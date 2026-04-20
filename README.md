@@ -2,8 +2,6 @@
 
 **Interactive study tool for the ASQ Certified Manager of Quality / Organizational Excellence (CMQ/OE) exam**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Portal-blue?style=for-the-badge&logo=github)](https://ondrejholub.github.io/ASQ-CMQ/)
-
 A clean, fast, single-file web application designed to help Quality professionals master the **ASQ CMQ/OE Body of Knowledge**. No installation needed — just open and study.
 
 → **[Open the Study Portal](https://ondrejholub.github.io/ASQ-CMQ/)**
@@ -58,11 +56,4 @@ All content is based on publicly available information about the CMQ/OE Body of 
 Found an error? Want to add more questions, improve explanations, or suggest new features?  
 Feel free to open an issue or submit a pull request.
 
-## 📄 License
-
-MIT License — see the [LICENSE](LICENSE) file for details.
-
----
-
-Made with ❤️ for the Quality community  
 Developed by [Ondrej Holub](https://github.com/OndrejHolub)
