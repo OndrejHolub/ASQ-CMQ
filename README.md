@@ -1,36 +1,69 @@
-# CQM Pro — ASQ CMQ/OE Exam Mastery Portal
+# ASQ-CMQ Exam Mastery Portal
 
-A sleek, Apple/Tesla-inspired learning portal for Quality Engineers preparing for the **ASQ Certified Manager of Quality/Organizational Excellence (CMQ/OE)** exam.
+**Interactive study tool for the ASQ Certified Manager of Quality / Organizational Excellence (CMQ/OE) exam**
 
-## 🎯 Features
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Portal-blue?style=for-the-badge&logo=github)](https://ondrejholub.github.io/ASQ-CMQ/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-- **7 Domains** — Complete coverage of the ASQ CMQ/OE Body of Knowledge
-- **Chapter Summaries** — Concise overviews with 6 key insights per domain
-- **Infographics** — Animated bar charts + radar visualizations
-- **Interactive Quizzes** — 35 exam-style questions with explanations
-- **Flashcards** — 42 flip cards with mastery tracking
-- **Exam Blueprint** — Visual breakdown of question distribution
+A clean, fast, single-file web application designed to help Quality professionals master the **ASQ CMQ/OE Body of Knowledge**. No installation needed — just open and study.
 
-## 📚 Domains Covered
+→ **[Open the Study Portal](https://ondrejholub.github.io/ASQ-CMQ/)**
 
-| Domain | Title | Exam Questions |
-|--------|-------|---------------|
-| I | Leadership | 28 |
-| II | Strategic Plan Development & Deployment | 25 |
-| III | Management Elements & Methods | 32 |
-| IV | Quality Management Tools | 28 |
-| V | Customer-Focused Organizations | 25 |
-| VI | Supply Chain Management | 15 |
-| VII | Training & Development | 12 |
+---
 
-## 🚀 Live Site
+## ✨ Features
 
-**[https://ondrejholub.github.io/ASQ-CMQ/](https://ondrejholub.github.io/ASQ-CMQ/)**
+- Complete coverage of all **7 Domains**
+- Concise chapter summaries with 6 key insights per domain
+- Animated infographics (bar charts + radar charts)
+- 35 exam-style practice questions with detailed explanations
+- 42 digital flashcards with progress tracking
+- Visual Exam Blueprint showing question distribution
+- Fully responsive + works offline after first visit
 
-## 🛠 Tech
+## 📊 Domains Covered
 
-Single-file HTML application — no build step required. Uses React 18 via CDN.
+| Domain | Title                                      | Approx. Exam Weight |
+|--------|--------------------------------------------|---------------------|
+| I      | Leadership                                 | 20%                 |
+| II     | Strategic Plan Development & Deployment    | 15%                 |
+| III    | Management Elements & Methods              | **32%**             |
+| IV     | Quality Management Tools                   | 25%                 |
+| V      | Customer-Focused Organizations             | 15%                 |
+| VI     | Supply Chain Management                    | 10%                 |
+| VII    | Training & Development                     | 8%                  |
+
+## 🚀 Quick Start
+
+Just visit the live site:
+
+**[→ Start Studying Now](https://ondrejholub.github.io/ASQ-CMQ/)**
+
+Your quiz scores and flashcard progress are saved automatically in your browser.
+
+## 🛠️ Tech Stack
+
+- Single-file HTML + JavaScript
+- React 18 (loaded via CDN)
+- Tailwind CSS
+- Chart.js for visualizations
+- Hosted on GitHub Pages
 
 ## ⚠️ Disclaimer
 
-This portal is based on the ASQ CMQ/OE Body of Knowledge and is intended as a study aid. It is **not affiliated with or endorsed by ASQ**. For official exam information, visit [asq.org/cert/manager-of-quality](https://asq.org/cert/manager-of-quality).
+This project is an independent study aid and is **not affiliated with or endorsed by ASQ**.  
+All content is based on publicly available information about the CMQ/OE Body of Knowledge. For official details, visit [asq.org](https://asq.org/cert/manager-of-quality).
+
+## 🤝 Contributing
+
+Found an error? Want to add more questions, improve explanations, or suggest new features?  
+Feel free to open an issue or submit a pull request.
+
+## 📄 License
+
+MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+Made with ❤️ for the Quality community  
+Developed by [Ondrej Holub](https://github.com/OndrejHolub)
