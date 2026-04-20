@@ -1,755 +1,2413 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CQM Pro — ASQ CMQ/OE Exam Mastery</title>
-  <meta name="description" content="Master all 7 domains of the ASQ Certified Manager of Quality/Organizational Excellence exam. Interactive quizzes, flashcards, and study guides." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>◆</text></svg>" />
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: #000; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif; }
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: #111; }
-    ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
-    ::selection { background: rgba(255,255,255,0.15); }
-    @keyframes float { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(30px, -30px); } }
-    #root { min-height: 100vh; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASQ CMQ/OE Study Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0d0f12;
+  --bg2: #13161b;
+  --bg3: #1a1f27;
+  --border: #252b35;
+  --text: #c9d1d9;
+  --text-muted: #6e7681;
+  --text-bright: #e6edf3;
+  --accent: #f0c040;
+  --accent2: #3d9cf0;
+  --accent3: #56d364;
+  --accent4: #f0886f;
+  --sidebar-w: 280px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ── LAYOUT ── */
+#app { display: flex; min-height: 100vh; }
+
+/* ── SIDEBAR ── */
+#sidebar {
+  width: var(--sidebar-w);
+  min-width: var(--sidebar-w);
+  background: var(--bg2);
+  border-right: 1px solid var(--border);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+#sidebar::-webkit-scrollbar { width: 4px; }
+#sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+.sidebar-header {
+  padding: 20px 16px 12px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg2);
+  z-index: 10;
+}
+.sidebar-logo {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.sidebar-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-bright);
+  line-height: 1.3;
+}
+
+#search-box {
+  margin: 12px 12px 0;
+  position: relative;
+}
+#search-input {
+  width: 100%;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  padding: 7px 10px 7px 32px;
+  outline: none;
+  transition: border-color .2s;
+}
+#search-input:focus { border-color: var(--accent2); }
+#search-input::placeholder { color: var(--text-muted); }
+.search-icon {
+  position: absolute;
+  left: 9px; top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.nav-area { padding: 8px 0 24px; }
+
+.part-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 16px 16px 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.part-label:hover { color: var(--text); }
+.part-label .part-icon { font-size: 12px; }
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-left: 2px solid transparent;
+  transition: all .15s;
+  text-decoration: none;
+}
+.nav-item:hover { color: var(--text); background: var(--bg3); }
+.nav-item.active {
+  color: var(--accent);
+  border-left-color: var(--accent);
+  background: rgba(240,192,64,.06);
+}
+.nav-item .ch-icon { font-size: 14px; min-width: 18px; }
+.nav-item .ch-title { flex: 1; line-height: 1.3; }
+.nav-item .done-badge {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--accent3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 9px; color: #000; font-weight: 700;
+  opacity: 0; transition: opacity .2s;
+}
+.nav-item.done .done-badge { opacity: 1; }
+
+.progress-bar-wrap {
+  padding: 12px 16px;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+.progress-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.progress-track {
+  height: 4px;
+  background: var(--bg3);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent2), var(--accent3));
+  border-radius: 2px;
+  transition: width .4s ease;
+}
+
+/* ── MAIN ── */
+#main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.topbar-breadcrumb {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.topbar-breadcrumb span { color: var(--text); }
+.topbar-actions { display: flex; gap: 8px; align-items: center; }
+.btn {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+  letter-spacing: .05em;
+  transition: all .15s;
+}
+.btn-outline {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text-muted);
+}
+.btn-outline:hover { border-color: var(--text-muted); color: var(--text); }
+.btn-accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #000;
+}
+.btn-accent:hover { background: #ffd060; }
+
+#content {
+  flex: 1;
+  padding: 40px 48px 80px;
+  max-width: 900px;
+}
+
+/* ── CHAPTER CONTENT ── */
+.ch-header { margin-bottom: 36px; }
+.ch-header-icon { font-size: 36px; margin-bottom: 12px; }
+.ch-header-part {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent2);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.ch-header-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-bright);
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+.ch-header-bok {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin: 32px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin: 24px 0 8px;
+}
+h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent2);
+  margin: 16px 0 6px;
+}
+p { margin-bottom: 12px; }
+ul, ol {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+li { margin-bottom: 4px; }
+strong { color: var(--text-bright); font-weight: 600; }
+em { color: var(--text-muted); font-style: italic; }
+code {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 1px 6px;
+  color: var(--accent2);
+}
+
+/* Exam tip callout */
+.exam-tip {
+  background: rgba(240,192,64,.07);
+  border: 1px solid rgba(240,192,64,.25);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 16px 0;
+  font-size: 14px;
+}
+.exam-tip::before {
+  content: '🎯 EXAM TIP';
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+/* Key terms table */
+.kt-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 13px;
+}
+.kt-table th {
+  background: var(--bg3);
+  color: var(--accent2);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid var(--border);
+}
+.kt-table td {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.5;
+}
+.kt-table tr:nth-child(even) td { background: rgba(255,255,255,.02); }
+.kt-table td:first-child {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-bright);
+  white-space: nowrap;
+}
+
+/* Formula callout */
+.formula {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent2);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin: 12px 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: var(--accent2);
+}
+
+/* Model box */
+.model-box {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+.model-box h4 { margin-top: 0; }
+
+/* Tag badge */
+.tag {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 3px;
+  letter-spacing: .06em;
+}
+.tag-domain { background: rgba(61,156,240,.15); color: var(--accent2); }
+.tag-level { background: rgba(86,211,100,.15); color: var(--accent3); }
+
+/* ── SEARCH RESULTS ── */
+#search-results {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 12px; right: 12px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0,0,0,.5);
+}
+.search-result-item {
+  padding: 10px 14px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  transition: background .1s;
+}
+.search-result-item:last-child { border-bottom: none; }
+.search-result-item:hover { background: var(--bg3); }
+.sr-ch { font-size: 13px; color: var(--text-bright); font-weight: 600; }
+.sr-ctx { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.sr-hi { color: var(--accent); font-weight: 600; }
+
+/* ── HOME ── */
+.home-hero {
+  padding: 48px 48px 0;
+  max-width: 900px;
+}
+.home-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.home-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--text-bright);
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+.home-sub {
+  font-size: 16px;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 40px;
+}
+.stat-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+.stat-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+.stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.exam-blueprint {
+  padding: 0 48px 48px;
+  max-width: 900px;
+}
+.exam-blueprint h2 {
+  font-size: 18px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+.domain-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+.domain-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent2);
+  min-width: 24px;
+}
+.domain-name { flex: 1; color: var(--text); }
+.domain-qs {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: var(--text-muted);
+  min-width: 50px;
+  text-align: right;
+}
+.domain-pct {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  min-width: 44px;
+  text-align: right;
+}
+.domain-bar-wrap { min-width: 100px; }
+.domain-bar {
+  height: 6px;
+  background: var(--bg3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.domain-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  border-radius: 3px;
+}
+
+/* ── CHAPTER NAV BUTTONS ── */
+.ch-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.ch-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  transition: all .15s;
+}
+.ch-nav-btn:hover { color: var(--text); border-color: var(--text-muted); }
+.ch-nav-btn.disabled { opacity: .3; cursor: default; pointer-events: none; }
+
+/* ── MOBILE HAMBURGER ── */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 90;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    position: fixed;
+    left: -100%;
+    transition: left .25s ease;
+    z-index: 100;
+  }
+  #sidebar.open { left: 0; }
+  .overlay.open { display: block; }
+  #menu-toggle { display: block; }
+  #content { padding: 24px 20px 60px; }
+  .home-hero { padding: 24px 20px 0; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .exam-blueprint { padding: 0 20px 40px; }
+  .topbar { padding: 12px 16px; }
+  .home-title { font-size: 26px; }
+}
+</style>
 </head>
 <body>
-  <div id="root"></div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.9/babel.min.js"></script>
-
-  <script type="text/babel">
-    const { useState, useEffect, useRef } = React;
-
-    // ─── DATA ───────────────────────────────────────────────────────────────
-    const DOMAINS = [
-      {
-        id: 1, num: "I", title: "Leadership", questions: 28, color: "#FF4D4D", accent: "#FF8A80", icon: "◆",
-        summary: "This domain covers organizational structures, leadership challenges, teams and team processes, and the ASQ Code of Ethics. Quality managers must understand how to design effective organizational frameworks, navigate complex leadership situations, build high-performing teams, and maintain ethical standards throughout all quality initiatives.",
-        keyInsights: [
-          { title: "Organizational Design", desc: "Understand functional, matrix, and flat structures. Know when each is optimal for quality outcomes." },
-          { title: "Leadership vs Management", desc: "Leaders set vision and inspire change; managers plan, organize, and control. The CQM must do both." },
-          { title: "Team Dynamics", desc: "Forming → Storming → Norming → Performing → Adjourning. Recognize each stage and adapt leadership style." },
-          { title: "Emotional Intelligence", desc: "Self-awareness, self-regulation, motivation, empathy, and social skills drive effective quality leadership." },
-          { title: "Change Management", desc: "Use Kotter's 8 steps, Lewin's model, or ADKAR to drive sustainable organizational change." },
-          { title: "Ethics & Compliance", desc: "The ASQ Code of Ethics mandates integrity, competence, and responsibility in all professional conduct." }
-        ],
-        infographic: {
-          title: "Leadership Styles Spectrum",
-          items: [
-            { label: "Autocratic", value: 15, desc: "Crisis situations" },
-            { label: "Transactional", value: 25, desc: "Stable operations" },
-            { label: "Transformational", value: 35, desc: "Change initiatives" },
-            { label: "Servant", value: 30, desc: "Team empowerment" },
-            { label: "Situational", value: 40, desc: "Adaptive approach" }
-          ]
-        },
-        quiz: [
-          { q: "Which leadership style is MOST appropriate during a quality crisis requiring immediate action?", options: ["Servant leadership", "Autocratic leadership", "Laissez-faire leadership", "Democratic leadership"], correct: 1, explanation: "In crisis situations requiring immediate action, autocratic leadership provides the clear, decisive direction needed to resolve issues quickly." },
-          { q: "Tuckman's team development model stage where conflict emerges is:", options: ["Forming", "Storming", "Norming", "Performing"], correct: 1, explanation: "The Storming stage is characterized by conflict, power struggles, and disagreements as team members push boundaries." },
-          { q: "A matrix organization structure is best characterized by:", options: ["Single reporting line", "Dual reporting relationships", "No formal hierarchy", "Regional divisions only"], correct: 1, explanation: "Matrix structures feature dual reporting relationships where employees report to both a functional manager and a project/product manager." },
-          { q: "Which is NOT a component of emotional intelligence?", options: ["Self-awareness", "Technical expertise", "Empathy", "Social skills"], correct: 1, explanation: "Technical expertise is a hard skill, not a component of Goleman's emotional intelligence model." },
-          { q: "Kotter's 8-step change model begins with:", options: ["Forming a coalition", "Creating a vision", "Establishing urgency", "Empowering action"], correct: 2, explanation: "Kotter's model starts with establishing a sense of urgency to motivate people to move toward the change." }
-        ],
-        flashcards: [
-          { front: "What are Deming's 14 Points?", back: "Management philosophy principles including: drive out fear, break down barriers, institute training, adopt new philosophy, cease dependence on inspection, and improve constantly." },
-          { front: "Servant Leadership", back: "A leadership philosophy where the leader's primary goal is to serve others. The servant-leader shares power, puts others' needs first, and helps people develop and perform." },
-          { front: "Span of Control", back: "The number of subordinates a manager can effectively manage. Wider spans create flatter organizations; narrower spans create taller hierarchies." },
-          { front: "ADKAR Model", back: "Awareness → Desire → Knowledge → Ability → Reinforcement. A goal-oriented change management model for individual transitions." },
-          { front: "Stakeholder Analysis", back: "Process of identifying individuals/groups affected by quality initiatives and assessing their influence, interest, and potential impact on project success." },
-          { front: "Quality Trilogy (Juran)", back: "Quality Planning → Quality Control → Quality Improvement. Juran's three fundamental processes for managing quality." }
-        ]
-      },
-      {
-        id: 2, num: "II", title: "Strategic Plan Development & Deployment", questions: 25, color: "#448AFF", accent: "#82B1FF", icon: "◇",
-        summary: "Covers strategic planning models, business environment analysis, and strategic plan deployment. Quality managers must understand SWOT analysis, Hoshin Kanri (policy deployment), scenario planning, balanced scorecard, and how to translate high-level strategy into actionable quality objectives across all organizational levels.",
-        keyInsights: [
-          { title: "Hoshin Kanri", desc: "Policy deployment method that aligns organizational goals from top to bottom using catchball—a collaborative planning process." },
-          { title: "SWOT Analysis", desc: "Strengths, Weaknesses, Opportunities, Threats framework for assessing internal capabilities and external environment." },
-          { title: "Balanced Scorecard", desc: "Four perspectives: Financial, Customer, Internal Process, Learning & Growth. Translates strategy into measurable objectives." },
-          { title: "PESTLE Analysis", desc: "Political, Economic, Social, Technological, Legal, Environmental factors shaping the business landscape." },
-          { title: "Risk Assessment", desc: "Identify, analyze, evaluate, and treat risks using qualitative and quantitative methods to protect strategic objectives." },
-          { title: "KPIs & Metrics", desc: "Key Performance Indicators must be SMART: Specific, Measurable, Achievable, Relevant, and Time-bound." }
-        ],
-        infographic: {
-          title: "Strategic Planning Process Flow",
-          items: [
-            { label: "Vision/Mission", value: 20, desc: "Define purpose" },
-            { label: "Environmental Scan", value: 30, desc: "SWOT/PESTLE" },
-            { label: "Strategy Formulation", value: 35, desc: "Set objectives" },
-            { label: "Deployment", value: 40, desc: "Hoshin Kanri" },
-            { label: "Review & Adapt", value: 25, desc: "PDCA cycle" }
-          ]
-        },
-        quiz: [
-          { q: "Hoshin Kanri is best described as:", options: ["A statistical tool", "Policy deployment methodology", "Customer satisfaction survey", "Financial audit process"], correct: 1, explanation: "Hoshin Kanri (policy deployment) is a strategic planning methodology that aligns organizational goals from strategic to operational levels." },
-          { q: "Which Balanced Scorecard perspective focuses on employee training?", options: ["Financial", "Customer", "Internal Process", "Learning & Growth"], correct: 3, explanation: "The Learning & Growth perspective addresses employee training, corporate culture, and organizational improvement capabilities." },
-          { q: "In SWOT analysis, market trends represent:", options: ["Strengths", "Weaknesses", "Opportunities or Threats", "Internal factors only"], correct: 2, explanation: "Market trends are external factors that can represent either opportunities to leverage or threats to mitigate." },
-          { q: "The 'catchball' process in Hoshin Kanri refers to:", options: ["Rejecting bad ideas", "Iterative negotiation of goals", "Catching defects early", "Competitive benchmarking"], correct: 1, explanation: "Catchball is the collaborative, back-and-forth negotiation process where goals and means are discussed between management levels." },
-          { q: "A PESTLE analysis examines which type of factors?", options: ["Internal only", "External macro-environment", "Employee performance", "Product quality metrics"], correct: 1, explanation: "PESTLE analyzes Political, Economic, Social, Technological, Legal, and Environmental macro-environmental factors." }
-        ],
-        flashcards: [
-          { front: "Balanced Scorecard", back: "Strategic management tool with 4 perspectives: Financial (shareholder value), Customer (satisfaction/retention), Internal Process (operational excellence), Learning & Growth (innovation/improvement)." },
-          { front: "Porter's Five Forces", back: "Competitive analysis framework: Threat of new entrants, Bargaining power of suppliers, Bargaining power of buyers, Threat of substitutes, Industry rivalry." },
-          { front: "Scenario Planning", back: "Strategic method that creates multiple plausible future scenarios to test strategies against uncertainty and prepare contingency plans." },
-          { front: "Mission vs Vision", back: "Mission = What we do now (present purpose). Vision = Where we want to be (future aspiration). Both guide strategic direction." },
-          { front: "Deployment Flowdown", back: "Process of cascading strategic objectives from corporate → division → department → individual level with aligned metrics at each tier." },
-          { front: "Core Competency", back: "A unique capability that provides competitive advantage, is difficult to imitate, and can be leveraged across markets (Prahalad & Hamel)." }
-        ]
-      },
-      {
-        id: 3, num: "III", title: "Management Elements & Methods", questions: 32, color: "#00C853", accent: "#69F0AE", icon: "▲",
-        summary: "The largest exam domain covering management skills, communication, project management, quality management systems (ISO 9001), problem-solving methodologies, and process management. Includes financial management concepts like cost of quality, ROI analysis, and budget management essential for quality professionals.",
-        keyInsights: [
-          { title: "Cost of Quality (CoQ)", desc: "Prevention + Appraisal + Internal Failure + External Failure. Investing in prevention reduces total CoQ significantly." },
-          { title: "Project Management", desc: "Initiating → Planning → Executing → Monitoring/Controlling → Closing. Apply WBS, Gantt charts, and critical path analysis." },
-          { title: "ISO 9001:2015", desc: "Quality Management System standard based on 7 principles: Customer focus, Leadership, Engagement, Process approach, Improvement, Evidence-based decisions, Relationship management." },
-          { title: "Problem Solving", desc: "8D, A3, DMAIC, PDCA—structured approaches to identify root causes and implement permanent corrective actions." },
-          { title: "Process Management", desc: "Map, measure, analyze, improve, and control processes. Use SIPOC, value stream mapping, and process capability analysis." },
-          { title: "Financial Tools", desc: "ROI, NPV, payback period, break-even analysis—essential for justifying quality improvement investments to leadership." }
-        ],
-        infographic: {
-          title: "Cost of Quality Breakdown",
-          items: [
-            { label: "Prevention", value: 25, desc: "Training, planning" },
-            { label: "Appraisal", value: 20, desc: "Testing, audits" },
-            { label: "Internal Failure", value: 30, desc: "Scrap, rework" },
-            { label: "External Failure", value: 45, desc: "Warranty, recalls" }
-          ]
-        },
-        quiz: [
-          { q: "Which cost of quality category includes warranty claims?", options: ["Prevention", "Appraisal", "Internal Failure", "External Failure"], correct: 3, explanation: "Warranty claims are External Failure costs because they occur after the product/service reaches the customer." },
-          { q: "The critical path in project management is:", options: ["The shortest path", "The longest path determining minimum duration", "The most expensive path", "The path with most resources"], correct: 1, explanation: "The critical path is the longest sequence of dependent activities that determines the minimum project duration." },
-          { q: "ISO 9001:2015 is based on how many quality management principles?", options: ["5", "6", "7", "8"], correct: 2, explanation: "ISO 9001:2015 is based on 7 quality management principles, reduced from 8 in the 2008 version." },
-          { q: "SIPOC stands for:", options: ["Strategy, Input, Process, Output, Customer", "Supplier, Input, Process, Output, Customer", "System, Integration, Process, Operation, Control", "Standard, Improvement, Practice, Outcome, Compliance"], correct: 1, explanation: "SIPOC (Supplier, Input, Process, Output, Customer) is a high-level process mapping tool." },
-          { q: "In the 8D problem-solving method, D4 is:", options: ["Define the problem", "Root cause analysis", "Implement corrective actions", "Form the team"], correct: 1, explanation: "D4 in the 8D methodology is root cause analysis—identifying and verifying the root cause(s) and escape point(s)." }
-        ],
-        flashcards: [
-          { front: "PDCA Cycle", back: "Plan → Do → Check → Act. Deming's continuous improvement cycle. Plan the change, implement it, check results, act on lessons learned." },
-          { front: "Work Breakdown Structure (WBS)", back: "Hierarchical decomposition of project scope into manageable work packages. Foundation for scheduling, cost estimation, and resource allocation." },
-          { front: "Cost of Poor Quality (COPQ)", back: "Internal failures (scrap, rework, retesting) + External failures (warranty, recalls, lost customers). Typically 15-25% of revenue." },
-          { front: "Management Review (ISO 9001)", back: "Top management evaluates QMS suitability, adequacy, effectiveness at planned intervals. Reviews policy, objectives, audit results, customer feedback." },
-          { front: "Risk-Based Thinking", back: "Core concept in ISO 9001:2015. Proactively identify risks and opportunities throughout the QMS rather than treating prevention as a separate component." },
-          { front: "Earned Value Management", back: "EVM tracks project performance: PV (Planned Value), EV (Earned Value), AC (Actual Cost). CPI = EV/AC, SPI = EV/PV." }
-        ]
-      },
-      {
-        id: 4, num: "IV", title: "Quality Management Tools", questions: 28, color: "#FF9100", accent: "#FFAB40", icon: "●",
-        summary: "Encompasses the seven basic quality tools, management and planning tools, process improvement techniques, statistical process control, measurement system analysis, and design of experiments. Quality managers must be proficient in selecting and applying the right tool for each situation.",
-        keyInsights: [
-          { title: "7 Basic QC Tools", desc: "Cause & Effect, Check Sheet, Control Chart, Histogram, Pareto, Scatter Diagram, Flowchart—the foundation of quality analysis." },
-          { title: "7 Management Tools", desc: "Affinity Diagram, Tree Diagram, Matrix Diagram, Interrelationship Digraph, Prioritization Matrix, PDPC, Activity Network." },
-          { title: "SPC Fundamentals", desc: "Statistical Process Control uses control charts to monitor process stability. Distinguish between common cause and special cause variation." },
-          { title: "Six Sigma DMAIC", desc: "Define → Measure → Analyze → Improve → Control. Data-driven methodology for process improvement achieving 3.4 DPMO." },
-          { title: "Lean Tools", desc: "5S, Value Stream Mapping, Kaizen, Kanban, Poka-Yoke—eliminate waste and create flow in processes." },
-          { title: "MSA", desc: "Measurement System Analysis evaluates gage R&R (repeatability and reproducibility) to ensure measurement system adequacy." }
-        ],
-        infographic: {
-          title: "Tool Selection by DMAIC Phase",
-          items: [
-            { label: "Define", value: 20, desc: "SIPOC, VOC, CTQ" },
-            { label: "Measure", value: 30, desc: "MSA, Cp/Cpk" },
-            { label: "Analyze", value: 40, desc: "Pareto, Fishbone" },
-            { label: "Improve", value: 35, desc: "DOE, Poka-Yoke" },
-            { label: "Control", value: 25, desc: "SPC, Control Plans" }
-          ]
-        },
-        quiz: [
-          { q: "A Pareto chart is based on what principle?", options: ["Normal distribution", "80/20 rule", "Central limit theorem", "Regression analysis"], correct: 1, explanation: "The Pareto chart is based on the 80/20 rule—roughly 80% of effects come from 20% of causes." },
-          { q: "Which control chart is used for attribute data with varying sample sizes?", options: ["X-bar and R chart", "p-chart", "c-chart", "u-chart"], correct: 1, explanation: "The p-chart monitors the proportion of defective items and is designed for attribute data with varying subgroup sizes." },
-          { q: "Poka-Yoke is a Japanese term meaning:", options: ["Continuous improvement", "Mistake-proofing", "Visual management", "Just-in-time delivery"], correct: 1, explanation: "Poka-Yoke means mistake-proofing—designing processes or devices that prevent or detect errors before they become defects." },
-          { q: "In a Gage R&R study, which component measures operator variation?", options: ["Repeatability", "Reproducibility", "Resolution", "Reliability"], correct: 1, explanation: "Reproducibility measures the variation due to different operators measuring the same parts with the same gage." },
-          { q: "The 5th S in 5S methodology is:", options: ["Sort", "Standardize", "Sustain", "Simplify"], correct: 2, explanation: "The 5S's are: Sort, Set in Order, Shine, Standardize, Sustain. Sustain ensures long-term adherence." }
-        ],
-        flashcards: [
-          { front: "Control Chart Rules", back: "Western Electric rules: 1 point beyond 3σ, 2 of 3 beyond 2σ, 4 of 5 beyond 1σ, 8 consecutive points on one side of center line." },
-          { front: "Process Capability (Cpk)", back: "Cpk = min[(USL-μ)/3σ, (μ-LSL)/3σ]. Measures how well a process meets specifications. Cpk ≥ 1.33 is typically acceptable." },
-          { front: "FMEA", back: "Failure Mode and Effects Analysis. Severity × Occurrence × Detection = RPN (Risk Priority Number). Prioritize actions on highest RPNs." },
-          { front: "Value Stream Mapping", back: "Lean tool that visualizes all steps (value-added and non-value-added) in a process from supplier to customer." },
-          { front: "Design of Experiments (DOE)", back: "Statistical method to determine cause-and-effect relationships. Full factorial, fractional factorial, and Taguchi methods optimize process parameters." },
-          { front: "Kaizen Event", back: "Focused, short-term improvement activity (typically 3-5 days) where a cross-functional team rapidly improves a specific process." }
-        ]
-      },
-      {
-        id: 5, num: "V", title: "Customer-Focused Organizations", questions: 25, color: "#AA00FF", accent: "#D500F9", icon: "★",
-        summary: "Focuses on understanding customer needs, managing customer relationships, building customer satisfaction and loyalty, and leveraging customer data for improvement. Covers Voice of the Customer, Kano model, customer segmentation, complaint management, and using customer insights to drive quality strategy.",
-        keyInsights: [
-          { title: "Voice of the Customer", desc: "Systematic approach to capturing customer needs through surveys, interviews, focus groups, and data analysis." },
-          { title: "Kano Model", desc: "Categorizes features: Must-Be (expected), One-Dimensional (performance), Attractive (delighters), Indifferent, and Reverse." },
-          { title: "Customer Segmentation", desc: "Divide customers into groups based on needs, behaviors, or demographics to tailor quality strategies." },
-          { title: "NPS & Loyalty", desc: "Net Promoter Score measures customer loyalty: Promoters (9-10) - Detractors (0-6) = NPS. Target: above +50." },
-          { title: "QFD", desc: "Quality Function Deployment (House of Quality) translates customer requirements into technical specifications." },
-          { title: "Complaint Management", desc: "Systematic process: Receive → Acknowledge → Investigate → Resolve → Follow-up → Prevent recurrence." }
-        ],
-        infographic: {
-          title: "Kano Model Categories",
-          items: [
-            { label: "Must-Be", value: 15, desc: "Expected basics" },
-            { label: "Performance", value: 30, desc: "Linear satisfaction" },
-            { label: "Attractive", value: 45, desc: "Delighters" },
-            { label: "Indifferent", value: 10, desc: "No impact" },
-            { label: "Reverse", value: 5, desc: "Causes dissatisfaction" }
-          ]
-        },
-        quiz: [
-          { q: "In the Kano Model, a 'Must-Be' quality attribute:", options: ["Increases satisfaction linearly", "Delights customers when present", "Causes dissatisfaction only when absent", "Has no effect on satisfaction"], correct: 2, explanation: "Must-Be attributes are expected. Their presence doesn't increase satisfaction, but absence causes strong dissatisfaction." },
-          { q: "QFD's 'House of Quality' primarily translates:", options: ["Financial targets to budgets", "Customer needs to design requirements", "Process maps to procedures", "Audit findings to corrective actions"], correct: 1, explanation: "The House of Quality translates Voice of the Customer into measurable technical/design requirements." },
-          { q: "Net Promoter Score is calculated as:", options: ["Average of all scores", "% Promoters - % Detractors", "% Satisfied / % Total", "Median customer rating"], correct: 1, explanation: "NPS = % Promoters (9-10) minus % Detractors (0-6). Passives (7-8) are excluded." },
-          { q: "Which VOC method provides the deepest qualitative insights?", options: ["Online surveys", "In-depth interviews", "Comment cards", "Social media monitoring"], correct: 1, explanation: "In-depth interviews provide the richest qualitative data with probing follow-up questions." },
-          { q: "Customer lifetime value (CLV) helps organizations:", options: ["Set product prices", "Prioritize customer retention investments", "Design manufacturing processes", "Audit supplier quality"], correct: 1, explanation: "CLV helps understand total customer relationship worth, guiding retention investment decisions." }
-        ],
-        flashcards: [
-          { front: "Quality Function Deployment (QFD)", back: "Structured method to translate customer requirements (WHATs) into technical requirements (HOWs) using the House of Quality matrix." },
-          { front: "Kano Model", back: "Classifies preferences: Must-Be (basic expectations), One-Dimensional (more is better), Attractive (unexpected delighters), Indifferent, Reverse." },
-          { front: "Customer Journey Mapping", back: "Visual representation of every touchpoint a customer has with an organization, identifying pain points and opportunities." },
-          { front: "Service Level Agreement (SLA)", back: "Formal agreement defining expected service performance levels, metrics, responsibilities, and remedies for non-compliance." },
-          { front: "SERVQUAL Model", back: "Measures service quality across 5 dimensions: Tangibles, Reliability, Responsiveness, Assurance, and Empathy." },
-          { front: "Customer Retention Rate", back: "((Customers at end - New customers) / Customers at start) × 100%. A 5% increase in retention can increase profits by 25-95%." }
-        ]
-      },
-      {
-        id: 6, num: "VI", title: "Supply Chain Management", questions: 15, color: "#00BFA5", accent: "#64FFDA", icon: "⬡",
-        summary: "Covers supplier selection and evaluation, supplier relationship management, performance monitoring, and supply chain risk management. Quality managers must understand how to qualify suppliers, conduct audits, manage incoming quality, and build collaborative partnerships.",
-        keyInsights: [
-          { title: "Supplier Selection", desc: "Evaluate suppliers on Quality, Cost, Delivery, Service (QCDS). Use weighted scoring matrices for objective decisions." },
-          { title: "Supplier Audits", desc: "First-party (internal), second-party (customer audits supplier), third-party (independent). Plan, execute, report, follow-up." },
-          { title: "Incoming Inspection", desc: "Acceptance sampling (AQL, LTPD), skip-lot inspection, and supplier certification programs reduce inspection burden." },
-          { title: "SQA Programs", desc: "Supplier Quality Assurance includes qualification, monitoring, development, and corrective action management." },
-          { title: "Risk Mitigation", desc: "Dual sourcing, safety stock, supplier development, and contractual protections manage supply chain vulnerabilities." },
-          { title: "Partnership Models", desc: "Move from adversarial to collaborative: preferred suppliers, strategic alliances, and joint improvement initiatives." }
-        ],
-        infographic: {
-          title: "Supplier Evaluation Criteria",
-          items: [
-            { label: "Quality", value: 35, desc: "PPM, certifications" },
-            { label: "Cost", value: 25, desc: "Total cost of ownership" },
-            { label: "Delivery", value: 20, desc: "OTD performance" },
-            { label: "Service", value: 15, desc: "Responsiveness" },
-            { label: "Innovation", value: 10, desc: "Continuous improvement" }
-          ]
-        },
-        quiz: [
-          { q: "AQL in acceptance sampling stands for:", options: ["Acceptable Quality Level", "Average Quality Limit", "Audit Quality Listing", "Approved Quality Lot"], correct: 0, explanation: "AQL (Acceptable Quality Level) is the maximum percent defective considered satisfactory as a process average." },
-          { q: "A second-party audit is conducted by:", options: ["The organization itself", "The customer on its supplier", "An independent certification body", "Government regulators"], correct: 1, explanation: "A second-party audit is conducted by the customer on a supplier to verify conformance." },
-          { q: "Total Cost of Ownership (TCO) includes:", options: ["Purchase price only", "Purchase price + all related costs", "Manufacturing cost only", "Labor costs only"], correct: 1, explanation: "TCO includes purchase price plus shipping, inspection, quality issues, inventory carrying costs, and all associated costs." },
-          { q: "Dual sourcing primarily mitigates:", options: ["Quality variation", "Supply disruption risk", "Design complexity", "Customer complaints"], correct: 1, explanation: "Dual sourcing provides alternatives if one supplier fails, primarily mitigating supply disruption risk." },
-          { q: "A supplier scorecard typically does NOT include:", options: ["On-time delivery rate", "PPM defect rate", "Employee satisfaction scores", "Corrective action responsiveness"], correct: 2, explanation: "Supplier scorecards focus on quality (PPM), delivery (OTD), responsiveness, and cost—not internal employee satisfaction." }
-        ],
-        flashcards: [
-          { front: "Acceptance Sampling", back: "Statistical method of inspecting a random sample from a lot to decide acceptance or rejection. Uses AQL, LTPD, producer's risk (α), consumer's risk (β)." },
-          { front: "Supplier Development", back: "Proactive program to improve supplier capabilities through training, technical assistance, and shared best practices." },
-          { front: "PPAP", back: "Production Part Approval Process. Formal process to demonstrate supplier's production process can consistently produce parts meeting all requirements." },
-          { front: "Approved Supplier List (ASL)", back: "Registry of suppliers who have been evaluated, qualified, and approved to provide specific materials, components, or services." },
-          { front: "VMI (Vendor Managed Inventory)", back: "Supply chain model where the supplier monitors and replenishes customer inventory based on agreed-upon levels." },
-          { front: "OC Curve", back: "Operating Characteristic curve shows probability of accepting a lot for different quality levels. Evaluates sampling plan discriminating power." }
-        ]
-      },
-      {
-        id: 7, num: "VII", title: "Training & Development", questions: 12, color: "#F50057", accent: "#FF4081", icon: "◈",
-        summary: "Addresses training needs assessment, training program design and delivery, training effectiveness evaluation, and knowledge management. Quality managers must develop competent teams through systematic training approaches and measure training ROI.",
-        keyInsights: [
-          { title: "Needs Assessment", desc: "Organizational analysis → Task analysis → Person analysis. Identify gaps between current and required competencies." },
-          { title: "Kirkpatrick's 4 Levels", desc: "Reaction → Learning → Behavior → Results. Evaluate training effectiveness from participant satisfaction to business impact." },
-          { title: "ADDIE Model", desc: "Analysis → Design → Development → Implementation → Evaluation. Systematic instructional design framework." },
-          { title: "Adult Learning Theory", desc: "Knowles' Andragogy: adults are self-directed, experience-based, relevancy-oriented, problem-centered, and internally motivated." },
-          { title: "Knowledge Management", desc: "Capture, organize, share, and apply organizational knowledge. Tacit (personal) vs Explicit (documented) knowledge." },
-          { title: "Competency Models", desc: "Define knowledge, skills, and abilities required for roles. Use for hiring, training, performance management, and succession planning." }
-        ],
-        infographic: {
-          title: "Kirkpatrick's Training Evaluation",
-          items: [
-            { label: "Reaction", value: 15, desc: "Did they like it?" },
-            { label: "Learning", value: 25, desc: "Did they learn?" },
-            { label: "Behavior", value: 35, desc: "Do they apply it?" },
-            { label: "Results", value: 45, desc: "Business impact?" }
-          ]
-        },
-        quiz: [
-          { q: "Kirkpatrick Level 3 evaluates:", options: ["Participant satisfaction", "Knowledge gained", "On-the-job behavior change", "Business results/ROI"], correct: 2, explanation: "Level 3 (Behavior) evaluates whether participants apply what they learned back on the job." },
-          { q: "The ADDIE model's first phase is:", options: ["Assessment", "Analysis", "Application", "Alignment"], correct: 1, explanation: "ADDIE begins with Analysis—identifying training needs, learner characteristics, and learning objectives." },
-          { q: "Tacit knowledge is best described as:", options: ["Written procedures", "Personal expertise and intuition", "Database records", "Published research"], correct: 1, explanation: "Tacit knowledge is personal, experiential knowledge that is difficult to articulate or codify." },
-          { q: "Knowles' theory of Andragogy focuses on:", options: ["Child learning principles", "Adult learning principles", "Machine learning", "Organizational learning"], correct: 1, explanation: "Andragogy is Malcolm Knowles' theory emphasizing that adults learn differently—they are self-directed and experience-oriented." },
-          { q: "A training ROI of 150% means:", options: ["Training cost exceeded benefits", "Benefits were 1.5x the cost", "Benefits were 2.5x the cost", "Training had no financial impact"], correct: 2, explanation: "ROI of 150% means net benefits are 1.5 times the cost, so total benefits are 2.5 times the investment." }
-        ],
-        flashcards: [
-          { front: "Kirkpatrick Model", back: "4-level training evaluation: Level 1 (Reaction), Level 2 (Learning), Level 3 (Behavior), Level 4 (Results/business impact)." },
-          { front: "ADDIE Model", back: "Instructional design: Analysis (needs), Design (objectives), Development (materials), Implementation (delivery), Evaluation (effectiveness)." },
-          { front: "Learning Organization (Senge)", back: "Peter Senge's 5 disciplines: Personal Mastery, Mental Models, Shared Vision, Team Learning, Systems Thinking." },
-          { front: "70-20-10 Model", back: "70% learning from on-the-job experiences, 20% from interactions (coaching/mentoring), 10% from formal education/training." },
-          { front: "Competency-Based Training", back: "Training focused on developing specific, measurable competencies required for job performance rather than just completing course hours." },
-          { front: "Knowledge Management", back: "Systematic process of capturing, distributing, and effectively using organizational knowledge. Includes communities of practice and lessons learned." }
-        ]
-      }
-    ];
-
-    // ─── COMPONENTS ─────────────────────────────────────────────────────────
-
-    const HeroSection = ({ onExplore }) => {
-      const [loaded, setLoaded] = React.useState(false);
-      React.useEffect(() => { setTimeout(() => setLoaded(true), 100); }, []);
-
-      return (
-        <div style={{
-          minHeight: "100vh", display: "flex", flexDirection: "column",
-          justifyContent: "center", alignItems: "center", position: "relative",
-          overflow: "hidden", background: "#000", padding: "40px 20px"
-        }}>
-          <div style={{
-            position: "absolute", top: "-20%", left: "-10%", width: "600px", height: "600px",
-            borderRadius: "50%", background: "radial-gradient(circle, rgba(255,77,77,0.15) 0%, transparent 70%)",
-            animation: "float 8s ease-in-out infinite", filter: "blur(60px)"
-          }} />
-          <div style={{
-            position: "absolute", bottom: "-20%", right: "-10%", width: "500px", height: "500px",
-            borderRadius: "50%", background: "radial-gradient(circle, rgba(68,138,255,0.15) 0%, transparent 70%)",
-            animation: "float 10s ease-in-out infinite reverse", filter: "blur(60px)"
-          }} />
-
-          <div style={{
-            opacity: loaded ? 1 : 0, transform: loaded ? "translateY(0)" : "translateY(40px)",
-            transition: "all 1.2s cubic-bezier(0.16, 1, 0.3, 1)",
-            textAlign: "center", position: "relative", zIndex: 1, maxWidth: "900px"
-          }}>
-            <div style={{
-              fontSize: "13px", letterSpacing: "6px", textTransform: "uppercase",
-              color: "#888", marginBottom: "24px"
-            }}>ASQ Certified Manager of Quality</div>
-
-            <h1 style={{
-              fontSize: "clamp(42px, 8vw, 86px)", fontWeight: 700, lineHeight: 1.05,
-              background: "linear-gradient(135deg, #FFFFFF 0%, #AAAAAA 100%)",
-              WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
-              margin: "0 0 24px"
-            }}>CMQ/OE<br/>Exam Mastery</h1>
-
-            <p style={{
-              fontSize: "clamp(17px, 2.5vw, 22px)", color: "#999", lineHeight: 1.6,
-              maxWidth: "600px", margin: "0 auto 48px"
-            }}>
-              Master all 7 domains. 165 questions. One certification that transforms your career in quality management.
-            </p>
-
-            <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
-              <button onClick={onExplore} style={{
-                padding: "16px 40px", fontSize: "17px", fontWeight: 600,
-                background: "#fff", color: "#000", border: "none", borderRadius: "980px",
-                cursor: "pointer", transition: "all 0.3s"
-              }}
-              onMouseEnter={e => { e.target.style.transform = "scale(1.05)"; e.target.style.boxShadow = "0 0 40px rgba(255,255,255,0.2)"; }}
-              onMouseLeave={e => { e.target.style.transform = "scale(1)"; e.target.style.boxShadow = "none"; }}
-              >Start Learning</button>
-
-              <button onClick={onExplore} style={{
-                padding: "16px 40px", fontSize: "17px", fontWeight: 600,
-                background: "transparent", color: "#fff", border: "1px solid rgba(255,255,255,0.3)",
-                borderRadius: "980px", cursor: "pointer", transition: "all 0.3s"
-              }}
-              onMouseEnter={e => { e.target.style.borderColor = "rgba(255,255,255,0.6)"; }}
-              onMouseLeave={e => { e.target.style.borderColor = "rgba(255,255,255,0.3)"; }}
-              >View All Domains →</button>
-            </div>
-          </div>
-
-          <div style={{
-            display: "flex", gap: "clamp(24px,5vw,64px)", justifyContent: "center",
-            marginTop: "80px", opacity: loaded ? 1 : 0,
-            transition: "opacity 1.5s ease 0.5s", flexWrap: "wrap"
-          }}>
-            {[
-              { num: "7", label: "Domains" },
-              { num: "165", label: "Exam Questions" },
-              { num: "42", label: "Flashcards" },
-              { num: "35", label: "Quiz Questions" }
-            ].map((s, i) => (
-              <div key={i} style={{ textAlign: "center" }}>
-                <div style={{ fontSize: "clamp(28px,4vw,48px)", fontWeight: 700, color: "#fff" }}>{s.num}</div>
-                <div style={{ fontSize: "13px", color: "#666", textTransform: "uppercase", letterSpacing: "2px", marginTop: "4px" }}>{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      );
-    };
-
-    const DomainCard = ({ domain, onClick, index }) => {
-      const [hovered, setHovered] = React.useState(false);
-      const [visible, setVisible] = React.useState(false);
-      React.useEffect(() => { setTimeout(() => setVisible(true), index * 120); }, []);
-
-      return (
-        <div onClick={() => onClick(domain)} onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}
-          style={{
-            background: hovered ? `linear-gradient(135deg, ${domain.color}15, ${domain.color}08)` : "rgba(255,255,255,0.03)",
-            border: `1px solid ${hovered ? domain.color + '40' : 'rgba(255,255,255,0.06)'}`,
-            borderRadius: "20px", padding: "32px", cursor: "pointer",
-            transition: "all 0.5s cubic-bezier(0.16, 1, 0.3, 1)",
-            transform: visible ? (hovered ? "translateY(-4px) scale(1.01)" : "translateY(0)") : "translateY(30px)",
-            opacity: visible ? 1 : 0, position: "relative", overflow: "hidden"
-          }}>
-          <div style={{
-            position: "absolute", top: "-30px", right: "-30px", fontSize: "120px",
-            opacity: 0.04, fontWeight: 900, color: domain.color
-          }}>{domain.num}</div>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
-            <span style={{
-              fontSize: "24px", width: "44px", height: "44px", display: "flex", alignItems: "center",
-              justifyContent: "center", background: domain.color + "18", borderRadius: "12px", color: domain.color
-            }}>{domain.icon}</span>
-            <div>
-              <div style={{ fontSize: "11px", color: "#666", letterSpacing: "2px", textTransform: "uppercase" }}>Domain {domain.num}</div>
-              <div style={{ fontSize: "13px", color: domain.color, fontWeight: 600 }}>{domain.questions} Questions</div>
-            </div>
-          </div>
-          <h3 style={{ fontSize: "clamp(18px,2vw,22px)", fontWeight: 700, color: "#fff", margin: "0 0 12px", lineHeight: 1.3 }}>{domain.title}</h3>
-          <p style={{ fontSize: "14px", color: "#888", lineHeight: 1.6, margin: 0, display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>{domain.summary}</p>
-          <div style={{ marginTop: "20px", fontSize: "14px", color: domain.color, fontWeight: 600, display: "flex", alignItems: "center", gap: "6px" }}>
-            Explore Domain <span style={{ transition: "transform 0.3s", display: "inline-block", transform: hovered ? "translateX(4px)" : "none" }}>→</span>
-          </div>
-        </div>
-      );
-    };
-
-    const TabBar = ({ tabs, active, onChange, color }) => (
-      <div style={{ display: "flex", gap: "4px", background: "rgba(255,255,255,0.05)", borderRadius: "14px", padding: "4px", marginBottom: "32px", flexWrap: "wrap" }}>
-        {tabs.map(tab => (
-          <button key={tab} onClick={() => onChange(tab)} style={{
-            padding: "10px 20px", fontSize: "14px", fontWeight: 600,
-            background: active === tab ? color : "transparent",
-            color: active === tab ? "#fff" : "#888",
-            border: "none", borderRadius: "10px", cursor: "pointer",
-            transition: "all 0.3s", flex: "1 1 auto", minWidth: "100px", whiteSpace: "nowrap"
-          }}>{tab}</button>
-        ))}
+<div id="app">
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">ASQ CMQ/OE</div>
+      <div class="sidebar-title">Complete Study Guide</div>
+    </div>
+    <div id="search-box">
+      <span class="search-icon">⌕</span>
+      <input id="search-input" type="text" placeholder="Search chapters…" autocomplete="off">
+      <div id="search-results" style="display:none"></div>
+    </div>
+    <div class="nav-area" id="nav-area"></div>
+    <div class="progress-bar-wrap">
+      <div class="progress-label">
+        <span>Progress</span>
+        <span id="progress-text">0 / 20</span>
       </div>
-    );
-
-    const SummaryView = ({ domain }) => (
-      <div>
-        <p style={{ fontSize: "17px", color: "#ccc", lineHeight: 1.8, margin: "0 0 32px" }}>{domain.summary}</p>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "16px" }}>
-          {domain.keyInsights.map((insight, i) => (
-            <div key={i} style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", borderRadius: "16px", padding: "24px" }}>
-              <div style={{ fontSize: "11px", color: domain.color, letterSpacing: "2px", textTransform: "uppercase", marginBottom: "8px", fontWeight: 700 }}>Insight {i + 1}</div>
-              <h4 style={{ fontSize: "17px", color: "#fff", margin: "0 0 8px", fontWeight: 700 }}>{insight.title}</h4>
-              <p style={{ fontSize: "14px", color: "#999", margin: 0, lineHeight: 1.6 }}>{insight.desc}</p>
-            </div>
-          ))}
-        </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width:0%"></div>
       </div>
-    );
+    </div>
+  </nav>
+  <div class="overlay" id="overlay"></div>
+  <div id="main">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:12px">
+        <button id="menu-toggle" onclick="toggleSidebar()">☰</button>
+        <div class="topbar-breadcrumb" id="breadcrumb">Home</div>
+      </div>
+      <div class="topbar-actions">
+        <button class="btn btn-outline" id="mark-done-btn" onclick="markDone()" style="display:none">Mark Done ✓</button>
+        <a href="https://github.com/OndrejHolub/ASQ-CMQ" target="_blank" class="btn btn-outline">GitHub →</a>
+      </div>
+    </div>
+    <div id="content"></div>
+  </div>
+</div>
 
-    const InfographicView = ({ domain }) => {
-      const [animated, setAnimated] = React.useState(false);
-      React.useEffect(() => { setTimeout(() => setAnimated(true), 200); }, []);
-      const max = Math.max(...domain.infographic.items.map(i => i.value));
+<script>
+// ═══════════════════════════════════════════════
+// CHAPTER DATA
+// ═══════════════════════════════════════════════
+const PARTS = [
+  { id: 'I', title: 'Leadership', icon: '👑', chapters: [1,2,3,4] },
+  { id: 'II', title: 'Strategic Planning', icon: '📊', chapters: [5,6,7] },
+  { id: 'III', title: 'Management Elements', icon: '⚙️', chapters: [8,9,10,11,12] },
+  { id: 'IV', title: 'Quality Management Tools', icon: '🔧', chapters: [13,14,15] },
+  { id: 'V', title: 'Customer-Focused Orgs', icon: '👥', chapters: [16,17] },
+  { id: 'VI', title: 'Supply Chain Management', icon: '📦', chapters: [18] },
+  { id: 'VII', title: 'Training & Development', icon: '🎓', chapters: [19,20] },
+];
 
-      return (
-        <div>
-          <h3 style={{ fontSize: "24px", color: "#fff", margin: "0 0 32px", fontWeight: 700 }}>{domain.infographic.title}</h3>
-          <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-            {domain.infographic.items.map((item, i) => (
-              <div key={i} style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-                <div style={{ width: "120px", flexShrink: 0 }}>
-                  <div style={{ fontSize: "15px", color: "#fff", fontWeight: 600 }}>{item.label}</div>
-                  <div style={{ fontSize: "12px", color: "#888" }}>{item.desc}</div>
-                </div>
-                <div style={{ flex: 1, background: "rgba(255,255,255,0.05)", borderRadius: "8px", height: "40px", overflow: "hidden" }}>
-                  <div style={{
-                    width: animated ? `${(item.value / max) * 100}%` : "0%", height: "100%",
-                    background: `linear-gradient(90deg, ${domain.color}, ${domain.accent})`,
-                    borderRadius: "8px", transition: `width 1s cubic-bezier(0.16, 1, 0.3, 1) ${i * 0.15}s`,
-                    display: "flex", alignItems: "center", justifyContent: "flex-end", paddingRight: "12px"
-                  }}>
-                    <span style={{ fontSize: "13px", fontWeight: 700, color: "#fff" }}>{item.value}%</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div style={{ marginTop: "48px", display: "flex", justifyContent: "center" }}>
-            <svg viewBox="0 0 300 300" width="280" height="280">
-              {[1,2,3,4,5].map(ring => (
-                <polygon key={ring} points={domain.infographic.items.map((_,i) => {
-                  const angle = (Math.PI*2*i)/domain.infographic.items.length - Math.PI/2;
-                  const r = (ring/5)*120;
-                  return `${150+r*Math.cos(angle)},${150+r*Math.sin(angle)}`;
-                }).join(" ")} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="1" />
-              ))}
-              <polygon points={domain.infographic.items.map((item,i) => {
-                const angle = (Math.PI*2*i)/domain.infographic.items.length - Math.PI/2;
-                const r = (item.value/max)*120;
-                return `${150+r*Math.cos(angle)},${150+r*Math.sin(angle)}`;
-              }).join(" ")} fill={domain.color+"20"} stroke={domain.color} strokeWidth="2" style={{ transition: "all 1s ease", opacity: animated ? 1 : 0 }} />
-              {domain.infographic.items.map((item,i) => {
-                const angle = (Math.PI*2*i)/domain.infographic.items.length - Math.PI/2;
-                return <text key={i} x={150+135*Math.cos(angle)} y={150+135*Math.sin(angle)} textAnchor="middle" dominantBaseline="middle" fill="#999" fontSize="11">{item.label}</text>;
-              })}
-            </svg>
-          </div>
-        </div>
-      );
-    };
+const CHAPTERS = {
+1: { icon:'🏢', title:'Organizational Structures', bok:'I.A', part:'I',
+content:`
+<h2>Evolution of Quality</h2>
+<p><strong>Timeline:</strong> 1920s SPC (Shewhart at Bell Labs) → 1930s Deming brings SPC to Japan → 1980s TQM (Deming/Juran/Crosby/Feigenbaum) → BPR → Six Sigma → Lean-Six Sigma → BPM</p>
+<div class="exam-tip">Know the chronological evolution: SPC → TQM → BPR → Six Sigma → BPM. Know key quality gurus and their contributions.</div>
 
-    const QuizView = ({ domain }) => {
-      const [current, setCurrent] = React.useState(0);
-      const [selected, setSelected] = React.useState(null);
-      const [showExp, setShowExp] = React.useState(false);
-      const [score, setScore] = React.useState(0);
-      const [finished, setFinished] = React.useState(false);
-      const q = domain.quiz[current];
+<h2>Organizational Design Factors</h2>
+<p><strong>3 major factors:</strong></p>
+<ul>
+<li><strong>Complexity</strong> — number of different entities (job titles, departments, locations)</li>
+<li><strong>Formalization</strong> — how much standard guidelines direct behavior</li>
+<li><strong>Centralization</strong> — whether decisions are at top or delegated downward</li>
+</ul>
+<h3>Vertical Design: Unity of Command</h3>
+<p>Each subordinate reports to only one superior. <strong>Span of control</strong> = how many subordinates a manager can effectively supervise. Flat orgs = wider spans, fewer layers = more efficient.</p>
+<div class="exam-tip">Know the factors affecting span of control — this is frequently tested.</div>
 
-      const handleSelect = (idx) => {
-        if (selected !== null) return;
-        setSelected(idx); setShowExp(true);
-        if (idx === q.correct) setScore(s => s + 1);
-      };
-      const handleNext = () => {
-        if (current < domain.quiz.length - 1) { setCurrent(c => c+1); setSelected(null); setShowExp(false); }
-        else setFinished(true);
-      };
-      const restart = () => { setCurrent(0); setSelected(null); setShowExp(false); setScore(0); setFinished(false); };
+<h2>Types of Organizational Structures</h2>
+<table class="kt-table"><thead><tr><th>Structure</th><th>Key Feature</th><th>Best For</th></tr></thead><tbody>
+<tr><td>Functional</td><td>Grouped by specialty (engineering, finance, HR)</td><td>Most common; clear authority</td></tr>
+<tr><td>Product</td><td>Each major product line under dedicated executive</td><td>Diverse product portfolios</td></tr>
+<tr><td>Customer</td><td>Organized by customer segments</td><td>Distinct customer groups</td></tr>
+<tr><td>Geographic</td><td>Organized by territory</td><td>Geographically dispersed customers</td></tr>
+<tr><td>Process</td><td>Organized around production flow</td><td>Manufacturing workflows</td></tr>
+<tr><td>Matrix</td><td>Dual reporting: functional + project manager</td><td>Complex aerospace, R&D orgs</td></tr>
+<tr><td>Team</td><td>Cross-functional specialist teams</td><td>Project-based work</td></tr>
+<tr><td>Cellular</td><td>Self-contained unit for all operations on a product</td><td>Lean manufacturing</td></tr>
+<tr><td>Boundaryless/Network</td><td>Breaks down hierarchy/geographic barriers</td><td>Virtual orgs, startups</td></tr>
+</tbody></table>
+<div class="exam-tip">Matrix organizations are heavily tested. Pros: rapid response, efficient specialist use. Cons: dual reporting conflict, power struggles.</div>
 
-      if (finished) return (
-        <div style={{ textAlign: "center", padding: "40px 0" }}>
-          <div style={{ fontSize: "80px", fontWeight: 800, color: domain.color }}>{score}/{domain.quiz.length}</div>
-          <p style={{ fontSize: "22px", color: "#fff", margin: "16px 0 8px", fontWeight: 600 }}>
-            {score === domain.quiz.length ? "Perfect Score!" : score >= domain.quiz.length*0.8 ? "Excellent!" : score >= domain.quiz.length*0.6 ? "Good Progress!" : "Keep Studying!"}
-          </p>
-          <p style={{ fontSize: "15px", color: "#888", marginBottom: "32px" }}>
-            {score >= domain.quiz.length*0.8 ? "You're well-prepared for this domain." : "Review the flashcards and try again."}
-          </p>
-          <button onClick={restart} style={{ padding: "14px 36px", background: domain.color, color: "#fff", border: "none", borderRadius: "980px", fontSize: "16px", fontWeight: 600, cursor: "pointer" }}>Retake Quiz</button>
-        </div>
-      );
+<h3>Factors Affecting Structure Selection</h3>
+<p>Strategy, size, technology, core competencies, regulatory environment, union representation, national/societal culture.</p>
 
-      return (
-        <div>
-          <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "24px" }}>
-            <span style={{ fontSize: "13px", color: "#888", letterSpacing: "1px" }}>QUESTION {current+1} OF {domain.quiz.length}</span>
-            <span style={{ fontSize: "13px", color: domain.color, fontWeight: 600 }}>Score: {score}/{current + (selected !== null ? 1 : 0)}</span>
-          </div>
-          <div style={{ height: "3px", background: "rgba(255,255,255,0.05)", borderRadius: "2px", marginBottom: "32px" }}>
-            <div style={{ height: "100%", width: `${((current+(selected!==null?1:0))/domain.quiz.length)*100}%`, background: domain.color, borderRadius: "2px", transition: "width 0.5s" }} />
-          </div>
-          <h3 style={{ fontSize: "clamp(18px,2.5vw,22px)", color: "#fff", fontWeight: 600, lineHeight: 1.5, margin: "0 0 28px" }}>{q.q}</h3>
-          <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-            {q.options.map((opt, i) => {
-              let bg = "rgba(255,255,255,0.04)", border = "rgba(255,255,255,0.08)", txt = "#ccc";
-              if (selected !== null) {
-                if (i === q.correct) { bg="rgba(0,200,83,0.12)"; border="rgba(0,200,83,0.4)"; txt="#69F0AE"; }
-                else if (i === selected) { bg="rgba(255,77,77,0.12)"; border="rgba(255,77,77,0.4)"; txt="#FF8A80"; }
-              }
-              return (
-                <button key={i} onClick={() => handleSelect(i)} style={{
-                  padding: "16px 20px", background: bg, border: `1px solid ${border}`, borderRadius: "14px",
-                  color: txt, fontSize: "15px", fontWeight: 500, textAlign: "left",
-                  cursor: selected === null ? "pointer" : "default", transition: "all 0.3s",
-                  display: "flex", alignItems: "center", gap: "12px"
-                }}>
-                  <span style={{
-                    width: "28px", height: "28px", borderRadius: "8px", flexShrink: 0,
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    fontSize: "13px", fontWeight: 700,
-                    background: selected!==null && i===q.correct ? "rgba(0,200,83,0.2)" : selected===i ? "rgba(255,77,77,0.2)" : "rgba(255,255,255,0.06)",
-                    color: selected!==null && i===q.correct ? "#69F0AE" : selected===i ? "#FF8A80" : "#888"
-                  }}>{"ABCD"[i]}</span>{opt}
-                </button>
-              );
-            })}
-          </div>
-          {showExp && (
-            <div style={{ marginTop: "24px", padding: "20px", borderRadius: "14px", background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
-              <div style={{ fontSize: "13px", color: domain.color, fontWeight: 700, letterSpacing: "1px", marginBottom: "8px" }}>{selected===q.correct ? "✓ CORRECT" : "✗ INCORRECT"}</div>
-              <p style={{ fontSize: "14px", color: "#aaa", lineHeight: 1.7, margin: 0 }}>{q.explanation}</p>
-              <button onClick={handleNext} style={{ marginTop: "16px", padding: "12px 28px", background: domain.color, color: "#fff", border: "none", borderRadius: "980px", fontSize: "14px", fontWeight: 600, cursor: "pointer" }}>
-                {current < domain.quiz.length-1 ? "Next Question →" : "View Results"}
-              </button>
-            </div>
-          )}
-        </div>
-      );
-    };
+<h2>Management Hierarchy</h2>
+<ul>
+<li><strong>Top Management:</strong> Sets vision, mission, strategic objectives; allocates resources</li>
+<li><strong>Middle Management:</strong> Translates strategy to operational plans; day-to-day operations</li>
+<li><strong>First-Level Supervision:</strong> Oversees production; directly supervises workforce</li>
+</ul>
 
-    const FlashcardView = ({ domain }) => {
-      const [current, setCurrent] = React.useState(0);
-      const [flipped, setFlipped] = React.useState(false);
-      const [mastered, setMastered] = React.useState(new Set());
-      const card = domain.flashcards[current];
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>Unity of Command</td><td>Each subordinate reports to only one superior</td></tr>
+<tr><td>Span of Control</td><td>Number of subordinates a manager can effectively supervise</td></tr>
+<tr><td>Centralization</td><td>Decision-making authority concentrated at top levels</td></tr>
+<tr><td>Decentralization</td><td>Decision-making authority delegated to lower levels</td></tr>
+<tr><td>Matrix Organization</td><td>Dual reporting — functional + product/project managers</td></tr>
+<tr><td>Division of Labor</td><td>Breaking work into specialized steps</td></tr>
+<tr><td>Boundaryless Org</td><td>Network structure eliminating traditional barriers</td></tr>
+<tr><td>BPM</td><td>Business Process Management — documenting and managing key processes</td></tr>
+</tbody></table>
+`},
 
-      return (
-        <div>
-          <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "24px" }}>
-            <span style={{ fontSize: "13px", color: "#888" }}>Card {current+1} of {domain.flashcards.length}</span>
-            <span style={{ fontSize: "13px", color: "#69F0AE", fontWeight: 600 }}>{mastered.size} mastered</span>
-          </div>
-          <div style={{ display: "flex", gap: "6px", marginBottom: "24px", justifyContent: "center" }}>
-            {domain.flashcards.map((_,i) => (
-              <div key={i} onClick={() => { setCurrent(i); setFlipped(false); }} style={{
-                width: "10px", height: "10px", borderRadius: "50%", cursor: "pointer",
-                background: i===current ? domain.color : mastered.has(i) ? "#69F0AE" : "rgba(255,255,255,0.1)",
-                transition: "all 0.3s"
-              }} />
-            ))}
-          </div>
-          <div onClick={() => setFlipped(!flipped)} style={{
-            minHeight: "260px", background: "rgba(255,255,255,0.03)",
-            border: `1px solid ${flipped ? domain.color+'30' : 'rgba(255,255,255,0.06)'}`,
-            borderRadius: "20px", padding: "40px 32px", cursor: "pointer", transition: "all 0.4s",
-            display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",
-            textAlign: "center", position: "relative"
-          }}>
-            <div style={{ position: "absolute", top: "16px", right: "16px", fontSize: "11px", color: flipped ? domain.color : "#666", letterSpacing: "2px", textTransform: "uppercase", fontWeight: 700 }}>
-              {flipped ? "Answer" : "Question"}
-            </div>
-            <p style={{ fontSize: flipped ? "16px" : "clamp(18px,2.5vw,24px)", color: flipped ? "#ccc" : "#fff", fontWeight: flipped ? 400 : 700, lineHeight: 1.7, margin: 0, maxWidth: "500px" }}>
-              {flipped ? card.back : card.front}
-            </p>
-            {!flipped && <div style={{ fontSize: "13px", color: "#555", marginTop: "20px" }}>Tap to reveal answer</div>}
-          </div>
-          <div style={{ display: "flex", gap: "12px", marginTop: "20px", justifyContent: "center", flexWrap: "wrap" }}>
-            <button onClick={() => { setCurrent(c => Math.max(0,c-1)); setFlipped(false); }} disabled={current===0}
-              style={{ padding: "12px 24px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "980px", color: current===0?"#444":"#ccc", fontSize: "14px", fontWeight: 600, cursor: current===0?"default":"pointer" }}>← Previous</button>
-            <button onClick={() => { const s = new Set(mastered); if(s.has(current)) s.delete(current); else s.add(current); setMastered(s); }}
-              style={{ padding: "12px 24px", background: mastered.has(current)?"rgba(105,240,174,0.15)":"rgba(255,255,255,0.05)", border: `1px solid ${mastered.has(current)?'rgba(105,240,174,0.3)':'rgba(255,255,255,0.1)'}`, borderRadius: "980px", color: mastered.has(current)?"#69F0AE":"#ccc", fontSize: "14px", fontWeight: 600, cursor: "pointer" }}>
-              {mastered.has(current) ? "✓ Mastered" : "Mark Mastered"}
-            </button>
-            <button onClick={() => { setCurrent(c => Math.min(domain.flashcards.length-1,c+1)); setFlipped(false); }} disabled={current===domain.flashcards.length-1}
-              style={{ padding: "12px 24px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "980px", color: current===domain.flashcards.length-1?"#444":"#ccc", fontSize: "14px", fontWeight: 600, cursor: current===domain.flashcards.length-1?"default":"pointer" }}>Next →</button>
-          </div>
-        </div>
-      );
-    };
+2: { icon:'🎯', title:'Leadership Challenges', bok:'I.B', part:'I',
+content:`
+<h2>Leader vs. Manager</h2>
+<table class="kt-table"><thead><tr><th>Aspect</th><th>Leader</th><th>Manager</th></tr></thead><tbody>
+<tr><td>Focus</td><td>Doing the RIGHT things</td><td>Doing things RIGHT</td></tr>
+<tr><td>Authority</td><td>Earned through followers</td><td>Granted by position</td></tr>
+<tr><td>Orientation</td><td>Vision, change, inspiration</td><td>Planning, organizing, controlling</td></tr>
+<tr><td>Relationship</td><td>Followers choose to follow</td><td>Subordinates report by structure</td></tr>
+</tbody></table>
 
-    const DomainDetail = ({ domain, onBack }) => {
-      const [activeTab, setActiveTab] = React.useState("Summary");
-      return (
-        <div style={{ minHeight: "100vh", background: "#000", padding: "0 20px" }}>
-          <div style={{ maxWidth: "900px", margin: "0 auto", paddingTop: "40px" }}>
-            <button onClick={onBack} style={{ background: "none", border: "none", color: domain.color, fontSize: "15px", fontWeight: 600, cursor: "pointer", marginBottom: "32px", display: "flex", alignItems: "center", gap: "6px" }}>← All Domains</button>
-            <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "8px" }}>
-              <span style={{ fontSize: "32px", width: "56px", height: "56px", display: "flex", alignItems: "center", justifyContent: "center", background: domain.color+"18", borderRadius: "16px", color: domain.color }}>{domain.icon}</span>
-              <div>
-                <div style={{ fontSize: "11px", color: "#666", letterSpacing: "2px", textTransform: "uppercase" }}>Domain {domain.num} · {domain.questions} Exam Questions</div>
-                <h2 style={{ fontSize: "clamp(26px,4vw,38px)", fontWeight: 800, color: "#fff", margin: 0 }}>{domain.title}</h2>
-              </div>
-            </div>
-            <div style={{ margin: "32px 0" }}>
-              <TabBar tabs={["Summary","Infographic","Quiz","Flashcards"]} active={activeTab} onChange={setActiveTab} color={domain.color} />
-            </div>
-            <div style={{ paddingBottom: "80px" }}>
-              {activeTab === "Summary" && <SummaryView domain={domain} />}
-              {activeTab === "Infographic" && <InfographicView domain={domain} />}
-              {activeTab === "Quiz" && <QuizView domain={domain} />}
-              {activeTab === "Flashcards" && <FlashcardView domain={domain} />}
-            </div>
-          </div>
-        </div>
-      );
-    };
+<h2>Leadership Styles</h2>
+<ul>
+<li><strong>Transactional:</strong> Clear tasks/rewards exchange. "Hired gun" who delivers by contract</li>
+<li><strong>Transformational:</strong> Articulates vision; elevates goals; enhances self-confidence. Example: Bob Galvin/Motorola Six Sigma</li>
+<li><strong>Charismatic:</strong> Gathers followers through personal motivation and persuasion</li>
+</ul>
+<div class="exam-tip">Distinguish transactional (exchange/contract/rewards) vs. transformational (vision/values/change). Heavily tested.</div>
 
-    const ExamWeightChart = () => {
-      const [animated, setAnimated] = React.useState(false);
-      React.useEffect(() => { setTimeout(() => setAnimated(true), 300); }, []);
-      const total = DOMAINS.reduce((s,d) => s+d.questions, 0);
-      return (
-        <div style={{ padding: "100px 20px", background: "#000", borderTop: "1px solid rgba(255,255,255,0.04)" }}>
-          <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
-            <div style={{ fontSize: "13px", color: "#888", letterSpacing: "4px", textTransform: "uppercase", marginBottom: "16px" }}>Exam Blueprint</div>
-            <h2 style={{ fontSize: "clamp(30px,5vw,48px)", fontWeight: 800, color: "#fff", margin: "0 0 48px" }}>Know Where to Focus</h2>
-            <div style={{ display: "flex", borderRadius: "12px", overflow: "hidden", height: "48px", marginBottom: "32px" }}>
-              {DOMAINS.map((d,i) => (
-                <div key={i} style={{
-                  width: animated ? `${(d.questions/total)*100}%` : "0%",
-                  background: d.color, transition: `width 1s cubic-bezier(0.16,1,0.3,1) ${i*0.1}s`,
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  fontSize: "12px", fontWeight: 700, color: "#fff", overflow: "hidden", whiteSpace: "nowrap"
-                }}>{d.questions > 15 ? `${Math.round((d.questions/total)*100)}%` : ""}</div>
-              ))}
-            </div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "center" }}>
-              {DOMAINS.map((d,i) => (
-                <div key={i} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-                  <div style={{ width: "12px", height: "12px", borderRadius: "3px", background: d.color }} />
-                  <span style={{ fontSize: "13px", color: "#999" }}>{d.title.split(" ").slice(0,2).join(" ")} ({d.questions})</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      );
-    };
+<h2>Goleman's 5 Dimensions of Emotional Intelligence</h2>
+<table class="kt-table"><thead><tr><th>Dimension</th><th>Elements</th></tr></thead><tbody>
+<tr><td>Self-awareness</td><td>Emotional self-assessment, accurate self-assessment, self-confidence</td></tr>
+<tr><td>Self-regulation</td><td>Trustworthiness, conscientiousness, adaptability, innovation</td></tr>
+<tr><td>Motivation</td><td>Achievement drive, commitment, initiative, optimism</td></tr>
+<tr><td>Empathy</td><td>Understanding others, developing others, service orientation, diversity leverage</td></tr>
+<tr><td>Social Skills</td><td>Influence, communication, conflict management, collaboration, team capabilities</td></tr>
+</tbody></table>
+<div class="exam-tip">All 5 Goleman dimensions are tested. Remember the order and examples under each.</div>
 
-    // ─── MAIN APP ───────────────────────────────────────────────────────────
-    function App() {
-      const [view, setView] = React.useState("home");
-      const [selectedDomain, setSelectedDomain] = React.useState(null);
-      const domainRef = React.useRef(null);
+<h2>Kotter's 8-Step Change Model</h2>
+<ol>
+<li>Create urgency and awareness of need for change</li>
+<li>Organize a project with sufficient authority</li>
+<li>Define vision and strategies</li>
+<li>Communicate the vision — demonstrate personal commitment</li>
+<li>Remove obstacles preventing action on the vision</li>
+<li>Go for early and visible successes</li>
+<li>Build on success; reward supporters; involve more people</li>
+<li>Institutionalize new methods — align other systems</li>
+</ol>
+<div class="exam-tip">Know all 8 steps AND common errors (complacency, weak guidance coalition, not anchoring in culture).</div>
 
-      const handleExplore = () => { domainRef.current?.scrollIntoView({ behavior: "smooth" }); };
-      const handleDomainClick = (d) => { setSelectedDomain(d); setView("detail"); window.scrollTo({top:0,behavior:"smooth"}); };
-      const handleBack = () => { setView("home"); setSelectedDomain(null); setTimeout(() => domainRef.current?.scrollIntoView({behavior:"smooth"}), 100); };
+<h2>Motivation Theories</h2>
+<div class="model-box">
+<h4>Maslow's Hierarchy (bottom to top)</h4>
+<p>1. Physiological → 2. Safety → 3. Belonging → 4. Esteem → 5. Self-actualization</p>
+<p>People must satisfy lower needs before higher ones become motivating.</p>
+</div>
+<div class="model-box">
+<h4>Herzberg Two-Factor Theory</h4>
+<p><strong>Satisfiers (Motivators):</strong> Achievement, recognition, work itself, responsibility, advancement</p>
+<p><strong>Dissatisfiers (Hygiene Factors):</strong> Company policy, supervision, salary, work conditions</p>
+<p>Hygiene factors prevent dissatisfaction but don't create satisfaction. Motivators create true satisfaction.</p>
+</div>
+<p><strong>Additional theories:</strong> McClelland (achievement/affiliation/power), Vroom's Expectancy Theory, Reinforcement Theory</p>
 
-      if (view === "detail" && selectedDomain) return <DomainDetail domain={selectedDomain} onBack={handleBack} />;
+<h2>Hersey & Blanchard Situational Leadership</h2>
+<table class="kt-table"><thead><tr><th>Style</th><th>Task</th><th>Relationship</th><th>When to Use</th></tr></thead><tbody>
+<tr><td>Telling (S1)</td><td>High</td><td>Low</td><td>New, inexperienced employee</td></tr>
+<tr><td>Selling (S2)</td><td>High</td><td>High</td><td>Employee gaining confidence</td></tr>
+<tr><td>Participating (S3)</td><td>Low</td><td>High</td><td>Experienced, needs support</td></tr>
+<tr><td>Delegating (S4)</td><td>Low</td><td>Low</td><td>Highly experienced, autonomous</td></tr>
+</tbody></table>
 
-      return (
-        <div style={{ minHeight: "100vh", background: "#000", color: "#fff" }}>
-          <nav style={{
-            position: "fixed", top: 0, left: 0, right: 0, zIndex: 100,
-            background: "rgba(0,0,0,0.72)", backdropFilter: "blur(24px)",
-            borderBottom: "1px solid rgba(255,255,255,0.06)",
-            padding: "0 24px", height: "52px", display: "flex", alignItems: "center", justifyContent: "space-between"
-          }}>
-            <div style={{ fontSize: "15px", fontWeight: 700, letterSpacing: "0.5px" }}>
-              <span style={{ color: "#fff" }}>CQM</span><span style={{ color: "#FF4D4D" }}>Pro</span>
-            </div>
-            <div style={{ display: "flex", gap: "24px" }}>
-              {["Domains","Blueprint"].map(item => (
-                <button key={item} onClick={handleExplore} style={{
-                  background: "none", border: "none", color: "#999", fontSize: "13px",
-                  cursor: "pointer", fontWeight: 500, transition: "color 0.2s"
-                }}
-                onMouseEnter={e => e.target.style.color="#fff"}
-                onMouseLeave={e => e.target.style.color="#999"}
-                >{item}</button>
-              ))}
-            </div>
-          </nav>
+<h2>Conflict-Handling Modes (Assertiveness vs. Cooperativeness)</h2>
+<ul>
+<li><strong>Competing</strong> (high assert, low coop): Win-lose</li>
+<li><strong>Collaborating</strong> (high assert, high coop): Win-win — PREFERRED</li>
+<li><strong>Compromising</strong> (moderate both): Middle ground</li>
+<li><strong>Avoiding</strong> (low both): Withdrawal</li>
+<li><strong>Accommodating</strong> (low assert, high coop): Yielding</li>
+</ul>
 
-          <HeroSection onExplore={handleExplore} />
+<h2>Empowerment</h2>
+<p><strong>Job enlargement:</strong> More tasks at same level (horizontal expansion)<br>
+<strong>Job enrichment:</strong> More decision-making authority (vertical expansion)</p>
+<div class="exam-tip">Conflict-handling modes matrix (assertiveness vs. cooperativeness) is a core exam topic. Know all 5 modes.</div>
 
-          <div ref={domainRef} style={{ padding: "100px 20px", borderTop: "1px solid rgba(255,255,255,0.04)" }}>
-            <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-              <div style={{ textAlign: "center", marginBottom: "64px" }}>
-                <div style={{ fontSize: "13px", color: "#888", letterSpacing: "4px", textTransform: "uppercase", marginBottom: "16px" }}>Body of Knowledge</div>
-                <h2 style={{
-                  fontSize: "clamp(30px,5vw,48px)", fontWeight: 800,
-                  background: "linear-gradient(135deg, #FFFFFF 0%, #888888 100%)",
-                  WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent"
-                }}>7 Domains. One Certification.</h2>
-              </div>
-              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "16px" }}>
-                {DOMAINS.map((d,i) => <DomainCard key={d.id} domain={d} onClick={handleDomainClick} index={i} />)}
-              </div>
-            </div>
-          </div>
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>Transformational Leadership</td><td>Articulates vision; elevates subordinates' goals</td></tr>
+<tr><td>Transactional Leadership</td><td>Contractual — clear tasks for clear rewards</td></tr>
+<tr><td>Change Agent</td><td>Individual who facilitates planning/implementation of change</td></tr>
+<tr><td>Kotter's 8 Steps</td><td>Urgency → Coalition → Vision → Communicate → Empower → Short wins → Build → Anchor</td></tr>
+<tr><td>Job Enlargement</td><td>Expanding scope horizontally (more tasks, same level)</td></tr>
+<tr><td>Job Enrichment</td><td>Expanding depth vertically (more decision authority)</td></tr>
+<tr><td>Maslow's Hierarchy</td><td>Physiological → Safety → Belonging → Esteem → Self-actualization</td></tr>
+<tr><td>Herzberg Two-Factor</td><td>Satisfiers (motivators) vs. Dissatisfiers (hygiene factors)</td></tr>
+<tr><td>TRIZ</td><td>Inventive problem-solving methodology using 40 principles</td></tr>
+<tr><td>Socratic Method</td><td>Using guided questions to develop critical thinking</td></tr>
+</tbody></table>
+`},
 
-          <ExamWeightChart />
+3: { icon:'🧑‍🤝‍🧑', title:'Teams and Team Processes', bok:'I.C', part:'I',
+content:`
+<h2>Types of Teams</h2>
+<table class="kt-table"><thead><tr><th>Team Type</th><th>Key Characteristics</th></tr></thead><tbody>
+<tr><td>Self-Managed</td><td>Authorized to make day-to-day decisions (scheduling, quality, maintenance). Best at greenfield sites.</td></tr>
+<tr><td>Process Improvement</td><td>Cross-functional, project-based, has defined start/end. Guided by project plan.</td></tr>
+<tr><td>Ad Hoc / Temporary</td><td>Formed for specific problem/emergency. Less formal structure.</td></tr>
+<tr><td>Work Group (Natural)</td><td>Responsible for a specific process/product line</td></tr>
+<tr><td>Cellular</td><td>U-shaped layout; cross-trained operators; all steps in one area</td></tr>
+<tr><td>Special Project</td><td>Long-term dedicated team — reengineering, mergers, system replacement</td></tr>
+<tr><td>Virtual</td><td>Geographically dispersed; communicate via technology</td></tr>
+</tbody></table>
+<div class="exam-tip">Virtual teams and self-managed teams are most frequently tested. Self-managed teams work BEST in greenfield sites — cultural change is too dramatic in existing organizations.</div>
 
-          <footer style={{ padding: "48px 20px", borderTop: "1px solid rgba(255,255,255,0.04)", textAlign: "center" }}>
-            <p style={{ fontSize: "13px", color: "#555" }}>Built for Quality Engineers preparing for the ASQ CMQ/OE Certification Exam</p>
-            <p style={{ fontSize: "12px", color: "#333", marginTop: "8px" }}>Based on the ASQ CMQ/OE Body of Knowledge · Not affiliated with ASQ</p>
-          </footer>
-        </div>
-      );
+<h2>Tuckman's 5 Stages of Team Development</h2>
+<table class="kt-table"><thead><tr><th>Stage</th><th>Description</th><th>Leader Style</th></tr></thead><tbody>
+<tr><td>Forming</td><td>Orientation; polite; roles established</td><td>Directive</td></tr>
+<tr><td>Storming</td><td>Conflict; challenge authority — most critical stage</td><td>Coaching</td></tr>
+<tr><td>Norming</td><td>Cohesion; cooperation; norms established</td><td>Supportive</td></tr>
+<tr><td>Performing</td><td>High productivity; focus on goals</td><td>Delegating</td></tr>
+<tr><td>Adjourning</td><td>Disbands after mission; recognition/closure</td><td>Celebrating</td></tr>
+</tbody></table>
+<div class="exam-tip">Tuckman's stages are heavily tested. Know what happens at each stage and appropriate leader response.</div>
+
+<h2>Key Team Roles</h2>
+<table class="kt-table"><thead><tr><th>Role</th><th>Responsibility</th></tr></thead><tbody>
+<tr><td>Team Leader</td><td>Coordinates meetings; guides team; reports progress; has vested interest in content</td></tr>
+<tr><td>Team Facilitator</td><td>Guides process; remains NEUTRAL; does not get involved in content</td></tr>
+<tr><td>Process Owner</td><td>Accountable for outcomes; authority over process</td></tr>
+<tr><td>Champion/Sponsor</td><td>Provides authority, resources; removes barriers; represents to management</td></tr>
+<tr><td>Scribe/Recorder</td><td>Documents decisions and action items</td></tr>
+<tr><td>Timekeeper</td><td>Monitors meeting time; keeps discussions on schedule</td></tr>
+</tbody></table>
+<div class="exam-tip">Key distinction: Team Leader is involved in content; Facilitator focuses on PROCESS and is impartial.</div>
+
+<h2>Groupthink</h2>
+<p>Occurs when team prioritizes harmony over honest discussion. Members coalesce behind a decision without full exploration.</p>
+<p><strong>Prevention:</strong> Brainstorm alternatives; encourage dissent; assign devil's advocate role; allow adequate time for all ideas.</p>
+
+<h2>KESAM Model for Team Selection</h2>
+<table class="kt-table"><thead><tr><th>Factor</th><th>Description</th></tr></thead><tbody>
+<tr><td>K — Knowledge</td><td>Proven techniques; project planning principles</td></tr>
+<tr><td>E — Experience</td><td>2+ years relevant experience; instructed/trained others</td></tr>
+<tr><td>S — Skills</td><td>Communication; proficiency in tools</td></tr>
+<tr><td>A — Attitude</td><td>Enjoys imparting knowledge; team-oriented</td></tr>
+<tr><td>M — Additional</td><td>Specific tools/methods preferred</td></tr>
+</tbody></table>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>Groupthink</td><td>Tendency for team consensus to override critical evaluation</td></tr>
+<tr><td>Consensus</td><td>Decision acceptable enough that ALL members will support it</td></tr>
+<tr><td>Charter</td><td>Formal document defining team's authority and scope</td></tr>
+<tr><td>KESAM</td><td>Knowledge, Experience, Skills, Attitude, Additional comments</td></tr>
+<tr><td>Tuckman Stages</td><td>Forming, Storming, Norming, Performing, Adjourning</td></tr>
+</tbody></table>
+`},
+
+4: { icon:'⚖️', title:'ASQ Code of Ethics', bok:'I.D', part:'I',
+content:`
+<h2>ASQ Code of Ethics — Three Pillars</h2>
+
+<h3>A. Act with Integrity and Honesty</h3>
+<ul>
+<li>Uphold the honor and dignity of the quality profession</li>
+<li>Be truthful and transparent in all professional interactions</li>
+<li>Accurately represent qualifications and competence</li>
+<li>Only offer services within your areas of competence</li>
+</ul>
+
+<h3>B. Demonstrate Responsibility</h3>
+<ul>
+<li><strong>Hold paramount</strong> the safety, health, and welfare of individuals, the public, and the environment</li>
+<li>Avoid conduct that will cause harm through words or deeds</li>
+<li>Treat others fairly, courteously, with dignity; without prejudice or discrimination</li>
+<li>Act in a professional and socially responsible manner</li>
+</ul>
+
+<h3>C. Safeguard Proprietary Information / Avoid Conflicts of Interest</h3>
+<ul>
+<li>Ensure protection and integrity of confidential information</li>
+<li><strong>Never</strong> use confidential information for personal gain</li>
+<li>Fully disclose and avoid any real or perceived conflicts of interest</li>
+<li>Give credit where it is due; no plagiarism</li>
+</ul>
+
+<div class="exam-tip">Public safety ALWAYS takes priority over employer/personal loyalty. Expect 2-3 scenario-based ethics questions. When in doubt: choose the answer that prioritizes public safety and honest disclosure.</div>
+
+<h2>ISO 26000</h2>
+<p>International standard providing guidance on <strong>social responsibility</strong>. Not directly referenced in ASQ code but its intent permeates ethical behavior.</p>
+
+<h2>Practical Scenarios</h2>
+<ul>
+<li><strong>Cross-border ethics:</strong> Local unethical behavior should never be accepted simply because it is local practice</li>
+<li><strong>Confidential info:</strong> Never use for personal gain, regardless of circumstances</li>
+<li><strong>Conflicts of interest:</strong> Disclose proactively — both real AND perceived</li>
+</ul>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>Code of Ethics</td><td>Global standards of conduct for ASQ members and certification holders</td></tr>
+<tr><td>Conflict of Interest</td><td>Any situation where personal interests could impair objectivity</td></tr>
+<tr><td>ISO 26000</td><td>International guidance standard on social responsibility</td></tr>
+<tr><td>Paramount Safety</td><td>Holding safety, health, and welfare above all other concerns</td></tr>
+<tr><td>Plagiarism</td><td>Using others' intellectual property without permission or credit</td></tr>
+</tbody></table>
+`},
+
+5: { icon:'🎯', title:'Strategic Planning Models', bok:'II.A', part:'II',
+content:`
+<h2>Three Levels of Planning</h2>
+<table class="kt-table"><thead><tr><th>Level</th><th>Description</th><th>Time Horizon</th></tr></thead><tbody>
+<tr><td>Strategic</td><td>High-level direction; what org strives to become</td><td>3–5+ years</td></tr>
+<tr><td>Tactical</td><td>How to implement strategic plan; specific tasks</td><td>1–3 years</td></tr>
+<tr><td>Operational</td><td>Action plans; who, what, when, how; day-to-day execution</td><td>Months to 1 year</td></tr>
+</tbody></table>
+
+<h2>Mission, Vision, Values</h2>
+<ul>
+<li><strong>Vision:</strong> What org wants to BECOME in the future. Brief, inspiring, desired future state.</li>
+<li><strong>Mission:</strong> WHY the org exists. Defines purpose in terms of what, who, and how.</li>
+<li><strong>Values/Guiding Principles:</strong> HOW business is conducted; bases for ethical decision-making</li>
+</ul>
+
+<h2>Hoshin Kanri (Policy Deployment)</h2>
+<p>A tightly knit planning and implementation system connecting MBO with organizational direction. Involves <strong>every member</strong> at every level.</p>
+<div class="model-box">
+<h4>Key Features</h4>
+<ul>
+<li>Uses <strong>PDCA loop</strong> to ensure strategic plans are met</li>
+<li>Team-based problem-solving and decision-making</li>
+<li><strong>Catchball:</strong> Passing plans back and forth between levels for consensus (iterative up/down negotiation)</li>
+<li>Fact-based system; constant tracking, measuring, reviewing</li>
+</ul>
+</div>
+<p><strong>Disadvantages:</strong> Heavy emphasis on total org involvement; consensus at every level; may take 3+ years to mature; major culture change required.</p>
+<div class="exam-tip">Hoshin = policy deployment. It involves EVERY level, uses PDCA, and is a complete system — NOT just MBO. Know both advantages and disadvantages.</div>
+
+<h2>Scenario Planning</h2>
+<p>Disciplined method for imagining possible futures. Uses <strong>3 macro scenarios:</strong> good future, bad future, wild card.</p>
+
+<h2>S.M.A.R.T.W.A.Y. Framework</h2>
+<table class="kt-table"><thead><tr><th>Letter</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>S</td><td>Specific needs and opportunities</td></tr>
+<tr><td>M</td><td>Measurable — establish a measurement for each objective</td></tr>
+<tr><td>A</td><td>Achievable as well as challenging</td></tr>
+<tr><td>R</td><td>Realistic stretch objectives</td></tr>
+<tr><td>T</td><td>Time-framed</td></tr>
+<tr><td>W</td><td>Worthwhile return</td></tr>
+<tr><td>A</td><td>Assigned responsibility</td></tr>
+<tr><td>Y</td><td>Yielding — worth doing</td></tr>
+</tbody></table>
+
+<h2>10 Barriers to Successful Strategic Planning</h2>
+<p>Top barriers: Delegating planning to a planner (#1), focus on current problems (#2), no suitable goals (#3), failure to involve line personnel (#4), not using plans as performance standards (#5).</p>
+<div class="exam-tip">The 10 barriers are commonly tested. Focus on #1 (delegation to planner), #3 (no suitable goals), and #10 (intuitive decisions conflicting with formal plans).</div>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>Hoshin Kanri</td><td>Japanese policy deployment system; PDCA; every level involved</td></tr>
+<tr><td>Catchball</td><td>Passing plans back and forth between levels for consensus</td></tr>
+<tr><td>Vision Statement</td><td>What the org wants to become in the future</td></tr>
+<tr><td>Mission Statement</td><td>Why the org exists; fundamental purpose</td></tr>
+<tr><td>Means Matrix</td><td>Tool linking objectives to means with responsibility and measurement</td></tr>
+<tr><td>Scenario Planning</td><td>Imagining multiple possible futures (good/bad/wild card)</td></tr>
+<tr><td>Environmental Scan</td><td>Analysis of external factors affecting the organization</td></tr>
+</tbody></table>
+`},
+
+6: { icon:'🔍', title:'Business Environment Analysis', bok:'II.B', part:'II',
+content:`
+<h2>SWOT Analysis</h2>
+<ul>
+<li><strong>Strengths + Weaknesses = INTERNAL</strong> (org structure, brand, capabilities, financials)</li>
+<li><strong>Opportunities + Threats = EXTERNAL</strong> (market changes, competition, regulation, technology)</li>
+</ul>
+<div class="exam-tip">Always categorize SWOT items as internal (S/W) vs. external (O/T). Frequently tested.</div>
+
+<h2>FMEA in Strategic Planning</h2>
+<div class="formula">RPN = Severity (1-10) × Occurrence (1-10) × Detection (1-10)</div>
+<p>Detection scale: 10 = inability to detect. Higher RPN = higher priority for action.</p>
+
+<h2>Porter's Five Forces</h2>
+<ul>
+<li>Competitive rivalry among existing players</li>
+<li>Threat of new entrants (entry barriers)</li>
+<li>Threat of substitutes (switching costs)</li>
+<li>Bargaining power of buyers (ability to compare/shop)</li>
+<li>Bargaining power of suppliers (sole source vs. many suppliers)</li>
+</ul>
+
+<h2>Stakeholder Analysis</h2>
+<p><strong>Internal:</strong> Employees, shareholders, board, management, unions</p>
+<p><strong>External:</strong> Customers, suppliers, community, government/regulators, media, professional associations</p>
+
+<h2>Quality 4.0 Technologies</h2>
+<table class="kt-table"><thead><tr><th>Technology</th><th>Application to Quality</th></tr></thead><tbody>
+<tr><td>AI / Machine Learning</td><td>Predictive quality, pattern detection, SPC automation</td></tr>
+<tr><td>IoT / Edge Devices</td><td>Real-time data from connected equipment</td></tr>
+<tr><td>Cloud Computing</td><td>Storing and accessing quality data at scale</td></tr>
+<tr><td>Big Data</td><td>Analyzing massive datasets for quality insights</td></tr>
+<tr><td>Blockchain</td><td>Immutable supply chain traceability</td></tr>
+<tr><td>Automation</td><td>Automated inspection and testing systems</td></tr>
+</tbody></table>
+<div class="exam-tip">Quality 4.0 is increasingly important. Know the key technologies and how they relate to quality management.</div>
+
+<h2>Generational Workforce Differences</h2>
+<table class="kt-table"><thead><tr><th>Generation</th><th>Key Characteristics</th></tr></thead><tbody>
+<tr><td>Traditionalists</td><td>Paper-based; loyal; respect authority</td></tr>
+<tr><td>Baby Boomers</td><td>Electronic but basic; loyal but realistic</td></tr>
+<tr><td>Generation X</td><td>Web-based; independent/self-reliant; unimpressed by authority</td></tr>
+<tr><td>Millennials</td><td>On-demand; team-oriented; not brand-based</td></tr>
+<tr><td>Generation Z</td><td>Electronic-only; digest on-demand content; authority varies</td></tr>
+</tbody></table>
+
+<h2>Legal vs. Regulatory Factors</h2>
+<ul>
+<li><strong>Legal factors:</strong> Laws (enforceable by punishment). Employment, product liability, IP, Sarbanes-Oxley, antitrust.</li>
+<li><strong>Regulatory factors:</strong> Rules from agencies and self-regulating bodies. Often voluntary but have force of law.</li>
+</ul>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>FMEA</td><td>Failure Mode and Effects Analysis — systematic risk identification</td></tr>
+<tr><td>RPN</td><td>Risk Priority Number = Severity × Occurrence × Detection</td></tr>
+<tr><td>Stakeholder</td><td>Any individual/group affected by the organization's mission</td></tr>
+<tr><td>Core Competencies</td><td>Primary capabilities that distinguish org from competitors</td></tr>
+<tr><td>Porter's Five Forces</td><td>Competitive rivalry, new entrants, substitutes, buyer power, supplier power</td></tr>
+<tr><td>Sarbanes-Oxley</td><td>U.S. legislation on corporate governance and financial disclosure</td></tr>
+</tbody></table>
+`},
+
+7: { icon:'🚀', title:'Strategic Plan Deployment', bok:'II.C', part:'II',
+content:`
+<h2>Action Plan Components</h2>
+<p>A complete action plan includes: Project definition, date needed, link to strategic objective, project objectives, scope, deliverables, measurement criteria, assumptions, overall approach, start date, resource estimate, benefits vs. costs, timeline (Gantt).</p>
+
+<h2>Resource Allocation and Deployment</h2>
+<p><strong>Conflicting activities to assess:</strong> Process reengineering, new ISO/IATF implementation, Six Sigma initiative, new products, outsourcing, mergers/acquisitions, major IT upgrades.</p>
+<p><strong>Walkabout technique:</strong> Each person posts their required resources on flip chart. Others walk room, attach sticky notes identifying conflicts. Iterative process until all conflicts resolved.</p>
+
+<h2>Cascading Strategy (QFD-Based)</h2>
+<p>Enterprise objectives → Enterprise strategies → Divisional strategies → Divisional objectives → Departmental directives → Departmental action plans → Results</p>
+<div class="exam-tip">The cascading concept is heavily tested. Objectives flow from enterprise level down to departmental action plans, with customer requirements integrated at each level.</div>
+
+<h2>Balanced Scorecard</h2>
+<p>Measures organizational performance across 4 perspectives:</p>
+<ul>
+<li><strong>Financial:</strong> Revenue growth, profitability, ROI</li>
+<li><strong>Customer:</strong> Satisfaction, retention, market share</li>
+<li><strong>Internal Process:</strong> Cycle time, quality, efficiency</li>
+<li><strong>Learning & Growth:</strong> Employee development, innovation</li>
+</ul>
+
+<h2>Open-Loop vs. Closed-Loop</h2>
+<table class="kt-table"><thead><tr><th>Type</th><th>Description</th><th>Preferred?</th></tr></thead><tbody>
+<tr><td>Open-Loop</td><td>No continuous feedback; relies on intuition for adjustments</td><td>No</td></tr>
+<tr><td>Closed-Loop</td><td>Continuous monitoring with immediate adjustment capability</td><td>YES</td></tr>
+</tbody></table>
+
+<h2>Quality Policy vs. Objectives vs. Principles</h2>
+<ul>
+<li><strong>Quality Principles:</strong> Guiding beliefs for organizational decision-making</li>
+<li><strong>Quality Policy:</strong> Formalized document communicating org's quality intentions</li>
+<li><strong>Quality Objectives:</strong> Specific, measurable, time-bound quality actions (SMART)</li>
+</ul>
+
+<h2>Critical Success Factors (CSFs)</h2>
+<p>8–12 key indicators targeting the full span of strategic goals. Must be custom-fitted to the specific organization.</p>
+
+<h2>Annual Closed-Loop Assessment</h2>
+<ol>
+<li>Define "business excellence" for your business</li>
+<li>Assess progress (using Baldrige or strategic objectives)</li>
+<li>Identify improvement opportunities; compare to world-class; identify gaps</li>
+<li>Deploy action plan: set priorities, improvement goals, align metrics, deploy to all levels</li>
+</ol>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>Action Plan</td><td>Detailed project plan generated from a strategic objective</td></tr>
+<tr><td>Cascading</td><td>Flowing objectives from enterprise to departmental level</td></tr>
+<tr><td>Walkabout</td><td>Technique for identifying resource conflicts by posting and reviewing plans</td></tr>
+<tr><td>Catchball</td><td>Iterative consensus process; passing plans up and down for agreement</td></tr>
+<tr><td>Balanced Scorecard</td><td>4-perspective measurement: Financial, Customer, Internal Process, Learning</td></tr>
+<tr><td>CSF</td><td>Critical Success Factors — key indicators measuring strategic outcomes</td></tr>
+<tr><td>Closed-Loop</td><td>Preferred approach with continuous monitoring and immediate adjustment</td></tr>
+<tr><td>Quality Policy</td><td>Formalized document communicating organization's quality intentions</td></tr>
+</tbody></table>
+`},
+
+8: { icon:'💼', title:'Management Skills and Abilities', bok:'III.A', part:'III',
+content:`
+<h2>POSDC Management Functions</h2>
+<table class="kt-table"><thead><tr><th>Function</th><th>Description</th></tr></thead><tbody>
+<tr><td>Planning</td><td>Defining vision, mission, strategies; monitoring to ensure desired outputs</td></tr>
+<tr><td>Organizing</td><td>Determining org structure; dividing work; allocating authority</td></tr>
+<tr><td>Staffing</td><td>Acquiring right people; placing them in right jobs; developing competencies</td></tr>
+<tr><td>Directing</td><td>Guiding work; communicating vision; day-to-day delegation</td></tr>
+<tr><td>Controlling</td><td>Monitoring activities/results; initiating corrective action</td></tr>
+</tbody></table>
+
+<h2>Management Theories</h2>
+<table class="kt-table"><thead><tr><th>Theory</th><th>Key Points</th></tr></thead><tbody>
+<tr><td>Scientific (Taylor)</td><td>"One best way" to perform tasks; time & motion studies; separates thinking from doing</td></tr>
+<tr><td>Hawthorne Effect</td><td>Productivity changed because workers were singled out for attention, NOT due to physical changes</td></tr>
+<tr><td>Theory X (McGregor)</td><td>Employees don't want to work; need control and direction</td></tr>
+<tr><td>Theory Y (McGregor)</td><td>Employees want to work; seek responsibility; can offer creative solutions</td></tr>
+<tr><td>Kolb's Learning Cycle</td><td>Experience → Reflect → Theorize → Apply (continuous cycle)</td></tr>
+</tbody></table>
+<div class="exam-tip">Know Blake-Mouton grid positions (9,9 = Team Management is ideal), McGregor Theory X/Y, Kolb's learning cycle, Senge's 5 disciplines.</div>
+
+<h2>Blake-Mouton Managerial Grid</h2>
+<p>Two axes: Concern for Production (1-9) vs. Concern for People (1-9)</p>
+<ul>
+<li><strong>(1,1) Impoverished:</strong> Low concern for both</li>
+<li><strong>(9,1) Task/Authority:</strong> High production, low people</li>
+<li><strong>(1,9) Country Club:</strong> High people, low production</li>
+<li><strong>(5,5) Middle of Road:</strong> Moderate both</li>
+<li><strong>(9,9) Team Management:</strong> High both — IDEAL</li>
+</ul>
+
+<h2>Senge's 5 Disciplines</h2>
+<p>Personal mastery, Mental models, Shared vision, Team learning, <strong>Systems thinking</strong> (the 5th discipline that integrates all others)</p>
+
+<h2>DiSC Profile</h2>
+<p>D=Dominance, I=Influence, S=Steadiness, C=Conscientiousness</p>
+
+<h2>A-B-C Analysis (Behavior Management)</h2>
+<div class="formula">A (Antecedent) → B (Behavior) → C (Consequence)</div>
+<p>Used to understand what triggers a behavior and what perpetuates it.</p>
+
+<h2>Financial Management</h2>
+<h3>Three Basic Financial Statements</h3>
+<ul>
+<li><strong>Balance Sheet:</strong> Assets = Liabilities + Shareholders' Equity (point in time)</li>
+<li><strong>Income Statement:</strong> Revenue - Expenses = Net Income (period)</li>
+<li><strong>Cash Flow Statement:</strong> Cash inflows and outflows</li>
+</ul>
+<h3>Key Ratios</h3>
+<div class="formula">Current Ratio = Current Assets ÷ Current Liabilities  (should be ≥ 2.0)</div>
+<div class="formula">ROI = Net Dollar Benefit ÷ Investment</div>
+<div class="formula">Inventory Turnover = COGS ÷ Average Inventory  (higher = better)</div>
+<div class="formula">Gross Profit Margin = Gross Profit ÷ Net Sales</div>
+
+<h2>Risk Management (ISO 31000)</h2>
+<p>Risk = "effect of uncertainty on objectives." Two lenses:</p>
+<ul>
+<li><strong>Impact/Severity:</strong> How bad if it happened?</li>
+<li><strong>Likelihood/Probability:</strong> How likely is it?</li>
+</ul>
+<p><strong>Risk Assessment Techniques:</strong> FMEA, HACCP, SWIFT, Bow Tie Analysis, HRA (Human Reliability Assessment), Cause-and-Effect diagrams</p>
+
+<h2>Knowledge Management</h2>
+<div class="formula">Data → Information → Knowledge → Wisdom</div>
+<ul>
+<li><strong>Tacit knowledge:</strong> Unrecorded; beliefs, intuition, know-how. Lost when employee leaves.</li>
+<li><strong>Explicit knowledge:</strong> Codified in procedures, standards, documents</li>
+</ul>
+
+<h2>HR Management</h2>
+<p><strong>Interview types:</strong> Panel, Peer, Hierarchical, One-on-one, Group</p>
+<p><strong>KESAA factors (competency analysis):</strong> Knowledge, Experience, Skills, Aptitude, Attitude</p>
+
+<h2>ISO 9001 Seven Quality Management Principles</h2>
+<p>Customer focus, Leadership, Engagement of people, Process approach, Improvement, Evidence-based decision-making, Relationship management</p>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>POSDC</td><td>Planning, Organizing, Staffing, Directing, Controlling</td></tr>
+<tr><td>Hawthorne Effect</td><td>Productivity changes due to attention, not physical conditions</td></tr>
+<tr><td>Theory X / Y</td><td>McGregor's negative (X) vs. positive (Y) views of employee motivation</td></tr>
+<tr><td>Suboptimization</td><td>Optimizing one part of a system at the expense of the whole</td></tr>
+<tr><td>Concurrent Engineering</td><td>All functions working simultaneously on product development</td></tr>
+<tr><td>Tacit Knowledge</td><td>Unrecorded know-how; lost when employee leaves</td></tr>
+<tr><td>Explicit Knowledge</td><td>Codified knowledge in procedures and documents</td></tr>
+<tr><td>Poka-Yoke</td><td>Error-proofing; required by ISO 9001:2015 clause 8.5.1g</td></tr>
+<tr><td>HACCP</td><td>Hazard Analysis & Critical Control Points</td></tr>
+<tr><td>SWIFT</td><td>Structured What-If Technique — brainstorming-based risk assessment</td></tr>
+<tr><td>HFE</td><td>Human Factors Engineering — designing systems for the user</td></tr>
+<tr><td>Current Ratio</td><td>Current assets ÷ Current liabilities; should be ≥ 2.0</td></tr>
+<tr><td>ROI</td><td>Net dollar benefit ÷ Investment</td></tr>
+<tr><td>SOX</td><td>Sarbanes-Oxley Act (2002) — financial accountability after corporate scandals</td></tr>
+</tbody></table>
+`},
+
+9: { icon:'📡', title:'Communication Skills and Abilities', bok:'III.B', part:'III',
+content:`
+<h2>Communication Model</h2>
+<div class="formula">Sender → Filters → The Message → Filters → Receiver</div>
+<p>Filters include cultural beliefs, previous communications, confidence, perceived meaning. Feedback loop clarifies/confirms understanding.</p>
+
+<h2>Three Directions of Communication</h2>
+<ul>
+<li><strong>Vertical (Top-Down):</strong> Management to subordinates — goals, policy, direction</li>
+<li><strong>Vertical (Bottom-Up):</strong> Subordinates to management — feedback, status, complaints</li>
+<li><strong>Horizontal/Lateral:</strong> Across departments at similar levels — coordination, info sharing</li>
+</ul>
+<div class="exam-tip">Know all 3 directions of communication with examples. "Telephone game effect" = message distortion through multiple retransmissions (bottom-up vertical).</div>
+
+<h2>Formal vs. Informal Communication</h2>
+<ul>
+<li><strong>Formal:</strong> Mandated by SOPs — letters, reports, procedures, performance appraisals</li>
+<li><strong>Informal:</strong> Not mandated — hallway conversations, gossip, text messages, rumors</li>
+</ul>
+
+<h2>Active Listening Techniques</h2>
+<ul>
+<li>Paraphrasing (restating in your own words)</li>
+<li>Asking relevant and meaningful questions</li>
+<li>Clarifying objectives ("Can you tell me more about that?")</li>
+<li>Taking mental note of what you're learning</li>
+<li><strong>Open-ended questions:</strong> Cannot be answered with simple yes/no</li>
+</ul>
+
+<h2>Feedback Types</h2>
+<ul>
+<li><strong>Informative:</strong> Passing information from one person/group to another</li>
+<li><strong>Corrective (Constructive):</strong> Intended to cause behavioral change or action</li>
+</ul>
+
+<h2>Interpersonal Skills</h2>
+<p>Empathy, tactfulness, open-mindedness, sensitivity, trustworthiness, ethics, authenticity, fairness, friendliness.</p>
+
+<h2>Global Communication Obstacles</h2>
+<ul>
+<li>Cultural differences (customs, politics, religion)</li>
+<li>Language differences (multiple languages and dialects)</li>
+<li>Time zone differentials</li>
+<li>Incompatible organizational structures</li>
+<li>Incompatible electronic data interfaces</li>
+</ul>
+<p><strong>Remedies:</strong> Set learning about cultural differences early; cross-train key personnel; provide business language glossaries; establish communication protocols for offshore locations.</p>
+
+<h2>7 Steps to Manage E-mail</h2>
+<ol>
+<li>Automate tasks</li>
+<li>Preview messages</li>
+<li>Discipline yourself</li>
+<li>Do not duplicate</li>
+<li>Stay safe</li>
+<li>Block junk; establish e-communication policy</li>
+<li>Teach employees filtering tools</li>
+</ol>
+
+<h2>Information System Levels</h2>
+<p>Operations → Day-to-day decisions → Strategic analysis</p>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>Noise</td><td>Any disturbance blocking or distorting communication</td></tr>
+<tr><td>Active Listening</td><td>Paraphrasing, clarifying, asking meaningful questions</td></tr>
+<tr><td>Informative Feedback</td><td>Passing information from one person to another</td></tr>
+<tr><td>Corrective Feedback</td><td>Intended to cause behavioral change</td></tr>
+<tr><td>Open-Ended Questions</td><td>Cannot be answered with yes/no; elicit detailed responses</td></tr>
+</tbody></table>
+`},
+
+10: { icon:'📊', title:'Project Management', bok:'III.C', part:'III',
+content:`
+<h2>5 Project Life Cycle Stages</h2>
+<ol>
+<li><strong>Initiating</strong> — Define purpose, objectives, scope, stakeholders</li>
+<li><strong>Planning</strong> — Activities, who, when, schedule, budget</li>
+<li><strong>Executing</strong> — Implement the plan</li>
+<li><strong>Monitoring and Controlling</strong> — Track progress; compare actual vs. plan; corrective action</li>
+<li><strong>Evaluating and Closing</strong> — Lessons learned, post-project audit</li>
+</ol>
+
+<h2>Project Management Methodologies</h2>
+<table class="kt-table"><thead><tr><th>Methodology</th><th>Characteristics</th><th>Best For</th></tr></thead><tbody>
+<tr><td>Waterfall (Linear)</td><td>Sequential phases; requirements defined upfront</td><td>Well-defined requirements; stable scope</td></tr>
+<tr><td>Evolutionary/Incremental</td><td>Successive deliveries; flexible requirements</td><td>Unclear requirements; flexibility needed</td></tr>
+<tr><td>Agile/Iterative</td><td>Customer collaboration; respond to change; working deliverables</td><td>Complex, changing requirements</td></tr>
+</tbody></table>
+
+<h2>Agile Manifesto (4 Principles)</h2>
+<ul>
+<li><strong>Customer collaboration</strong> over contract negotiation</li>
+<li><strong>Responding to change</strong> over following a plan</li>
+<li><strong>Working software</strong> (deliverables) over comprehensive documentation</li>
+<li><strong>Individuals and interactions</strong> over processes and tools</li>
+</ul>
+
+<h2>Scrum Key Elements</h2>
+<ul>
+<li><strong>Product Backlog:</strong> Prioritized wish list of features</li>
+<li><strong>Sprint:</strong> 1-4 week iteration cycle</li>
+<li><strong>Daily Scrum:</strong> Daily stand-up to assess progress</li>
+<li><strong>Burndown Chart:</strong> Remaining work vs. time</li>
+<li><strong>Scrum Master:</strong> Removes barriers; leads Scrum team</li>
+</ul>
+
+<h2>15-Step Project Planning Sequence</h2>
+<p>Project justification → Scope/objectives → Stakeholder requirements → Team formation → Milestone statements → Deliverables → WBS → Gantt → CPM/PERT → RRM → LRM → Budget → Measurements → Completed project plan</p>
+
+<h2>Project Planning Tools</h2>
+<table class="kt-table"><thead><tr><th>Tool</th><th>Purpose</th><th>Key Notes</th></tr></thead><tbody>
+<tr><td>WBS</td><td>Hierarchical breakdown of all project work</td><td>Foundation for cost/schedule estimates</td></tr>
+<tr><td>Gantt Chart</td><td>Time-phased bar chart of tasks</td><td>Easy to read; does NOT show dependencies</td></tr>
+<tr><td>CPM</td><td>Critical path = longest path through network</td><td>No slack on critical path; delays the whole project</td></tr>
+<tr><td>PERT</td><td>3 time estimates per activity</td><td>(Optimistic + 4×Most Likely + Pessimistic) / 6</td></tr>
+<tr><td>RRM</td><td>Resource requirements matrix</td><td>What/when/how many resources needed</td></tr>
+<tr><td>LRM</td><td>Linear responsibility matrix</td><td>Who is responsible for what</td></tr>
+</tbody></table>
+
+<h2>Financial Analysis for Project Selection</h2>
+<table class="kt-table"><thead><tr><th>Method</th><th>Key Points</th></tr></thead><tbody>
+<tr><td>Payback Period</td><td>Years to recover investment. Simple but does NOT consider time value of money.</td></tr>
+<tr><td>NPV</td><td>Positive = accept project. Considers time value of money. Higher = better.</td></tr>
+<tr><td>IRR</td><td>Discount rate where NPV = 0. If IRR > required rate → accept. Higher = better.</td></tr>
+<tr><td>ROI</td><td>Net dollar benefit ÷ Investment</td></tr>
+<tr><td>ROA</td><td>Return on assets — used with substantial capital investment</td></tr>
+</tbody></table>
+
+<h2>Earned Value Analysis (EVA)</h2>
+<div class="formula">CPI = EV / AC  (Cost Performance Index — >1.0 = under budget)</div>
+<div class="formula">SPI = EV / PV  (Schedule Performance Index — >1.0 = ahead of schedule)</div>
+<div class="exam-tip">Post-project audit is one of the most commonly OMITTED steps in the project lifecycle. Know all 5 project life cycle stages and the difference between waterfall/agile.</div>
+
+<h2>Project Charter Key Elements</h2>
+<p>Problem statement, goals (SMART), scope (in/out), sponsor, team members, methodology, timeline with milestones, risk assessment criteria, recognition/rewards plan.</p>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>Critical Path</td><td>Longest path through network = minimum project duration; zero float</td></tr>
+<tr><td>Burndown Chart</td><td>Remaining work vs. time; tracks sprint progress</td></tr>
+<tr><td>EVA</td><td>Earned Value Analysis — planned vs. actual value of work</td></tr>
+<tr><td>NPV</td><td>Net Present Value; positive = accept project</td></tr>
+<tr><td>IRR</td><td>Internal Rate of Return; discount rate where NPV = 0</td></tr>
+<tr><td>Stage/Gate Review</td><td>Go/no-go decision points between project phases</td></tr>
+<tr><td>Post-Project Audit</td><td>Compares actual results to predicted; most commonly omitted step</td></tr>
+</tbody></table>
+`},
+
+11: { icon:'✅', title:'Quality System', bok:'III.D', part:'III',
+content:`
+<h2>Definitions of Quality</h2>
+<ul>
+<li>Fitness for use (Juran)</li>
+<li>Conformance to requirements (Crosby)</li>
+<li>Meeting customer expectations</li>
+<li>Zero defects</li>
+<li>Exceeding customer expectations / Delighting the customer</li>
+</ul>
+
+<h2>Little q vs. Big Q</h2>
+<ul>
+<li><strong>Little q:</strong> Quality focused on QC/inspection activities (quality department focus)</li>
+<li><strong>Big Q:</strong> Quality across the ENTIRE organization — the preferred approach</li>
+</ul>
+
+<h2>Quality Planning 10-Step Process</h2>
+<ol>
+<li>Identify customers</li>
+<li>Determine customer needs</li>
+<li>Discuss with customers whether the need exists</li>
+<li>If need exists, agree on standards and measures</li>
+<li>Quantify gap between current and required</li>
+<li>Define improvement actions</li>
+<li>Make improvement and track results</li>
+<li>Evaluate results; review lessons learned</li>
+<li>Maintain the gains</li>
+<li>Do it again</li>
+</ol>
+
+<h2>Types of Audits</h2>
+<table class="kt-table"><thead><tr><th>Type</th><th>Who Conducts</th><th>Example</th></tr></thead><tbody>
+<tr><td>First-Party (Internal)</td><td>Organization's own auditors</td><td>ISO 9001 internal audit</td></tr>
+<tr><td>Second-Party</td><td>Customer auditing supplier</td><td>Supplier qualification audit</td></tr>
+<tr><td>Third-Party</td><td>Independent registrar</td><td>ISO 9001 certification audit</td></tr>
+</tbody></table>
+
+<h2>Audit Scope Types</h2>
+<ul>
+<li><strong>System Audit:</strong> Verifies overall QMS appropriateness and implementation</li>
+<li><strong>Process Audit:</strong> Examines a single process or activity</li>
+<li><strong>Product Audit:</strong> In-depth examination of a specific product</li>
+</ul>
+
+<h2>3-Stage Audit Process</h2>
+<ol>
+<li><strong>Preparation:</strong> Define scope; select team; develop checklists; schedule</li>
+<li><strong>Performance:</strong> Opening meeting; collect data; verify documentation; closing meeting</li>
+<li><strong>Reporting/Follow-up:</strong> Formal report; request corrective action; close out when verified</li>
+</ol>
+
+<h2>Balanced Scorecard (BSC) for Quality</h2>
+<p>4 perspectives: Customers, Employees, Stakeholders/Financial, Process</p>
+<ul>
+<li><strong>Leading indicators:</strong> Easier to collect; predictive of future performance</li>
+<li><strong>Lagging indicators:</strong> Report past performance</li>
+</ul>
+
+<h2>ISO 9001 Management Review Requirements</h2>
+<p>Conducted at defined intervals (bimonthly/quarterly/annually). Inputs include: customer satisfaction, process performance, audit results, status of corrective actions, risks and opportunities.</p>
+
+<h2>Gemba Walk</h2>
+<p>Senior management walk-through of operations. Informal but observations taken seriously by responsible managers.</p>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>Fitness for Use</td><td>Quality is what a product/service does and is supposed to do</td></tr>
+<tr><td>Little q</td><td>Quality focused on QC/inspection (department-level)</td></tr>
+<tr><td>Big Q</td><td>Quality across the entire organization</td></tr>
+<tr><td>First-Party Audit</td><td>Internal audit by the organization's own auditors</td></tr>
+<tr><td>Second-Party Audit</td><td>Customer auditing a supplier</td></tr>
+<tr><td>Third-Party Audit</td><td>Independent registrar (e.g., for ISO 9001 certification)</td></tr>
+<tr><td>Gemba Walk</td><td>Senior management walk-through of production/operations</td></tr>
+<tr><td>Leading Indicator</td><td>Metric that predicts future performance</td></tr>
+<tr><td>Lagging Indicator</td><td>Metric that reports past performance</td></tr>
+<tr><td>DFSS</td><td>Design for Six Sigma — doing the right things right the first time</td></tr>
+<tr><td>ROQI</td><td>Return on Quality Investment</td></tr>
+</tbody></table>
+`},
+
+12: { icon:'🏆', title:'Quality Models and Theories', bok:'III.E', part:'III',
+content:`
+<h2>ISO 9001:2015 Ten Sections (4-10 = Requirements)</h2>
+<table class="kt-table"><thead><tr><th>Section</th><th>Focus</th></tr></thead><tbody>
+<tr><td>4 — Context</td><td>Org context; interested parties; scope; risk-based thinking</td></tr>
+<tr><td>5 — Leadership</td><td>Top management commitment; quality policy; customer focus</td></tr>
+<tr><td>6 — Planning</td><td>Risks/opportunities; SMART quality objectives; change planning</td></tr>
+<tr><td>7 — Support</td><td>Resources; competence; awareness; communication; documented info</td></tr>
+<tr><td>8 — Operations</td><td>Operational planning; customer requirements; design controls; supplier controls</td></tr>
+<tr><td>9 — Performance Evaluation</td><td>Customer satisfaction monitoring; internal audits; management review</td></tr>
+<tr><td>10 — Improvement</td><td>Nonconformity; corrective action; continual improvement</td></tr>
+</tbody></table>
+
+<h2>Baldrige 7 Categories (MBNQA)</h2>
+<table class="kt-table"><thead><tr><th>Category</th><th>Points</th></tr></thead><tbody>
+<tr><td>1. Leadership</td><td>120</td></tr>
+<tr><td>2. Strategy</td><td>85</td></tr>
+<tr><td>3. Customers</td><td>85</td></tr>
+<tr><td>4. Measurement, Analysis & Knowledge Management</td><td>90</td></tr>
+<tr><td>5. Workforce</td><td>85</td></tr>
+<tr><td>6. Operations</td><td>85</td></tr>
+<tr><td>7. Results</td><td>450 (45% — HIGHEST)</td></tr>
+</tbody></table>
+<div class="exam-tip">Results category = 450 points = 45% of total. The Baldrige criteria are nonprescriptive — orgs choose their own approach to meet criteria.</div>
+
+<h2>Quality Gurus — Essential Reference</h2>
+<table class="kt-table"><thead><tr><th>Guru</th><th>Key Contributions</th></tr></thead><tbody>
+<tr><td>Shewhart</td><td>Father of SPC; invented control charts; PDCA (Shewhart Cycle); common vs. assignable cause variation</td></tr>
+<tr><td>Deming</td><td>14 Points for transformation; 7 Deadly Diseases; System of Profound Knowledge; PDSA cycle; drove SPC in Japan</td></tr>
+<tr><td>Juran</td><td>Quality Trilogy (Planning/Control/Improvement); Pareto principle; universal sequence (diagnostic + remedial journeys)</td></tr>
+<tr><td>Crosby</td><td>Zero defects; "Quality is Free"; 5 Absolutes; 14 Steps; quality = conformance to requirements; cost of quality</td></tr>
+<tr><td>Feigenbaum</td><td>Total Quality Control; quality as strategic business tool; org-wide commitment; "hidden plant" concept</td></tr>
+<tr><td>Ishikawa</td><td>Cause-and-effect (fishbone) diagram; quality circles; 4 audit types; company-wide quality control</td></tr>
+<tr><td>Taguchi</td><td>Loss function L(y) = k(y-m)²; robust design via DOE; parameter/tolerance design</td></tr>
+</tbody></table>
+
+<h2>Deming's 14 Points (Top Key Items)</h2>
+<p>Create constancy of purpose → Cease dependence on inspection → End price-alone purchasing → Improve constantly → Institute training → Adopt leadership → Drive out fear → Break down barriers → Eliminate quotas → Remove barriers to pride of workmanship</p>
+
+<h2>Deming's 7 Deadly Diseases</h2>
+<ol>
+<li>Lack of constancy of purpose</li>
+<li>Emphasis on short-term profits</li>
+<li>Evaluation by performance/merit rating/annual review</li>
+<li>Mobility of management</li>
+<li>Running a company on visible figures alone</li>
+<li>Excessive medical costs</li>
+<li>Excessive costs of warranty</li>
+</ol>
+
+<h2>Crosby's 5 Absolutes of Quality</h2>
+<ol>
+<li>Quality = <strong>conformance to requirements</strong>, not elegance</li>
+<li>The quality system is <strong>prevention</strong>, not appraisal</li>
+<li>The performance standard is <strong>zero defects</strong></li>
+<li>The measurement of quality is the <strong>cost of quality</strong></li>
+<li>There is no such thing as a quality problem</li>
+</ol>
+
+<h2>TQM 8 Primary Elements</h2>
+<p>Customer focus, Total employee involvement, Process centered, Integrated system, Strategic/systematic approach, Continual improvement, Fact-based decisions, Communications</p>
+
+<h2>4 Types of Benchmarking</h2>
+<table class="kt-table"><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td>Internal</td><td>Comparing same process across functions/locations within the org</td></tr>
+<tr><td>Competitive</td><td>Comparing directly with competitors</td></tr>
+<tr><td>Functional</td><td>Comparing with non-competing orgs in different industries</td></tr>
+<tr><td>Generic</td><td>Comparing best practices regardless of industry</td></tr>
+</tbody></table>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>ISO 9001:2015</td><td>QMS Requirements standard; 10 sections; certifiable</td></tr>
+<tr><td>MBNQA</td><td>Malcolm Baldrige National Quality Award; 7 categories; Results = 450 pts</td></tr>
+<tr><td>Nonprescriptive</td><td>Baldrige criteria do not dictate HOW; org chooses approach</td></tr>
+<tr><td>TQM</td><td>Total Quality Management; customer focus; total involvement; process-centered</td></tr>
+<tr><td>Kaizen</td><td>Japanese for nonstop incremental continuous improvement</td></tr>
+<tr><td>Kaizen Blitz</td><td>5-day intensive improvement event</td></tr>
+<tr><td>Loss Function</td><td>Taguchi: L(y) = k(y-m)² — any deviation from target causes loss</td></tr>
+</tbody></table>
+`},
+
+13: { icon:'🛠️', title:'Problem-Solving Tools', bok:'IV.A', part:'IV',
+content:`
+<h2>7 Classic Quality Tools</h2>
+<table class="kt-table"><thead><tr><th>Tool</th><th>Purpose</th><th>Key Notes</th></tr></thead><tbody>
+<tr><td>1. Flowchart</td><td>Map sequence of steps and decisions</td><td>Starting point for process improvement</td></tr>
+<tr><td>2. Check Sheet</td><td>Gather data on frequency of occurrence</td><td>Facts over opinions; tally format</td></tr>
+<tr><td>3. Cause-and-Effect Diagram</td><td>Organize potential causes of a problem</td><td>Fishbone/Ishikawa; 4Ms or 4Ps</td></tr>
+<tr><td>4. Pareto Chart</td><td>Identify vital few causes (80/20)</td><td>Bar chart ranked high to low + cumulative line</td></tr>
+<tr><td>5. Control Chart</td><td>Monitor process stability over time</td><td>Shows special vs. common cause variation</td></tr>
+<tr><td>6. Histogram</td><td>Show frequency distribution of data</td><td>Reveals distribution shape and spread</td></tr>
+<tr><td>7. Scatter Diagram</td><td>Show relationship between two variables</td><td>r = correlation coefficient (±1 = strong, 0 = none)</td></tr>
+</tbody></table>
+<p><strong>4Ms (manufacturing C-E):</strong> Manpower, Machinery, Methods, Materials<br>
+<strong>4Ps (service C-E):</strong> People, Policies, Procedures, Plant</p>
+
+<h2>7 Management and Planning Tools</h2>
+<table class="kt-table"><thead><tr><th>Tool</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>1. Activity Network Diagram</td><td>Schedule/track project activities; shows critical path</td></tr>
+<tr><td>2. Affinity Diagram</td><td>Organize large group of brainstormed ideas into categories</td></tr>
+<tr><td>3. Interrelationship Digraph</td><td>Show cause-and-effect among complex issues; count arrows in vs. out</td></tr>
+<tr><td>4. Matrix Diagram</td><td>Show relationships between groups of items; strength of correlation</td></tr>
+<tr><td>5. Prioritization Matrix</td><td>Weight and rank alternatives against multiple criteria</td></tr>
+<tr><td>6. PDPC</td><td>Anticipate problems and plan countermeasures</td></tr>
+<tr><td>7. Tree Diagram</td><td>Break broad goals into increasingly detailed tasks (like WBS)</td></tr>
+</tbody></table>
+
+<h2>7-Step Problem-Solving Model</h2>
+<ol>
+<li><strong>Identify</strong> the problem and the process</li>
+<li><strong>List</strong> possible root causes</li>
+<li><strong>Search out</strong> the most likely root cause (data collection)</li>
+<li><strong>Identify</strong> potential solutions</li>
+<li><strong>Select and implement</strong> a solution</li>
+<li><strong>Follow up</strong> to evaluate the effect</li>
+<li><strong>Standardize</strong> the process (poka-yoke, procedures, training)</li>
+</ol>
+
+<h2>PDCA / PDSA Cycle</h2>
+<div class="formula">Plan → Do → Check/Study → Act (then repeat)</div>
+<p>Developed by Shewhart; associated with Deming. Plan-Do-Study-Act (PDSA) preferred term.</p>
+
+<h2>DMAIC (Six Sigma)</h2>
+<table class="kt-table"><thead><tr><th>Phase</th><th>Key Activities</th><th>Key Tools</th></tr></thead><tbody>
+<tr><td>Define</td><td>Project charter; VOC; identify CTS</td><td>SIPOC, Process map, Stakeholder analysis</td></tr>
+<tr><td>Measure</td><td>Define current process; measurement system baseline</td><td>Process map, MSA, FMEA, data collection plan</td></tr>
+<tr><td>Analyze</td><td>Validate root causes; cause-and-effect</td><td>C-E diagrams, 5 Whys, ANOVA, Pareto</td></tr>
+<tr><td>Improve</td><td>Design future state; implement recommendations</td><td>QFD, DOE, FMEA, poka-yoke, cost-benefit</td></tr>
+<tr><td>Control</td><td>Establish performance targets; sustain improvements</td><td>SPC charts, control plans, procedures</td></tr>
+</tbody></table>
+
+<h2>Six Sigma Levels</h2>
+<table class="kt-table"><thead><tr><th>Sigma Level</th><th>DPMO</th></tr></thead><tbody>
+<tr><td>6σ</td><td>3.4</td></tr>
+<tr><td>5σ</td><td>230</td></tr>
+<tr><td>4σ</td><td>6,210</td></tr>
+<tr><td>3σ</td><td>66,800</td></tr>
+<tr><td>2σ</td><td>308,000</td></tr>
+</tbody></table>
+
+<h2>FMEA Process</h2>
+<div class="formula">RPN = Severity (1-10) × Occurrence (1-10) × Detection (1-10)  [max 1000]</div>
+<p>Higher RPN = higher priority for action. Two types: DFMEA (design) and PFMEA (process).</p>
+
+<h2>Kepner-Tregoe (4 Steps)</h2>
+<ol>
+<li>Problem analysis — describe; identify; confirm causes</li>
+<li>Decision analysis — clarify purpose; identify alternatives; risk analysis; decide</li>
+<li>Situation appraisal — identify concerns; prioritize</li>
+<li>Potential problem analysis — identify future problems; prevent/mitigate</li>
+</ol>
+
+<h2>Cost of Quality (COQ)</h2>
+<div class="formula">Total COQ = Prevention + Appraisal + Internal Failure + External Failure</div>
+<table class="kt-table"><thead><tr><th>Category</th><th>Examples</th></tr></thead><tbody>
+<tr><td>Prevention</td><td>Training, planning, design reviews, process capability evaluations</td></tr>
+<tr><td>Appraisal</td><td>Incoming/in-process/final inspection, calibration, testing</td></tr>
+<tr><td>Internal Failure</td><td>Scrap, rework, reinspection, reprocessing (before delivery)</td></tr>
+<tr><td>External Failure</td><td>Warranty, returns, complaints, product liability lawsuits (after delivery)</td></tr>
+</tbody></table>
+<div class="exam-tip">Goal: INCREASE prevention costs to DECREASE total COQ. Internal failure: before delivery. External failure: after delivery.</div>
+
+<h2>Creativity Tools</h2>
+<table class="kt-table"><thead><tr><th>Tool</th><th>Description</th></tr></thead><tbody>
+<tr><td>SCAMPER</td><td>Substitute, Combine, Adapt, Modify, Put to use, Eliminate, Reverse</td></tr>
+<tr><td>Six Thinking Hats (de Bono)</td><td>White=facts, Red=emotions, Black=negative, Yellow=positive, Green=creative, Blue=process</td></tr>
+<tr><td>TRIZ</td><td>Theory of inventive problem-solving; 40 inventive principles; resolves contradictions</td></tr>
+<tr><td>Five Whys</td><td>Repeatedly ask "Why?" (typically 5 times) to find root cause</td></tr>
+<tr><td>NGT</td><td>Nominal Group Technique; structured voting to narrow ideas</td></tr>
+<tr><td>Mind Mapping</td><td>Central topic with radiating branches for related ideas</td></tr>
+</tbody></table>
+`},
+
+14: { icon:'⚙️', title:'Process Management', bok:'IV.B', part:'IV',
+content:`
+<h2>SIPOC Model</h2>
+<div class="formula">Suppliers → Inputs → Process → Outputs → Customers</div>
+<p>Fundamental tool for understanding how a process functions. Starting point for process improvement.</p>
+
+<h2>The 7 Wastes (TIMWOOD)</h2>
+<table class="kt-table"><thead><tr><th>Waste</th><th>Description</th><th>Example</th></tr></thead><tbody>
+<tr><td>Transportation</td><td>Unnecessary movement of materials</td><td>Moving parts between distant workstations</td></tr>
+<tr><td>Inventory</td><td>Excess raw materials, WIP, finished goods</td><td>Buffer stock from batch production</td></tr>
+<tr><td>Motion</td><td>Unnecessary operator movements</td><td>Reaching, searching, bending for tools</td></tr>
+<tr><td>Waiting</td><td>Idle time waiting for materials, info, decisions</td><td>Operator waiting for machine to cycle</td></tr>
+<tr><td>Overproduction</td><td>Producing more than customer needs</td><td>Large batch runs "just in case"</td></tr>
+<tr><td>Overprocessing</td><td>More effort than customer requires</td><td>Fine tolerances on non-critical features</td></tr>
+<tr><td>Defects</td><td>Rework, scrap, rejects</td><td>Failed welds requiring rework</td></tr>
+</tbody></table>
+<p><em>DOWNTIME also includes: Non-utilized talent (8th waste in some frameworks)</em></p>
+
+<h2>5S Methodology</h2>
+<table class="kt-table"><thead><tr><th>Step</th><th>Japanese</th><th>Action</th></tr></thead><tbody>
+<tr><td>Sort</td><td>Seiri</td><td>Separate needed from unneeded items; red-tag unneeded</td></tr>
+<tr><td>Set in Order</td><td>Seiton</td><td>Organize and identify items for ease of use; visual management</td></tr>
+<tr><td>Shine</td><td>Seiso</td><td>Cleanup campaign; perfect condition</td></tr>
+<tr><td>Standardize</td><td>Seiketsu</td><td>Maintain first 3 S's through standard procedures</td></tr>
+<tr><td>Sustain</td><td>Shitsuke</td><td>Form the habit; periodic audit; train/cross-train</td></tr>
+</tbody></table>
+
+<h2>Value Stream Mapping (VSM)</h2>
+<p>Charts ALL activities (processing, materials, ordering) from raw material to customer delivery. Identifies value-added and non-value-added activities.</p>
+<div class="formula">Takt Time = Available Work Time ÷ Customer Demand</div>
+<p><strong>3 types:</strong> Material flow VSM, Transactional VSM (TVSM), Enterprise VSM (EVSM)</p>
+
+<h2>Key Lean Tools</h2>
+<table class="kt-table"><thead><tr><th>Tool</th><th>Description</th></tr></thead><tbody>
+<tr><td>JIT</td><td>Material delivered exactly when needed; pull-based; minimizes inventory</td></tr>
+<tr><td>Kanban</td><td>Visual pull signal system; minimum qty = (demand during lead time + safety stock) ÷ container qty</td></tr>
+<tr><td>SMED</td><td>Single-Minute Exchange of Die; reduce setup; convert internal to external steps</td></tr>
+<tr><td>Poka-Yoke</td><td>Error-proofing; Control approach (removes human element) vs. Warning approach (alarm)</td></tr>
+<tr><td>Kaizen Blitz</td><td>5-day rapid improvement: Mon=train, Tue=current state map, Wed=future state, Thu=data, Fri=implement</td></tr>
+</tbody></table>
+
+<h2>OEE Formula</h2>
+<div class="formula">OEE = Availability × Performance × Quality</div>
+<p><strong>World-class OEE ≥ 85%</strong></p>
+<ul>
+<li>Availability = Actual run time ÷ Planned run time</li>
+<li>Performance = Actual output ÷ Maximum possible output</li>
+<li>Quality = Good pieces ÷ Total pieces</li>
+</ul>
+
+<h2>Theory of Constraints (TOC)</h2>
+<p>Eliyahu Goldratt's framework: System strength = weakest link (constraint)</p>
+<h3>5 Focusing Steps</h3>
+<ol>
+<li><strong>Identify</strong> the weakest link (constraint)</li>
+<li><strong>Exploit</strong> — squeeze more from constraint without major changes</li>
+<li><strong>Subordinate</strong> — make everything else support the constraint</li>
+<li><strong>Elevate</strong> — if still constrained, make major changes to eliminate it</li>
+<li><strong>Repeat</strong> — find the next constraint; don't let inertia become new constraint</li>
+</ol>
+<div class="formula">Throughput (T) = Rate system generates money through sales</div>
+<div class="formula">Profit = T - Operating Expense (OE)</div>
+<div class="formula">ROI = (T - OE) ÷ Inventory (I)</div>
+
+<h2>Documentation Hierarchy</h2>
+<ol>
+<li>Quality Manual (What? Why?)</li>
+<li>Procedures (Who? What? When?)</li>
+<li>Work Instructions (How?)</li>
+<li>Records (Objective evidence)</li>
+</ol>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>Muda</td><td>Japanese for waste — anything not adding value</td></tr>
+<tr><td>Takt Time</td><td>Available work time ÷ Customer demand</td></tr>
+<tr><td>Little's Law</td><td>WIP = Throughput × Lead Time</td></tr>
+<tr><td>OEE</td><td>Availability × Performance × Quality (world-class ≥ 85%)</td></tr>
+<tr><td>SMED</td><td>Single-Minute Exchange of Die — rapid changeover</td></tr>
+<tr><td>Poka-Yoke</td><td>Mistake-proofing</td></tr>
+<tr><td>Kaizen</td><td>Continuous incremental improvement</td></tr>
+<tr><td>Constraint</td><td>Weakest link limiting system throughput</td></tr>
+<tr><td>Physical Constraint</td><td>Equipment, materials, workforce — easier to identify and fix</td></tr>
+<tr><td>Policy Constraint</td><td>Rules, procedures, decisions — harder to change but higher impact</td></tr>
+</tbody></table>
+`},
+
+15: { icon:'📏', title:'Measurement, Assessment and Metrics', bok:'IV.C', part:'IV',
+content:`
+<h2>Statistics Fundamentals</h2>
+<table class="kt-table"><thead><tr><th>Measure</th><th>Formula / Description</th></tr></thead><tbody>
+<tr><td>Mean (X̄)</td><td>Sum of values ÷ Number of observations</td></tr>
+<tr><td>Median</td><td>Middle value when ordered; average of two middle for even count</td></tr>
+<tr><td>Mode</td><td>Most frequently occurring value</td></tr>
+<tr><td>Range (R)</td><td>Largest − Smallest value</td></tr>
+<tr><td>Standard Deviation (s)</td><td>s = √[Σ(X − X̄)² ÷ (n−1)]</td></tr>
+<tr><td>Variance</td><td>Standard deviation squared (s²)</td></tr>
+</tbody></table>
+
+<h2>Common Distributions</h2>
+<table class="kt-table"><thead><tr><th>Distribution</th><th>Use Case</th></tr></thead><tbody>
+<tr><td>Normal</td><td>Symmetric, bell-shaped; most common quality data; ±3σ = 99.7% of data</td></tr>
+<tr><td>Binomial</td><td>Probability of p successes in n trials (pass/fail data)</td></tr>
+<tr><td>Poisson</td><td>Count of events in interval; probability of occurrence is low (&lt;0.10)</td></tr>
+<tr><td>Exponential</td><td>Time between events; reliability/failure rate data</td></tr>
+<tr><td>Weibull</td><td>Flexible — can model infant mortality, random failures, wear-out</td></tr>
+</tbody></table>
+
+<h2>Control Charts</h2>
+<table class="kt-table"><thead><tr><th>Chart Type</th><th>Data Type</th><th>When to Use</th></tr></thead><tbody>
+<tr><td>X̄-R Chart</td><td>Variables (continuous)</td><td>Sample size n ≤ 10</td></tr>
+<tr><td>X̄-s Chart</td><td>Variables (continuous)</td><td>Sample size n > 10</td></tr>
+<tr><td>p-chart</td><td>Attributes</td><td>Fraction defective; variable sample size</td></tr>
+<tr><td>np-chart</td><td>Attributes</td><td>Number defective; constant sample size</td></tr>
+<tr><td>c-chart</td><td>Attributes</td><td>Count of defects; constant sample size</td></tr>
+<tr><td>u-chart</td><td>Attributes</td><td>Count of defects per unit; variable sample size</td></tr>
+</tbody></table>
+
+<h2>Sampling</h2>
+<ul>
+<li><strong>Random sampling:</strong> Every item has equal probability of selection</li>
+<li><strong>Stratified sampling:</strong> Every nth item selected</li>
+<li><strong>Cluster sampling:</strong> Random subgroup selected; all items in subgroup examined</li>
+</ul>
+<table class="kt-table"><thead><tr><th>Risk</th><th>Also Known As</th><th>Description</th></tr></thead><tbody>
+<tr><td>Alpha (α)</td><td>Producer's risk / Type I Error</td><td>Probability of REJECTING GOOD product</td></tr>
+<tr><td>Beta (β)</td><td>Consumer's risk / Type II Error</td><td>Probability of ACCEPTING BAD product</td></tr>
+</tbody></table>
+<div class="exam-tip">Alpha = reject good (Type I). Beta = accept bad (Type II). AQL = worst tolerable process average.</div>
+
+<h2>Measurement Systems Analysis (MSA)</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>Accuracy</td><td>How close measured value is to true value (validity)</td></tr>
+<tr><td>Precision</td><td>How repeatable the measurement is (reliability)</td></tr>
+<tr><td>Repeatability</td><td>Same operator, same gage — variation in gage itself</td></tr>
+<tr><td>Reproducibility</td><td>Different operators, same gage — variation between operators</td></tr>
+<tr><td>Bias</td><td>Systematic difference from true value</td></tr>
+<tr><td>Linearity</td><td>Consistency of bias across measurement range</td></tr>
+</tbody></table>
+<p><strong>Target analogy:</strong> Reliable but not valid = tight grouping off-center. Valid but not reliable = centered but scattered. Reliable AND valid = tight grouping, on-center.</p>
+
+<h2>Process Capability Indices</h2>
+<div class="formula">Cp = (USL − LSL) ÷ 6σ  [potential capability; assumes centered process]</div>
+<div class="formula">Cpk = min[(USL − μ) ÷ 3σ, (μ − LSL) ÷ 3σ]  [actual capability; accounts for centering]</div>
+<table class="kt-table"><thead><tr><th>Index Value</th><th>Interpretation</th></tr></thead><tbody>
+<tr><td>&gt; 1.67</td><td>Excellent — safety-critical applications</td></tr>
+<tr><td>≥ 1.33</td><td>Capable — standard target</td></tr>
+<tr><td>1.00 – 1.33</td><td>Capable but requires tight control</td></tr>
+<tr><td>&lt; 1.00</td><td>Not capable</td></tr>
+</tbody></table>
+<p><strong>Pp/Ppk:</strong> Potential process capability for initial/short-term studies</p>
+
+<h2>Common vs. Special Cause Variation</h2>
+<ul>
+<li><strong>Common cause:</strong> Inherent, random variation always present. Stable process. System issue.</li>
+<li><strong>Special cause:</strong> Assignable, detectable, removable. Unstable process. Specific event.</li>
+<li><strong>Tampering:</strong> Adjusting a stable process based on individual data points — INCREASES variation</li>
+</ul>
+
+<h2>Reliability Metrics (Bathtub Curve)</h2>
+<p><strong>3 phases:</strong> Infant mortality (decreasing failure rate) → Useful life (constant rate) → Wear-out (increasing rate)</p>
+<div class="formula">Availability (Ao) = MTBF ÷ (MTBF + MTTR)</div>
+<ul>
+<li><strong>MTTF:</strong> Mean Time to Failure — nonrepairable products</li>
+<li><strong>MTBF:</strong> Mean Time Between Failures — repairable products</li>
+<li><strong>MTTR:</strong> Mean Time to Repair</li>
+</ul>
+
+<h2>GQM Model</h2>
+<p>Goal → Question → Metric. Three-level measurement model for defining what to measure and why.</p>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>AQL</td><td>Acceptable Quality Limit — worst tolerable process average</td></tr>
+<tr><td>Cp</td><td>Process capability — specification range ÷ process range</td></tr>
+<tr><td>Cpk</td><td>Process capability accounting for centering</td></tr>
+<tr><td>Common Cause</td><td>Inherent random variation — system issue</td></tr>
+<tr><td>Special Cause</td><td>Assignable, detectable variation — specific event</td></tr>
+<tr><td>Tampering</td><td>Overcorrecting a stable process — increases variation</td></tr>
+<tr><td>Repeatability</td><td>Same operator, same gage</td></tr>
+<tr><td>Reproducibility</td><td>Different operators, same gage</td></tr>
+<tr><td>MTBF</td><td>Mean Time Between Failures (repairable)</td></tr>
+<tr><td>MTTR</td><td>Mean Time to Repair</td></tr>
+</tbody></table>
+`},
+
+16: { icon:'🎯', title:'Customer Identification and Segmentation', bok:'V.A', part:'V',
+content:`
+<h2>6 Types of Customers (Harrington)</h2>
+<table class="kt-table"><thead><tr><th>Type</th><th>Description</th></tr></thead><tbody>
+<tr><td>Primary</td><td>Directly receives the output of a process (main reason process exists)</td></tr>
+<tr><td>Secondary</td><td>Also receives outputs but not the reason for the process</td></tr>
+<tr><td>Indirect</td><td>Within org boundaries; affected by outputs but doesn't receive them directly</td></tr>
+<tr><td>External</td><td>End users / consumers — final users of product or service</td></tr>
+<tr><td>False</td><td>Performs activities that don't add value (e.g., 100% inspector for a stable process)</td></tr>
+<tr><td>Internal</td><td>"Next operation as customer" — functions within the organization</td></tr>
+</tbody></table>
+<div class="exam-tip">Know all 6 customer types, especially the distinction between primary, secondary, and false customers. Internal customer concept is heavily tested.</div>
+
+<h2>Internal Customers and Quality-Level Agreements (QLAs)</h2>
+<p>QLAs (also called SLAs) formalize relationships between internal providers and receivers.</p>
+<h3>3 Tenets of QLA</h3>
+<ol>
+<li>Valid requirements are agreed upon and meet receiver's needs</li>
+<li>Valid measurement of service quality is consistent with needs</li>
+<li>All internal requirements must be consistent with external customer requirements</li>
+</ol>
+<h3>7 Steps to Improve Internal Customer Interfaces</h3>
+<ol>
+<li>Identify internal customer interfaces</li>
+<li>Establish gap assessment</li>
+<li>Set improvement objectives and measurements</li>
+<li>Perform feasibility study of each recommended change</li>
+<li>Modify processes where needed</li>
+<li>Implement tracking/reporting systems</li>
+<li>Document quality-level agreements</li>
+</ol>
+
+<h2>Market Segmentation</h2>
+<p><strong>Segmentation dimensions:</strong> Purchase volume, profitability, industry, geography, demographics (age/income/gender), psychographics (lifestyle/attitudes), organizational type</p>
+
+<h2>Three Preference Patterns</h2>
+<ul>
+<li><strong>Homogeneous:</strong> All customers have similar preferences → mass marketing</li>
+<li><strong>Diffused:</strong> Customers have widely varying preferences → no natural segments</li>
+<li><strong>Clustered:</strong> Natural groups with distinct preferences → targeted segmentation</li>
+</ul>
+
+<h2>8-Step Process for Working with External Customers</h2>
+<ol>
+<li>Define and prioritize customer segments</li>
+<li>Capture voice of key segments</li>
+<li>Identify internal processes needing change</li>
+<li>Establish action plans</li>
+<li>Perform risk analysis of each change</li>
+<li>Test market the changes</li>
+<li>Roll out full-scale changes</li>
+<li>Evaluate effectiveness</li>
+</ol>
+
+<h2>Qualitative vs. Quantitative Assessment</h2>
+<ul>
+<li><strong>Qualitative:</strong> Subjective — opinions, attitudes, beliefs, feelings. Techniques: interviews, observation, focus groups, open-ended surveys.</li>
+<li><strong>Quantitative:</strong> Objective — numbers, counts, measurements. Statistical analysis.</li>
+</ul>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>QLA</td><td>Quality-Level Agreement — internal service agreement between provider/receiver</td></tr>
+<tr><td>B2B</td><td>Business-to-business customer relationship</td></tr>
+<tr><td>B2C</td><td>Business-to-consumer customer relationship</td></tr>
+<tr><td>Vital Few</td><td>Core customers representing the most critical/profitable segment</td></tr>
+<tr><td>Internal Customer</td><td>Next operation/function receiving output within the organization</td></tr>
+<tr><td>False Customer</td><td>Performs activities that don't add value</td></tr>
+</tbody></table>
+`},
+
+17: { icon:'🤝', title:'Customer Relationship Management', bok:'V.B', part:'V',
+content:`
+<h2>Voice of the Customer (VOC)</h2>
+<p>System for capturing customer needs and expectations. Sources: complaints, warranty data, surveys, focus groups, listening posts, market research, social media, joint planning meetings.</p>
+
+<h2>Quality Function Deployment (QFD) — House of Quality</h2>
+<p>Methodology to translate customer voice (qualitative) into technical requirements (operational).</p>
+<table class="kt-table"><thead><tr><th>Section</th><th>Content</th></tr></thead><tbody>
+<tr><td>A — What (left)</td><td>Customer wants and needs (VOC)</td></tr>
+<tr><td>B — Importance (left)</td><td>Relative importance weighting by customer</td></tr>
+<tr><td>C — Competitive (right)</td><td>Customer perceptions vs. competitors</td></tr>
+<tr><td>D — How (top)</td><td>Technical/engineering characteristics</td></tr>
+<tr><td>E — Relationships (center)</td><td>Strength of relationships between what and how</td></tr>
+<tr><td>F — Importance (bottom)</td><td>Technical importance rating</td></tr>
+<tr><td>G — Roof</td><td>Correlations between technical characteristics</td></tr>
+<tr><td>H — Targets (bottom)</td><td>Technical benchmarks/targets</td></tr>
+</tbody></table>
+<div class="exam-tip">QFD cascades through 4 levels: Customer requirements → Design → Parts → Process → Production</div>
+
+<h2>Kano Model — 5 Quality Categories</h2>
+<table class="kt-table"><thead><tr><th>Category</th><th>Description</th><th>Example</th></tr></thead><tbody>
+<tr><td>Must-be (Basic)</td><td>Causes dissatisfaction when absent; NO satisfaction when present (expected)</td><td>Seatbelts in a car</td></tr>
+<tr><td>One-dimensional (Performance)</td><td>Linear: more = more satisfaction; less = less</td><td>Fuel economy</td></tr>
+<tr><td>Attractive (Delighters)</td><td>Creates delight when present; NO dissatisfaction when absent</td><td>Heated seats (when new)</td></tr>
+<tr><td>Indifferent</td><td>Neither satisfaction nor dissatisfaction regardless of presence</td><td>Internal system components</td></tr>
+<tr><td>Reverse</td><td>Causes dissatisfaction when present; satisfaction when absent</td><td>Overly complex features</td></tr>
+</tbody></table>
+<div class="exam-tip">Key insight: Today's delighters become tomorrow's must-be's. Evolution of customer expectations is critical concept.</div>
+
+<h2>Net Promoter Score (NPS)</h2>
+<div class="formula">NPS = % Promoters (9-10) − % Detractors (0-6)  [Range: -100 to +100]</div>
+<p>Passives score 7-8 and are excluded from the calculation.</p>
+
+<h2>5 Levels of Customer Satisfaction</h2>
+<table class="kt-table"><thead><tr><th>Level</th><th>Description</th><th>Outcome</th></tr></thead><tbody>
+<tr><td>1</td><td>Dissatisfied</td><td>Departed customer</td></tr>
+<tr><td>2</td><td>Marginally satisfied</td><td>Easily lost</td></tr>
+<tr><td>3</td><td>Basically satisfied</td><td>Probably departed forever</td></tr>
+<tr><td>4</td><td>Delighted</td><td>Return customer (retained)</td></tr>
+<tr><td>5</td><td>Committed advocate</td><td>Loyal; tells others</td></tr>
+</tbody></table>
+
+<h2>5-Step Customer Recovery Process</h2>
+<ol>
+<li><strong>Apologize</strong> — Sincere apology; accept responsibility</li>
+<li><strong>Restate</strong> — Confirm understanding; personally accept resolution responsibility</li>
+<li><strong>Empathize</strong> — Genuine commitment to resolve</li>
+<li><strong>Make Restitution</strong> — Specific action (free gift, discount, replacement)</li>
+<li><strong>Follow Up</strong> — Check customer satisfaction after resolution</li>
+</ol>
+
+<h2>Complaint Handling Statistics</h2>
+<ul>
+<li>Only 9.5% of non-complainers with $100+ loss would repurchase</li>
+<li>54.3% repurchase when complaint is resolved</li>
+<li>Resolution speed significantly increases repurchase intent</li>
+</ul>
+
+<h2>Survey Methods Comparison</h2>
+<table class="kt-table"><thead><tr><th>Method</th><th>Response Rate</th><th>Best For</th></tr></thead><tbody>
+<tr><td>Mail/Written</td><td>30-50%</td><td>Periodic quantitative/qualitative</td></tr>
+<tr><td>Telephone</td><td>Higher than mail</td><td>Functional areas, sales/service</td></tr>
+<tr><td>In-person</td><td>Highest</td><td>Identifying important issues; probing for detail</td></tr>
+<tr><td>E-mail/Web</td><td>Variable</td><td>Most popular; lowest cost; fastest</td></tr>
+<tr><td>Observation/Mystery shopping</td><td>N/A</td><td>Monitoring policy deployment; training effectiveness</td></tr>
+</tbody></table>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>CRM</td><td>Customer Relationship Management — coordinates all customer touchpoints</td></tr>
+<tr><td>VOC</td><td>Voice of the Customer — system for capturing needs/expectations</td></tr>
+<tr><td>QFD</td><td>Quality Function Deployment — translates VOC into technical requirements</td></tr>
+<tr><td>Kano Model</td><td>5 categories: must-be, one-dimensional, attractive, indifferent, reverse</td></tr>
+<tr><td>NPS</td><td>Net Promoter Score = % Promoters − % Detractors</td></tr>
+<tr><td>ICALL</td><td>Informal Customer Acquisition Listening and Learning — listening post process</td></tr>
+<tr><td>Customer Lifetime Value</td><td>Total financial value of a customer relationship over time</td></tr>
+<tr><td>Must-be</td><td>Basic expectations causing dissatisfaction when absent</td></tr>
+<tr><td>Attractive (Delighters)</td><td>Unexpected features creating high satisfaction</td></tr>
+</tbody></table>
+`},
+
+18: { icon:'🔗', title:'Supply Chain Management', bok:'VI.A–G', part:'VI',
+content:`
+<h2>Supplier Selection Process (8 Steps)</h2>
+<ol>
+<li>Identify all possible sources</li>
+<li>Evaluate reputations</li>
+<li>Prepare bidders list</li>
+<li>Request bids</li>
+<li>Evaluate pre-award data</li>
+<li>Select approved supplier list</li>
+<li>Update the contracts</li>
+<li>Prepare the contracts</li>
+</ol>
+<p>Selection done by <strong>cross-functional team</strong> (purchasing, engineering, production, quality, materials).</p>
+
+<h2>Supplier Classification Ladder</h2>
+<table class="kt-table"><thead><tr><th>Level</th><th>Requirements</th></tr></thead><tbody>
+<tr><td>Approved</td><td>Meets minimum requirements of the organization</td></tr>
+<tr><td>Qualified</td><td>Additional review — self-assessment, questionnaire, on-site audit</td></tr>
+<tr><td>Certified</td><td>Demonstrated consistent quality over time; reduced/eliminated incoming inspection</td></tr>
+</tbody></table>
+<div class="exam-tip">Certification criteria include: No lot rejections for 1 year, process stable and in control, documented quality system evaluation, agreed-upon specification.</div>
+
+<h2>Key Industry Standards</h2>
+<ul>
+<li><strong>ISO 9001:</strong> All industries — QMS requirements</li>
+<li><strong>IATF 16949:</strong> Automotive quality standard</li>
+<li><strong>AS9100:</strong> Aerospace quality standard</li>
+<li><strong>ISO 13485:</strong> Medical devices</li>
+</ul>
+
+<h2>Supplier Risk Management Strategies</h2>
+<table class="kt-table"><thead><tr><th>Risk Type</th><th>Strategies</th></tr></thead><tbody>
+<tr><td>Threats (negative)</td><td>Escalate, Avoid, Transfer, Mitigate, Accept</td></tr>
+<tr><td>Opportunities (positive)</td><td>Exploit, Enhance, Share, Accept</td></tr>
+</tbody></table>
+
+<h2>Supplier Performance Metrics</h2>
+<ul>
+<li>Defects (PPM — parts per million)</li>
+<li>On-time delivery %</li>
+<li>Responsiveness to corrective actions</li>
+<li>Process capability (Cpk)</li>
+<li>Cost/price performance</li>
+<li>Technical support availability</li>
+</ul>
+
+<h2>Key Performance Indices</h2>
+<ul>
+<li><strong>QPI:</strong> Quality Performance Index</li>
+<li><strong>CPI:</strong> Commodity Performance Index</li>
+<li><strong>SPI:</strong> Supplier Performance Index</li>
+<li><strong>DPI:</strong> Delivery Performance Index</li>
+<li><strong>PPI:</strong> Past Performance Index</li>
+</ul>
+
+<h2>Supplier Communications</h2>
+<p>Types of requirements to communicate: delivery, order quantities, corrective action processes, safety/security, environmental parameters, financial stability, ethical standards.</p>
+<p><strong>Methods:</strong> Written specifications, SQA manual, samples, supplier visits, EDI, contracts, purchase orders, training.</p>
+
+<h2>Push vs. Pull Systems</h2>
+<ul>
+<li><strong>Push system:</strong> Forecast-driven; materials pushed to next stage based on schedule</li>
+<li><strong>Pull system:</strong> Demand-driven; material pulled by actual consumption (JIT/Ship-to-stock)</li>
+</ul>
+
+<h2>Supplier Certification Steps</h2>
+<ol>
+<li>Develop certification criteria and process steps</li>
+<li>Evaluate selected suppliers against criteria</li>
+<li>Ongoing monitoring of supplier performance</li>
+</ol>
+
+<h2>Deming's Principle</h2>
+<p>"End the practice of awarding business on the basis of price tag alone." — Total cost of ownership, not just purchase price.</p>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>SCM</td><td>Supply Chain Management — planning, sourcing, making, delivery, returns</td></tr>
+<tr><td>Strategic Sourcing</td><td>Process for reducing costs while improving quality and service</td></tr>
+<tr><td>Approved Supplier</td><td>Meets minimum requirements</td></tr>
+<tr><td>Certified Supplier</td><td>Consistent quality demonstrated; reduced incoming inspection</td></tr>
+<tr><td>IATF 16949</td><td>Automotive quality standard</td></tr>
+<tr><td>AS9100</td><td>Aerospace quality standard</td></tr>
+<tr><td>Ship-to-Stock</td><td>Material received without incoming inspection (certified suppliers)</td></tr>
+<tr><td>Supplier Alliance</td><td>Formalized relationship with shared fate and mutual benefits</td></tr>
+<tr><td>Type I Risk (α)</td><td>Producer's risk — rejecting good product</td></tr>
+<tr><td>Type II Risk (β)</td><td>Consumer's risk — accepting bad product</td></tr>
+</tbody></table>
+`},
+
+19: { icon:'📚', title:'Training and Development', bok:'VII.A–D', part:'VII',
+content:`
+<h2>Training vs. Education</h2>
+<table class="kt-table"><thead><tr><th>Aspect</th><th>Training</th><th>Education</th></tr></thead><tbody>
+<tr><td>Focus</td><td>HOW to perform tasks (skill acquisition)</td><td>WHY and WHEN (knowledge; broader thinking)</td></tr>
+<tr><td>Measurement</td><td>Can demonstrate the learned skill</td><td>Broadened knowledge base and thinking</td></tr>
+<tr><td>Duration</td><td>Shorter; specific</td><td>Longer; conceptual</td></tr>
+<tr><td>Example</td><td>Operating a CMM machine</td><td>Understanding statistics and DOE principles</td></tr>
+</tbody></table>
+
+<h2>ADDIE Instructional Design Model</h2>
+<ol>
+<li><strong>A — Analysis:</strong> Audience; what to teach; how to deliver; who participates</li>
+<li><strong>D — Design:</strong> Objectives, methods, evaluation criteria; delivery strategies</li>
+<li><strong>D — Development:</strong> Create/purchase training materials</li>
+<li><strong>I — Implementation:</strong> Deliver training to target audience</li>
+<li><strong>E — Evaluation:</strong> Determine results; continuous improvement</li>
+</ol>
+
+<h2>Bloom's Taxonomy (Cognitive Domain)</h2>
+<p>Remember → Understand → Apply → Analyze → Evaluate → Create (low to high complexity)</p>
+<p><em>The CMQ/OE BoK uses these levels to classify each exam question</em></p>
+
+<h2>Mager & Pipe — Training Needs Diagnosis</h2>
+<p><strong>Key question:</strong> "Could they do it if their life depended on it?"</p>
+<ul>
+<li><strong>YES</strong> → NOT a training problem. Look at: Job design (J), Consequences (C), Feedback (F)</li>
+<li><strong>NO</strong> → Training solution (T) — skill/knowledge deficiency</li>
+</ul>
+<div class="exam-tip">This is the most important training diagnostic concept. If performance could improve without training, training is NOT the solution.</div>
+
+<h2>Adult Learning Principles (Knowles — 6 Principles)</h2>
+<ol>
+<li>Adults have a deep need to be self-directing</li>
+<li>Adults have a deep need to know WHY they should learn something</li>
+<li>Adults become ready to learn when they experience a need</li>
+<li>Adults are task/problem-centered in their learning orientation</li>
+<li>Adults are motivated by both extrinsic and intrinsic motivators</li>
+<li>Adults' prior experience is a rich resource for learning</li>
+</ol>
+
+<h2>Kirkpatrick / Phillips 5 Levels of Training Evaluation</h2>
+<table class="kt-table"><thead><tr><th>Level</th><th>Name</th><th>Question</th><th>Note</th></tr></thead><tbody>
+<tr><td>1</td><td>Reaction</td><td>Were participants pleased?</td><td>Smile sheets; lowest value</td></tr>
+<tr><td>2</td><td>Learning</td><td>Did they learn what was intended?</td><td>Pre/post tests</td></tr>
+<tr><td>3</td><td>Behavior</td><td>Was there positive behavior change on the job?</td><td>Supervisor observation</td></tr>
+<tr><td>4</td><td>Results</td><td>Measurable organizational impact?</td><td>Most important</td></tr>
+<tr><td>5</td><td>ROTI</td><td>What is the financial return?</td><td>Hardest to measure</td></tr>
+</tbody></table>
+<div class="formula">ROTI = Net Program Benefits ÷ Program Costs  (target: ≥ 3:1)</div>
+
+<h2>Training Delivery Methods</h2>
+<p><strong>On-the-Job Training (OJT):</strong> Tell them, show them, have them do it, repeat until standard met.</p>
+<p><strong>E-learning gamification levels:</strong> 1=Partial (quiz in course), 2=Game-Based Learning, 3=Gamified Learning Path, 4=Gamified Portal</p>
+<p><strong>Coaching:</strong> One-on-one; define goals → identify resources → observe → set expectations → schedule → commit → give feedback → follow up</p>
+
+<h2>Juran's 6 Issues for Training Planning</h2>
+<ol>
+<li>Quality problems and challenges faced</li>
+<li>Knowledge and skills needed to solve them</li>
+<li>Existing training facilities and processes</li>
+<li>Prevailing climate for training in the organization</li>
+<li>What needs to be done differently</li>
+<li>What needs top management support</li>
+</ol>
+
+<h2>KESSA Factors (Training Needs Assessment)</h2>
+<p>Knowledge, Experience, Skills, Aptitude, Attitude</p>
+
+<h2>Why Training Fails</h2>
+<ul>
+<li>Cultural resistance by line managers</li>
+<li>No connection to strategic plans</li>
+<li>No projected objectives established</li>
+<li>Lack of management participation</li>
+<li>Technique vs. problem orientation</li>
+<li>Inadequate needs assessment</li>
+</ul>
+
+<h2>Key Terms</h2>
+<table class="kt-table"><thead><tr><th>Term</th><th>Definition</th></tr></thead><tbody>
+<tr><td>ADDIE</td><td>Analysis → Design → Development → Implementation → Evaluation</td></tr>
+<tr><td>Bloom's Taxonomy</td><td>Remember → Understand → Apply → Analyze → Evaluate → Create</td></tr>
+<tr><td>IDP</td><td>Individual Development Plan; goals, timelines, activities</td></tr>
+<tr><td>ROTI</td><td>Return on Training Investment; target ≥ 3:1</td></tr>
+<tr><td>Kirkpatrick Level 1</td><td>Reaction — smile sheets (lowest value)</td></tr>
+<tr><td>Kirkpatrick Level 5</td><td>ROTI — financial return (highest value; hardest to measure)</td></tr>
+<tr><td>Andragogy</td><td>Adult learning theory (Knowles)</td></tr>
+<tr><td>Competency-Based Training</td><td>Learner-centered; mastery before advancing</td></tr>
+</tbody></table>
+`},
+
+20: { icon:'🎯', title:'CMQ/OE Body of Knowledge', bok:'Exam Master Reference', part:'VII',
+content:`
+<h2>Exam Blueprint</h2>
+<table class="kt-table"><thead><tr><th>Domain</th><th>Title</th><th>Questions</th><th>Weight</th></tr></thead><tbody>
+<tr><td>I</td><td>Leadership</td><td>28</td><td>17.0%</td></tr>
+<tr><td>II</td><td>Strategic Plan Development & Deployment</td><td>22</td><td>13.3%</td></tr>
+<tr><td>III</td><td>Management Elements and Methods</td><td>31</td><td>18.8%</td></tr>
+<tr><td>IV</td><td>Quality Management Tools</td><td>30</td><td>18.2%</td></tr>
+<tr><td>V</td><td>Customer-Focused Organizations</td><td>21</td><td>12.7%</td></tr>
+<tr><td>VI</td><td>Supply Chain Management</td><td>17</td><td>10.3%</td></tr>
+<tr><td>VII</td><td>Training and Development</td><td>16</td><td>9.7%</td></tr>
+<tr><td>TOTAL</td><td></td><td>165</td><td>100%</td></tr>
+</tbody></table>
+<div class="exam-tip">Study Priority: Domains III + IV = 37% of exam. Master these first. Domains I + II = 30%. Together these 4 domains = 67% of all questions.</div>
+
+<h2>Key Formulas — Quick Reference</h2>
+<table class="kt-table"><thead><tr><th>Formula</th><th>Expression</th><th>Context</th></tr></thead><tbody>
+<tr><td>RPN</td><td>S × O × D</td><td>FMEA risk priority (IV.A.3)</td></tr>
+<tr><td>PERT Time</td><td>(O + 4M + P) / 6</td><td>Project estimation (III.C.2)</td></tr>
+<tr><td>Cp</td><td>(USL - LSL) / 6σ</td><td>Process capability potential (IV.C.7)</td></tr>
+<tr><td>Cpk</td><td>min[(USL-μ)/3σ, (μ-LSL)/3σ]</td><td>Process capability actual (IV.C.7)</td></tr>
+<tr><td>OEE</td><td>Availability × Performance × Quality</td><td>Lean metric (IV.B.3)</td></tr>
+<tr><td>Availability</td><td>MTBF / (MTBF + MTTR)</td><td>Reliability (IV.C.8)</td></tr>
+<tr><td>NPS</td><td>%Promoters − %Detractors</td><td>Customer loyalty (V.B.1)</td></tr>
+<tr><td>ROTI</td><td>Net Benefits / Program Costs</td><td>Training ROI (VII.D)</td></tr>
+<tr><td>CPI</td><td>EV / AC</td><td>Project cost performance (III.C.3)</td></tr>
+<tr><td>SPI</td><td>EV / PV</td><td>Project schedule performance (III.C.3)</td></tr>
+<tr><td>Total COQ</td><td>Prevention + Appraisal + Internal + External Failure</td><td>Cost of Quality (IV.A.5)</td></tr>
+<tr><td>Takt Time</td><td>Available Time / Customer Demand</td><td>Lean (IV.B.3)</td></tr>
+<tr><td>Little's Law</td><td>WIP = Throughput × Lead Time</td><td>Lean/TOC (IV.B.3)</td></tr>
+</tbody></table>
+
+<h2>Bloom's Taxonomy — Exam Levels</h2>
+<table class="kt-table"><thead><tr><th>Level</th><th>Action Words</th><th>Complexity</th></tr></thead><tbody>
+<tr><td>1. Remember</td><td>Recall, list, define, identify</td><td>Lowest</td></tr>
+<tr><td>2. Understand</td><td>Describe, explain, summarize, interpret</td><td>Low</td></tr>
+<tr><td>3. Apply</td><td>Use, demonstrate, execute, implement</td><td>Medium</td></tr>
+<tr><td>4. Analyze</td><td>Differentiate, compare, examine, break down</td><td>Medium-High</td></tr>
+<tr><td>5. Evaluate</td><td>Judge, assess, justify, determine</td><td>High</td></tr>
+<tr><td>6. Create</td><td>Design, develop, formulate, construct</td><td>Highest</td></tr>
+</tbody></table>
+
+<h2>Cross-Cutting Themes</h2>
+<ul>
+<li><strong>Cost of Quality</strong> (IV.A.5, II, III, VI)</li>
+<li><strong>Risk Management</strong> (II.B.1, III.A.6, VI.B)</li>
+<li><strong>PDCA / Continuous Improvement</strong> (IV.A.3, III.D, III.E.3)</li>
+<li><strong>Stakeholder Analysis</strong> (II.B.3, V.A, VI)</li>
+<li><strong>Performance Measurement</strong> (II.C.3, III.C.3, VII.D)</li>
+<li><strong>ISO 9001 Requirements</strong> (III.D, III.E.1, VI.A, VII.C)</li>
+</ul>
+
+<h2>Exam Strategy</h2>
+<ul>
+<li><strong>Time:</strong> 165 questions in ~5 hours = ~1.8 min per question</li>
+<li><strong>Flag and move on</strong> if stuck — come back later</li>
+<li>Most questions are scenario-based — apply principles to practical situations</li>
+<li>Look for "best" answer — often 2 answers seem correct but one is more comprehensive</li>
+<li>Ethics questions: public safety ALWAYS trumps other considerations</li>
+<li>Bring real-world experience as a quality leader to anchor abstract concepts</li>
+</ul>
+
+<h2>Top Must-Know Concepts by Domain</h2>
+<h3>Domain I — Leadership</h3>
+<p>Kotter 8 steps, Tuckman 5 stages, Goleman EI 5 dimensions, Hersey-Blanchard situational leadership, ASQ Code 3 pillars, Maslow/Herzberg motivation</p>
+<h3>Domain II — Strategic Planning</h3>
+<p>Hoshin Kanri + catchball, SWOT (internal/external), Porter's 5 forces, Balanced Scorecard, SMART objectives, cascading deployment</p>
+<h3>Domain III — Management Elements</h3>
+<p>POSDC, Theory X/Y, Blake-Mouton 9,9, Deming 14 points, ISO 9001 sections, Baldrige 7 categories, Financial ratios, ISO 31000 risk, FMEA</p>
+<h3>Domain IV — Quality Tools</h3>
+<p>7 classic tools, 7 management tools, DMAIC, FMEA (RPN=S×O×D), Six Sigma levels, 5 Wastes, 5S, VSM, Takt time, OEE, Cp/Cpk, common vs. special cause, COQ 4 categories</p>
+<h3>Domain V — Customer</h3>
+<p>Kano model (5 categories), QFD house of quality, NPS formula, 5-level satisfaction, VOC system, 5-step recovery, 6 customer types</p>
+<h3>Domain VI — Supply Chain</h3>
+<p>8-step selection process, approved/qualified/certified ladder, risk strategies (EATMA/EESA), supplier metrics, certification standards</p>
+<h3>Domain VII — Training</h3>
+<p>Training vs. education, ADDIE, Bloom's taxonomy, Kirkpatrick 5 levels, Mager & Pipe diagnosis, ROTI formula, adult learning 6 principles</p>
+`}
+};
+
+// ═══════════════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════════════
+let currentChapter = null;
+const done = new Set(JSON.parse(localStorage.getItem('asq-done') || '[]'));
+
+function saveDone() {
+  localStorage.setItem('asq-done', JSON.stringify([...done]));
+}
+
+// ═══════════════════════════════════════════════
+// NAV RENDERING
+// ═══════════════════════════════════════════════
+function renderNav() {
+  const nav = document.getElementById('nav-area');
+  let html = '';
+  PARTS.forEach(p => {
+    html += `<div class="part-label"><span class="part-icon">${p.icon}</span>Part ${p.id} — ${p.title}</div>`;
+    p.chapters.forEach(n => {
+      const ch = CHAPTERS[n];
+      const isDone = done.has(n);
+      html += `<div class="nav-item${isDone?' done':''}" id="nav-${n}" onclick="loadChapter(${n})">
+        <span class="ch-icon">${ch.icon}</span>
+        <span class="ch-title">Ch.${n}: ${ch.title}</span>
+        <span class="done-badge">✓</span>
+      </div>`;
+    });
+  });
+  nav.innerHTML = html;
+  updateProgress();
+}
+
+function updateProgress() {
+  const total = 20;
+  const count = done.size;
+  document.getElementById('progress-text').textContent = `${count} / ${total}`;
+  document.getElementById('progress-fill').style.width = `${(count/total)*100}%`;
+  // Update nav items
+  done.forEach(n => {
+    const el = document.getElementById(`nav-${n}`);
+    if(el) el.classList.add('done');
+  });
+}
+
+// ═══════════════════════════════════════════════
+// CHAPTER LOADING
+// ═══════════════════════════════════════════════
+function loadChapter(n) {
+  currentChapter = n;
+  const ch = CHAPTERS[n];
+  const partObj = PARTS.find(p => p.id === ch.part);
+
+  // Update active nav
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+  const navEl = document.getElementById(`nav-${n}`);
+  if(navEl) {
+    navEl.classList.add('active');
+    navEl.scrollIntoView({ block: 'nearest' });
+  }
+
+  // Update breadcrumb
+  document.getElementById('breadcrumb').innerHTML = `<span>Part ${ch.part}</span> / <span>Ch.${n}: ${ch.title}</span>`;
+
+  // Show mark done button
+  const btn = document.getElementById('mark-done-btn');
+  btn.style.display = 'block';
+  btn.textContent = done.has(n) ? '✓ Done' : 'Mark Done ✓';
+  btn.style.background = done.has(n) ? 'var(--accent3)' : '';
+  btn.style.color = done.has(n) ? '#000' : '';
+  btn.style.borderColor = done.has(n) ? 'var(--accent3)' : '';
+
+  // Find prev/next
+  const allChs = PARTS.flatMap(p => p.chapters);
+  const idx = allChs.indexOf(n);
+  const prev = idx > 0 ? allChs[idx-1] : null;
+  const next = idx < allChs.length-1 ? allChs[idx+1] : null;
+
+  document.getElementById('content').innerHTML = `
+    <div class="ch-header">
+      <div class="ch-header-icon">${ch.icon}</div>
+      <div class="ch-header-part"><span class="tag tag-domain">Part ${ch.part} — ${partObj.title}</span> &nbsp;<span class="tag tag-level">BoK ${ch.bok}</span></div>
+      <div class="ch-header-title">Chapter ${n}: ${ch.title}</div>
+    </div>
+    ${ch.content}
+    <div class="ch-nav">
+      <button class="ch-nav-btn${!prev?' disabled':''}" onclick="${prev?`loadChapter(${prev})`:''}">&larr; ${prev ? 'Ch.'+prev+': '+CHAPTERS[prev].title : 'Start'}</button>
+      <button class="ch-nav-btn${!next?' disabled':''}" onclick="${next?`loadChapter(${next})`:''}">${next ? 'Ch.'+next+': '+CHAPTERS[next].title : 'End'} &rarr;</button>
+    </div>
+  `;
+
+  window.scrollTo(0,0);
+}
+
+function markDone() {
+  if(!currentChapter) return;
+  if(done.has(currentChapter)) {
+    done.delete(currentChapter);
+  } else {
+    done.add(currentChapter);
+  }
+  saveDone();
+  const btn = document.getElementById('mark-done-btn');
+  const isDone = done.has(currentChapter);
+  btn.textContent = isDone ? '✓ Done' : 'Mark Done ✓';
+  btn.style.background = isDone ? 'var(--accent3)' : '';
+  btn.style.color = isDone ? '#000' : '';
+  btn.style.borderColor = isDone ? 'var(--accent3)' : '';
+  const navEl = document.getElementById(`nav-${currentChapter}`);
+  if(navEl) navEl.classList.toggle('done', isDone);
+  updateProgress();
+}
+
+// ═══════════════════════════════════════════════
+// HOME PAGE
+// ═══════════════════════════════════════════════
+function loadHome() {
+  currentChapter = null;
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+  document.getElementById('breadcrumb').innerHTML = 'Home';
+  document.getElementById('mark-done-btn').style.display = 'none';
+
+  const domains = [
+    {id:'I',q:28,pct:17.0},
+    {id:'II',q:22,pct:13.3},
+    {id:'III',q:31,pct:18.8},
+    {id:'IV',q:30,pct:18.2},
+    {id:'V',q:21,pct:12.7},
+    {id:'VI',q:17,pct:10.3},
+    {id:'VII',q:16,pct:9.7},
+  ];
+  const maxPct = 18.8;
+
+  document.getElementById('content').innerHTML = `
+    <div class="home-hero">
+      <div class="home-tag">ASQ CMQ/OE Certification</div>
+      <div class="home-title">Complete Study Guide</div>
+      <div class="home-sub">All 20 chapters from the CMQ/OE Handbook. Full content, exam tips, key terms, and formulas.</div>
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-num">20</div><div class="stat-label">Chapters</div></div>
+        <div class="stat-card"><div class="stat-num">165</div><div class="stat-label">Exam Questions</div></div>
+        <div class="stat-card"><div class="stat-num">7</div><div class="stat-label">BoK Domains</div></div>
+        <div class="stat-card"><div class="stat-num">${done.size}</div><div class="stat-label">Chapters Done</div></div>
+      </div>
+    </div>
+    <div class="exam-blueprint">
+      <h2>Exam Blueprint</h2>
+      ${domains.map(d => `
+      <div class="domain-row" onclick="loadChapter(${d.id==='I'?1:d.id==='II'?5:d.id==='III'?8:d.id==='IV'?13:d.id==='V'?16:d.id==='VI'?18:19})" style="cursor:pointer">
+        <div class="domain-num">${d.id}</div>
+        <div class="domain-name">${PARTS.find(p=>p.id===d.id).title}</div>
+        <div class="domain-qs">${d.q} Q</div>
+        <div class="domain-pct">${d.pct}%</div>
+        <div class="domain-bar-wrap"><div class="domain-bar"><div class="domain-bar-fill" style="width:${(d.pct/maxPct)*100}%"></div></div></div>
+      </div>`).join('')}
+      <div style="margin-top:24px;padding:16px 20px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;font-size:13px;color:var(--text-muted);line-height:1.7">
+        <strong style="color:var(--text)">🎯 Study Priority</strong><br>
+        Domains III + IV = 37% of exam → Master these first<br>
+        Domains I + II = 30% → Strong secondary focus<br>
+        All 4 combined = 67% of all questions
+      </div>
+    </div>
+  `;
+}
+
+// ═══════════════════════════════════════════════
+// SEARCH
+// ═══════════════════════════════════════════════
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+
+searchInput.addEventListener('input', function() {
+  const q = this.value.trim().toLowerCase();
+  if(q.length < 2) { searchResults.style.display = 'none'; return; }
+
+  const results = [];
+  Object.entries(CHAPTERS).forEach(([n, ch]) => {
+    const text = (ch.title + ' ' + ch.content).toLowerCase();
+    const idx = text.indexOf(q);
+    if(idx !== -1) {
+      const raw = (ch.title + ' ' + ch.content).substring(Math.max(0, idx-40), idx+80);
+      const ctx = raw.replace(/<[^>]+>/g, '').replace(/\s+/g,' ');
+      const highlighted = ctx.replace(new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi'), m => `<span class="sr-hi">${m}</span>`);
+      results.push({ n: parseInt(n), ch, ctx: highlighted });
     }
+  });
 
-    ReactDOM.render(<App />, document.getElementById("root"));
-  </script>
+  if(results.length === 0) {
+    searchResults.innerHTML = '<div class="search-result-item"><div class="sr-ctx" style="color:var(--text-muted)">No results found</div></div>';
+  } else {
+    searchResults.innerHTML = results.slice(0,8).map(r =>
+      `<div class="search-result-item" onclick="loadChapter(${r.n});clearSearch()">
+        <div class="sr-ch">${r.ch.icon} Ch.${r.n}: ${r.ch.title}</div>
+        <div class="sr-ctx">${r.ctx}</div>
+      </div>`
+    ).join('');
+  }
+  searchResults.style.display = 'block';
+});
+
+document.addEventListener('click', e => {
+  if(!document.getElementById('search-box').contains(e.target)) {
+    searchResults.style.display = 'none';
+  }
+});
+
+function clearSearch() {
+  searchInput.value = '';
+  searchResults.style.display = 'none';
+}
+
+// ═══════════════════════════════════════════════
+// MOBILE
+// ═══════════════════════════════════════════════
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('overlay').classList.toggle('open');
+}
+
+document.getElementById('overlay').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('overlay').classList.remove('open');
+});
+
+// Close sidebar on nav click (mobile)
+document.getElementById('nav-area').addEventListener('click', () => {
+  if(window.innerWidth <= 768) {
+    document.getElementById('sidebar').classList.remove('open');
+    document.getElementById('overlay').classList.remove('open');
+  }
+});
+
+// ═══════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════
+renderNav();
+loadHome();
+
+// Home link on logo click
+document.querySelector('.sidebar-logo').style.cursor = 'pointer';
+document.querySelector('.sidebar-logo').addEventListener('click', loadHome);
+document.querySelector('.sidebar-title').style.cursor = 'pointer';
+document.querySelector('.sidebar-title').addEventListener('click', loadHome);
+</script>
 </body>
 </html>
