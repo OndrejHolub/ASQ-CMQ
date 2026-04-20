@@ -3,7 +3,6 @@
 **Interactive study tool for the ASQ Certified Manager of Quality / Organizational Excellence (CMQ/OE) exam**
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20Portal-blue?style=for-the-badge&logo=github)](https://ondrejholub.github.io/ASQ-CMQ/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 A clean, fast, single-file web application designed to help Quality professionals master the **ASQ CMQ/OE Body of Knowledge**. No installation needed — just open and study.
 
