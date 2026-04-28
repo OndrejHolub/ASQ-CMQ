@@ -3,153 +3,328 @@
   "num": "V",
   "title": "Customer-Focused Organizations",
   "examQuestions": 25,
-  "examWeight": 15,
+  "examWeight": 17,
   "sections": [
     {
       "id": "5A",
       "ref": "V.A",
       "title": "Customer Identification and Segmentation",
-      "cognitive": "Analyze",
-      "summary": "Quality management begins with understanding who the customer is. Organizations serve multiple customer types — external end users, internal process customers, regulatory bodies, and stakeholders. Segmentation allows organizations to tailor quality strategies to different customer groups with different needs, expectations, and value drivers.",
+      "cognitive": "Evaluate / Analyze",
+      "summary": "All quality begins with identifying who the customer is — internal vs external, primary vs secondary vs indirect, B2B vs B2C. Customers are segmented by volume, profitability, industry, geography, demographics, or psychographics. Qualitative data (opinions, beliefs) and quantitative data (counts, measurements) both inform decisions, with the right type chosen for the question being asked.",
       "concepts": [
         {
-          "term": "Customer Types",
-          "definition": "External customers: end users who purchase or use the product/service. Internal customers: downstream processes or departments that receive the output of an upstream process. Intermediate customers: distributors, retailers, or partners who deliver the product to end users. Regulatory/statutory customers: government agencies enforcing compliance requirements. Each type has distinct quality requirements that the QMS must address.",
+          "term": "Six Customer Types (Harrington)",
+          "definition": "(1) Primary — directly receives process output; (2) Secondary — receives output but is not the process's reason for being; (3) Indirect — affected by but does not receive output directly; (4) External — end user/consumer; (5) False — performs activities that do not add value; (6) Internal — next operation/function within the organization.",
           "formula": null,
-          "examTip": "Internal customer concept is frequently tested — every process has a customer (the next process). Treating internal handoffs as customer-supplier relationships improves overall quality."
+          "examTip": "Especially distinguish primary, secondary, indirect, and false customers."
         },
         {
-          "term": "Customer Segmentation",
-          "definition": "Dividing the customer base into distinct groups that share common characteristics, needs, or behaviors. Segmentation bases: demographic (age, income, industry, company size), geographic (region, climate, urban/rural), behavioral (usage rate, loyalty, purchase occasion), psychographic (values, lifestyle), needs-based (functional requirements, service expectations). Quality strategies should be differentiated by segment.",
+          "term": "Internal Customer Concept",
+          "definition": "Every function and process within the organization is both a receiver and provider — 'next operation as customer' (Bhote). Treating internal customers well cascades to external customer satisfaction.",
           "formula": null,
-          "examTip": "Not all customers are equal in value or requirements. Segmentation enables resource allocation — premium segments may justify higher quality investment."
+          "examTip": "Internal customer is foundational to TQM. Poor internal treatment → poor external service."
         },
         {
-          "term": "Stakeholder Analysis for Quality",
-          "definition": "Identify all interested parties and their quality-related requirements: customers (product performance), employees (safe work environment), shareholders (financial returns), regulators (compliance), community (environmental impact), suppliers (clear specifications, fair terms). ISO 9001:2015 Clause 4.2 explicitly requires understanding the needs and expectations of interested parties.",
+          "term": "Quality-Level Agreements (QLAs / SLAs)",
+          "definition": "Internal service agreements between provider and receiver. Three timely tenets: (1) requirements meet receiver needs, (2) measurement is consistent with needs, (3) internal requirements align with external customer requirements.",
           "formula": null,
-          "examTip": "Interested parties ≠ just customers. ISO 9001:2015 broadened scope to all relevant interested parties — know the distinction."
+          "examTip": "QLAs make internal expectations explicit and measurable."
+        },
+        {
+          "term": "Seven Steps to Improve Internal Customer Interfaces",
+          "definition": "(1) Identify interfaces; (2) Assess gaps; (3) Set objectives & measurements; (4) Feasibility study of changes; (5) Modify processes; (6) Track and report; (7) Document QLAs.",
+          "formula": null,
+          "examTip": "Step 1 (identify interfaces) is most often skipped — easy to assume you already know."
+        },
+        {
+          "term": "External Customer Types",
+          "definition": "Wholesale buyer, Distributor, Retail chain buyer, Other volume buyers (gov't, education, healthcare), Retail buyer, Discount buyer, Employee buyer, Service buyer, Service user, Organization buyer.",
+          "formula": null,
+          "examTip": "Each type has distinct influence on design, pricing, packaging, and delivery."
+        },
+        {
+          "term": "B2B vs B2C",
+          "definition": "B2C: provider sells directly to consumers — straightforward to capture VOC. B2B: 'real customer' is often unclear; multiple stakeholders in purchasing decision; each stakeholder group has unique requirements.",
+          "formula": null,
+          "examTip": "B2B requires segmenting by stakeholder role within the buying organization."
+        },
+        {
+          "term": "Market Segmentation Criteria",
+          "definition": "Purchase volume, profitability, industry, type of purchases, type of organization, geographic, demographic (age, income, gender), psychographic (lifestyle, attitudes), buyers' organizational structure.",
+          "formula": null,
+          "examTip": "Profitability segmentation is more useful than volume — high-volume customers may not be profitable."
+        },
+        {
+          "term": "Three Preference Patterns",
+          "definition": "(1) Homogeneous — all customers have similar preferences (compete in middle); (2) Diffused — no natural segments, varied preferences; (3) Clustered — distinct natural groups (target with cluster analysis).",
+          "formula": null,
+          "examTip": "Clustered preferences enable targeted marketing — most actionable for segmentation."
+        },
+        {
+          "term": "'Vital Few' Customers",
+          "definition": "Core customer segment representing the most strategic value. Avoid the trap of treating all customers as equally important — bar set too low for core customers means delivering minimum to everyone.",
+          "formula": null,
+          "examTip": "Pareto applies to customers — focus on vital few without abandoning the rest."
+        },
+        {
+          "term": "8-Step Process for Working with External Customers",
+          "definition": "(1) Define & prioritize segments; (2) Capture VOC for key segments (gap analysis); (3) Identify required internal process changes; (4) Action plans; (5) Risk analysis; (6) Test market; (7) Roll out; (8) Evaluate effectiveness.",
+          "formula": null,
+          "examTip": "Step 5 (risk analysis) and Step 6 (test market) are commonly skipped."
+        },
+        {
+          "term": "Qualitative vs Quantitative Data",
+          "definition": "Qualitative: subjective — opinions, beliefs, feelings, attitudes (interviews, focus groups, observation, content analysis). Quantitative: objective — counts, measurements, statistical estimates (surveys with closed questions, transactional data).",
+          "formula": null,
+          "examTip": "Qualitative explores WHY; quantitative measures HOW MUCH/MANY."
+        },
+        {
+          "term": "Qualitative Techniques",
+          "definition": "One-on-one interviews (in-person/phone/mystery shoppers), focus groups, observation of behavior, content analysis of memos/comments, surveys with open-ended questions for in-depth exploration.",
+          "formula": null,
+          "examTip": "Open-ended surveys + interviews are the highest-quality qualitative inputs."
+        },
+        {
+          "term": "Survey Analysis (4 Steps)",
+          "definition": "(1) Analyze raw data — rank, correlate, segment, compare to past; (2) Compare findings to other internal/external data; (3) Communicate to decision-makers; (4) Use the information and verify results with follow-up.",
+          "formula": null,
+          "examTip": "Follow-up surveys after improvements close the loop."
         }
       ],
-      "keyFigures": ["Juran (internal customer concept)", "Drucker (customer-centric management)"],
+      "keyFigures": [
+        "H. James Harrington (six customer types)",
+        "Keki Bhote (next operation as customer)",
+        "Philip Kotler (market segmentation)",
+        "Alvin & Heidi Toffler (Powershift — customer-driven trends)",
+        "Sam Walton ('there is only one boss—the customer')"
+      ],
       "practiceQuestions": [
         {
-          "q": "A quality manager argues that the manufacturing department's only customer is the end user who purchases the product. This view is INCOMPLETE because:",
-          "options": ["End users are not the most important customer", "It ignores internal customers — downstream processes that receive manufacturing output", "Manufacturing departments have no customers", "Regulatory agencies are the primary customer"],
+          "q": "An inspector who 100% checks every part because of historical deficiencies is BEST classified as a:",
+          "options": ["Primary customer", "Secondary customer", "Indirect customer", "False customer"],
+          "correct": 3,
+          "explanation": "A false customer performs activities that do not add value. The 100% inspection persists because of past failures, not because it adds value to the end product."
+        },
+        {
+          "q": "Which segmentation criterion is BEST for prioritizing strategic customer focus?",
+          "options": ["Purchase volume only", "Profitability", "Geographic location only", "Customer's company size"],
           "correct": 1,
-          "explanation": "Every process has an internal customer — the next process in the value chain. Manufacturing's immediate customers include assembly, test, and packaging departments. Ignoring internal customer requirements causes defects that propagate to the end user."
+          "explanation": "Profitability-based segmentation reveals which customers actually generate value. Volume alone can be misleading — high-volume customers may erode margins."
+        },
+        {
+          "q": "Quality-Level Agreements (QLAs) are MOST appropriate for:",
+          "options": [
+            "External customer warranty terms",
+            "Supplier contracts",
+            "Internal provider/receiver relationships",
+            "Government compliance documents"
+          ],
+          "correct": 2,
+          "explanation": "QLAs (also called SLAs internally) formalize service expectations between internal providers and receivers. They cascade external requirements into internal commitments."
+        },
+        {
+          "q": "Open-ended interview questions are BEST suited to gather:",
+          "options": [
+            "Quantitative satisfaction scores",
+            "Statistical confidence intervals",
+            "Qualitative insights and motivations",
+            "Defect rate trends"
+          ],
+          "correct": 2,
+          "explanation": "Open-ended questions surface qualitative insights — beliefs, motivations, attitudes. Quantitative data comes from closed questions and transactional sources."
         }
       ],
       "flashcards": [
-        { "front": "Internal vs. External Customer", "back": "Internal: next process in the value chain within the organization. External: entity outside the organization who receives the final product/service. Both have requirements that must be identified, communicated, and met. Juran emphasized that quality improvement requires treating internal handoffs with the same rigor as external deliveries." },
-        { "front": "Interested Parties (ISO 9001:2015)", "back": "Clause 4.2 requires identifying interested parties relevant to the QMS and their requirements. Beyond customers: employees, owners, suppliers, regulators, society. The organization decides which are relevant and which requirements to address." }
+        { "front": "Harrington's 6 customer types?", "back": "Primary, Secondary, Indirect, External, False, Internal." },
+        { "front": "What is a 'false customer'?", "back": "An individual or group performing non-value-added activities (e.g., 100% inspector compensating for poor process)." },
+        { "front": "QLA stands for?", "back": "Quality-Level Agreement (internal SLA)." },
+        { "front": "Three customer preference patterns?", "back": "Homogeneous, Diffused, Clustered." },
+        { "front": "B2B vs B2C — key difference?", "back": "B2B has multiple stakeholders in the buying decision; the 'real customer' is often unclear." },
+        { "front": "Qualitative vs Quantitative data?", "back": "Qualitative = subjective (opinions, beliefs). Quantitative = objective (counts, measurements)." }
       ]
     },
     {
       "id": "5B",
       "ref": "V.B",
-      "title": "Voice of the Customer (VOC)",
-      "cognitive": "Analyze",
-      "summary": "Voice of the Customer is the systematic process of capturing, analyzing, and translating customer needs and expectations into actionable quality requirements. VOC data drives product development, process improvement, and strategic decisions. Quality managers must know the methods, their strengths and limitations, and how to translate qualitative customer language into measurable specifications.",
+      "title": "Customer Relationship Management",
+      "cognitive": "Create / Analyze / Apply / Evaluate",
+      "summary": "CRM coordinates all customer touchpoints to learn about needs, build retention, and grow loyalty. Key tools: VOC capture, QFD (House of Quality), Kano Model (must-be / one-dimensional / attractive / indifferent / reverse), NPS, complaint handling, and the five-step service recovery process. Modern focus: customer experience management across the full journey.",
       "concepts": [
         {
-          "term": "VOC Collection Methods",
-          "definition": "Reactive methods (customer-initiated): complaints, warranty claims, returns, call center data, social media feedback. Proactive methods (organization-initiated): surveys (structured questionnaires), interviews (in-depth qualitative), focus groups (moderated group discussion), observation/ethnography (watch customers use the product), customer advisory boards (ongoing dialogue with key accounts). Proactive methods are more valuable because they capture unexpressed needs and opportunities.",
+          "term": "Customer Relationship Management (CRM)",
+          "definition": "Strategy and toolset to learn customers' needs, values, and behaviors; segment them; coordinate sales, service, and marketing information across all touchpoints. Most-advanced form: partnerships and alliances.",
           "formula": null,
-          "examTip": "Complaints represent only 4–8% of dissatisfied customers — reactive data dramatically underestimates quality issues. Proactive VOC is essential."
+          "examTip": "CRM ≠ a software tool. It's the strategy; software supports it."
         },
         {
-          "term": "Kano Model",
-          "definition": "Classifies customer requirements into categories based on their relationship to satisfaction: Must-Be (basic expectations — absence causes strong dissatisfaction, presence does not increase satisfaction), One-Dimensional (performance — satisfaction increases linearly with fulfillment), Attractive (delighters — unexpected features that create excitement, absence causes no dissatisfaction), Indifferent (customer does not care either way), Reverse (presence causes dissatisfaction for some customers).",
+          "term": "Customer-Focused vs Market-Driven",
+          "definition": "Customer-focused: emphasizes care and retention of EXISTING customers. Market-driven: emphasizes attracting NEW customers. Both are needed, but quality management leans customer-focused.",
           "formula": null,
-          "examTip": "Must-Be requirements are non-negotiable — failing these causes immediate customer defection regardless of other performance. Attractive requirements differentiate but are temporary — they become Must-Be over time as competitors copy them."
+          "examTip": "Retention is cheaper than acquisition (Reichheld). Quality programs prioritize customer-focused."
+        },
+        {
+          "term": "Voice of the Customer (VOC)",
+          "definition": "System for systematically capturing what customers want/need and how well current products/services meet expectations. Inputs: complaints, surveys, listening posts, focus groups, mystery shoppers, social media. Outputs: requirements, satisfaction scores, improvement priorities.",
+          "formula": null,
+          "examTip": "VOC is a SYSTEM, not a single survey. Multiple touchpoints feed it."
         },
         {
           "term": "Quality Function Deployment (QFD)",
-          "definition": "Structured methodology for translating VOC into technical requirements at every development stage. The House of Quality matrix maps: Customer Requirements (WHATs — left wall), Technical Requirements (HOWs — ceiling), Relationship Matrix (body — strength of linkage between WHATs and HOWs), Correlation Matrix (roof — interactions among HOWs), Competitive Assessment (right wall — benchmarking), Technical Targets (basement — measurable specifications).",
+          "definition": "Methodology translating customer voice (qualitative requirements) into operational requirements using a series of matrices (House of Quality). Cascades through 4 levels: Customer Requirements → Design → Parts → Process → Production.",
           "formula": null,
-          "examTip": "QFD ensures customer voice is not lost during translation to engineering specifications. The exam tests whether you understand the matrix components and their purpose."
+          "examTip": "QFD is heavily tested. Know all 4 cascading levels."
         },
         {
-          "term": "Critical-to-Quality (CTQ) Tree",
-          "definition": "Decomposes broad customer needs into specific, measurable quality characteristics. Structure: Customer Need (general, qualitative) → Driver (specific aspect of the need) → CTQ (measurable requirement with specification and tolerance). Example: 'Fast delivery' → 'Order processing time' → 'Processing time ≤ 24 hours from order receipt, target 4 hours.'",
+          "term": "House of Quality (QFD Matrix)",
+          "definition": "Sections: (A) Customer wants/needs (VOC); (B) Importance weighting; (C) Customer perception of competitors; (D) Critical process characteristics (Voice of Company); (E) Relationship strength matrix; (F) Importance rating; (G) Correlations (the 'roof'); (H) Targets.",
           "formula": null,
-          "examTip": "CTQ trees bridge the gap between 'what the customer says' and 'what we measure.' The exam tests whether a CTQ is truly measurable and actionable."
+          "examTip": "Memorize sections A–H. Roof (G) shows relationships among technical characteristics."
+        },
+        {
+          "term": "Kano Model — Five Quality Element Categories",
+          "definition": "(1) Must-be (basic — dissatisfaction if absent, no satisfaction if present); (2) One-dimensional (linear — satisfaction scales with fulfillment); (3) Attractive/Delighters (unexpected features that delight); (4) Indifferent (no impact either way); (5) Reverse (some users dissatisfied when feature is provided).",
+          "formula": null,
+          "examTip": "HEAVILY TESTED. Yesterday's delighters become today's must-be's (e.g., automobile cup holders)."
+        },
+        {
+          "term": "Kano Curves",
+          "definition": "Must-be: lower-right curve (saturates at neutral). One-dimensional: straight diagonal line. Attractive: upper-left curve (rises rapidly with fulfillment). Indifferent: flat horizontal line. Reverse: opposite of expected.",
+          "formula": null,
+          "examTip": "Visualize the curves — must-be saturates; attractive accelerates."
+        },
+        {
+          "term": "Listening Posts",
+          "definition": "Formal process for capturing casual/informal customer remarks. ICALL (Informal Customer Acquisition Listening and Learning) formalizes the practice. Captures suggestions, displeasures, ideas, and signals of customer departure.",
+          "formula": null,
+          "examTip": "Listening posts catch what surveys miss — early warning of customer issues."
+        },
+        {
+          "term": "Customer Survey Methods",
+          "definition": "Written/mail (30–50% response), telephone (higher response, faster), in-person (most powerful but expensive), e-mail/web (cheapest, variable response), comment cards, mystery shopping, social media monitoring, joint planning meetings, customer panels, advisory councils.",
+          "formula": null,
+          "examTip": "Match method to objective: in-person for depth, web for breadth, mystery shopping for service consistency."
+        },
+        {
+          "term": "Complaint Handling Statistics",
+          "definition": "9.5% of non-complainers (with >$100 loss) repurchase. 19% of complainers with unresolved issues repurchase. 54.3% repurchase when complaint is resolved — and even higher with quick resolution.",
+          "formula": null,
+          "examTip": "Resolving complaints quickly is the highest-leverage retention tool."
+        },
+        {
+          "term": "Customer Value Analysis (Gale & Wood — 7 Tools)",
+          "definition": "(1) Market-perceived quality profile; (2) Market-perceived price profile; (3) Customer value map; (4) Won/lost analysis; (5) Head-to-head area chart; (6) Key events timeline; (7) What/who matrix.",
+          "formula": null,
+          "examTip": "Gale & Wood's 7 tools — used to quantify customer-perceived value vs. competition."
+        },
+        {
+          "term": "Five Levels of Customer Satisfaction",
+          "definition": "(1) Dissatisfied — departed; (2) Marginally satisfied — easily lost; (3) Basically satisfied — probably gone; (4) Delighted — returns (retained); (5) Committed advocate — loyal AND tells others.",
+          "formula": null,
+          "examTip": "'Basically satisfied' is NOT good — they often leave silently."
+        },
+        {
+          "term": "Net Promoter Score (NPS)",
+          "definition": "Single question: 'How likely are you to recommend us?' on 0–10 scale. Promoters (9–10), Passives (7–8), Detractors (0–6).",
+          "formula": "NPS = % Promoters − % Detractors",
+          "examTip": "NPS ranges from −100 to +100. Memorize the 9–10 / 7–8 / 0–6 thresholds."
+        },
+        {
+          "term": "Customer Lifetime Value (CLV)",
+          "definition": "Total economic value of a customer over the entire relationship. Considers acquisition cost, base profit, revenue growth, operating costs, referrals, and price premium. Reichheld pioneered this measure.",
+          "formula": null,
+          "examTip": "Retention is cheaper than acquisition — CLV justifies retention investment."
+        },
+        {
+          "term": "Customer Experience Management (CXM)",
+          "definition": "Mapping the cumulative impact of multiple touchpoints over the customer journey. Includes personas, key moments, positive/negative impacts, and emotions. Visual journey mapping is the core tool.",
+          "formula": null,
+          "examTip": "CXM ≠ CRM. CRM = data; CXM = end-to-end experience design."
+        },
+        {
+          "term": "Reputational Risk",
+          "definition": "Risk to organizational reputation and customer goodwill. Damage translates to lost revenue, increased capital costs, and shareholder value destruction. Boeing 737 MAX example: FAA grounding caused billions in lost revenue and cancelled orders.",
+          "formula": null,
+          "examTip": "Reputational risk is now a top-3 ERM concern for most large organizations."
+        },
+        {
+          "term": "Six Critical Areas of Customer-Centric Organizations",
+          "definition": "(1) Equip, enable, engage employees; (2) Leadership, vision, support; (3) Create & deploy service strategies; (4) Master service delivery processes; (5) Performance measurement (VOC); (6) Resource & infrastructure development.",
+          "formula": null,
+          "examTip": "Memorize all 6 areas — exam may give a deficiency and ask which area it falls under."
+        },
+        {
+          "term": "Five-Step Customer Recovery Process",
+          "definition": "(1) Apologize sincerely and accept responsibility; (2) Restate to confirm understanding; (3) Empathize and commit to resolution; (4) Make Restitution (specific, tangible); (5) Follow Up to verify satisfaction.",
+          "formula": null,
+          "examTip": "Memorize all 5 steps in order. Skipping #5 (follow-up) loses the recovery effect."
+        },
+        {
+          "term": "Unconditional Guarantee",
+          "definition": "(1) Replace failed products at equal or refund value; (2) Re-do substandard service; (3) Customer not challenged; (4) Quick and fair settlement; (5) Sincere apology that restores loyalty.",
+          "formula": null,
+          "examTip": "Unconditional guarantees demonstrate confidence and build loyalty."
+        },
+        {
+          "term": "Multiple/Diverse Customer Management",
+          "definition": "Resolving conflicts among customers competing for resources requires understanding cost to produce/deliver, segment-specific needs, capacity planning, and prioritization aligned to strategy. Building long-term relationships often requires reducing supplier base.",
+          "formula": null,
+          "examTip": "Conflict resolution becomes a competitive advantage in the industry."
         }
       ],
-      "keyFigures": ["Kano (satisfaction model)", "Akao (QFD originator)", "Griffin & Hauser (VOC methodology)"],
+      "keyFigures": [
+        "Noriaki Kano (Kano Model)",
+        "Yoji Akao (QFD)",
+        "Bradley Gale & Robert Wood (Customer Value Analysis)",
+        "Fred Reichheld (Net Promoter Score, customer loyalty)",
+        "Karl Albrecht (Service America!)",
+        "Don Peppers & Martha Rogers (one-to-one marketing)"
+      ],
       "practiceQuestions": [
         {
-          "q": "A hotel chain discovers that clean rooms receive no positive feedback in surveys but immediately generates complaints when standards slip. Using the Kano model, room cleanliness is classified as:",
-          "options": ["Attractive quality — it delights when present", "One-dimensional quality — satisfaction scales linearly", "Must-be quality — expected baseline, no upside from exceeding", "Indifferent quality — customers do not notice either way"],
-          "correct": 2,
-          "explanation": "Room cleanliness is a Must-Be requirement: its presence is simply expected (no satisfaction increase), but its absence causes immediate, strong dissatisfaction. Must-Be requirements must be met consistently but do not create competitive advantage."
+          "q": "In the Kano Model, automobile cup holders today are MOST likely to be:",
+          "options": ["Attractive (delighter)", "Must-be (basic)", "One-dimensional", "Indifferent"],
+          "correct": 1,
+          "explanation": "Cup holders were delighters when introduced; over time customer expectations shifted them to must-be (their absence causes dissatisfaction; presence is expected)."
         },
         {
-          "q": "In a QFD House of Quality, the 'roof' (correlation matrix) identifies:",
-          "options": ["Links between customer requirements and technical requirements", "Relationships among technical requirements themselves", "Competitive benchmarking data", "Customer importance ratings"],
+          "q": "An NPS survey returns 60% promoters, 25% passives, 15% detractors. The NPS is:",
+          "options": ["35", "45", "60", "85"],
           "correct": 1,
-          "explanation": "The roof of the House of Quality shows correlations (positive and negative) among technical requirements. This reveals trade-offs — improving one technical parameter may worsen another — which is critical for design optimization."
+          "explanation": "NPS = % Promoters − % Detractors = 60 − 15 = 45."
+        },
+        {
+          "q": "Which step in the five-step recovery process is MOST often skipped, eroding the recovery's effectiveness?",
+          "options": ["Apologize", "Restate", "Empathize", "Follow Up"],
+          "correct": 3,
+          "explanation": "Follow-up — verifying that the customer is now satisfied — is the step most commonly omitted. Without it, the customer can't tell if the apology was sincere."
+        },
+        {
+          "q": "QFD cascades through how many primary levels?",
+          "options": ["Two", "Three", "Four", "Five"],
+          "correct": 2,
+          "explanation": "Four levels: Customer Requirements → Design Requirements → Parts Requirements → Process Requirements (with Production controls)."
+        },
+        {
+          "q": "A 'committed advocate' (Level 5 satisfaction) is BEST described as:",
+          "options": [
+            "A customer who is satisfied with basic product features",
+            "A delighted customer who returns",
+            "A loyal customer who tells others",
+            "A first-time customer"
+          ],
+          "correct": 2,
+          "explanation": "Level 5 = committed advocate. Loyal AND actively promotes — the highest tier."
         }
       ],
       "flashcards": [
-        { "front": "Kano Model — Category Lifecycle", "back": "Attractive → One-Dimensional → Must-Be. Today's delighters become tomorrow's expectations. Example: GPS navigation in cars was once a luxury feature (Attractive), became a competitive differentiator (One-Dimensional), and is now a basic expectation (Must-Be)." },
-        { "front": "House of Quality — Six Components", "back": "Left wall: Customer requirements (WHATs). Ceiling: Technical requirements (HOWs). Body: Relationship matrix (linkage strength). Roof: Correlation matrix (HOW-to-HOW interactions). Right wall: Competitive assessment. Basement: Technical targets and benchmarks." },
-        { "front": "VOC — Reactive vs. Proactive", "back": "Reactive: complaints, returns, warranty — captures failures. Proactive: surveys, interviews, focus groups, observation — captures needs, expectations, and opportunities. Best practice: use both. Proactive methods capture the 90%+ of dissatisfied customers who never complain." },
-        { "front": "Net Promoter Score (NPS)", "back": "Single-question metric: 'How likely are you to recommend us?' (0–10 scale). Promoters (9–10) − Detractors (0–6) = NPS. Passives (7–8) excluded. World-class: NPS > 50. Strength: simplicity. Weakness: one number cannot diagnose root causes of satisfaction or dissatisfaction." }
-      ]
-    },
-    {
-      "id": "5C",
-      "ref": "V.C",
-      "title": "Customer Satisfaction and Loyalty",
-      "cognitive": "Evaluate",
-      "summary": "Measuring and improving customer satisfaction is a fundamental quality management responsibility. This section covers satisfaction measurement methods, the economics of customer retention, complaint management systems, and the relationship between service quality, satisfaction, and loyalty. The exam tests both measurement methodology and strategic application.",
-      "concepts": [
-        {
-          "term": "Customer Satisfaction Measurement",
-          "definition": "Methods range from transactional surveys (after specific interactions) to relationship surveys (periodic assessment of overall satisfaction). Key design principles: measure what matters to the customer (not what is easy to measure), use consistent scales, benchmark against competitors, track trends over time, close the loop (act on feedback). Common metrics: CSAT (Customer Satisfaction Score), NPS (Net Promoter Score), CES (Customer Effort Score).",
-          "formula": "CSAT = (Satisfied responses / Total responses) × 100%\nNPS = % Promoters (9-10) − % Detractors (0-6)\nCES = Average of effort ratings (typically 1-7 scale)",
-          "examTip": "CSAT measures satisfaction with a specific transaction. NPS measures likelihood to recommend (loyalty proxy). CES measures ease of interaction. Each answers a different question — use the right metric for the right purpose."
-        },
-        {
-          "term": "SERVQUAL Model (Parasuraman, Zeithaml, Berry)",
-          "definition": "Measures service quality through five dimensions: Tangibles (physical facilities, equipment, staff appearance), Reliability (ability to perform the promised service dependably), Responsiveness (willingness to help, promptness), Assurance (knowledge, courtesy, ability to inspire trust), Empathy (caring, individualized attention). Quality = Perception − Expectation across all five dimensions.",
-          "formula": "Service Quality Gap = Perception Score − Expectation Score\nNegative gap = quality shortfall\nPositive gap = quality exceeds expectations",
-          "examTip": "Remember the five dimensions with the acronym 'RATER' (Reliability, Assurance, Tangibles, Empathy, Responsiveness). Reliability is consistently rated as the most important dimension across industries."
-        },
-        {
-          "term": "Customer Retention Economics",
-          "definition": "Acquiring a new customer costs 5–7 times more than retaining an existing one. A 5% increase in retention can increase profits by 25–95% (Reichheld). Loyal customers: buy more frequently, try new products, refer others, are less price-sensitive, cost less to serve. Customer Lifetime Value (CLV) quantifies the total revenue a customer generates over the entire relationship.",
-          "formula": "CLV = (Average Annual Revenue × Gross Margin %) × Avg. Customer Lifespan − Acquisition Cost\nSimplified CLV = Annual Profit per Customer / Annual Churn Rate",
-          "examTip": "CLV arguments are powerful for justifying quality investments — frame quality improvements in terms of customer retention impact."
-        },
-        {
-          "term": "Complaint Management",
-          "definition": "Systematic process for handling customer complaints: Receive and acknowledge promptly, Log and categorize, Investigate root cause, Resolve and communicate resolution to customer, Follow up to verify satisfaction, Analyze aggregate complaint data for systemic improvement. A well-managed complaint can increase loyalty (the 'service recovery paradox' — customers whose complaints are handled well may become more loyal than those who never experienced a problem).",
-          "formula": null,
-          "examTip": "Complaints are a gift — they provide free VOC data. The key metric is resolution time and first-contact resolution rate, not just complaint volume."
-        }
-      ],
-      "keyFigures": ["Parasuraman, Zeithaml & Berry (SERVQUAL)", "Reichheld (NPS, loyalty economics)", "Kano (satisfaction dynamics)"],
-      "practiceQuestions": [
-        {
-          "q": "A SERVQUAL analysis shows the largest gap (Perception − Expectation) is in the Reliability dimension. This means:",
-          "options": ["Customers perceive the physical facilities as inadequate", "Customers feel employees lack knowledge and courtesy", "The organization is failing to deliver its promised service dependably", "Customers want more personalized, empathetic attention"],
-          "correct": 2,
-          "explanation": "Reliability is 'the ability to perform the promised service dependably and accurately.' A gap in this dimension means customers perceive the organization as not delivering on its commitments — the most damaging service quality failure."
-        },
-        {
-          "q": "Customer data shows: annual revenue per customer = $10,000, gross margin = 40%, average lifespan = 5 years, acquisition cost = $2,000. The CLV is:",
-          "options": ["$48,000", "$18,000", "$20,000", "$50,000"],
-          "correct": 1,
-          "explanation": "CLV = ($10,000 × 0.40) × 5 − $2,000 = $4,000 × 5 − $2,000 = $20,000 − $2,000 = $18,000."
-        }
-      ],
-      "flashcards": [
-        { "front": "SERVQUAL — Five Dimensions (RATER)", "back": "Reliability: deliver as promised. Assurance: knowledge and courtesy inspiring trust. Tangibles: physical evidence of service. Empathy: caring, individualized attention. Responsiveness: willingness to help promptly. Reliability ranks #1 in importance across most industries." },
-        { "front": "Service Recovery Paradox", "back": "A customer whose complaint is resolved exceptionally well may become more loyal than a customer who never had a problem. Conditions: the failure was perceived as not severe, recovery was swift and exceeded expectations, and the failure was seen as an isolated incident." },
-        { "front": "Customer Effort Score (CES)", "back": "Measures how easy it was for the customer to get their issue resolved. Research suggests CES is a better predictor of repurchase behavior than CSAT or NPS. Principle: reducing customer effort drives loyalty more than delighting customers." }
+        { "front": "VOC stands for?", "back": "Voice of the Customer." },
+        { "front": "QFD's primary tool?", "back": "House of Quality matrix." },
+        { "front": "QFD 4 cascading levels?", "back": "Customer Reqs → Design Reqs → Parts Reqs → Process Reqs." },
+        { "front": "Kano 5 categories?", "back": "Must-be, One-dimensional, Attractive (delighter), Indifferent, Reverse." },
+        { "front": "NPS formula?", "back": "% Promoters (9–10) − % Detractors (0–6). Passives (7–8) excluded." },
+        { "front": "Five satisfaction levels?", "back": "Dissatisfied → Marginal → Basically satisfied → Delighted → Committed advocate." },
+        { "front": "Five-step recovery process?", "back": "Apologize → Restate → Empathize → Make Restitution → Follow Up." },
+        { "front": "Customer-focused vs market-driven?", "back": "Customer-focused = retain existing. Market-driven = attract new." }
       ]
     }
   ]

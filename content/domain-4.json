@@ -3,173 +3,664 @@
   "num": "IV",
   "title": "Quality Management Tools",
   "examQuestions": 28,
-  "examWeight": 17,
+  "examWeight": 19,
   "sections": [
     {
       "id": "4A",
       "ref": "IV.A",
-      "title": "Problem-Solving and Improvement Tools",
-      "cognitive": "Analyze",
-      "summary": "Quality managers must select and apply the right analytical tool for each situation. This section covers the seven basic quality control tools, the seven management and planning tools, and lean improvement tools. The exam tests tool selection — which tool answers which question — as much as tool mechanics.",
+      "title": "Problem-Solving Tools",
+      "cognitive": "Evaluate / Apply",
+      "summary": "Quality managers must master the 7 classic quality tools, the 7 management & planning tools, the structured problem-solving model (PDCA/DMAIC/Kepner-Tregoe), creativity techniques (Six Hats, SCAMPER, TRIZ), and Cost of Quality (P-A-F-F). Common failure mode: jumping to solutions before validating root cause.",
       "concepts": [
         {
-          "term": "Seven Basic Quality Control Tools",
-          "definition": "Ishikawa's foundational toolkit: (1) Cause-and-Effect (Fishbone) Diagram — organizes potential causes by category, (2) Check Sheet — structured data collection form, (3) Control Chart — monitors process stability over time, (4) Histogram — displays frequency distribution of data, (5) Pareto Chart — prioritizes problems by frequency/impact (80/20), (6) Scatter Diagram — shows correlation between two variables, (7) Flowchart (Process Map) — visualizes process steps and decision points.",
+          "term": "Seven Classic Quality Tools",
+          "definition": "(1) Flowchart, (2) Check Sheet (tally sheet), (3) Cause-and-Effect / Ishikawa / Fishbone diagram, (4) Pareto Chart, (5) Control Chart, (6) Histogram, (7) Scatter Diagram.",
           "formula": null,
-          "examTip": "Know which tool answers which question: What is the distribution? → Histogram. Which problems are most significant? → Pareto. Is the process stable? → Control chart. Are two variables related? → Scatter diagram."
+          "examTip": "Memorize all 7 in order. Each maps to a phase of investigation."
+        },
+        {
+          "term": "Cause-and-Effect Diagram (4M / 4P)",
+          "definition": "Fishbone diagram organizing potential causes by category. Manufacturing: 4Ms (Manpower, Machinery, Methods, Materials). Service: 4Ps (People, Policies, Procedures, Plant).",
+          "formula": null,
+          "examTip": "Manufacturing → 4Ms; Service → 4Ps. Created by Ishikawa."
+        },
+        {
+          "term": "Pareto Principle",
+          "definition": "80% of effects come from 20% of causes (Vilfredo Pareto, applied broadly by Juran). Pareto chart arranges bars by descending frequency with a cumulative percentage line.",
+          "formula": null,
+          "examTip": "Not all problems have a Pareto shape — sometimes bars are nearly equal."
+        },
+        {
+          "term": "Correlation Coefficient (r)",
+          "definition": "Statistical measure of linear association between two variables. r approaches +1 (strong positive), -1 (strong negative), or 0 (no correlation). Visual slope is NOT a measure of correlation strength.",
+          "formula": "r ranges from -1 to +1",
+          "examTip": "Correlation ≠ causation. Visual slope can mislead — calculate r."
         },
         {
           "term": "Seven Management and Planning Tools",
-          "definition": "(1) Affinity Diagram — groups ideas by natural relationships, (2) Interrelationship Digraph — identifies cause-and-effect among related issues, (3) Tree Diagram — breaks objectives into increasingly detailed actions, (4) Matrix Diagram — shows relationships between groups of items, (5) Prioritization Matrix — weighted criteria for decision-making, (6) Process Decision Program Chart (PDPC) — anticipates failures in implementation plans, (7) Activity Network Diagram — sequences tasks for project scheduling.",
+          "definition": "(1) Activity Network Diagram (AND), (2) Affinity Diagram, (3) Interrelationship Digraph, (4) Matrix Diagram, (5) Prioritization Matrix, (6) Process Decision Program Chart (PDPC), (7) Tree Diagram.",
           "formula": null,
-          "examTip": "The 7 management tools are used for planning and organizing qualitative information — contrast with the 7 QC tools which are primarily for quantitative data analysis."
+          "examTip": "Different from the 7 classic tools. Used for planning and complex decision-making."
         },
         {
-          "term": "Pareto Analysis",
-          "definition": "Based on the Pareto Principle (80/20 rule): approximately 80% of effects come from 20% of causes. The Pareto chart displays categories of problems in descending order of frequency with a cumulative percentage line. Used to identify the 'vital few' problems that will yield the greatest improvement when addressed. Can be stratified (nested Pareto) to drill into the top category.",
-          "formula": "Cumulative % = Running total of category / Grand total × 100%",
-          "examTip": "After creating a Pareto chart, focus improvement on the leftmost bars (vital few). If all bars are roughly equal height, the Pareto principle does not apply — look for a different stratification."
-        },
-        {
-          "term": "Cause-and-Effect (Ishikawa/Fishbone) Diagram",
-          "definition": "Organizes brainstormed potential causes of a problem into major categories. Manufacturing commonly uses 6M: Man (People), Machine (Equipment), Method (Process), Material, Measurement, Mother Nature (Environment). Service industries may use 4P: Policies, Procedures, People, Plant. The diagram structures team thinking and ensures comprehensive cause exploration.",
+          "term": "Affinity Diagram",
+          "definition": "Method to organize a large group of brainstormed ideas into natural categories using sticky notes. Creates jointly built mental model.",
           "formula": null,
-          "examTip": "The fishbone is a brainstorming organizer, not a root cause confirmation tool. After generating potential causes, each must be verified with data before concluding it is the actual root cause."
+          "examTip": "Affinity = group/sort. Used after brainstorming."
         },
         {
-          "term": "FMEA (Failure Mode and Effects Analysis)",
-          "definition": "Proactive risk assessment tool that systematically evaluates potential failures. For each potential failure mode, three factors are scored (typically 1–10): Severity (impact on customer), Occurrence (likelihood of cause), Detection (likelihood of catching before customer). The Risk Priority Number prioritizes corrective action.",
-          "formula": "RPN = Severity × Occurrence × Detection\nAction Priority: address highest RPNs first\nNote: Some standards now recommend using Action Priority tables instead of raw RPN multiplication",
-          "examTip": "High severity items should be addressed regardless of RPN — a severity 9 or 10 with any occurrence warrants action. Do not solely rely on RPN ranking."
-        },
-        {
-          "term": "Lean Tools — 5S, Kaizen, Poka-Yoke",
-          "definition": "5S: Sort (remove unnecessary items), Set in Order (organize remaining items), Shine (clean and inspect), Standardize (create standards for first 3S), Sustain (maintain discipline). Kaizen: rapid, focused improvement events (3–5 days) with cross-functional teams attacking a specific process. Poka-Yoke: mistake-proofing devices or methods that prevent errors or make them immediately obvious — classified as prevention (impossible to make error) or detection (error is immediately flagged).",
+          "term": "Interrelationship Digraph",
+          "definition": "Maps cause-and-effect relationships between ideas using arrows. Counting 'arrows in' vs 'arrows out' identifies primary drivers (out > in) and outcomes (in > out).",
           "formula": null,
-          "examTip": "Prevention poka-yoke > detection poka-yoke. Example: asymmetric connector that only fits one way (prevention) vs. sensor that alarms on incorrect assembly (detection)."
+          "examTip": "Identifies leverage points — focus on primary drivers."
+        },
+        {
+          "term": "Process Decision Program Chart (PDPC)",
+          "definition": "Identifies what could go wrong in a project, contingency plans, and resource availability. Similar to fault tree analysis applied to project planning.",
+          "formula": null,
+          "examTip": "PDPC = anticipate failures and plan contingencies."
+        },
+        {
+          "term": "Seven-Step Problem-Solving Model",
+          "definition": "(1) Identify the problem, (2) List possible root causes, (3) Search out the most likely root cause, (4) Identify potential solutions, (5) Select and implement, (6) Follow up to evaluate, (7) Standardize the process.",
+          "formula": null,
+          "examTip": "Step 7 (standardize) prevents regression. Often skipped in real projects."
+        },
+        {
+          "term": "PDCA / PDSA Cycle",
+          "definition": "Plan-Do-Check-Act (Shewhart, popularized by Deming who later promoted Plan-Do-Study-Act). Foundation of continuous improvement.",
+          "formula": null,
+          "examTip": "Shewhart created it; Deming preferred PDSA (Study emphasizes learning over checking)."
+        },
+        {
+          "term": "Kepner-Tregoe Method",
+          "definition": "Fact-based root cause analysis (Rand Corp., 1950s). Four steps: (1) Problem Analysis, (2) Decision Analysis, (3) Situation Appraisal, (4) Potential Problem Analysis.",
+          "formula": null,
+          "examTip": "Kepner-Tregoe is structured and rational — focuses on systematically eliminating possibilities."
+        },
+        {
+          "term": "DMAIC (Six Sigma)",
+          "definition": "Define (charter, VOC), Measure (current process, MSA), Analyze (root causes), Improve (design future state, implement), Control (control plan, SPC, sustain).",
+          "formula": null,
+          "examTip": "Memorize DMAIC phases and key tools per phase."
+        },
+        {
+          "term": "Six Sigma Quality Levels",
+          "definition": "1σ = 690,000 DPMO; 2σ = 308,000; 3σ = 66,800; 4σ = 6,210; 5σ = 230; 6σ = 3.4 DPMO.",
+          "formula": null,
+          "examTip": "6σ = 3.4 DPMO. Memorize."
+        },
+        {
+          "term": "FMEA (Design / Process)",
+          "definition": "Systematic identification of potential failures, their effects, and preventive/corrective actions. DFMEA = product/design; PFMEA = process. Computes RPN to prioritize.",
+          "formula": "RPN = Severity × Occurrence × Detection",
+          "examTip": "Each scale 1–10. RPN > threshold (often 100 or 125) triggers action."
+        },
+        {
+          "term": "Five Whys",
+          "definition": "Iterative root cause technique — ask 'Why?' approximately 5 times to drill from symptom to root cause. Simple but powerful.",
+          "formula": null,
+          "examTip": "Best for non-complex problems. Combine with fishbone for complex ones."
+        },
+        {
+          "term": "Brainstorming Process",
+          "definition": "Generate → Discuss/refine → Add/delete/combine/modify → Select and verify feasible ideas. Quantity over quality in generation phase.",
+          "formula": null,
+          "examTip": "Defer judgment in idea generation. Evaluate later."
+        },
+        {
+          "term": "Six Thinking Hats (de Bono)",
+          "definition": "White (facts), Red (emotions), Black (negative/risks), Yellow (positive/optimism), Green (creative/alternatives), Blue (process/control).",
+          "formula": null,
+          "examTip": "All team members wear the same hat at the same time. Forces parallel perspectives."
+        },
+        {
+          "term": "SCAMPER",
+          "definition": "Creativity prompts: Substitute, Combine, Adapt, Modify, Put to other uses, Eliminate, Reverse/Rearrange.",
+          "formula": null,
+          "examTip": "SCAMPER spurs ideation by forcing perspective shifts."
+        },
+        {
+          "term": "TRIZ",
+          "definition": "Russian acronym for 'Theory of Inventive Problem-Solving.' 40 inventive principles enabling systematic innovation. Allows average inventors to access patterns from breakthrough inventions.",
+          "formula": null,
+          "examTip": "TRIZ = systematic creativity using 40 principles."
+        },
+        {
+          "term": "Nominal Group Technique (NGT) / Multivoting",
+          "definition": "Structured ranking and voting to narrow many ideas to a few. Multiple rounds with elimination of low-vote items.",
+          "formula": null,
+          "examTip": "NGT/multivoting = democratic narrowing without dominant voices controlling."
+        },
+        {
+          "term": "Cost of Quality (COQ) — Four Categories",
+          "definition": "Prevention (training, planning, audits), Appraisal (testing, inspection, calibration), Internal Failure (rework, scrap before delivery), External Failure (warranty, returns, lawsuits after delivery).",
+          "formula": "COQ = P + A + IF + EF",
+          "examTip": "Goal: shift spending TO Prevention, AWAY from failures. Total COQ DECREASES."
+        },
+        {
+          "term": "COQ Cost Optimization",
+          "definition": "Investing in Prevention reduces all downstream failure costs. External failures are MOST expensive; Prevention is CHEAPEST. Typical organization starts with 60–70% in failure costs and aims to flip toward prevention.",
+          "formula": null,
+          "examTip": "1-10-100 rule: $1 prevention = $10 appraisal = $100 failure."
+        },
+        {
+          "term": "DFMA (Design for Manufacture and Assembly)",
+          "definition": "Concurrent product/process design to prevent defects, simplify production, and reduce parts count.",
+          "formula": null,
+          "examTip": "DFMA reduces parts. Fewer parts = less to fail."
+        },
+        {
+          "term": "DFSS (Design for Six Sigma)",
+          "definition": "Adds statistical techniques (DOE, tolerance design) to DFMA. Builds quality into the design rather than inspecting it later. Often uses DMADV (Define, Measure, Analyze, Design, Verify).",
+          "formula": null,
+          "examTip": "DFSS = upstream Six Sigma. DMADV is the design-side counterpart to DMAIC."
         }
       ],
-      "keyFigures": ["Ishikawa (7 QC tools, fishbone)", "Pareto/Juran (vital few)", "Shingo (poka-yoke)", "Ohno (lean/TPS)", "Mizuno (7 management tools)"],
+      "keyFigures": [
+        "Walter Shewhart (control charts, PDCA)",
+        "Vilfredo Pareto (80/20 principle)",
+        "Joseph Juran (universal sequence, applied Pareto)",
+        "Kaoru Ishikawa (fishbone)",
+        "Charles Kepner & Benjamin Tregoe (problem solving)",
+        "Edward de Bono (Six Thinking Hats)",
+        "Genrich Altshuller (TRIZ)",
+        "Bob Eberle (SCAMPER)",
+        "Jack Welch / GE (popularized Six Sigma)"
+      ],
       "practiceQuestions": [
         {
-          "q": "A quality team has brainstormed 40 potential causes for a recurring defect and needs to organize them logically before investigation. The MOST appropriate tool is:",
-          "options": ["Pareto chart", "Cause-and-effect diagram", "Scatter diagram", "Control chart"],
-          "correct": 1,
-          "explanation": "A cause-and-effect (fishbone) diagram organizes brainstormed causes into structured categories (6M or similar), making the list manageable and highlighting areas for investigation. Pareto requires frequency data (not yet available); scatter diagrams require paired data."
+          "q": "Which of the 7 classic tools BEST shows the relationship between two variables?",
+          "options": ["Pareto chart", "Histogram", "Scatter diagram", "Control chart"],
+          "correct": 2,
+          "explanation": "A scatter diagram plots one variable against another to reveal correlation. Histogram shows distribution; Pareto ranks; control chart monitors over time."
         },
         {
-          "q": "An FMEA identifies a failure mode with Severity = 9, Occurrence = 2, Detection = 3. The RPN is 54. Another mode has S = 5, O = 8, D = 7 with RPN = 280. Which should be prioritized?",
-          "options": ["The RPN 280 mode — higher RPN means higher risk", "The Severity 9 mode — high severity requires action regardless of RPN", "Both equally — both are above the action threshold", "Neither — RPNs below 300 do not require action"],
+          "q": "An RPN calculation gives Severity=9, Occurrence=4, Detection=3. The RPN is:",
+          "options": ["16", "108", "126", "216"],
           "correct": 1,
-          "explanation": "A severity of 9 (safety or regulatory impact) demands action regardless of the overall RPN. Relying solely on RPN can mask critical high-severity, low-occurrence risks. Best practice: address all severity ≥ 9 items first, then prioritize remaining by RPN."
+          "explanation": "RPN = 9 × 4 × 3 = 108."
+        },
+        {
+          "q": "At Six Sigma quality level, defects per million opportunities are approximately:",
+          "options": ["3.4", "230", "6,210", "66,800"],
+          "correct": 0,
+          "explanation": "6σ = 3.4 DPMO. 5σ ≈ 230, 4σ ≈ 6,210, 3σ ≈ 66,800."
+        },
+        {
+          "q": "An organization has Total COQ = 15% of sales, with 45% in internal failure, 30% in external failure, 20% appraisal, and 5% prevention. The BEST first action is:",
+          "options": [
+            "Reduce inspection (appraisal) to save money",
+            "Increase prevention investment to reduce both internal and external failure",
+            "Accept the current distribution as normal",
+            "Outsource quality to a third party"
+          ],
+          "correct": 1,
+          "explanation": "Increasing prevention reduces all downstream failures. With 75% of COQ in failures, prevention investment yields the highest leverage."
+        },
+        {
+          "q": "Which of the 7 management & planning tools is BEST suited to organizing brainstormed ideas into natural categories?",
+          "options": ["Tree diagram", "Affinity diagram", "Matrix diagram", "Prioritization matrix"],
+          "correct": 1,
+          "explanation": "Affinity diagrams group ideas by natural similarity using sticky notes. Tree diagrams decompose hierarchically; matrices compare; prioritization weights alternatives."
         }
       ],
       "flashcards": [
-        { "front": "7 QC Tools — Selection Guide", "back": "What's the pattern? → Histogram. What's most frequent? → Pareto. What causes this? → Fishbone. Is this stable? → Control Chart. Are X and Y related? → Scatter. What are the steps? → Flowchart. How do I collect data? → Check Sheet." },
-        { "front": "FMEA — Severity 9 and 10", "back": "Severity 9: potential safety issue with warning. Severity 10: safety issue without warning (or regulatory non-compliance). AIAG guidance: any Severity ≥ 9 requires action regardless of Occurrence or Detection scores." },
-        { "front": "5S — Japanese Terms", "back": "Seiri (Sort), Seiton (Set in Order), Seiso (Shine), Seiketsu (Standardize), Shitsuke (Sustain). The fifth S — Sustain — is the most difficult and the most critical for long-term success." },
-        { "front": "8 Wastes of Lean (TIMWOODS)", "back": "Transportation, Inventory, Motion, Waiting, Overproduction, Overprocessing, Defects, Skills (underutilized talent). Overproduction is often considered the worst waste because it generates all others." }
+        { "front": "7 classic quality tools?", "back": "Flowchart, Check sheet, Cause-and-Effect, Pareto, Control chart, Histogram, Scatter diagram." },
+        { "front": "7 management & planning tools?", "back": "AND, Affinity, Interrelationship digraph, Matrix, Prioritization matrix, PDPC, Tree." },
+        { "front": "4Ms vs 4Ps?", "back": "4Ms (Manufacturing): Manpower, Machinery, Methods, Materials. 4Ps (Service): People, Policies, Procedures, Plant." },
+        { "front": "DMAIC phases?", "back": "Define, Measure, Analyze, Improve, Control." },
+        { "front": "RPN formula?", "back": "RPN = Severity × Occurrence × Detection (each 1–10 scale)." },
+        { "front": "6σ DPMO?", "back": "3.4 defects per million opportunities." },
+        { "front": "COQ four buckets?", "back": "Prevention + Appraisal + Internal Failure + External Failure." },
+        { "front": "Kepner-Tregoe 4 steps?", "back": "Problem Analysis, Decision Analysis, Situation Appraisal, Potential Problem Analysis." },
+        { "front": "Six Thinking Hats colors?", "back": "White (facts), Red (emotions), Black (negative), Yellow (positive), Green (creative), Blue (control)." },
+        { "front": "TRIZ — what is it?", "back": "Theory of Inventive Problem-Solving — 40 principles for systematic innovation." }
       ]
     },
     {
       "id": "4B",
       "ref": "IV.B",
-      "title": "Statistical Process Control",
-      "cognitive": "Analyze",
-      "summary": "SPC is the application of statistical methods to monitor and control processes. Quality managers must understand variation theory, control chart selection, interpretation rules, and process capability — the mathematical language of process performance. This section is calculation-heavy on the exam.",
+      "title": "Process Management",
+      "cognitive": "Evaluate / Apply",
+      "summary": "A process is a series of interrelated actions transforming inputs into outputs. Process management uses SIPOC, mapping, documentation hierarchies, lean tools (5S, JIT, Kanban, VSM, SMED, Poka-Yoke, Kaizen, OEE), and Theory of Constraints to systematically improve flow, eliminate waste, and reduce variation.",
       "concepts": [
         {
-          "term": "Variation Theory — Common vs. Special Cause",
-          "definition": "Common cause variation is inherent to the process — random, stable, predictable within limits. Special cause variation is assignable to a specific, identifiable factor — not part of the normal process. A process exhibiting only common cause variation is 'in statistical control' (stable and predictable). Special causes must be identified and eliminated. Acting on common cause variation as if it were special cause (tampering) increases variation.",
+          "term": "Process Definition",
+          "definition": "A series of interrelated actions that transform a concept, request, or order into a delivered product or service. Adds value to inputs and provides outputs to internal/external customers.",
           "formula": null,
-          "examTip": "Deming's key insight: do NOT adjust a stable process in response to individual data points (tampering). Improve the system to reduce common cause variation. Only act on special causes."
+          "examTip": "Every process must add value — otherwise it is waste."
         },
         {
-          "term": "Control Chart Selection",
-          "definition": "Variable data (continuous measurement): X-bar and R chart (subgroup average and range, n < 10), X-bar and S chart (subgroup average and standard deviation, n ≥ 10), Individual and Moving Range (I-MR) chart (single measurements). Attribute data (counts): p-chart (proportion defective, variable sample size), np-chart (number defective, fixed sample size), c-chart (count of defects per unit, fixed opportunity), u-chart (defects per unit, variable opportunity).",
-          "formula": "X-bar chart: UCL = X̄ + A₂R̄,  LCL = X̄ − A₂R̄\nR chart: UCL = D₄R̄,  LCL = D₃R̄\np-chart: UCL = p̄ + 3√(p̄(1−p̄)/n),  LCL = p̄ − 3√(p̄(1−p̄)/n)",
-          "examTip": "Chart selection logic: Is data variable or attribute? If variable: subgroups or individuals? If attribute: defectives (p, np) or defects (c, u)? Fixed or variable sample size?"
-        },
-        {
-          "term": "Control Chart Interpretation — Western Electric Rules",
-          "definition": "Out-of-control signals: (1) One point beyond 3σ from center line, (2) Two of three consecutive points beyond 2σ (same side), (3) Four of five consecutive points beyond 1σ (same side), (4) Eight consecutive points on one side of the center line. Additional patterns: trends (six consecutive increasing/decreasing points), cycles (repeating patterns), stratification (points hugging center line — may indicate mixed populations or incorrect control limits).",
+          "term": "SIPOC Model",
+          "definition": "Suppliers → Inputs → Process → Outputs → Customers. Foundational tool for understanding any process from a management perspective. Used in Six Sigma Define phase.",
           "formula": null,
-          "examTip": "Memorize all four Western Electric rules. The exam provides control charts and asks you to identify whether the process is in control and which rule(s) are violated."
+          "examTip": "SIPOC is THE first map you draw to understand a process."
         },
         {
-          "term": "Process Capability",
-          "definition": "Measures how well a stable process meets specifications. Cp measures potential capability (spread of process relative to specification width). Cpk measures actual capability (accounts for centering). A capable and centered process has Cp ≈ Cpk. A capable but off-center process has Cp > Cpk.",
-          "formula": "Cp = (USL − LSL) / 6σ\nCpk = min[(USL − μ) / 3σ,  (μ − LSL) / 3σ]\nPp = (USL − LSL) / 6s   [uses sample std dev — overall capability]\nPpk = min[(USL − μ) / 3s,  (μ − LSL) / 3s]\n\nGeneral benchmarks:\n  Cpk ≥ 1.33 — capable\n  Cpk ≥ 1.67 — capable (safety/critical)\n  Cpk ≥ 2.00 — Six Sigma level",
-          "examTip": "Cp vs. Cpk: Cp ignores centering (best case), Cpk accounts for centering (actual performance). If Cp >> Cpk, the process is capable but off-center — center it to realize the potential."
+          "term": "Process Mapping (Standard Symbols)",
+          "definition": "Oval = terminal (start/end); Rectangle = activity; Diamond = decision; Arrow = flow line; D-shape = delay/wait; Document shape = input/output; Circle with letter = page link.",
+          "formula": null,
+          "examTip": "Memorize all standard symbols. Decision diamond branches based on yes/no question."
         },
         {
-          "term": "Measurement System Analysis (MSA)",
-          "definition": "Evaluates whether the measurement system contributes acceptable variation relative to process variation or specification tolerance. Gage R&R study: Repeatability (equipment variation — same operator, same part, same gage) and Reproducibility (operator variation — different operators, same part, same gage). Acceptable: GRR < 10% of tolerance. Marginal: 10–30%. Unacceptable: > 30%.",
-          "formula": "Total MSA Variation² = Repeatability² + Reproducibility²\n%GRR = (GRR / Tolerance) × 100%\n%GRR < 10% → Acceptable\n%GRR 10–30% → Marginal (conditionally acceptable)\n%GRR > 30% → Unacceptable",
-          "examTip": "Always validate the measurement system BEFORE conducting process capability studies — if the gage is inadequate, capability numbers are meaningless."
+          "term": "Swim-Lane / Cross-Functional Flowchart",
+          "definition": "Grid-format process map with departments in columns. Shows handoffs and where work crosses functional boundaries — a primary source of disconnects.",
+          "formula": null,
+          "examTip": "Swim lanes reveal cross-functional handoffs and accountability gaps."
+        },
+        {
+          "term": "QMS Documentation Hierarchy (4 Levels)",
+          "definition": "(1) Quality Manual (What/Why), (2) Procedures (Who/What/When), (3) Work Instructions (How), (4) Records (objective evidence/data).",
+          "formula": null,
+          "examTip": "4-level pyramid. Quality Manual at top; Records at bottom."
+        },
+        {
+          "term": "Control Plan",
+          "definition": "Document defining product/process characteristics, tolerances, measurements, controls, and reaction plans. Supports — does not replace — work instructions.",
+          "formula": null,
+          "examTip": "Control plan = systematic capture of how each characteristic is monitored."
+        },
+        {
+          "term": "Automotive APQP / PPAP / FMEA / MSA / SPC",
+          "definition": "APQP: Advanced Product Quality Planning (5-phase product development). PPAP: Production Part Approval Process (documents launch readiness). FMEA: failure mode analysis. MSA: measurement system analysis. SPC: statistical process control. All required by IATF 16949.",
+          "formula": null,
+          "examTip": "These five tools form the core of automotive QMS expectations."
+        },
+        {
+          "term": "Seven Wastes (Muda) — TIMWOOD",
+          "definition": "Transportation, Inventory, Motion, Waiting, Overproduction, Overprocessing, Defects. Some add an 8th: unused human talent.",
+          "formula": null,
+          "examTip": "TIMWOOD acronym. Be ready to classify any example into one of the seven."
+        },
+        {
+          "term": "5S Methodology",
+          "definition": "Sort (Seiri — separate needed from unneeded; red tags), Set in Order (Seiton — neat arrangement), Shine (Seiso — clean), Standardize (Seiketsu — maintain), Sustain (Shitsuke — habituate).",
+          "formula": null,
+          "examTip": "Memorize order: Sort → Set → Shine → Standardize → Sustain. Some add 6th 'S' for Safety."
+        },
+        {
+          "term": "Visual Management",
+          "definition": "Status of process understood at-a-glance — color codes, andon lights, signage, tool boards. Cuts costs, improves communication, identifies safety hazards, enables rapid correction.",
+          "formula": null,
+          "examTip": "Visual management is core to Lean — see the abnormality immediately."
+        },
+        {
+          "term": "Just-in-Time (JIT)",
+          "definition": "Material delivered exactly when needed. Originally Ford 'dock to factory floor,' refined by Taiichi Ohno into Toyota Production System. Pull-driven, not forecast-driven.",
+          "formula": null,
+          "examTip": "JIT = pull system. Reduces inventory, surfaces defects faster."
+        },
+        {
+          "term": "Little's Law",
+          "definition": "Average WIP = Throughput Rate × Average Lead Time. Foundation of JIT and flow analysis.",
+          "formula": "WIP = Throughput × Lead Time",
+          "examTip": "Reduce WIP → must reduce throughput or lead time. Memorize the formula."
+        },
+        {
+          "term": "Kanban",
+          "definition": "Pull signal (originally cards) authorizing upstream production or material movement based on downstream consumption. Enables JIT.",
+          "formula": "Min Kanban Quantity = (Demand during Lead Time + Safety Stock) / Container Quantity",
+          "examTip": "Kanban PULLS, doesn't push. Goal is one-piece flow."
+        },
+        {
+          "term": "Value Stream Mapping (VSM)",
+          "definition": "Charts all material and information flow from raw material to customer. Three types: Material flow (manufacturing), Transactional (TVSM — non-mfg processes), Enterprise (EVSM — across business). Two states: Current State, Future State.",
+          "formula": "Takt Time = Available Work Time ÷ Customer Demand",
+          "examTip": "Always map current state first, then future state. Never improve the future without seeing the current."
+        },
+        {
+          "term": "Single-Minute Exchange of Die (SMED)",
+          "definition": "Shigeo Shingo's method to reduce setup/changeover time. Key step: convert internal setup (machine stopped) to external setup (machine running). Goal: under 10 minutes.",
+          "formula": null,
+          "examTip": "Internal → external is the key conversion. Enables small batch production."
+        },
+        {
+          "term": "Poka-Yoke (Mistake-Proofing)",
+          "definition": "Shigeo Shingo's mistake-prevention approach. Two systems: Control (prevents error) and Warning (alerts operator). Three device types: Contact, Counting, Motion sequence.",
+          "formula": null,
+          "examTip": "Control approach is preferred — it prevents the error completely."
+        },
+        {
+          "term": "Four Categories of Mistakes (Poka-Yoke)",
+          "definition": "(1) Information errors — incorrect/ambiguous/missing/inadequate warning; (2) Omission/Commission — wrong addition or harmful action; (3) Selection errors — wrong part/destination; (4) Misalignment — misuse or rush.",
+          "formula": null,
+          "examTip": "Match scenarios to one of these four mistake categories."
+        },
+        {
+          "term": "Kaizen Blitz / Event",
+          "definition": "Intense 3–5 day rapid improvement event. Cross-functional team focused on a target process. Typical Mon-train, Tue-current state, Wed-future state, Thu-data, Fri-implement.",
+          "formula": null,
+          "examTip": "Kaizen blitz = focused rapid improvement. Different from continuous kaizen philosophy."
+        },
+        {
+          "term": "Overall Equipment Effectiveness (OEE)",
+          "definition": "Measure of equipment efficiency combining three components.",
+          "formula": "OEE = Availability × Performance × Quality",
+          "examTip": "World-class OEE ≈ 85%. Memorize the formula."
+        },
+        {
+          "term": "Theory of Constraints (TOC) — Goldratt",
+          "definition": "Systems-thinking methodology. Performance is constrained by the weakest link. Goal: identify and exploit constraints to maximize throughput.",
+          "formula": null,
+          "examTip": "Goldratt's 'The Goal' is the foundational text. TOC ≠ Pareto — focuses on one constraint at a time."
+        },
+        {
+          "term": "TOC — Five Focusing Steps",
+          "definition": "(1) Identify the constraint, (2) Exploit the constraint (squeeze more capacity without major changes), (3) Subordinate everything else to the constraint, (4) Elevate the constraint (major changes if needed), (5) Repeat — don't let inertia become the new constraint.",
+          "formula": null,
+          "examTip": "Memorize all 5 steps. Step 5 is critical — TOC is iterative."
+        },
+        {
+          "term": "TOC Financial Definitions",
+          "definition": "Throughput (T): rate at which system generates money via sales. Inventory (I): money tied up in things to sell. Operating Expense (OE): money spent turning inventory into throughput.",
+          "formula": "Productivity = T/OE | Profit = T − OE | ROI = (T − OE)/I",
+          "examTip": "Memorize T, I, OE. Throughput goes up; Inventory and OE go down."
+        },
+        {
+          "term": "Physical vs Policy Constraints",
+          "definition": "Physical constraints: easier to identify (raw materials, equipment, workforce). Policy constraints: harder — rules, procedures, management decisions limiting throughput. Eliminating policy constraints yields bigger gains.",
+          "formula": null,
+          "examTip": "Most real constraints are POLICY, not physical."
         }
       ],
-      "keyFigures": ["Shewhart (control charts)", "Deming (variation theory)", "Wheeler (understanding variation)", "AIAG (MSA reference manual)"],
+      "keyFigures": [
+        "Taiichi Ohno (Toyota Production System, JIT)",
+        "Shigeo Shingo (SMED, Poka-Yoke)",
+        "Henry Ford (early flow / dock-to-factory-floor)",
+        "Eliyahu Goldratt (Theory of Constraints, 'The Goal')",
+        "Sakichi Ohno (5S origin)"
+      ],
       "practiceQuestions": [
         {
-          "q": "A process has Cp = 1.8 and Cpk = 0.9. The CORRECT interpretation is:",
-          "options": ["The process is capable and well-centered", "The process has potential capability but is off-center", "The measurement system is inadequate", "The specification limits are too narrow"],
+          "q": "In a SIPOC analysis, the 'P' represents:",
+          "options": ["Purchase orders", "Process", "Product", "Procedure"],
           "correct": 1,
-          "explanation": "Cp = 1.8 shows the process spread (6σ) fits well within the specification width — the process has good potential. Cpk = 0.9 shows the process mean is shifted toward one specification limit. Centering the process would bring Cpk closer to the Cp value of 1.8."
+          "explanation": "SIPOC = Suppliers, Inputs, Process, Outputs, Customers."
         },
         {
-          "q": "A control chart shows eight consecutive points above the center line, all within the control limits. This indicates:",
-          "options": ["The process is in control — all points within limits", "A special cause is present — Western Electric Rule 4 violated", "The control limits need to be recalculated", "Normal random variation"],
+          "q": "Which of the seven wastes is BEST illustrated by 'producing more than the customer ordered to keep machines busy'?",
+          "options": ["Inventory", "Waiting", "Overproduction", "Defects"],
+          "correct": 2,
+          "explanation": "Overproduction is producing more than current demand. It cascades into other wastes (excess inventory, longer lead times)."
+        },
+        {
+          "q": "The fifth 'S' in 5S methodology is:",
+          "options": ["Safety", "Sustain", "Simplify", "Stabilize"],
           "correct": 1,
-          "explanation": "Eight consecutive points on one side of the center line is a Western Electric Rule violation indicating a special cause — likely a process shift. Points within control limits does NOT mean the process is in control if patterns violate run rules."
+          "explanation": "Sort, Set in Order, Shine, Standardize, Sustain. (Some practitioners add Safety as a 6th S.)"
+        },
+        {
+          "q": "In SMED, the goal is to convert:",
+          "options": [
+            "External setup steps to internal setup steps",
+            "Internal setup steps to external setup steps",
+            "All setup steps to automatic operation",
+            "Setup steps into inspection steps"
+          ],
+          "correct": 1,
+          "explanation": "Internal setup happens while the machine is stopped — the key is to move as much as possible to external (while machine is still running)."
+        },
+        {
+          "q": "OEE of a machine: Availability=80%, Performance=90%, Quality=95%. OEE equals:",
+          "options": ["68.4%", "85%", "88%", "265%"],
+          "correct": 0,
+          "explanation": "OEE = 0.80 × 0.90 × 0.95 = 0.684 = 68.4%."
+        },
+        {
+          "q": "In Goldratt's Theory of Constraints, the second focusing step is:",
+          "options": ["Identify the constraint", "Subordinate everything else", "Exploit the constraint", "Elevate the constraint"],
+          "correct": 2,
+          "explanation": "After identifying, the next step is to EXPLOIT — squeeze more capacity from the constraint without major investment, before subordinating or elevating."
         }
       ],
       "flashcards": [
-        { "front": "Control Chart Selection Logic", "back": "Variable data → subgroups: X̄-R (n<10) or X̄-S (n≥10). Individuals: I-MR. Attribute — defectives: p (variable n), np (fixed n). Defects: u (variable opportunity), c (fixed opportunity)." },
-        { "front": "Cp vs. Cpk vs. Pp vs. Ppk", "back": "Cp/Cpk: within-subgroup variation (short-term, 'potential' capability). Pp/Ppk: total variation (long-term, 'actual' performance). Cp ignores centering; Cpk accounts for it. Use Pp/Ppk when process is not in statistical control." },
-        { "front": "Common Cause vs. Special Cause Action", "back": "Common cause: improve the system (management responsibility). Special cause: find and remove the assignable cause (usually operational responsibility). Treating common cause as special cause = tampering = increased variation." },
-        { "front": "Gage R&R Acceptance Criteria", "back": "<10% of tolerance: acceptable. 10–30%: marginal — may be acceptable based on importance, cost of gage, etc. >30%: unacceptable — measurement system must be improved before use." }
+        { "front": "SIPOC?", "back": "Suppliers → Inputs → Process → Outputs → Customers." },
+        { "front": "QMS documentation 4 levels?", "back": "Quality Manual → Procedures → Work Instructions → Records." },
+        { "front": "Seven wastes (TIMWOOD)?", "back": "Transportation, Inventory, Motion, Waiting, Overproduction, Overprocessing, Defects." },
+        { "front": "5S in order?", "back": "Sort, Set in Order, Shine, Standardize, Sustain." },
+        { "front": "Little's Law?", "back": "WIP = Throughput × Lead Time." },
+        { "front": "Takt Time formula?", "back": "Available Work Time ÷ Customer Demand." },
+        { "front": "OEE formula?", "back": "Availability × Performance × Quality." },
+        { "front": "TOC 5 focusing steps?", "back": "Identify, Exploit, Subordinate, Elevate, Repeat." },
+        { "front": "Internal vs external setup (SMED)?", "back": "Internal = machine stopped. External = machine running. Goal: convert internal to external." },
+        { "front": "Two poka-yoke approaches?", "back": "Control (prevents) and Warning (alerts)." }
       ]
     },
     {
       "id": "4C",
       "ref": "IV.C",
-      "title": "Design of Experiments and Process Optimization",
-      "cognitive": "Analyze",
-      "summary": "Design of Experiments (DOE) provides a systematic method for determining how process inputs (factors) affect outputs (responses). Unlike one-factor-at-a-time experimentation, DOE efficiently evaluates multiple factors simultaneously and identifies interactions. Quality managers must understand when to apply DOE and how to interpret results.",
+      "title": "Measurement, Assessment, and Metrics",
+      "cognitive": "Evaluate / Apply / Analyze / Understand",
+      "summary": "Statistics turns data into information. Quality managers must apply sampling, descriptive statistics, distributions, SPC, MSA (gage R&R, accuracy/precision), trend and pattern analysis, and process capability indices (Cp/Cpk/Pp/Ppk) — and distinguish common from special cause variation. Reliability is captured through MTTF/MTBF/MTTR and the bathtub curve.",
       "concepts": [
         {
-          "term": "Full Factorial Design",
-          "definition": "Tests all possible combinations of factor levels. For k factors at 2 levels each, a full factorial requires 2^k experimental runs. Advantages: estimates all main effects and all interactions. Disadvantages: number of runs grows exponentially — a 2^5 design requires 32 runs, 2^7 requires 128 runs.",
-          "formula": "Number of runs = L^k\nwhere L = number of levels, k = number of factors\n2 factors × 2 levels = 2² = 4 runs\n3 factors × 2 levels = 2³ = 8 runs\n5 factors × 2 levels = 2⁵ = 32 runs",
-          "examTip": "Know how to calculate the number of runs. The exam may ask: 'How many experimental runs are needed for a full factorial with 4 factors at 2 levels?' → 2⁴ = 16 runs."
+          "term": "Goal-Question-Metric (GQM)",
+          "definition": "Three-level measurement model: Goal (conceptual), Question (operational, defines what to measure), Metric (quantitative answer to the question).",
+          "formula": null,
+          "examTip": "GQM ensures every metric ties back to a goal — no orphan measurements."
         },
         {
-          "term": "Fractional Factorial Design",
-          "definition": "Tests a strategically selected subset of a full factorial to reduce the number of runs while still estimating main effects and some interactions. A 2^(k-p) design uses 2^(k-p) runs — the 'p' indicates the fraction (2^(-p) of the full factorial). Trade-off: fewer runs but some effects are confounded (aliased) — cannot be distinguished from each other.",
-          "formula": "2^(k-p) design: fraction = 1/2^p of full factorial\nExample: 2^(5-2) = 2³ = 8 runs (1/4 fraction of 32-run full factorial)\nResolution indicates what is confounded:\n  Resolution III: main effects confounded with 2-factor interactions\n  Resolution IV: main effects clear of 2-fi; 2-fi confounded with each other\n  Resolution V: main effects and 2-fi all estimable independently",
-          "examTip": "Resolution V or higher is preferred for important studies. Resolution III is a screening design — useful for identifying which factors matter, not for precise optimization."
+          "term": "Three Timely Tenets of Measurement",
+          "definition": "(1) Never measure without knowing who supplies data, who consumes information, and the cost-effectiveness; (2) Always involve the people doing the work; (3) The primary reason is to IMPROVE — not control or punish.",
+          "formula": null,
+          "examTip": "Metrics are for improvement, not surveillance."
         },
         {
-          "term": "Taguchi Methods",
-          "definition": "Genichi Taguchi's approach emphasizes robust design — making products/processes insensitive to variation (noise factors). Key concepts: Loss Function (quality loss increases quadratically as output deviates from target), Signal-to-Noise ratio (optimization metric), Orthogonal arrays (efficient experimental layouts). Taguchi's philosophy: it is cheaper to design quality in than to inspect it out.",
-          "formula": "Taguchi Loss Function: L(y) = k(y − T)²\nwhere y = actual value, T = target, k = cost constant\nLoss increases with the SQUARE of deviation — small deviations matter",
-          "examTip": "The Taguchi Loss Function challenges the 'goalpost' mentality (anything within spec is equally good). It quantifies the increasing cost of deviation from target, even within specification limits."
+          "term": "Sampling Methods",
+          "definition": "Random (every item has equal chance), Stratified (every nth item from subgroup), Cluster (random subgroup, all items examined). Choice depends on purpose and cost.",
+          "formula": null,
+          "examTip": "Stratified sampling protects against bias when subgroups differ. Random sampling is gold standard."
+        },
+        {
+          "term": "Alpha (α) and Beta (β) Risk",
+          "definition": "Alpha = Producer's Risk = probability of rejecting good product (Type I error). Beta = Consumer's Risk = probability of accepting bad product (Type II error). Typical: α = 0.05, β = 0.10.",
+          "formula": null,
+          "examTip": "α = Type I = reject GOOD. β = Type II = accept BAD."
+        },
+        {
+          "term": "AQL and LTPD",
+          "definition": "AQL (Acceptable Quality Limit): worst tolerable process average submitted for acceptance. LTPD (Lot Tolerance Percent Defective): the point on OC curve associated with consumer's risk. Defined in ANSI/ASQ Z1.4.",
+          "formula": null,
+          "examTip": "AQL ≠ acceptable quality. It's the worst the customer will tolerate, not the goal."
+        },
+        {
+          "term": "Single / Double / Multiple Sampling",
+          "definition": "Single: one sample, accept if ≤ c defects. Double: two samples; first determines accept/reject/test more. Multiple: up to 7 sequential samples — most discriminating but susceptible to abuse.",
+          "formula": null,
+          "examTip": "Sampling complexity vs. cost trade-off. ANSI/ASQ Z1.4 governs in many industries."
+        },
+        {
+          "term": "Central Tendency Measures",
+          "definition": "Mean (average): ΣX ÷ n. Median: middle value when sorted (or avg of two middles for even n). Mode: most frequently occurring value.",
+          "formula": "X̄ = ΣX / n",
+          "examTip": "Median is robust to outliers; mean is not. Mode may not be unique."
+        },
+        {
+          "term": "Dispersion Measures",
+          "definition": "Range (R): max − min. Variance: average of squared deviations. Standard Deviation (s): square root of variance.",
+          "formula": "s = √[Σ(X − X̄)² ÷ (n − 1)]",
+          "examTip": "Sample SD divides by (n − 1); population SD by N."
+        },
+        {
+          "term": "Probability Distributions",
+          "definition": "Normal (bell-shaped, symmetric), Exponential (time between events), Weibull (reliability — bathtub), Poisson (rare events in n trials, p < 0.10), Binomial (yes/no in n trials), Hypergeometric (without replacement).",
+          "formula": null,
+          "examTip": "Normal for continuous data, Poisson for rare counts, Binomial for pass/fail."
+        },
+        {
+          "term": "Statistical Process Control (SPC)",
+          "definition": "Method using control charts to determine if a process is stable (predictable) and detect special-cause variation early. Based on Shewhart's framework.",
+          "formula": null,
+          "examTip": "SPC is the foundation of variables-based quality control."
+        },
+        {
+          "term": "Variables Control Charts",
+          "definition": "X̄-R (subgroup average + range), X̄-s (average + standard deviation, larger subgroups), CUSUM (cumulative sum, detects small shifts), individuals (X-MR for individual measurements).",
+          "formula": null,
+          "examTip": "Variables data → X̄-R or X̄-s. Use s when subgroup size > ~10."
+        },
+        {
+          "term": "Attributes Control Charts",
+          "definition": "p-chart (fraction defective, variable n), np-chart (number defective, constant n), c-chart (count of defects, constant area), u-chart (defects per unit, variable area).",
+          "formula": null,
+          "examTip": "p/np for defectives; c/u for defects. Constant n → np or c; variable n → p or u."
+        },
+        {
+          "term": "Four Control Chart Criteria for In-Control",
+          "definition": "(1) No visible pattern; (2) Approximately equal points above and below centerline; (3) Some points close to control limits but not beyond; (4) Approximately two-thirds of points within ±1σ.",
+          "formula": null,
+          "examTip": "Memorize all four criteria for an in-control process."
+        },
+        {
+          "term": "MSA — Repeatability vs Reproducibility",
+          "definition": "Repeatability: variation in same gage with same operator measuring the same part repeatedly (gage variation). Reproducibility: variation between operators using same gage on same part (operator variation). Together = Gage R&R.",
+          "formula": null,
+          "examTip": "Repeat = same operator/gage. Reproduce = different operators/same gage."
+        },
+        {
+          "term": "Accuracy vs Precision vs Bias vs Linearity",
+          "definition": "Accuracy: closeness to true value (validity). Precision: repeatability (reliability). Bias: systematic difference between observed average and reference. Linearity: consistency of bias across the measurement range.",
+          "formula": null,
+          "examTip": "Target analogy: Tight cluster off-center = precise but not accurate. Centered scatter = accurate but not precise. Tight + centered = both."
+        },
+        {
+          "term": "Calibration",
+          "definition": "Comparing instrument readings to a traceable standard (e.g., NIST). Each device gets ID, calibration frequency, and method. Record as-found and after-corrected conditions.",
+          "formula": null,
+          "examTip": "Calibration is traceable to a national/international standard."
+        },
+        {
+          "term": "Common vs Special Cause Variation",
+          "definition": "Common (chance) cause: inherent random variation always present in a stable process. Special (assignable) cause: detectable, removable variation from a specific source — appears as out-of-control patterns.",
+          "formula": null,
+          "examTip": "Stable process = common cause only. Out-of-control = special cause to investigate."
+        },
+        {
+          "term": "Tampering",
+          "definition": "Overcorrecting a stable process treating common-cause variation as special-cause. Increases variation rather than reducing it. Deming's funnel experiment demonstrated this.",
+          "formula": null,
+          "examTip": "Tampering MAKES IT WORSE. Don't react to every fluctuation in a stable process."
+        },
+        {
+          "term": "Sporadic vs Chronic Problems (Juran)",
+          "definition": "Sporadic: sudden departure from normal — restore control. Chronic: ongoing baseline that needs breakthrough improvement, not just control.",
+          "formula": null,
+          "examTip": "Sporadic = control. Chronic = breakthrough."
+        },
+        {
+          "term": "Process Capability Cp",
+          "definition": "Ratio of specification range to process spread. Measures POTENTIAL capability assuming the process is centered.",
+          "formula": "Cp = (USL − LSL) ÷ 6σ",
+          "examTip": "Cp > 1.33 = capable. Cp = 2 → 6σ short-term."
+        },
+        {
+          "term": "Process Capability Cpk",
+          "definition": "Accounts for centering. Smaller of (USL − X̄)/3σ and (X̄ − LSL)/3σ.",
+          "formula": "Cpk = min[(USL − X̄)/3σ, (X̄ − LSL)/3σ]",
+          "examTip": "Cpk ≤ Cp. If Cpk = Cp, process is perfectly centered."
+        },
+        {
+          "term": "Pp / Ppk (Performance Indices)",
+          "definition": "Same formulas as Cp/Cpk but use overall (long-term) standard deviation instead of within-subgroup standard deviation. Used for initial / new-product capability studies.",
+          "formula": null,
+          "examTip": "Pp/Ppk = long-term performance. Cp/Cpk = short-term capability."
+        },
+        {
+          "term": "Capability Thresholds",
+          "definition": "Cp/Cpk > 1.33: capable. Cp/Cpk = 1.00–1.33: capable with tight control. Cp/Cpk < 1.00: not capable. Ppk > 1.67: capable (long-term).",
+          "formula": null,
+          "examTip": "1.33 (short-term) and 1.67 (long-term) are the magic numbers."
+        },
+        {
+          "term": "Bathtub Curve (Reliability)",
+          "definition": "Failure rate vs time has three phases: (1) Infant Mortality (decreasing rate — defects burn-in), (2) Useful Life (constant random failure rate), (3) Wear-out (increasing failure rate — end of life).",
+          "formula": null,
+          "examTip": "Most modeling assumes the constant-rate useful-life region. Burn-in screens infant mortality."
+        },
+        {
+          "term": "MTTF / MTBF / MTTR",
+          "definition": "MTTF: Mean Time To Failure (nonrepairable items). MTBF: Mean Time Between Failures (repairable items). MTTR: Mean Time To Repair.",
+          "formula": null,
+          "examTip": "MTTF = nonrepairable; MTBF = repairable. Don't confuse them."
+        },
+        {
+          "term": "Availability (Ao)",
+          "definition": "Operational availability — combines reliability and maintainability.",
+          "formula": "Ao = MTBF ÷ (MTBF + MTTR)",
+          "examTip": "Improve availability by raising MTBF or lowering MTTR."
         }
       ],
-      "keyFigures": ["Fisher (ANOVA, factorial design)", "Taguchi (robust design, loss function)", "Box (response surface methodology)"],
+      "keyFigures": [
+        "Walter Shewhart (SPC, common vs special cause)",
+        "W. Edwards Deming (funnel experiment, profound knowledge)",
+        "Joseph Juran (sporadic vs chronic, breakthrough)",
+        "Genichi Taguchi (loss function)"
+      ],
       "practiceQuestions": [
         {
-          "q": "A quality engineer needs to screen 7 factors to identify the 2–3 most significant ones, with minimum experimental runs. The BEST approach is:",
-          "options": ["Full factorial: 2⁷ = 128 runs", "One-factor-at-a-time: 7 experiments", "Fractional factorial: 2^(7-4) = 8 runs (Resolution III)", "Taguchi L₈ orthogonal array"],
+          "q": "In sampling, alpha (α) risk is BEST described as:",
+          "options": [
+            "Accepting bad product",
+            "Rejecting good product",
+            "Failing to take a sample",
+            "Sampling too few units"
+          ],
+          "correct": 1,
+          "explanation": "Alpha (Producer's Risk / Type I) is the probability of rejecting good product. Beta is Type II (accepting bad)."
+        },
+        {
+          "q": "A process has Cp = 1.50 and Cpk = 0.90. This indicates:",
+          "options": [
+            "The process is incapable and uncentered",
+            "The process is capable and centered",
+            "The process has potential capability but is off-center",
+            "The process is in statistical control"
+          ],
           "correct": 2,
-          "explanation": "For screening (identifying which factors matter), a Resolution III fractional factorial or Taguchi orthogonal array efficiently evaluates 7 factors in only 8 runs. Full factorial (128 runs) is wasteful for screening. OFAT misses interactions and is statistically inefficient."
+          "explanation": "Cp = 1.50 indicates good potential. Cpk = 0.90 < Cp shows the process is shifted off-center. Centering improvement could realize Cp."
+        },
+        {
+          "q": "Which control chart is BEST for tracking the count of defects in a constant-size sample?",
+          "options": ["p-chart", "np-chart", "c-chart", "u-chart"],
+          "correct": 2,
+          "explanation": "c-chart counts defects per constant inspection unit. np-chart counts DEFECTIVES (not defects). u-chart is for variable sample size."
+        },
+        {
+          "q": "Repeatability in a Gage R&R study refers to:",
+          "options": [
+            "Variation between different operators",
+            "Variation in same operator using same gage on same part",
+            "Drift in measurements over time",
+            "Variation across measurement range"
+          ],
+          "correct": 1,
+          "explanation": "Repeatability is gage variation when same operator measures same part repeatedly. Reproducibility is variation BETWEEN operators."
+        },
+        {
+          "q": "MTBF = 200 hours and MTTR = 5 hours. Operational availability is approximately:",
+          "options": ["97.6%", "95.2%", "97.5%", "99.0%"],
+          "correct": 0,
+          "explanation": "Ao = MTBF/(MTBF + MTTR) = 200/205 ≈ 0.9756 = 97.6%."
+        },
+        {
+          "q": "Treating common-cause variation as if it were special-cause and adjusting the process is called:",
+          "options": ["Calibration", "Tampering", "Drift", "Process capability"],
+          "correct": 1,
+          "explanation": "Tampering — overcorrecting a stable process — increases variation. Demonstrated by Deming's funnel experiment."
         }
       ],
       "flashcards": [
-        { "front": "DOE — Key Terms", "back": "Factor: input variable being studied. Level: specific value of a factor. Response: output being measured. Main Effect: impact of one factor on the response. Interaction: combined effect of two+ factors that differs from the sum of their individual effects. Confounding: inability to separate two effects." },
-        { "front": "Taguchi Loss Function", "back": "L(y) = k(y−T)². Loss is zero at target, increases quadratically with deviation. Contradicts the traditional 'within spec = acceptable' view. Drives toward continuous reduction of variation around the target, not just meeting specifications." },
-        { "front": "ANOVA in DOE", "back": "Analysis of Variance partitions total variation into factor effects, interactions, and error. F-ratio = Mean Square (factor) / Mean Square (error). If F > F-critical (or p-value < α), the factor is statistically significant." }
+        { "front": "Alpha vs Beta risk?", "back": "α = Producer's risk = reject GOOD (Type I). β = Consumer's risk = accept BAD (Type II)." },
+        { "front": "Cp formula?", "back": "Cp = (USL − LSL) ÷ 6σ." },
+        { "front": "Cpk formula?", "back": "Cpk = min[(USL − X̄)/3σ, (X̄ − LSL)/3σ]." },
+        { "front": "Cp/Cpk capable threshold?", "back": "> 1.33 (short-term). > 1.67 (long-term Ppk)." },
+        { "front": "Repeatability vs Reproducibility?", "back": "Repeatability = same operator/same gage. Reproducibility = different operators/same gage." },
+        { "front": "Bathtub curve phases?", "back": "Infant mortality → Useful life (constant rate) → Wear-out." },
+        { "front": "MTTF vs MTBF?", "back": "MTTF = nonrepairable. MTBF = repairable." },
+        { "front": "Availability formula?", "back": "Ao = MTBF ÷ (MTBF + MTTR)." },
+        { "front": "Common vs special cause?", "back": "Common = inherent random. Special = assignable, detectable, removable." },
+        { "front": "What is tampering?", "back": "Overcorrecting common-cause variation; increases overall variation." }
       ]
     }
   ]

@@ -3,107 +3,583 @@
   "num": "VI",
   "title": "Supply Chain Management",
   "examQuestions": 15,
-  "examWeight": 9,
+  "examWeight": 10,
   "sections": [
     {
       "id": "6A",
       "ref": "VI.A",
       "title": "Supplier Selection and Approval",
-      "cognitive": "Evaluate",
-      "summary": "Supplier quality begins before the first purchase order. Quality managers must establish systematic processes for identifying, evaluating, qualifying, and approving suppliers. The selection process must balance quality capability, cost, delivery performance, and strategic fit. Poor supplier selection is one of the most expensive quality failures because it propagates through the entire value chain.",
+      "cognitive": "Analyze",
+      "summary": "Supplier selection is a structured process driven by total cost of ownership, not price alone (Deming). A cross-functional team defines criteria covering quality systems, capability, capacity, financial stability, and past performance. Suppliers are classified in tiers — Approved (meets minimums), Qualified (passed audit), Certified (consistent over time, can skip routine inspection). Industry-specific QMS standards (ISO 9001, IATF 16949, AS9100, ISO 13485) often gate approval.",
       "concepts": [
         {
-          "term": "Supplier Evaluation Criteria (QCDS)",
-          "definition": "Structured assessment across four dimensions: Quality (process capability, quality system certification, defect history, corrective action responsiveness), Cost (unit price, total cost of ownership including quality costs), Delivery (on-time delivery rate, lead time, flexibility), Service (technical support, communication, responsiveness to changes). Weighted scoring matrices assign importance weights to each criterion based on the organization's strategic priorities.",
-          "formula": "Weighted Score = Σ(Criterion Weight × Criterion Rating)\nTotal weights must sum to 100%\nExample: Quality 40% × 8 + Cost 25% × 7 + Delivery 20% × 9 + Service 15% × 6 = 7.65",
-          "examTip": "Quality weighting should generally be highest. If a scenario presents a supplier with lowest price but poor quality history, the total cost of ownership (including quality failures) typically makes them the most expensive option."
+          "term": "Supply Chain Management (SCM) — ASQ Definition",
+          "definition": "The process of effectively integrating and managing supply chain planning, sourcing, making, delivery, and returns of goods or services that satisfy customers' needs.",
+          "formula": null,
+          "examTip": "Five SCM functions: Plan, Source, Make, Deliver, Return. Memorize the ASQ definition verbatim."
         },
         {
-          "term": "Supplier Qualification Process",
-          "definition": "Systematic verification that a potential supplier can consistently meet requirements. Steps: preliminary assessment (questionnaire, financial review), capability evaluation (process audit, sample evaluation), trial production (first article inspection, PPAP), qualification decision (approved, conditionally approved, rejected), ongoing monitoring. Qualification does not end at approval — it includes periodic re-evaluation.",
+          "term": "Supplier Quality (ASQ Definition)",
+          "definition": "The series of processes including planning, sourcing, making, and delivering aspects of SCM — focused on ensuring inputs meet purchaser requirements.",
           "formula": null,
-          "examTip": "First Article Inspection (FAI) and Production Part Approval Process (PPAP) are critical qualification tools. FAI verifies that the supplier can produce one conforming unit; PPAP verifies they can do it consistently."
+          "examTip": "Supplier quality is a subset of SCM, focused on the quality dimension of inputs."
         },
         {
-          "term": "Approved Supplier List (ASL)",
-          "definition": "Controlled registry of suppliers who have completed the qualification process and are authorized to provide specific materials, components, or services. The ASL typically includes: supplier name, approved scope (which parts/materials), qualification status (full, conditional, probationary), review dates, and performance ratings. Purchasing must be restricted to ASL suppliers for controlled items.",
+          "term": "Strategic Sourcing",
+          "definition": "Process for reducing costs while improving quality, service, and innovation. Customer and supplier organizations work together for mutual benefit.",
           "formula": null,
-          "examTip": "An ASL without purchasing enforcement is useless. The quality system must have controls ensuring that purchasing cannot bypass the ASL for critical materials."
+          "examTip": "Strategic sourcing ≠ purchasing. It's collaborative and long-term, not transactional."
+        },
+        {
+          "term": "Deming's Point #4 (Awarding Business)",
+          "definition": "End the practice of awarding business on the basis of price tag alone. Move toward a single supplier for any one item, on a long-term relationship of loyalty and trust.",
+          "formula": null,
+          "examTip": "Deming Point #4 is foundational to modern supplier management. Total cost of ownership > unit price."
+        },
+        {
+          "term": "8-Step Supplier Selection Process",
+          "definition": "(1) Identify all possible sources; (2) Evaluate reputations; (3) Prepare bidders list; (4) Request bids; (5) Evaluate pre-award data; (6) Select approved supplier list; (7) Update contracts; (8) Prepare contracts.",
+          "formula": null,
+          "examTip": "Selection should be done by a cross-functional team (purchasing, engineering, production, quality, materials)."
+        },
+        {
+          "term": "Key Selection Criteria",
+          "definition": "Past performance with the product/service; sophistication of supplier's quality system (ISO 9001, IATF 16949 registration); capability to consistently meet requirements; capacity for current and forecasted demand; financial stability; technical support and partnership willingness.",
+          "formula": null,
+          "examTip": "Quality system, capability, capacity, financial stability, past performance — the 'big 5' selection criteria."
         },
         {
           "term": "Total Cost of Ownership (TCO)",
-          "definition": "Comprehensive cost assessment that goes beyond unit purchase price to include: acquisition costs (purchasing, logistics, customs), quality costs (incoming inspection, rework, warranty attributable to supplier), inventory costs (carrying cost, safety stock due to unreliable delivery), risk costs (supply disruption, single-source dependency), and administrative costs (supplier management overhead).",
-          "formula": "TCO = Purchase Price + Shipping + Inspection + Quality Failures + Inventory Carrying + Administrative + Risk Costs",
-          "examTip": "A supplier with a 5% lower unit price but 3x the defect rate almost always has a higher TCO. Frame supplier quality arguments in TCO terms for maximum leadership impact."
+          "definition": "Total cost of dealing with the supplier including material, communications, inventory requirements, and incoming verification — not just unit purchase price.",
+          "formula": null,
+          "examTip": "TCO = unit price + hidden costs (incoming inspection, defects, expediting, inventory carrying)."
+        },
+        {
+          "term": "Supplier Classification — Approved",
+          "definition": "Supplier meets the minimum requirements of the organization. Entry-level tier — can do business but not preferred status.",
+          "formula": null,
+          "examTip": "Approved is the floor; Qualified and Certified are progressively higher trust levels."
+        },
+        {
+          "term": "Supplier Classification — Qualified",
+          "definition": "Supplier has undergone additional review such as a self-assessment, questionnaire, on-site quality audit, or has obtained certificates of compliance/conformance.",
+          "formula": null,
+          "examTip": "Qualified = audited and passed. Higher trust than approved, lower than certified."
+        },
+        {
+          "term": "Supplier Classification — Certified",
+          "definition": "Supplier has demonstrated consistent quality over time. May allow reduced or skip-lot incoming inspection. Eight typical criteria: timely test data, stable/in-control process, documented QMS, recent on-site QMS evaluation, recent on-site assessment, no product rejections for 1 year, no non-product rejections for 6 months, agreed-upon specifications.",
+          "formula": null,
+          "examTip": "Certified suppliers earn the right to bypass incoming inspection — a major cost savings for the buyer."
+        },
+        {
+          "term": "Industry QMS Standards",
+          "definition": "ISO 9001 (general QMS); IATF 16949 (automotive); AS9100 (aerospace); ISO 13485 (medical devices). Often required for supplier approval in regulated industries.",
+          "formula": null,
+          "examTip": "Match the standard to the industry: IATF=auto, AS9100=aero, 13485=medical, 9001=general."
         }
       ],
-      "keyFigures": ["Deming (cease dependence on inspection — build quality at the source)", "AIAG (PPAP, APQP standards)"],
+      "keyFigures": [],
       "practiceQuestions": [
         {
-          "q": "A procurement manager argues for selecting Supplier A (lowest unit price, no ISO certification, 92% OTD) over Supplier B (10% higher unit price, ISO 9001 certified, 99% OTD, lower defect rate). Using TCO analysis, the quality manager should:",
-          "options": ["Agree — lowest price minimizes cost", "Request a full TCO comparison including quality, delivery, and risk costs", "Reject Supplier A outright — no ISO certification is unacceptable", "Accept Supplier A with increased incoming inspection"],
+          "q": "According to Deming's 14 Points, what should organizations do regarding supplier selection?",
+          "options": ["Award business based solely on lowest price", "End the practice of awarding business on price alone", "Use multiple suppliers to maximize competition", "Always source domestically"],
           "correct": 1,
-          "explanation": "The unit price difference tells only part of the story. A TCO analysis would include the cost of Supplier A's 8% late deliveries (line stoppages, expediting), the cost of higher defect rates (incoming inspection, rework, potential escapes), and the risk of no formal quality system. TCO typically favors the higher-quality supplier."
+          "explanation": "Deming's Point #4 explicitly states organizations should end the practice of awarding business on price tag alone, moving toward long-term relationships based on loyalty and trust with single suppliers."
+        },
+        {
+          "q": "A supplier who has demonstrated consistent quality over time and may receive reduced incoming inspection is classified as:",
+          "options": ["Approved", "Qualified", "Certified", "Strategic"],
+          "correct": 2,
+          "explanation": "A Certified supplier has shown sustained performance over time. Approved meets minimums; Qualified has passed an additional audit; Certified earns reduced or skip-lot inspection privileges."
+        },
+        {
+          "q": "Which standard governs quality management systems in the automotive industry?",
+          "options": ["ISO 9001", "IATF 16949", "AS9100", "ISO 13485"],
+          "correct": 1,
+          "explanation": "IATF 16949 is the automotive-specific QMS standard. AS9100 covers aerospace; ISO 13485 covers medical devices; ISO 9001 is the general QMS standard."
+        },
+        {
+          "q": "Who should typically be involved in defining supplier selection criteria?",
+          "options": ["Purchasing only", "Senior leadership only", "A cross-functional team", "The supplier itself"],
+          "correct": 2,
+          "explanation": "A cross-functional team (purchasing, engineering, production, quality, materials) defines selection criteria. Purchasing typically leads execution, but criteria definition needs broader input."
         }
       ],
       "flashcards": [
-        { "front": "PPAP (Production Part Approval Process)", "back": "AIAG standard for supplier qualification in automotive (widely adopted elsewhere). 18 elements including: design records, engineering change documents, DFMEA, process flow diagram, PFMEA, control plan, MSA results, dimensional results, material test results, initial process capability study, PSW (Part Submission Warrant)." },
-        { "front": "Single vs. Dual Sourcing", "back": "Single source: deeper relationship, volume leverage, simpler management, BUT high supply disruption risk. Dual source: risk mitigation, competitive leverage, BUT split volumes reduce leverage, more management overhead. Strategy depends on component criticality and supply market conditions." },
-        { "front": "Supplier Risk Assessment", "back": "Evaluate: financial stability (bankruptcy risk), geographic risk (natural disaster, geopolitical), capacity risk (ability to scale), quality risk (process capability, system maturity), dependency risk (percentage of their business you represent). Mitigate through dual sourcing, safety stock, contractual protections, and development programs." }
+        {"front": "What does SCM stand for and what are its 5 functions?", "back": "Supply Chain Management. Functions: Plan, Source, Make, Deliver, Return."},
+        {"front": "Deming's Point #4 on suppliers", "back": "End the practice of awarding business on price tag alone. Move to long-term, single-supplier relationships built on loyalty and trust."},
+        {"front": "Supplier classification tiers", "back": "Approved → Qualified → Certified. Approved meets minimums; Qualified passed audit; Certified has consistent track record (may skip incoming inspection)."},
+        {"front": "ISO 13485 covers what industry?", "back": "Medical devices."},
+        {"front": "AS9100 covers what industry?", "back": "Aerospace."},
+        {"front": "IATF 16949 covers what industry?", "back": "Automotive."},
+        {"front": "Total Cost of Ownership (TCO)", "back": "Unit price + hidden costs (inspection, defects, inventory, expediting). Always > purchase price."}
       ]
     },
     {
       "id": "6B",
       "ref": "VI.B",
-      "title": "Supplier Performance Monitoring",
+      "title": "Supplier Risk Management",
       "cognitive": "Evaluate",
-      "summary": "Ongoing supplier performance monitoring ensures that qualified suppliers continue to meet requirements. Quality managers must establish metrics, reporting cadences, and escalation processes that provide early warning of supplier quality deterioration and enable data-driven supplier management decisions.",
+      "summary": "Supplier risk management identifies, evaluates, and prioritizes supply chain risks. PMBOK defines risk as an uncertain event with positive or negative impact on scope, schedule, cost, or quality. Threat strategies: Escalate, Avoid, Transfer, Mitigate, Accept. Opportunity strategies: Exploit, Enhance, Share, Accept. FMEA and fault tree analysis are primary risk assessment tools. Outsourcing transfers — but does not eliminate — risk.",
       "concepts": [
         {
-          "term": "Supplier Scorecard",
-          "definition": "Periodic (monthly/quarterly) performance assessment across key dimensions. Typical metrics: PPM (Parts Per Million defective), OTD (On-Time Delivery percentage), SCAR responsiveness (Supplier Corrective Action Request closure time), first-pass yield at incoming, number of customer escapes attributable to supplier. Scorecards should be shared with suppliers, reviewed jointly, and linked to business consequences (preferred status, volume allocation, development support, or probation/removal).",
-          "formula": "PPM = (Defective Parts / Total Parts Received) × 1,000,000\nOTD = (On-Time Deliveries / Total Deliveries) × 100%",
-          "examTip": "PPM is the standard quality metric for supplier performance. World-class target: < 50 PPM for direct materials. Scorecards without consequences are ignored."
-        },
-        {
-          "term": "Supplier Audits",
-          "definition": "Systematic evaluation of a supplier's processes, systems, and capabilities. Types: First-party (supplier's internal audit), Second-party (customer audits the supplier), Third-party (independent certification body). Audit types by focus: System audit (QMS compliance), Process audit (specific manufacturing process — VDA 6.3 is common in automotive), Product audit (finished product conformance). Second-party audits provide the deepest insight into supplier capability for your specific requirements.",
+          "term": "Risk Management Definition (PMBOK)",
+          "definition": "The identification, evaluation, and prioritization of risks to eliminate or mitigate their probability/severity, or to leverage opportunities. A risk is an uncertain event that, if it occurs, has a positive or negative effect on project objectives (scope, schedule, cost, quality).",
           "formula": null,
-          "examTip": "VDA 6.3 process audit methodology is widely used in automotive — know it exists and that it evaluates process capability rather than system documentation."
+          "examTip": "Risk has both negative (threat) AND positive (opportunity) dimensions — most candidates only think about threats."
         },
         {
-          "term": "Acceptance Sampling",
-          "definition": "Statistical inspection method: inspect a random sample from a lot and accept or reject the entire lot based on the number of defects found in the sample. Key parameters: AQL (Acceptable Quality Level — maximum percent defective considered satisfactory as process average), LTPD (Lot Tolerance Percent Defective — quality level that the plan should reject), α (producer's risk — probability of rejecting a good lot), β (consumer's risk — probability of accepting a bad lot). ANSI/ASQ Z1.4 (attributes) and Z1.9 (variables) are standard plans.",
-          "formula": "OC Curve: plots Probability of Acceptance vs. Actual Lot Quality\nAt AQL: Pa ≈ 1 − α (high probability of acceptance)\nAt LTPD: Pa ≈ β (low probability of acceptance)\nIdeal OC curve is a step function — sample size determines discrimination",
-          "examTip": "Know the relationship between sample size and discrimination: larger samples produce steeper OC curves (better discrimination between good and bad lots). AQL is NOT the acceptable defect rate — it is the process average at which the plan has high acceptance probability."
-        },
-        {
-          "term": "Supplier Development Programs",
-          "definition": "Proactive programs to improve supplier capabilities rather than simply rejecting non-conforming product. Activities include: technical assistance (engineering support for process improvement), training (quality tools, lean methods), joint improvement projects (kaizen events at supplier facility), technology transfer, mentoring/coaching. Development is an investment — typically reserved for strategic suppliers with strong relationship potential but capability gaps.",
+          "term": "Threat Response Strategies",
+          "definition": "(1) Escalate — raise to higher authority; (2) Avoid — eliminate the threat by changing plans; (3) Transfer — shift to third party (insurance, contracts); (4) Mitigate — reduce probability or impact; (5) Accept — acknowledge without action.",
           "formula": null,
-          "examTip": "The modern quality management approach favors supplier development over adversarial inspection-based relationships. Development builds long-term capability; inspection catches defects after they occur."
+          "examTip": "Memorize: E-A-T-M-A. Escalate, Avoid, Transfer, Mitigate, Accept."
+        },
+        {
+          "term": "Opportunity Response Strategies",
+          "definition": "(1) Exploit — ensure opportunity is realized; (2) Enhance — increase probability or impact; (3) Share — partner with another party to capture; (4) Accept — take if it occurs without active pursuit.",
+          "formula": null,
+          "examTip": "Memorize: E-E-S-A. Exploit, Enhance, Share, Accept. Mirror of threat strategies."
+        },
+        {
+          "term": "FMEA (Failure Mode and Effects Analysis)",
+          "definition": "Systematic tool to identify potential failure modes, their effects, and prioritize them by Risk Priority Number (RPN = Severity × Occurrence × Detection). Used for proactive risk assessment in supplier processes.",
+          "formula": "RPN = Severity × Occurrence × Detection",
+          "examTip": "FMEA is the most-cited supplier risk tool. RPN ranges 1–1000."
+        },
+        {
+          "term": "Fault Tree Analysis (FTA)",
+          "definition": "Top-down deductive analysis starting with an undesired event and working backward through logical (AND/OR) gates to identify root causes and combinations.",
+          "formula": null,
+          "examTip": "FTA is top-down (start with failure, find causes); FMEA is bottom-up (start with components, find failures)."
+        },
+        {
+          "term": "Outsourcing",
+          "definition": "Contracting out processes or subprocesses that don't directly contribute to core business. Reasons include lack of internal capability, cost, or strategic focus. Critical caveat: outsourcing transfers risk but does not eliminate it.",
+          "formula": null,
+          "examTip": "Outsourcing ≠ risk-free. The buyer retains accountability even when execution is delegated."
+        },
+        {
+          "term": "Supplier Rating System Considerations",
+          "definition": "Metrics must be meaningful, easy to understand, with low data error potential. Components should be periodically reviewed for applicability and improvement opportunities.",
+          "formula": null,
+          "examTip": "Bad metrics drive bad behavior — review the rating system itself, not just supplier scores."
         }
       ],
-      "keyFigures": ["Dodge & Romig (acceptance sampling)", "Deming (supplier relationships)", "AIAG (supplier quality manual)"],
+      "keyFigures": [],
       "practiceQuestions": [
         {
-          "q": "A supplier's PPM has gradually increased from 120 to 450 over six months despite two SCARs. The MOST appropriate escalation action is:",
-          "options": ["Issue a third SCAR with a tighter deadline", "Place the supplier on probation with a 90-day improvement plan and onsite audit", "Immediately disqualify the supplier and find an alternative", "Increase incoming inspection sampling level"],
-          "correct": 1,
-          "explanation": "Two ineffective SCARs indicate a systemic supplier issue that paperwork alone cannot solve. Probation with a structured improvement plan and onsite audit provides both consequence (probation) and support (direct assessment of root causes). Immediate disqualification may be premature if no alternative is qualified; increased inspection treats the symptom, not the cause."
+          "q": "Which of the following is NOT a strategy for responding to a negative risk (threat)?",
+          "options": ["Avoid", "Transfer", "Exploit", "Mitigate"],
+          "correct": 2,
+          "explanation": "Exploit is an OPPORTUNITY (positive risk) strategy. Threat strategies are Escalate, Avoid, Transfer, Mitigate, and Accept."
         },
         {
-          "q": "An OC curve for a sampling plan shows Pa = 0.95 at p = 1% and Pa = 0.10 at p = 5%. The AQL and LTPD are approximately:",
-          "options": ["AQL = 1%, LTPD = 5%", "AQL = 5%, LTPD = 1%", "AQL = 0.95, LTPD = 0.10", "Cannot be determined from this information"],
-          "correct": 0,
-          "explanation": "AQL is the quality level with high probability of acceptance (Pa = 0.95 at 1% defective → AQL ≈ 1%). LTPD is the quality level with low probability of acceptance (Pa = 0.10 at 5% defective → LTPD ≈ 5%). The OC curve visualizes the sampling plan's discriminating power between these two levels."
+          "q": "What is the primary tool used for proactive supplier risk assessment based on Severity × Occurrence × Detection?",
+          "options": ["Fault Tree Analysis", "FMEA", "SWOT Analysis", "Pareto Chart"],
+          "correct": 1,
+          "explanation": "FMEA (Failure Mode and Effects Analysis) calculates Risk Priority Number = S × O × D. FTA is also a risk tool but is top-down deductive, not numerical."
+        },
+        {
+          "q": "When an organization outsources a process to a supplier, what happens to the risk?",
+          "options": ["Risk is eliminated", "Risk is fully transferred", "Risk is shared but accountability remains", "Risk increases"],
+          "correct": 2,
+          "explanation": "Outsourcing transfers some execution risk but the purchaser retains accountability for outcomes. Risk is shared, not eliminated."
         }
       ],
       "flashcards": [
-        { "front": "PPM Calculation", "back": "PPM = (Defective parts / Total parts) × 1,000,000. Example: 12 defects in 50,000 parts = 240 PPM. Industry targets vary: automotive typically <50 PPM for Tier 1; electronics may target <10 PPM for critical components." },
-        { "front": "AQL vs. LTPD", "back": "AQL (Acceptable Quality Level): process average at which sampling plan accepts lots ~95% of the time (producer's risk α ≈ 5%). LTPD (Lot Tolerance Percent Defective): quality level at which plan rejects lots ~90% of the time (consumer's risk β ≈ 10%). The gap between AQL and LTPD is the plan's 'zone of indifference.'" },
-        { "front": "SCAR (Supplier Corrective Action Request)", "back": "Formal request to a supplier to investigate a quality nonconformance, identify root cause, implement corrective action, and verify effectiveness. Should include: problem description, evidence, deadline, required response format (8D or equivalent). Track closure time and effectiveness as supplier performance metrics." },
-        { "front": "Skip-Lot Inspection", "back": "Reduced inspection frequency for suppliers with demonstrated quality performance. After a defined number of consecutive accepted lots, inspection frequency is reduced (e.g., inspect every 3rd or 5th lot). Reverts to normal inspection if a rejection occurs. Rewards good performance and reduces appraisal costs." }
+        {"front": "5 threat response strategies", "back": "Escalate, Avoid, Transfer, Mitigate, Accept (E-A-T-M-A)."},
+        {"front": "4 opportunity response strategies", "back": "Exploit, Enhance, Share, Accept (E-E-S-A)."},
+        {"front": "FMEA RPN formula", "back": "RPN = Severity × Occurrence × Detection (range 1–1000)."},
+        {"front": "FTA vs FMEA direction", "back": "FTA = top-down (start with failure event). FMEA = bottom-up (start with components)."},
+        {"front": "Does outsourcing eliminate risk?", "back": "No. Outsourcing transfers execution but the buyer retains accountability."}
+      ]
+    },
+    {
+      "id": "6C",
+      "ref": "VI.C",
+      "title": "Supplier Communications",
+      "cognitive": "Apply",
+      "summary": "Effective supplier management requires clear, structured communication of expectations covering delivery, orders, corrective actions, safety, environmental requirements, financial expectations, and ethics. Methods range from formal written specifications, contracts, and SQA manuals to ongoing meetings, plant visits, EDI, and forecast sharing.",
+      "concepts": [
+        {
+          "term": "Categories of Requirements to Communicate",
+          "definition": "(1) Delivery — order placement, packaging, batch sizes; (2) Order — quantity, mix; (3) Corrective action — defect response process; (4) Safety/security; (5) Environmental — pollution, hazardous substances; (6) Financial — supplier stability; (7) Management integrity & ethics — code of conduct.",
+          "formula": null,
+          "examTip": "Seven categories — memorize. The exam loves to ask which is/isn't a requirement category."
+        },
+        {
+          "term": "Formal Communication Methods",
+          "definition": "Written specifications/drawings (hard copy or EDI); SQA (Supplier Quality Assurance) Requirements Manual; contracts and POs; terms and conditions covering IP, warranties, disclaimers.",
+          "formula": null,
+          "examTip": "Formal = written and binding. The SQA manual is a key supplier-facing document."
+        },
+        {
+          "term": "Informal/Ongoing Communication",
+          "definition": "Customer plant visits by technical/quality/logistics personnel; sample products provided to supplier; training delivered to supplier personnel; demand forecasts shared with suppliers.",
+          "formula": null,
+          "examTip": "Forecast sharing reduces bullwhip effect and supplier capacity surprises."
+        },
+        {
+          "term": "Electronic Data Interchange (EDI)",
+          "definition": "Electronic transfer of structured business documents (POs, ASNs, invoices) between buyer and supplier systems. Reduces lead time and error rate vs paper.",
+          "formula": null,
+          "examTip": "EDI is fundamental to JIT and ship-to-stock programs."
+        },
+        {
+          "term": "SQA Requirements Manual",
+          "definition": "Supplier Quality Assurance Requirements Manual — a single document specifying QMS expectations, audit rights, performance metrics, corrective action procedures, and reporting requirements.",
+          "formula": null,
+          "examTip": "The SQA manual replaces fragmented requirements with one source of truth for suppliers."
+        }
+      ],
+      "keyFigures": [],
+      "practiceQuestions": [
+        {
+          "q": "Which of the following is NOT one of the seven categories of requirements that must be communicated to suppliers?",
+          "options": ["Delivery requirements", "Environmental parameters", "Marketing strategy", "Management's integrity and ethical standards"],
+          "correct": 2,
+          "explanation": "Marketing strategy is not a supplier communication category. The seven are: Delivery, Order, Corrective Action, Safety/Security, Environmental, Financial, and Management Integrity/Ethics."
+        },
+        {
+          "q": "What is the primary function of a Supplier Quality Assurance (SQA) Requirements Manual?",
+          "options": ["Track supplier invoices", "Provide a single source of QMS expectations and audit rights", "Replace the purchase contract", "Document customer complaints"],
+          "correct": 1,
+          "explanation": "The SQA manual consolidates QMS expectations, audit rights, performance metrics, and corrective action procedures into one supplier-facing document."
+        }
+      ],
+      "flashcards": [
+        {"front": "7 categories of supplier requirements", "back": "Delivery, Order, Corrective Action, Safety/Security, Environmental, Financial, Management Integrity/Ethics."},
+        {"front": "What is EDI?", "back": "Electronic Data Interchange — automated transfer of POs, ASNs, invoices between buyer and supplier systems. Critical for JIT."},
+        {"front": "SQA Manual purpose", "back": "Single source-of-truth document covering QMS expectations, audit rights, metrics, and corrective action procedures."}
+      ]
+    },
+    {
+      "id": "6D",
+      "ref": "VI.D",
+      "title": "Supplier Performance",
+      "cognitive": "Evaluate",
+      "summary": "Supplier performance is measured across quality, cost, delivery, and service dimensions using metrics like ppm defects, on-time delivery, Cpk, and responsiveness. Performance indices (QPI, CPI, SPI, PPI, DPI) provide composite scoring. Reports compare suppliers against best/average/worst performers and drive corrective actions, certification decisions, and business allocation.",
+      "concepts": [
+        {
+          "term": "Core Supplier Performance Metrics",
+          "definition": "Defects (ppm); accuracy (order/billing); timeliness (on-time, JIT); completeness; responsiveness; returns for rework/repair; technical support; supplier process capability (Cpk); cost responsiveness; compliance; warranty performance.",
+          "formula": null,
+          "examTip": "Quality (ppm, Cpk), Delivery (on-time %), Cost (price responsiveness), Service (responsiveness) — the four main pillars."
+        },
+        {
+          "term": "Quality Performance Index (QPI)",
+          "definition": "Index focused on quality dimension — defect rates, rejections. Often organized by product when no past performance history exists.",
+          "formula": null,
+          "examTip": "QPI = quality only. Used for new product/supplier scenarios."
+        },
+        {
+          "term": "Commodity Performance Index (CPI)",
+          "definition": "Tracks all materials provided by a supplier across a commodity category. Used when supplier lacks past performance history.",
+          "formula": null,
+          "examTip": "CPI aggregates across products in a commodity — broader than QPI."
+        },
+        {
+          "term": "Supplier Performance Index (SPI)",
+          "definition": "Composite index that may include quality, delivery, and best-value measures. The most general supplier scorecard.",
+          "formula": null,
+          "examTip": "SPI is the umbrella metric. Most scorecards roll up to an SPI score."
+        },
+        {
+          "term": "Past Performance Index (PPI)",
+          "definition": "Historical index based on quality, delivery, and other measures. Allows comparison of a supplier against its own track record or peer suppliers.",
+          "formula": null,
+          "examTip": "PPI = trend metric. Used for re-qualification and renewal decisions."
+        },
+        {
+          "term": "Delivery Performance Index (DPI)",
+          "definition": "Tracks delivery trends, scrap, supplier corrective action, and incoming inspection failures. Focused on logistics and service reliability.",
+          "formula": null,
+          "examTip": "DPI = delivery dimension only. On-time, in-full (OTIF) is the operational version."
+        },
+        {
+          "term": "Process Capability (Cpk)",
+          "definition": "Statistical measure of how well a supplier's process meets specification limits, accounting for centering. Cpk ≥ 1.33 typically required for capable processes.",
+          "formula": "Cpk = min[(USL - μ) / 3σ, (μ - LSL) / 3σ]",
+          "examTip": "Cpk < 1.0 = process not capable. Cpk = 1.33 = standard requirement. Cpk = 1.67 = high-volume/safety-critical."
+        },
+        {
+          "term": "Measurement Frequency Considerations",
+          "definition": "Key questions: What is the metric's purpose? Which suppliers are critical? How much time/money will measurement require? Can the metric drive process control? What are the risks of NOT measuring?",
+          "formula": null,
+          "examTip": "Don't measure everything for everyone — calibrate frequency to supplier criticality and risk."
+        }
+      ],
+      "keyFigures": [
+        {
+          "title": "Supplier Performance Report Categories (Figure 18.1)",
+          "description": "Standard scoring bands: Best supplier 95–100; Average 80–90 (mean ~85); Least supplier <60. Production status: Approved / Pending / Probation."
+        }
+      ],
+      "practiceQuestions": [
+        {
+          "q": "Which performance index would best track a supplier's delivery trends, scrap, and incoming inspection failures?",
+          "options": ["QPI", "CPI", "SPI", "DPI"],
+          "correct": 3,
+          "explanation": "DPI (Delivery Performance Index) specifically focuses on delivery trends, scrap rates, supplier corrective actions, and incoming inspection failures."
+        },
+        {
+          "q": "A supplier's process has Cpk = 0.95. What does this indicate?",
+          "options": ["Process is highly capable", "Process meets standard requirements", "Process is not capable of meeting specifications", "Process is over-engineered"],
+          "correct": 2,
+          "explanation": "Cpk < 1.0 indicates the process is not capable. Industry standard is typically Cpk ≥ 1.33. The supplier requires improvement before approval."
+        },
+        {
+          "q": "On a typical supplier performance report, what score range represents the average of all suppliers?",
+          "options": ["95–100", "80–90", "60–79", "Below 60"],
+          "correct": 1,
+          "explanation": "Average suppliers score 80–90 (mean ~85). 95–100 is best-in-class; below 60 is the worst-performing."
+        }
+      ],
+      "flashcards": [
+        {"front": "5 Supplier Performance Indices", "back": "QPI (Quality), CPI (Commodity), SPI (Supplier — composite), PPI (Past Performance — trend), DPI (Delivery)."},
+        {"front": "Cpk capability thresholds", "back": "<1.0 = not capable. 1.33 = standard. 1.67 = safety/high-volume critical."},
+        {"front": "Cpk formula", "back": "Cpk = min[(USL−μ)/3σ, (μ−LSL)/3σ]"},
+        {"front": "4 pillars of supplier performance", "back": "Quality, Cost, Delivery, Service (QCDS)."}
+      ]
+    },
+    {
+      "id": "6E",
+      "ref": "VI.E",
+      "title": "Supplier Improvement",
+      "cognitive": "Evaluate",
+      "summary": "Supplier improvement combines audits (against ISO 9001, IATF 16949, AS9100, or Baldrige criteria), corrective and preventive action (CAPA), structured feedback through scorecards and meetings, and active monitoring of process improvements. Best buyers invest technical resources in their key suppliers — joint problem-solving, redesigns, and onsite support.",
+      "concepts": [
+        {
+          "term": "Supplier Audit",
+          "definition": "Formal assessment of a supplier's quality system against a standard (ISO 9001, IATF 16949, AS9100) or against the buyer's own criteria. Used for qualification, surveillance, and improvement.",
+          "formula": null,
+          "examTip": "Audit types: First-party (self), Second-party (customer audits supplier), Third-party (independent registrar)."
+        },
+        {
+          "term": "Corrective Action",
+          "definition": "Action taken to eliminate the root cause of an identified nonconformance. Reactive — responds to a problem that has already occurred.",
+          "formula": null,
+          "examTip": "Corrective = fix what already broke. Reactive."
+        },
+        {
+          "term": "Preventive Action",
+          "definition": "Action taken to eliminate the root causes of POTENTIAL nonconformances. Proactive — addresses risks before failure occurs. Examines the interrelationships between purchaser and supplier processes.",
+          "formula": null,
+          "examTip": "Preventive = stop it from breaking. Proactive. ISO 9001:2015 replaced 'preventive action' language with risk-based thinking."
+        },
+        {
+          "term": "8D / CAPA Process",
+          "definition": "Eight Disciplines methodology for supplier corrective action: D1 Form team, D2 Describe problem, D3 Containment, D4 Root cause, D5 Permanent corrective action, D6 Implement & verify, D7 Prevent recurrence, D8 Recognize team.",
+          "formula": null,
+          "examTip": "8D is the auto industry standard. Containment (D3) precedes root cause analysis to protect the customer."
+        },
+        {
+          "term": "Supplier Scorecards",
+          "definition": "Structured periodic reports communicating supplier performance across quality, delivery, cost, and service dimensions. Reviewed in supplier business meetings.",
+          "formula": null,
+          "examTip": "Scorecards drive behavior — they should reinforce strategic priorities, not just measure compliance."
+        },
+        {
+          "term": "Joint Process Improvement",
+          "definition": "Buyer provides technical personnel, training, or co-investment to help key suppliers solve product/process problems or jointly redesign products. Reserved for strategic suppliers where mutual benefit is high.",
+          "formula": null,
+          "examTip": "Joint improvement is differentiated — only worthwhile for strategic suppliers, not transactional ones."
+        }
+      ],
+      "keyFigures": [],
+      "practiceQuestions": [
+        {
+          "q": "What is the key difference between corrective action and preventive action?",
+          "options": ["Corrective is faster than preventive", "Corrective fixes existing problems; preventive addresses potential problems", "Preventive is more expensive", "There is no difference"],
+          "correct": 1,
+          "explanation": "Corrective action responds to nonconformances that have occurred (reactive). Preventive action eliminates the root cause of potential nonconformances before they occur (proactive)."
+        },
+        {
+          "q": "In the 8D corrective action process, which step comes BEFORE root cause analysis?",
+          "options": ["Permanent corrective action", "Containment", "Recognize team", "Verify effectiveness"],
+          "correct": 1,
+          "explanation": "D3 Containment comes before D4 Root Cause Analysis. Containment protects the customer from continued exposure while root cause is being investigated."
+        }
+      ],
+      "flashcards": [
+        {"front": "Corrective vs Preventive Action", "back": "Corrective = reactive, fixes existing nonconformance. Preventive = proactive, addresses potential nonconformance."},
+        {"front": "8D steps", "back": "D1 Team, D2 Problem, D3 Containment, D4 Root Cause, D5 Permanent Action, D6 Implement/Verify, D7 Prevent Recurrence, D8 Recognize Team."},
+        {"front": "3 audit types", "back": "First-party (internal/self), Second-party (customer audits supplier), Third-party (independent registrar like ISO)."}
+      ]
+    },
+    {
+      "id": "6F",
+      "ref": "VI.F",
+      "title": "Supplier Certification, Partnerships, and Alliances",
+      "cognitive": "Evaluate",
+      "summary": "Supplier certification programs reduce incoming inspection burden — certified suppliers may be inspected only every 5th lot. Partnerships and alliances are formalized, long-term, mutually beneficial relationships. Reasons to partner: focus on core, access world-class capability, share risk, free capital, gain capacity, eliminate hard-to-manage functions. Top supplier traits: responsive/flexible service (52%), good communication (48%), high quality (29%).",
+      "concepts": [
+        {
+          "term": "Supplier Certification Program — Objective",
+          "definition": "Allow reduced or skip-lot incoming inspection for proven suppliers. Common practice: certified suppliers receive priority for new business; only every 5th lot might be selected for incoming verification.",
+          "formula": null,
+          "examTip": "Certification benefit = lower incoming inspection cost + new business priority."
+        },
+        {
+          "term": "3-Step Certification Process",
+          "definition": "(1) Develop certification criteria and process — identify, evaluate, select rating categories; (2) Evaluate selected suppliers against criteria; (3) Ongoing monitoring per supplier reporting requirements.",
+          "formula": null,
+          "examTip": "Three steps — criteria, evaluation, monitoring. Don't confuse with the 8-step selection process."
+        },
+        {
+          "term": "Supplier Partnership",
+          "definition": "Cooperative working relationship between buyer and supplier, with shared goals but typically less formalized than an alliance.",
+          "formula": null,
+          "examTip": "Partnership = cooperative; Alliance = formalized with shared fate."
+        },
+        {
+          "term": "Supplier Alliance",
+          "definition": "Special, formalized relationship with a supplier implying SHARED FATE, mutual benefits, and joint commitment to a common purpose. Strategic alliances are cooperative undertakings between two or more companies.",
+          "formula": null,
+          "examTip": "Alliance is the deepest tier — shared fate, joint investment, often equity or long-term contracts."
+        },
+        {
+          "term": "Reasons for Partnerships/Alliances",
+          "definition": "Improve focus on core; access world-class capabilities; concentrate on strategic functions; share/reduce risk; free non-financial resources; reduce operating costs; secure unavailable resources; increase capacity; eliminate hard-to-manage functions; quickly gain new functions/services/products.",
+          "formula": null,
+          "examTip": "Memorize 3–4 reasons. Common exam question: 'Which is NOT a reason for partnership?'"
+        },
+        {
+          "term": "Best Supplier Characteristics (Survey)",
+          "definition": "(1) Responsive and flexible service — 52%; (2) Good communications — 48%; (3) Providing high product quality — 29%.",
+          "formula": null,
+          "examTip": "Surprising finding — responsiveness ranks higher than quality. Service > specs in buyer perception."
+        },
+        {
+          "term": "7-Step Partnership Development Process",
+          "definition": "(1) Determine materials/services for closer relationship; (2) Address legal implications; (3) Identify candidate suppliers; (4) Define expectations and risks; (5) Communicate and negotiate; (6) Implement mutual arrangements; (7) Establish ongoing monitoring/communication.",
+          "formula": null,
+          "examTip": "Step 2 (legal) is critical — antitrust, IP, exclusivity issues can derail partnerships."
+        }
+      ],
+      "keyFigures": [],
+      "practiceQuestions": [
+        {
+          "q": "What is the primary benefit of a supplier certification program for the buyer?",
+          "options": ["Lower unit prices", "Reduced or skip-lot incoming inspection", "Exclusive supply rights", "Tax advantages"],
+          "correct": 1,
+          "explanation": "Certified suppliers may receive reduced or skip-lot inspection (e.g., only every 5th lot), significantly reducing the buyer's incoming inspection cost while maintaining quality assurance."
+        },
+        {
+          "q": "What distinguishes a supplier alliance from a supplier partnership?",
+          "options": ["Alliances are short-term", "Alliances imply shared fate and formalized commitment", "Partnerships involve equity stakes", "There is no difference"],
+          "correct": 1,
+          "explanation": "An alliance is the deepest tier — formalized relationship with shared fate, mutual benefits, and joint commitment to common purpose. Partnerships are cooperative but less formalized."
+        },
+        {
+          "q": "According to survey data, what is the #1 characteristic of best suppliers?",
+          "options": ["Lowest price (52%)", "Responsive and flexible service (52%)", "Highest product quality (52%)", "Largest capacity (52%)"],
+          "correct": 1,
+          "explanation": "Responsive and flexible service ranked #1 at 52%, followed by good communications (48%) and high product quality (29%). Buyers value responsiveness over specs."
+        }
+      ],
+      "flashcards": [
+        {"front": "Supplier certification primary benefit", "back": "Reduced or skip-lot incoming inspection (e.g., every 5th lot only) + priority for new business."},
+        {"front": "3 steps of certification", "back": "(1) Develop criteria; (2) Evaluate suppliers; (3) Ongoing monitoring."},
+        {"front": "Partnership vs Alliance", "back": "Partnership = cooperative. Alliance = formalized with SHARED FATE and joint commitment."},
+        {"front": "Top 3 best supplier traits (survey)", "back": "Responsive/flexible service (52%), Good communications (48%), High product quality (29%)."}
+      ]
+    },
+    {
+      "id": "6G",
+      "ref": "VI.G",
+      "title": "Supplier Logistics and Material Acceptance",
+      "cognitive": "Understand",
+      "summary": "Logistics interfaces use push systems (forecast-driven) or pull systems (demand-triggered, including ship-to-stock). JIT extends pull principles, eliminating raw material storage by frequent small deliveries. Material acceptance options: source inspection, certification, receiving inspection, or supplier QMS history. Sampling carries Type I (producer's) and Type II (consumer's) risks. Modular assembly transfers subassembly responsibility to suppliers.",
+      "concepts": [
+        {
+          "term": "Push System",
+          "definition": "Production and inventory based on forecast and demand planning. Material is pushed through the supply chain in anticipation of need. Requires close forecast/demand alignment and multi-tier schedule communication.",
+          "formula": null,
+          "examTip": "Push = forecast-driven, anticipatory. High inventory risk if forecast is wrong."
+        },
+        {
+          "term": "Pull System",
+          "definition": "Production and replenishment triggered by actual customer demand. Ship-to-stock is the supplier-side embodiment — material received directly without inspection, moved to point of use.",
+          "formula": null,
+          "examTip": "Pull = demand-driven, reactive. Lower inventory but requires reliable suppliers."
+        },
+        {
+          "term": "Ship-to-Stock",
+          "definition": "Program leveraging supplier performance and certification to receive materials directly into the organization without incoming inspection. Material flows directly to point of use.",
+          "formula": null,
+          "examTip": "Ship-to-stock requires supplier certification first. Bypasses incoming inspection entirely."
+        },
+        {
+          "term": "Just-In-Time (JIT)",
+          "definition": "Inventory strategy where materials arrive precisely when needed for production. Reduces inventory levels and may eliminate raw material storage by frequent small-batch deliveries from suppliers.",
+          "formula": null,
+          "examTip": "JIT example: automotive nuts and bolts — frequent deliveries vs. large warehouse inventory."
+        },
+        {
+          "term": "Material Acceptance Methods",
+          "definition": "(1) Source inspection — buyer inspects at supplier site before shipment; (2) Certification — based on supplier QMS history; (3) Receiving inspection — sampling at buyer dock; (4) Supplier quality system reliance — no buyer inspection.",
+          "formula": null,
+          "examTip": "Risk level dictates method. Critical parts → source inspection. Certified suppliers → ship-to-stock."
+        },
+        {
+          "term": "Type I Risk (Producer's Risk, α)",
+          "definition": "Risk of REJECTING a good lot during sampling inspection. The supplier (producer) bears the cost when a conforming lot is wrongly rejected.",
+          "formula": null,
+          "examTip": "Type I = α = Producer's risk = false rejection. Memorize: 'PR' both = Producer/Reject."
+        },
+        {
+          "term": "Type II Risk (Consumer's Risk, β)",
+          "definition": "Risk of ACCEPTING a defective lot during sampling inspection. The buyer (consumer) bears the cost when a nonconforming lot is wrongly accepted.",
+          "formula": null,
+          "examTip": "Type II = β = Consumer's risk = false acceptance. Most damaging — defective product reaches customer."
+        },
+        {
+          "term": "Modular Assembly",
+          "definition": "Transferring additional subassembly work back to the supplier. Buyer receives a completed subassembly module, simplifying final assembly integration.",
+          "formula": null,
+          "examTip": "Modular assembly shifts complexity upstream. Common in automotive (e.g., complete dashboard modules)."
+        }
+      ],
+      "keyFigures": [
+        {
+          "title": "Sampling Risks (Figure 18.2)",
+          "description": "Type I risk (α) — producer's risk — rejecting good lots. Type II risk (β) — consumer's risk — accepting bad lots. Both risks are inherent in any sampling plan; AQL and LTPD set the boundaries."
+        }
+      ],
+      "practiceQuestions": [
+        {
+          "q": "Which logistics system is triggered by actual customer demand rather than forecasts?",
+          "options": ["Push system", "Pull system", "MRP system", "Batch system"],
+          "correct": 1,
+          "explanation": "A pull system is demand-driven — production and replenishment are triggered by actual customer orders. Ship-to-stock is a pull-system implementation. Push systems are forecast-driven."
+        },
+        {
+          "q": "Type I sampling risk (α) refers to:",
+          "options": ["Accepting a defective lot", "Rejecting a good lot", "Inspecting too few units", "Cost of incoming inspection"],
+          "correct": 1,
+          "explanation": "Type I (α) is the producer's risk — the probability of rejecting a good lot. Type II (β) is the consumer's risk — accepting a defective lot."
+        },
+        {
+          "q": "An automotive plant receives nuts and bolts in small frequent deliveries directly to the production line, with no incoming storage. This is an example of:",
+          "options": ["MRP", "JIT with ship-to-stock", "Batch production", "Push system"],
+          "correct": 1,
+          "explanation": "Just-In-Time (JIT) combined with ship-to-stock eliminates raw material storage by relying on certified suppliers and frequent small deliveries directly to point of use."
+        },
+        {
+          "q": "Which material acceptance method is most appropriate for a supplier with strong certification and consistent quality history?",
+          "options": ["100% incoming inspection", "Source inspection at supplier site", "Reliance on supplier's quality system (ship-to-stock)", "Random destructive testing"],
+          "correct": 2,
+          "explanation": "Certified suppliers with strong QMS histories warrant ship-to-stock — no incoming inspection. This is the lowest-cost option and reflects earned trust."
+        }
+      ],
+      "flashcards": [
+        {"front": "Push vs Pull system", "back": "Push = forecast-driven, anticipatory, higher inventory risk. Pull = demand-triggered, reactive, requires reliable suppliers."},
+        {"front": "What is ship-to-stock?", "back": "Receiving certified-supplier materials directly to point of use, bypassing incoming inspection."},
+        {"front": "Type I risk (α)", "back": "Producer's risk — rejecting a GOOD lot. Cost falls on supplier."},
+        {"front": "Type II risk (β)", "back": "Consumer's risk — accepting a BAD lot. Cost falls on buyer/end customer."},
+        {"front": "Modular assembly", "back": "Transferring subassembly work back to supplier. Buyer receives completed module ready for final integration."}
       ]
     }
   ]
