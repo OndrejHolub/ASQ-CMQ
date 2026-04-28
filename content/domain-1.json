@@ -9,178 +9,334 @@
       "id": "1A",
       "ref": "I.A",
       "title": "Organizational Structures",
-      "cognitive": "Analyze",
-      "summary": "Quality managers must evaluate and recommend organizational structures that best support quality objectives. Organizational design directly impacts communication flow, decision-making speed, accountability, and the effectiveness of quality management systems.",
+      "cognitive": "Apply",
+      "summary": "A major role of leadership is to ensure the organization is designed to carry out its mission, goals, and strategies. Three major factors determine organizational design: complexity (number of different entities such as job titles, departments, reporting levels, locations), formalization (reliance on standard guidelines and procedures), and centralization (whether decision-making authority is at upper levels or delegated downward). The handbook's introduction traces the evolution of quality from Shewhart's SPC in the 1920s at Western Electric, through Deming bringing SPC to Japan post-WWII, TQM emerging in the 1980s from Deming/Juran/Crosby/Feigenbaum, BPR for radical process redesign, and Six Sigma evolving into Business Process Management. The productivity timeline follows Ford Production System to Toyota Production System to JIT to Lean to Lean-Six Sigma. Enterprise systems evolved from MRP to MRP II to ERP/CRM.",
       "concepts": [
         {
-          "term": "Functional Structure",
-          "definition": "Organizes employees by specialized function (engineering, quality, operations). Provides deep technical expertise but can create silos that impede cross-functional quality initiatives.",
+          "term": "Vertical Organizational Design — Unity of Command and Span of Control",
+          "definition": "The core concept of vertical design is unity of command — each subordinate should report to only one superior. Span of control determines how many subordinates a manager can effectively supervise. There is no universal ideal number; it depends on task complexity, subordinate training and experience, physical proximity, standardization of procedures, management information systems, organizational culture, manager's style, turnover, financial pressures, and organizational values. Flatter organizations (wider spans) have fewer management layers and are more efficient. Taller organizations (narrow spans) have more layers but slower communication.",
           "formula": null,
-          "examTip": "Know that functional structures are strongest for developing deep expertise but weakest for cross-functional communication."
+          "examTip": "Know the factors affecting span of control — this is frequently tested. Wider span = fewer layers = faster communication but less oversight. Narrower span = more layers = more control but slower decisions."
         },
         {
-          "term": "Matrix Structure",
-          "definition": "Employees report to both a functional manager and a project or product manager simultaneously. Enables flexible resource allocation but can create authority conflicts and ambiguous accountability.",
+          "term": "Centralization vs. Decentralization",
+          "definition": "Centralization concentrates decisions at the top with a select group of managers. Decentralization delegates decision-making authority to lower levels. Historically organizations were structured as pyramids with centralized authority. More decentralization is favored when: the environment is complex or uncertain, lower-level managers are capable and experienced, decisions are relatively minor, corporate culture is open to allowing managers a voice, the organization is geographically dispersed, and effective implementation requires flexibility.",
           "formula": null,
-          "examTip": "Matrix structures appear frequently in exam scenarios involving conflict resolution and authority clarification."
+          "examTip": "Be able to identify conditions favoring centralization vs. decentralization. Complex/uncertain environments favor decentralization; stable/routine environments favor centralization."
         },
         {
-          "term": "Flat (Horizontal) Structure",
-          "definition": "Minimizes management layers between staff and leadership. Increases employee autonomy and speeds decision-making but limits career advancement paths and can overwhelm managers with excessive direct reports.",
+          "term": "Types of Organizational Structures",
+          "definition": "Nine major types: (1) Functional Departmentalization — most common, groups by function (engineering, manufacturing, quality). (2) Product Departmentalization — each product group under a specialized executive. (3) Customer Departmentalization — organized around customer segments (retail vs. wholesale vs. government). (4) Geographic Departmentalization — organized by territory (western, southern, etc.). (5) Process Departmentalization — organized around production flow stages (casting, press, tube, finishing, inspection). (6) Matrix Organization — combines functional and product, dual reporting to both a functional and project manager, developed in 1960s U.S. aerospace industry; advantages include rapid response to change and efficient use of specialists; disadvantages include potential for conflict, dual reporting, and power struggles. (7) Team Structure — cross-functional teams of specialists. (8) Cells — self-contained units dedicated to all operations for a product/process, reporting to a functional manager. (9) Boundaryless Organization — breaks down traditional barriers (hierarchies, departments, geography), also called a network organization, enabled by technology.",
           "formula": null,
-          "examTip": "Flat structures are associated with agile, empowered teams — contrast with tall hierarchies for control-oriented environments."
+          "examTip": "Be able to match each structure to its advantages, disadvantages, and best-use scenarios. Matrix organizations are heavily tested — know advantages (rapid response, efficient specialist use) and disadvantages (conflict, dual reporting)."
         },
         {
-          "term": "Span of Control",
-          "definition": "The number of subordinates a manager directly supervises. Wider spans (10–15 reports) create flatter organizations; narrower spans (3–6 reports) create taller hierarchies with more oversight.",
-          "formula": "Organizational Layers ≈ log(N) / log(S), where N = total employees, S = average span",
-          "examTip": "Understand the trade-off: wider span = less oversight but more autonomy; narrower span = more control but slower decisions."
+          "term": "Factors Affecting Organizational Structure Selection",
+          "definition": "Six key factors: (1) Strategy — structure should support strategic goals; low-cost strategy favors functional centralized structure, innovation strategy favors flexible decentralized structure. (2) Size — larger organizations tend to be more specialized with more hierarchical layers. (3) Technology — the type of technology used impacts how work is organized (hospitals vs. law firms vs. chemical plants). (4) Core competencies — organizations may structure around what differentiates them from competitors. (5) Regulatory/legal environment — compliance requirements (ISO 9001, safety laws) influence structure. (6) Union/employee representation — collective bargaining agreements affect organizational design.",
+          "formula": null,
+          "examTip": "Strategy drives structure, not the reverse. If a scenario asks which structure supports innovation — the answer is decentralized and flexible."
+        },
+        {
+          "term": "Management Hierarchy — Three Levels",
+          "definition": "Top Management: sets vision, mission, strategic objectives; allocates resources; monitors results. Middle Management: responsible for carrying out policies and procedures; manages day-to-day operations; translates strategic goals into operational plans; plays a key role in communication between top management and first-level supervisors. First-Level Supervisors (Line Management): oversees production of products/services; directly supervises the workforce; maintains quality and quantity of output; communicates problems upward and vision downward.",
+          "formula": null,
+          "examTip": "Understand the distinct roles and responsibilities at each management level. Middle management is the critical translation layer between strategy and operations."
+        },
+        {
+          "term": "Division of Labor and Horizontal Design",
+          "definition": "Horizontal organizational design determines how work activities are organized at each level. Division of labor breaks work into steps performed by separate individuals. Assembly-line production is a classic example. Fast-food companies use division of labor to standardize processes. The key question in horizontal design is: How will work be grouped? Additional factors include workforce issues (availability of skilled workers), facilities (present and future availability), environmental factors (climate, political considerations), and national/societal culture impact — not all management concepts apply universally across cultures.",
+          "formula": null,
+          "examTip": "A society with strong independence values may resist top-down authority. Organization culture has an overarching influence bridging workers and management."
         }
       ],
-      "keyFigures": ["Weber (bureaucratic theory)", "Mintzberg (structural configurations)", "Burns & Stalker (mechanistic vs. organic)"],
+      "keyFigures": ["Shewhart (SPC, 1920s Western Electric)", "Deming (post-WWII Japan, TQM foundations)", "Fayol (general administration, unity of command)", "Weber (bureaucratic theory)", "Mintzberg (structural configurations)", "Burns & Stalker (mechanistic vs. organic)", "Ashkenas/Ulrich/Jick/Kerr (boundaryless organization)", "Robbins/DeCenzo/Coulter (management fundamentals)"],
       "practiceQuestions": [
         {
-          "q": "A quality manager at a mid-size manufacturer discovers that corrective action requests routinely stall because functional departments dispute ownership of process failures. Which organizational change would MOST directly address this issue?",
+          "q": "Corrective action requests routinely stall because functional departments dispute ownership of process failures. Which organizational change would MOST directly address this?",
           "options": ["Increase the span of control for the VP of Quality", "Implement a matrix structure with cross-functional quality ownership", "Create a taller hierarchy with more management layers", "Adopt a purely project-based structure"],
           "correct": 1,
           "explanation": "Matrix structures assign dual accountability — functional expertise and cross-functional project ownership — directly resolving the ownership disputes that stall CARs in purely functional structures."
         },
         {
-          "q": "An organization with 6 management layers is experiencing slow decision-making on quality holds. Senior leadership asks the quality director to recommend a structural change. The BEST recommendation is to:",
-          "options": ["Add a quality liaison at each management layer", "Flatten the structure by removing intermediate layers and widening spans of control", "Create a separate quality division with its own hierarchy", "Implement a committee-based decision process"],
+          "q": "An organization operating in a rapidly changing technology market with experienced, capable lower-level managers should favor which approach?",
+          "options": ["Highly centralized with narrow span of control", "Decentralized with wider spans and empowered managers", "Functional departmentalization with strict hierarchy", "Process departmentalization with centralized authority"],
           "correct": 1,
-          "explanation": "Reducing management layers (flattening) shortens the decision path. Each removed layer eliminates a communication handoff and approval delay."
+          "explanation": "Decentralization is favored when the environment is complex/uncertain AND lower-level managers are capable. This enables faster response to market changes."
+        },
+        {
+          "q": "The matrix organizational structure was originally developed in which industry?",
+          "options": ["Automotive manufacturing in the 1940s", "U.S. aerospace industry in the 1960s", "Japanese electronics in the 1970s", "Silicon Valley technology in the 1990s"],
+          "correct": 1,
+          "explanation": "The matrix organization was developed in the 1960s in the U.S. aerospace industry to manage complex projects requiring both functional expertise and project coordination."
+        },
+        {
+          "q": "Which is NOT a factor that determines the appropriate span of control?",
+          "options": ["Task complexity and subordinate experience", "Physical proximity of workers", "The manager's personal salary level", "Degree of standardization of procedures"],
+          "correct": 2,
+          "explanation": "Span of control is determined by task complexity, subordinate training/experience, physical proximity, standardization, MIS, culture, manager's style, turnover, financial pressures, and organizational values — not the manager's personal compensation."
+        },
+        {
+          "q": "Which organizational structure groups employees around the stages of a production flow such as casting, pressing, finishing, and inspection?",
+          "options": ["Functional departmentalization", "Product departmentalization", "Process departmentalization", "Customer departmentalization"],
+          "correct": 2,
+          "explanation": "Process departmentalization organizes around the production flow — each department specializes in one phase of production (e.g., casting → press → tube → finishing → inspection/shipping)."
         }
       ],
       "flashcards": [
-        { "front": "What are Mintzberg's five structural configurations?", "back": "Simple Structure, Machine Bureaucracy, Professional Bureaucracy, Divisionalized Form, and Adhocracy. Each optimizes for different environmental conditions and organizational sizes." },
-        { "front": "Mechanistic vs. Organic Organizations (Burns & Stalker)", "back": "Mechanistic: rigid hierarchy, formal rules, centralized decisions — suits stable environments. Organic: flexible, decentralized, adaptive — suits dynamic, uncertain environments." },
-        { "front": "Centralization vs. Decentralization", "back": "Centralized: decisions made at the top — consistent but slow. Decentralized: decisions pushed down — faster and more responsive but risks inconsistency across units." }
+        { "front": "Unity of Command", "back": "Each subordinate should report to only one superior. Core principle of vertical organizational design. Violated in matrix structures where employees have dual reporting relationships." },
+        { "front": "Quality Evolution Timeline", "back": "1920s: Shewhart SPC at Western Electric → 1931/39: Shewhart publications → Post-WWII: Deming brings SPC to Japan → 1980s: TQM (Deming/Juran/Crosby/Feigenbaum) → BPR (radical redesign) → Six Sigma → BPM → Lean-Six Sigma. Productivity: Ford → TPS → JIT → Lean." },
+        { "front": "Matrix Organization — Pros & Cons", "back": "Pros: rapid response to change, efficient use of specialists across products/projects, flexible resource allocation. Cons: potential for conflict, dual reporting confusion, power struggles between functional and project managers. Developed in 1960s U.S. aerospace." },
+        { "front": "Boundaryless Organization", "back": "Also called a network organization. Breaks down traditional barriers (hierarchies, departments, geography) using technology. Enables rapid communication across organizational boundaries. From Ashkenas, Ulrich, Jick, and Kerr." },
+        { "front": "Three Factors of Organizational Design", "back": "Complexity: number of different entities (titles, departments, levels, locations). Formalization: reliance on standard guidelines and procedures. Centralization: where decision-making authority is located." },
+        { "front": "Centralization vs. Decentralization", "back": "Centralized: decisions at top, consistent but slow. Decentralized: decisions pushed down, faster, flexible. Decentralize when: complex/uncertain environment, capable lower managers, minor decisions, open culture, geographic dispersion, flexibility needed." },
+        { "front": "Nine Organizational Structure Types", "back": "Functional, Product, Customer, Geographic, Process, Matrix, Team, Cellular, Boundaryless. Most large organizations use a combination of approaches at different levels." },
+        { "front": "Management Hierarchy — Three Levels", "back": "Top: vision, mission, strategy, resource allocation. Middle: policies, procedures, day-to-day operations, translation layer. First-Level/Line: production oversight, direct workforce supervision, upward/downward communication." }
       ]
     },
     {
       "id": "1B",
       "ref": "I.B",
       "title": "Leadership Challenges",
-      "cognitive": "Analyze",
-      "summary": "Quality leaders must navigate complex interpersonal, organizational, and strategic challenges. This section covers leadership theories, emotional intelligence, change management, and the distinction between leadership and management — all critical for driving quality culture and sustainable improvement.",
+      "cognitive": "Create",
+      "summary": "This section covers five BoK sub-topics: I.B.1 Roles and responsibilities of leaders, I.B.2 Roles and responsibilities of managers, I.B.3 Change management, I.B.4 Leadership techniques (motivation, negotiation, critical thinking), and I.B.5 Empowerment. The line between leader and manager is often blurred in practice but understanding the distinction is critical for the exam. Leaders focus on doing the right things — vision, change, inspiration. Managers focus on doing things right — planning, organizing, controlling. A leader can exist without a formal title; leadership is earned, management is appointed.",
       "concepts": [
         {
-          "term": "Leadership vs. Management",
-          "definition": "Leadership sets direction, aligns people, and motivates through vision. Management plans, organizes, staffs, and controls through systems. Effective quality executives must demonstrate both — leading change while managing operational stability.",
+          "term": "Leader vs. Manager — Key Distinction",
+          "definition": "Leaders focus on doing the right things — authority earned through followers, orientation toward vision/change/inspiration, may or may not hold formal title, followers choose to follow. Managers focus on doing things right — authority granted by position, orientation toward planning/organizing/controlling, hold formal position title, subordinates report by structure. Key leader attributes: knowledge, skills, experience, action, charisma, convincing speech, empathy, ethics, empowerment, collaboration, support, trust, multidimensional personality. Gallup study (2005-2006) found the most commonly identified positive leadership words were: trust, compassion, stability, and hope.",
           "formula": null,
-          "examTip": "Exam questions often present scenarios asking you to distinguish between a leadership response (inspire, vision, change) and a management response (plan, control, measure)."
+          "examTip": "Be able to distinguish between a leadership response (inspire, vision, change) and a management response (plan, control, measure) in exam scenarios."
+        },
+        {
+          "term": "Leadership Styles — Transactional, Transformational, Charismatic",
+          "definition": "Transactional Leadership: based on contractual relationship — clear definition of tasks and responsibilities, getting work done through providing resources and rewards. Sometimes negatively associated with achieving goals only through exchange. The 'hired gun' approach. Transformational Leadership: articulates the vision and values necessary for success, elevates subordinates' goals to align with organizational goals, enhances followers' self-confidence. Example: Bob Galvin's transformation of Motorola through Six Sigma. Sometimes equated to charismatic leadership. Charismatic/Cause Leaders: work behind scenes or are highly visible, gather followers through personal motivation and persuasion, communicate in the language of the targeted group, have stamina to build and sustain energy.",
+          "formula": null,
+          "examTip": "Heavily tested. Transformational = vision + values + change. Transactional = exchange + contracts + rewards. When scenario involves culture change or breakthrough improvement, transformational is the preferred answer."
+        },
+        {
+          "term": "Emotional Intelligence — Goleman's Five Dimensions",
+          "definition": "(1) Self-Awareness: emotional self-assessment, accurate self-assessment, self-confidence. (2) Self-Regulation (Self-Control): trustworthiness, conscientiousness, adaptability, innovation. (3) Motivation: achievement drive, commitment, initiative, optimism. (4) Empathy: understanding others, developing others, service orientation, leveraging diversity, political awareness. (5) Social Skills: influence, communication, conflict management, leadership, change catalyst, building bonds, collaboration and cooperation, team capabilities.",
+          "formula": null,
+          "examTip": "Goleman's five dimensions are frequently tested. EI questions often present interpersonal conflict scenarios — the correct answer addresses emotional awareness before jumping to process solutions."
         },
         {
           "term": "Situational Leadership (Hersey & Blanchard)",
-          "definition": "Leadership style should adapt to the follower's maturity level. Four styles: Telling (S1) for low maturity, Selling (S2), Participating (S3), Delegating (S4) for high maturity. No single style is universally best.",
+          "definition": "Leadership style varies based on follower maturity/readiness. Three factors: task behavior (guidance level), relationship behavior (interpersonal support), and employee maturity/readiness (willingness and ability). Four styles: S1 Telling — high task, low relationship — new/inexperienced employee needing specific instructions and close supervision. S2 Selling — high task, high relationship — employee gaining confidence, decisions explained, questions encouraged. S3 Participating — low task, high relationship — experienced employee, leader shares ideas and facilitates decision-making. S4 Delegating — low task, low relationship — highly experienced employee takes full responsibility with minimal supervision.",
           "formula": null,
-          "examTip": "Match the style to the quadrant: new quality technician = Telling; experienced quality engineer = Delegating."
+          "examTip": "Commonly tested. Match style to follower maturity: new technician = S1 Telling, gaining confidence = S2 Selling, experienced but disengaged = S3 Participating, expert autonomous = S4 Delegating."
         },
         {
-          "term": "Transformational Leadership",
-          "definition": "Leaders who inspire followers to exceed expectations through idealized influence, inspirational motivation, intellectual stimulation, and individualized consideration. Strongly correlated with successful quality culture change.",
+          "term": "Manager Roles, Functions, and Competencies (Drucker)",
+          "definition": "Managers attend to work and resources — a stewardship role. Primary resources: money, people, time, material, physical assets, information, intellectual property. Management functions (POSDC): Planning, Organizing, Staffing, Directing, Controlling. Specific roles include: ethicist, environmentalist, mentor, motivator, coach, communicator, trainer, harmonizer, controller, evaluator, integrator, strategist, architect, organizer, value creator, innovator, administrator, entrepreneur, supporter. Drucker's four tasks: (1) economic performance/profitability, (2) making work productive, (3) managing social impacts, (4) managing within the dimension of time. Competency areas: technical, business, people, human resource, environmental.",
           "formula": null,
-          "examTip": "Transformational leadership is the exam's preferred answer when the scenario involves culture change, quality transformation, or breakthrough improvement."
+          "examTip": "Know the POSDC management functions and Drucker's four tasks. The distinction between the many manager roles helps identify the right approach in scenario questions."
         },
         {
-          "term": "Emotional Intelligence (Goleman)",
-          "definition": "Five domains: Self-Awareness (recognize own emotions), Self-Regulation (manage impulses), Motivation (internal drive), Empathy (understand others' emotions), Social Skills (manage relationships). Research shows EI accounts for 67% of abilities deemed necessary for superior leadership performance.",
+          "term": "Change Management — Kotter's 8 Steps",
+          "definition": "Eight-step model: (1) Create awareness of need for change (urgency), (2) Organize a project with sufficient authority to guide process (coalition), (3) Define the vision and strategies, (4) Communicate the vision — demonstrate personal commitment, (5) Remove obstacles preventing action on the vision (empower), (6) Go for early and visible successes (short-term wins), (7) Build on success by rewarding supporters and involving more people (consolidate), (8) Institutionalize new methods by aligning other systems (anchor in culture). Common errors: not emphasizing urgency, insufficient power in guiding coalition, failing to manage resistance, not ensuring early successes, celebrating prematurely, not changing other systems for continuation.",
           "formula": null,
-          "examTip": "EI questions often present interpersonal conflict scenarios — the correct answer addresses emotional awareness before jumping to process solutions."
+          "examTip": "Know all 8 steps and common errors. Most common failure: Step 1 — not establishing urgency. If scenario describes resistance — identify which step was skipped."
         },
         {
-          "term": "Kotter's 8-Step Change Model",
-          "definition": "Sequential framework: (1) Create urgency, (2) Form guiding coalition, (3) Develop vision & strategy, (4) Communicate the vision, (5) Empower broad-based action, (6) Generate short-term wins, (7) Consolidate gains, (8) Anchor in culture.",
+          "term": "Change Agents and Organizational Roadblocks",
+          "definition": "Change agents facilitate planning and implementation of change. Internal agents: familiar with culture, norms, beliefs, can build relationships with informal leaders. External agents: greater freedom, objectivity, fresh perspective, but lack long-term vested interest and cultural familiarity. Organizational roadblocks: lack of authority (permeable work boundaries), internal focus (inward vs. outward at customers), lack of cross-functional collaboration (silos), lack of understanding (knowledge gaps filled inaccurately), lack of pulling together (must communicate, communicate, communicate), fear of the unknown (uncertain new roles), history of past failures (cynicism from unsuccessful changes).",
           "formula": null,
-          "examTip": "Memorize the sequence — exams test which step comes first, which is missing in a scenario, or what happens when steps are skipped."
+          "examTip": "Know types of roadblocks and strategies for overcoming each. Communication appears repeatedly as both a roadblock and solution."
         },
         {
-          "term": "Lewin's Change Model",
-          "definition": "Three phases: Unfreeze (disrupt status quo, create motivation for change), Change (implement new processes/behaviors), Refreeze (stabilize and institutionalize the new state). Simpler than Kotter but foundational.",
+          "term": "Resistance to Change",
+          "definition": "Fear of change is real and valid. People fear: impact on work and personal lives, corporate downsizing and outsourcing, job losses, not knowing organizational direction. Causes of resistance (AFORMET): like the current condition, believe timing is wrong, don't like change generally, change poorly communicated, fear of failure, wrong people/method/timing, additional workload, poor history of change. Constraint management tools: Interrelationship Digraph (cause-and-effect relationships), Tree Diagram (break constraints into components), Affinity Diagram (group related ideas).",
           "formula": null,
-          "examTip": "If a scenario describes resistance to a new QMS — the organization likely skipped the Unfreeze phase."
+          "examTip": "Know the difference between interrelationship digraphs and tree diagrams for constraint analysis. The interrelationship digraph shows relationships; the tree diagram breaks down into component parts."
+        },
+        {
+          "term": "Organizational Culture (Schein)",
+          "definition": "Schein defined culture as a pattern of shared basic assumptions learned by a group as it solved problems of external adaptation and internal integration, considered valid and taught to new members as the correct way to perceive, think, and feel. Three levels: (1) Artifacts — visible: symbols (logos, office layouts, parking spaces), rituals and routines (performance measurement, reward systems), control systems (hierarchy, informal structures), organizational structures, power structures. (2) Espoused Beliefs and Values — stated strategies, goals, philosophies. (3) Basic Underlying Assumptions — unconscious, taken-for-granted beliefs, deepest and hardest to change.",
+          "formula": null,
+          "examTip": "Culture operates at three levels with increasing depth and difficulty to change. Artifacts are visible and surface-level; underlying assumptions are the deepest and most resistant."
+        },
+        {
+          "term": "Motivation — Maslow's Hierarchy and Herzberg's Two-Factor Theory",
+          "definition": "Maslow's Hierarchy (bottom to top): (1) Physiological — eat, sleep, shelter, (2) Safety — economic and physical security, (3) Belonging — acceptance by family/friends, (4) Esteem — status, high regard, (5) Self-Actualization — achieve one's best. People must satisfy lower-level needs before higher-level needs become motivating. Herzberg's Two-Factor Theory: Hygiene factors (dissatisfiers) — salary, company policies, working conditions, relationship with supervisor. Addressing these prevents dissatisfaction but does NOT create satisfaction. Motivators (satisfiers) — achievement, recognition, the work itself, responsibility, advancement. These create true satisfaction. Additional theories: McClelland (achievement, affiliation, power), Equity theory, Expectancy theory (Vroom — what people do is based on expected gain), Reinforcement theory (antecedent and consequences). Two types of motivation: Extrinsic (applied by others) and Intrinsic (self-applied satisfaction from the work itself).",
+          "formula": null,
+          "examTip": "Both heavily tested. Maslow = hierarchy (must satisfy lower before higher). Herzberg = satisfiers vs. dissatisfiers (fixing hygiene prevents dissatisfaction but doesn't motivate). Caution: what motivates one person may not work for another."
+        },
+        {
+          "term": "Empowerment",
+          "definition": "Giving employees the right to make decisions and take action — based on belief that employees can do more given responsibility and authority. Results in increased productivity and better quality of work life. Job Enlargement: changing scope to include greater portion of horizontal process (more tasks, same level). Job Enrichment: changing depth to include responsibilities of higher level (more decision-making authority). Traditional vs. Empowered: Traditional focuses employee-to-manager with boss/subordinate relationship, hierarchical structure, monitoring/controlling. Empowered focuses customer-to-employee with facilitating/coaching management, inverted triangle (customers on top), peer-to-peer decisions. Four principles: (1) give important work on critical issues, (2) give visibility through sponsors/mentors, (3) build relationships, (4) give discretion and autonomy. Barriers: lack of clear commitment, failure to define empowerment, inappropriate incentives, failure to establish boundaries, inadequate training, lack of implementation plan, inability to modify culture.",
+          "formula": null,
+          "examTip": "Know the difference: job enlargement = horizontal (more tasks), job enrichment = vertical (more authority). Empowerment requires boundaries, training, and sustained commitment — takes a long time and costs money."
+        },
+        {
+          "term": "Negotiation and Conflict Resolution",
+          "definition": "Four negotiation orientations: Win-Win (both benefit — PREFERRED), Win-Lose (one gains at other's expense), Lose-Win (giving in), Lose-Lose (both worse off). Principled negotiation (Fisher & Ury): separate people from the problem, focus on interests not positions, invent options for mutual gain, insist on objective criteria, understand what both sides want to achieve. Additional techniques: be prepared with supporting information, determine real intentions, identify acceptable outcome range up front, be adept at win-win compromise, control emotions, actively listen. Conflict-handling modes (Thomas-Kilmann) — Assertiveness vs. Cooperativeness: Competing (high A, low C — win-lose), Collaborating (high A, high C — win-win), Compromising (moderate both), Avoiding (low both — withdrawal), Accommodating (low A, high C — yielding). Best resolution: (1) define problem apart from people, (2) clarify interests, (3) identify creative options, (4) determine objective criteria.",
+          "formula": null,
+          "examTip": "The conflict-handling modes matrix (assertiveness vs. cooperativeness) is a core exam topic. Know all five modes. Collaborating is almost always preferred unless time pressure makes it impractical."
+        },
+        {
+          "term": "Critical Thinking, TRIZ, and Socratic Method",
+          "definition": "Critical thinking (Davis-Sears): ability to analyze from multiple perspectives, arrive at solutions (not just identify problems), understand creative process, align with outcomes, incorporate TQM elements. Tools include: root cause analysis, Six Sigma thinking, process mapping, affinity diagrams, cause-and-effect diagrams, failure mode analysis. TRIZ: methodology focused on inventive problem-solving, extracts and codifies patterns of invention, seeks contradictions between two values within a system and resolves them using 40 inventive principles. Socratic Method: uses questions to help the thinker (1) gather information, (2) test assumptions, (3) challenge thinking, (4) make conclusions.",
+          "formula": null,
+          "examTip": "TRIZ is a specialty topic but may appear. Know it uses 40 inventive principles to resolve contradictions. The Socratic Method is question-based critical thinking."
         }
       ],
-      "keyFigures": ["Kotter (change management)", "Lewin (force field analysis)", "Goleman (emotional intelligence)", "Hersey & Blanchard (situational leadership)", "Bass (transformational leadership)", "Deming (14 Points)"],
+      "keyFigures": ["Goleman (emotional intelligence)", "Hersey & Blanchard (situational leadership)", "Kotter (8-step change)", "Maslow (hierarchy of needs)", "Herzberg (two-factor theory)", "McClelland (achievement motivation)", "Vroom (expectancy theory)", "Fisher & Ury (principled negotiation)", "Thomas & Kilmann (conflict modes)", "Schein (organizational culture)", "Drucker (management tasks, POSDC)", "Galvin (Motorola Six Sigma transformation)"],
       "practiceQuestions": [
         {
-          "q": "A newly hired quality director discovers that a Six Sigma deployment failed three years ago, leaving employees skeptical of improvement initiatives. Using Kotter's model, the FIRST step should be:",
-          "options": ["Form a cross-functional improvement team", "Create a compelling vision for quality excellence", "Establish urgency by quantifying the cost of poor quality", "Empower employees to eliminate barriers"],
+          "q": "A newly hired quality director discovers a failed Six Sigma deployment from three years ago, leaving employees skeptical. Using Kotter's model, the FIRST step should be:",
+          "options": ["Form a cross-functional improvement team", "Create a compelling vision for quality excellence", "Establish urgency by quantifying cost of poor quality", "Empower employees to eliminate barriers"],
           "correct": 2,
-          "explanation": "Kotter's Step 1 is creating urgency. Without a compelling case for why change is necessary now (e.g., COPQ data, competitive threats), employees who experienced a prior failed initiative will not engage."
+          "explanation": "Kotter's Step 1 is creating urgency. Without a compelling case for why change is necessary now (e.g., COPQ data, competitive threats), employees who experienced a prior failure will not engage."
         },
         {
-          "q": "A quality manager notices that a highly experienced quality engineer is disengaged and producing minimal output. According to Situational Leadership, the MOST appropriate approach is:",
-          "options": ["Provide detailed task instructions and close supervision", "Set goals collaboratively and provide support and encouragement", "Delegate fully and check results at milestones", "Transfer the engineer to a different department"],
+          "q": "An experienced quality engineer is disengaged and producing minimal output despite strong technical skills. According to Situational Leadership, the MOST appropriate style is:",
+          "options": ["Telling — provide detailed instructions and close supervision", "Selling — explain decisions and encourage questions", "Participating — share ideas and facilitate decision-making", "Delegating — hand off responsibility completely"],
+          "correct": 2,
+          "explanation": "High competence but low commitment maps to S3 Participating. The leader involves the follower in decision-making and provides encouragement rather than direction."
+        },
+        {
+          "q": "Herzberg's hygiene factors include all of the following EXCEPT:",
+          "options": ["Company policies", "Salary and benefits", "Working conditions", "Recognition for achievement"],
+          "correct": 3,
+          "explanation": "Recognition is a motivator (satisfier), not a hygiene factor. Hygiene factors (salary, policies, conditions, supervision) prevent dissatisfaction but don't create motivation."
+        },
+        {
+          "q": "A conflict between quality and production over line stoppage authority would BEST be resolved using which Thomas-Kilmann mode?",
+          "options": ["Competing — quality overrides production", "Avoiding — wait for the situation to resolve", "Collaborating — identify interests and create win-win protocol", "Accommodating — quality defers to production's schedule"],
+          "correct": 2,
+          "explanation": "Collaborating (high assertiveness + high cooperativeness) seeks a win-win solution by understanding both departments' underlying interests. This produces a durable resolution."
+        },
+        {
+          "q": "Job enrichment differs from job enlargement in that enrichment:",
+          "options": ["Adds more tasks at the same responsibility level", "Expands the depth of the job with higher-level decision authority", "Reduces the number of tasks to increase focus", "Requires a change in organizational structure"],
           "correct": 1,
-          "explanation": "An experienced but disengaged employee has high competence but low commitment — this maps to Hersey & Blanchard's S3 (Participating/Supporting) style, where the leader involves the follower in decision-making and provides encouragement."
+          "explanation": "Job enlargement expands horizontally (more tasks, same level). Job enrichment expands vertically (more decision-making authority). Enrichment is more closely associated with empowerment."
+        },
+        {
+          "q": "An organization celebrates a successful quality improvement pilot before embedding the new methods into standard procedures and performance systems. According to Kotter, this error occurs at which step?",
+          "options": ["Step 5 — Empower action", "Step 6 — Generate short-term wins", "Step 7 — Consolidate gains", "Step 8 — Anchor in culture"],
+          "correct": 3,
+          "explanation": "Celebrating victory prematurely is an error at Step 7-8. The organization must consolidate gains and anchor changes in culture by aligning systems, procedures, and performance management before declaring success."
+        },
+        {
+          "q": "Which of Drucker's four tasks of management states that business enterprises exist for this fundamental purpose?",
+          "options": ["Making work productive", "Managing social impacts", "Economic performance (profitability)", "Managing within the dimension of time"],
+          "correct": 2,
+          "explanation": "Drucker identified economic performance — profitability — as the fundamental purpose for which business enterprises exist. The other tasks support and sustain this purpose."
         }
       ],
       "flashcards": [
-        { "front": "Deming's 14 Points for Management", "back": "Key principles include: Create constancy of purpose; Adopt the new philosophy; Cease dependence on inspection; Drive out fear; Break down barriers between departments; Institute training and self-improvement; Institute leadership (not supervision)." },
-        { "front": "Servant Leadership (Greenleaf)", "back": "Leader exists to serve the team. Prioritizes growth and well-being of people and communities. Inverts the traditional power hierarchy. Characteristics: listening, empathy, healing, awareness, persuasion, stewardship." },
-        { "front": "Force Field Analysis (Lewin)", "back": "Visual tool mapping driving forces (supporting change) against restraining forces (resisting change). Change occurs when driving forces exceed restraining forces. Strategy: strengthen drivers or weaken restrainers." },
-        { "front": "ADKAR Change Model (Prosci)", "back": "Individual change framework: Awareness (why change), Desire (willingness to participate), Knowledge (how to change), Ability (implement new skills), Reinforcement (sustain the change)." }
+        { "front": "Transactional vs. Transformational Leadership", "back": "Transactional: contractual relationship, clear tasks for clear rewards, exchange-based. Transformational: articulates vision/values, elevates subordinates' goals, enhances self-confidence, drives change. Galvin at Motorola (Six Sigma) = classic transformational example." },
+        { "front": "Kotter's 8 Steps for Change", "back": "(1) Create urgency, (2) Form guiding coalition, (3) Develop vision/strategy, (4) Communicate vision, (5) Empower action/remove obstacles, (6) Generate short-term wins, (7) Consolidate gains, (8) Anchor in culture. Most common failure: skipping Step 1." },
+        { "front": "Goleman's Emotional Intelligence", "back": "Five dimensions: Self-Awareness (know emotions), Self-Regulation (manage impulses), Motivation (achievement drive), Empathy (understand others), Social Skills (manage relationships). EI accounts for ~67% of abilities needed for superior leadership." },
+        { "front": "Maslow's Hierarchy of Needs", "back": "Bottom to top: Physiological → Safety → Belonging → Esteem → Self-Actualization. Lower needs must be met before higher motivate. Workplace is key environment for satisfying all levels." },
+        { "front": "Herzberg's Two-Factor Theory", "back": "Hygiene factors (dissatisfiers): salary, policies, conditions, supervision — fixing prevents dissatisfaction but doesn't motivate. Motivators (satisfiers): achievement, recognition, the work itself, responsibility, advancement — create true satisfaction." },
+        { "front": "Situational Leadership — Four Styles", "back": "S1 Telling: high task, low relationship (new employee). S2 Selling: high task, high relationship (gaining confidence). S3 Participating: low task, high relationship (experienced, disengaged). S4 Delegating: low task, low relationship (expert, autonomous)." },
+        { "front": "Thomas-Kilmann Conflict Modes", "back": "Two dimensions: Assertiveness × Cooperativeness. Competing (win-lose). Collaborating (win-win — preferred). Compromising (middle). Avoiding (withdraw). Accommodating (yield)." },
+        { "front": "Empowerment — Enlargement vs. Enrichment", "back": "Enlargement: horizontal expansion — more tasks at same level. Enrichment: vertical expansion — more decision-making authority. Empowerment requires: clear boundaries, training, sustained commitment, modified culture. Traditional org = boss/subordinate. Empowered org = facilitating/coaching." },
+        { "front": "Schein's Three Levels of Culture", "back": "Level 1: Artifacts — visible (logos, layouts, rituals). Level 2: Espoused beliefs and values — stated strategies. Level 3: Basic underlying assumptions — unconscious, taken-for-granted, hardest to change." },
+        { "front": "Principled Negotiation (Fisher & Ury)", "back": "Four elements: (1) Separate people from problem, (2) Focus on interests not positions, (3) Invent options for mutual gain, (4) Insist on objective criteria. Win-win orientation preferred." },
+        { "front": "POSDC — Management Functions", "back": "Planning: map performance objectives. Organizing: acquire/assemble resources. Staffing: select, hire, train personnel. Directing: direct actions/activities. Controlling: monitor performance vs. plans." },
+        { "front": "TRIZ", "back": "Inventive problem-solving methodology. Extracts and codifies patterns of invention. Seeks contradictions between two values within a system and resolves them using 40 inventive principles." }
       ]
     },
     {
       "id": "1C",
       "ref": "I.C",
       "title": "Teams and Team Processes",
-      "cognitive": "Analyze",
-      "summary": "Quality improvements are overwhelmingly executed through teams. Understanding team formation, dynamics, conflict resolution, facilitation, and decision-making processes is essential for any quality manager leading cross-functional improvement initiatives.",
+      "cognitive": "Evaluate",
+      "summary": "A team is a group of people who perform interdependent tasks to work toward a common mission. Teams differ from work groups in that they have shared responsibility and mutual accountability. Benefits to organizations include synergistic problem-solving, improved cross-functional understanding, improved quality and productivity, greater innovation, reduced costs, increased commitment, more flexible response to change, and reduced turnover. Benefits to individuals include enhanced skills, broader knowledge, new leadership capabilities, increased quality of work life, and sense of accomplishment. Teams fail when cooperative methods are not integrated into culture, support systems are absent, managers are unprepared for changing roles, training is inadequate, recognition systems are inappropriate, and top management is impatient.",
       "concepts": [
         {
+          "term": "Eight Types of Teams",
+          "definition": "(1) Self-Managed Teams: authorized for day-to-day decisions (safety, quality, maintenance, scheduling, personnel); more successful in greenfield sites; require top management support, clear communication, training, supportive objectives, defined autonomy, and implementation plan. (2) Process Improvement Teams: cross-functional, project-based with beginning and end, guided by project plan, led by team leader selected by sponsor. (3) Temporary/Ad Hoc Teams: formed for specific problems (antivirus compromise, flood, compliance situation); may not use formal structures. (4) Work Groups (Natural Teams): employees responsible for a particular process or product line. (5) Cellular Teams: U-shape configuration, cross-trained operators, coordinated timing, lead may rotate. (6) Special Project Teams: long-standing, dedicated teams for major efforts (reengineering, new market entry, M&A, system replacement); may operate as parallel organization exempt from normal rules. (7) Virtual Teams: geographically dispersed, electronic communication; require specialized technology, reduce travel expenses but challenge team cohesion. (8) Combinations.",
+          "formula": null,
+          "examTip": "Self-managed and virtual teams are most frequently tested. Know that self-managed teams work better in greenfield (new) sites because existing organizations resist the dramatic cultural change required."
+        },
+        {
           "term": "Tuckman's Team Development Model",
-          "definition": "Five stages: Forming (orientation, politeness), Storming (conflict, power struggles), Norming (establishing roles, building trust), Performing (high productivity, self-managing), Adjourning (disbanding, closure). Teams may regress to earlier stages when membership or scope changes.",
+          "definition": "Five stages: (1) Forming — members get acquainted, roles and ground rules established, polite and tentative. (2) Storming — conflicts emerge, members challenge authority and each other, most critical stage. (3) Norming — team establishes norms, resolves conflicts, cooperation and cohesion develop. (4) Performing — team functions at high level, focus on achieving goals, maximum productivity. (5) Adjourning — team disbands after completing mission, recognition and closure. Teams may regress to earlier stages when membership or scope changes.",
           "formula": null,
-          "examTip": "Recognize the stage from behavioral descriptions in scenarios. Conflict = Storming. High autonomy and productivity = Performing."
+          "examTip": "Heavily tested. Recognize stages from behavioral descriptions: politeness = Forming, conflict = Storming, cohesion = Norming, high productivity = Performing, disbanding = Adjourning."
         },
         {
-          "term": "Team Types",
-          "definition": "Natural work teams (ongoing, same function), Cross-functional teams (multiple departments, specific project), Self-directed work teams (autonomous, minimal supervision), Virtual teams (geographically dispersed). Each has distinct leadership requirements.",
+          "term": "Seven Key Team Roles",
+          "definition": "Team Leader: coordinates meetings, guides team, reports progress, has vested interest in process. Facilitator: helps manage dynamics, guides problem-solving, focuses on process NOT content, impartial — does not influence group decisions. Process Owner: responsible for the process being improved, may also be sponsor. Champion/Sponsor: provides authority and resources, removes barriers, represents team to management, must be high enough in organization for cross-functional issues. Scribe/Recorder: records critical data, minutes, decisions; can intervene to clarify. Timekeeper: monitors meeting time, sufficiently assertive to intervene. Team Members: participants and SMEs who bring about change; must be willing to commit, receptive to new ideas, able to handle stress.",
           "formula": null,
-          "examTip": "Match the team type to the scenario's constraints — cross-functional for process improvement, self-directed for mature organizations."
+          "examTip": "Critical distinction: Team Leader is involved in content and has stake in outcome. Facilitator focuses on process, is impartial, does NOT get involved in content. This is commonly tested."
         },
         {
-          "term": "Facilitation Techniques",
-          "definition": "Neutral third-party guides group processes: brainstorming (divergent), nominal group technique (ranked voting), multi-voting (convergent), affinity diagramming (grouping ideas). The facilitator manages process, not content.",
+          "term": "Team Building Techniques and Meeting Best Practices",
+          "definition": "Two major process groups: task-type (keep team focused on goals) and maintenance-type (build effectiveness of relationships). First meeting best practices: have sponsor attend to emphasize mission, ensure full understanding of mission, icebreakers for acquaintance, establish ground rules (norms), clarify roles, work out decision-making issues, select improvement methodology, establish project plan, draft future meeting structure. Consensus decision-making: most thorough and demanding approach, all must objectively listen to others, decision must be acceptable enough that ALL members will support it. Preventing problems: use norms (agreed-upon rules) and set agendas. Norm examples: be on time, minimum attendance requirement, no side conversations, management representative present, participation by everyone, parking lot for off-agenda issues, no electronic devices.",
           "formula": null,
-          "examTip": "Know the difference: facilitators guide process; leaders guide content. Facilitators should not influence the group's decisions."
+          "examTip": "Consensus does NOT mean unanimity — it means the decision is acceptable enough that all members will support it. Know the difference."
         },
         {
-          "term": "Conflict Resolution Strategies",
-          "definition": "Thomas-Kilmann model: Competing (assertive, uncooperative), Collaborating (assertive, cooperative — win-win), Compromising (middle ground), Avoiding (withdraw), Accommodating (yield). Collaborating produces the most durable solutions but requires time.",
+          "term": "Dealing with Team Process Problems",
+          "definition": "Ten common problems: (1) Floundering — revisit objectives. (2) Influence based on position — clarify equal voice. (3) Participants rarely speak — gatekeeping, encourage participation. (4) Participants speak too much — round-robin techniques. (5) Unquestioned acceptance of opinions — ask for data. (6) Rushing to solution — slow down, follow process. (7) Explaining another's viewpoint — ask person directly. (8) Digression — redirect to agenda. (9) Ridiculing member's values — support person, reinforce ground rules. (10) Personal conflict — take off-line. Feedback guidelines: be specific, make observations not conclusions, avoid labels, don't exaggerate, speak for yourself, restrict to known things, phrase as statements not questions.",
           "formula": null,
-          "examTip": "Collaborating is almost always the preferred answer on the exam unless time pressure makes it impractical."
+          "examTip": "Exam presents scenarios matching these dysfunctions. Identify the problem type and select the correct intervention."
         },
         {
           "term": "Groupthink (Janis)",
-          "definition": "Dysfunctional team dynamic where desire for consensus overrides realistic appraisal of alternatives. Symptoms: illusion of invulnerability, collective rationalization, self-censorship, illusion of unanimity. Prevented by assigning devil's advocate roles, seeking external opinions, and encouraging dissent.",
+          "definition": "Occurs when team members coalesce in supporting an idea not fully explored, or when members secretly disagree but prioritize friendly relations over honest discussion. Prevention: brainstorm alternatives before selecting approach, encourage expressing concerns, ensure ample time to examine all ideas, appoint roles for examining alternatives, develop objective criteria for challenging proposed actions.",
           "formula": null,
-          "examTip": "Groupthink scenarios describe a team that agrees too quickly without examining risks or alternatives."
-        }
-      ],
-      "keyFigures": ["Tuckman (team stages)", "Thomas & Kilmann (conflict modes)", "Janis (groupthink)", "Belbin (team roles)"],
-      "practiceQuestions": [
-        {
-          "q": "During a kaizen event, two team members begin arguing about the root cause of a defect, and the team leader notices other members withdrawing from the discussion. This team is in which stage of Tuckman's model?",
-          "options": ["Forming", "Storming", "Norming", "Performing"],
-          "correct": 1,
-          "explanation": "Open conflict and member withdrawal are hallmarks of the Storming stage. The leader should normalize this as natural team development and facilitate constructive resolution."
+          "examTip": "Groupthink scenarios describe a team agreeing too quickly without examining risks. The correct answer involves structured techniques to surface dissent."
         },
         {
-          "q": "A quality improvement team consistently reaches consensus within minutes and has never challenged the team leader's proposals. The MOST likely dysfunction is:",
+          "term": "Team Performance Evaluation and Recognition",
+          "definition": "Objective measures: reduction of customer complaints, process performance changes (yield, defect rate, cycle time), person-hours invested, resources consumed (budget vs. actual), milestone progress. Recognition: nonmonetary (often MORE effective — plaques, articles, T-shirts, pins, verbal mention), monetary (bonuses, pay-for-skills, promotions, preferred assignments), internal (from team leaders at milestones), external (for exceptional contributions). Effective teamwork requires intersection of team member support (commitment, accountability, systems thinking, internal customer honor) and organizational support (culture integration, leadership structures, training, rewards).",
+          "formula": null,
+          "examTip": "Nonmonetary recognition is cited as often more effective than monetary. Ignoring or rewarding the wrong things are causes of dissatisfaction."
+        },
+        {
+          "term": "KESAM Model and Steering Committee",
+          "definition": "KESAM for team member selection: K — Knowledge (proven techniques, project planning), E — Experience (instruction/supervision, 2+ years relevant), S — Skills (communication, tools proficiency), A — Attitude (enjoys learning, team-oriented, measures success on improvement), M — Additional comments. Steering Committee: top management ultimately responsible, identifies and prioritizes improvement opportunities, selects teams, provides resources, removes barriers, tracks progress. A charter is a formal document defining the team's authority and scope of work.",
+          "formula": null,
+          "examTip": "KESAM may appear on the exam as a team member selection framework. Know all five factors."
+        }
+      ],
+      "keyFigures": ["Tuckman (team stages)", "Janis (groupthink)"],
+      "practiceQuestions": [
+        {
+          "q": "During a kaizen event, two team members argue about root cause while others withdraw. This team is in which Tuckman stage?",
+          "options": ["Forming", "Storming", "Norming", "Performing"],
+          "correct": 1,
+          "explanation": "Open conflict and member withdrawal are hallmarks of Storming. The leader should normalize this as natural development and facilitate constructive resolution."
+        },
+        {
+          "q": "A quality improvement team consistently reaches consensus within minutes and has never challenged the leader's proposals. The MOST likely dysfunction is:",
           "options": ["Poor facilitation skills", "Groupthink", "Social loafing", "Role ambiguity"],
           "correct": 1,
-          "explanation": "Rapid, unchallenged consensus is a primary indicator of groupthink — the team is prioritizing harmony over critical evaluation of alternatives."
+          "explanation": "Rapid, unchallenged consensus is a primary indicator of groupthink — the team prioritizes harmony over critical evaluation."
+        },
+        {
+          "q": "Self-managed teams are more likely to succeed in which type of facility?",
+          "options": ["Established factory with long-tenured employees", "Greenfield (new) facility", "Recently acquired competitor's plant", "Unionized facility with rigid job classifications"],
+          "correct": 1,
+          "explanation": "Self-managed teams work better in greenfield sites because there is no existing cultural baggage or hierarchical expectations to overcome."
+        },
+        {
+          "q": "The PRIMARY difference between a team leader and a facilitator is that the facilitator:",
+          "options": ["Has more authority than the leader", "Focuses on process rather than content and remains impartial", "Reports directly to the steering committee", "Is always an external consultant"],
+          "correct": 1,
+          "explanation": "The facilitator guides process without getting involved in content decisions. The leader is involved in content and has a vested interest in outcome."
+        },
+        {
+          "q": "A team member dominates every discussion while two others rarely contribute. The BEST intervention is:",
+          "options": ["Remove the dominant member from the team", "Use structured round-robin techniques and practice gatekeeping", "Let the team work it out naturally", "Report the issue to the steering committee"],
+          "correct": 1,
+          "explanation": "Problems 3 and 4 from the team process problems list: structure meetings so all participate (round-robin) and practice gatekeeping to encourage quieter members."
         }
       ],
       "flashcards": [
-        { "front": "Nominal Group Technique (NGT)", "back": "Structured decision-making: (1) Silent idea generation, (2) Round-robin sharing, (3) Group discussion for clarification, (4) Individual ranking/voting. Prevents dominant personalities from controlling outcomes." },
-        { "front": "Belbin's Team Roles", "back": "Nine roles across three categories: Action (Shaper, Implementer, Completer-Finisher), People (Coordinator, Team Worker, Resource Investigator), Thinking (Plant, Monitor-Evaluator, Specialist). Balanced teams have representation across categories." },
-        { "front": "Social Loafing", "back": "Tendency of individuals to exert less effort in a group than when working alone. Mitigated by: individual accountability, meaningful tasks, small team size, clear role assignments." }
+        { "front": "Tuckman's Five Stages", "back": "Forming (polite, tentative) → Storming (conflict, challenges) → Norming (cohesion, norms) → Performing (high productivity) → Adjourning (disbanding, closure). Teams can regress when membership or scope changes." },
+        { "front": "Team Leader vs. Facilitator", "back": "Leader: coordinates, guides, has vested interest, involved in content. Facilitator: guides process, impartial, NOT involved in content, helps manage dynamics." },
+        { "front": "Self-Managed Teams", "back": "Authorized for day-to-day decisions (safety, quality, scheduling, personnel). Work best in greenfield sites. Require: top management support, training, clear communication, defined autonomy, supportive objectives, implementation plan." },
+        { "front": "Groupthink Prevention", "back": "Brainstorm alternatives first, encourage dissent, provide ample time, appoint devil's advocate, use objective criteria. Key sign: team agrees too quickly without examining risks." },
+        { "front": "Consensus vs. Unanimity", "back": "Consensus: decision acceptable enough that ALL members will support it — not necessarily everyone's first choice. Unanimity: everyone agrees completely. Consensus is the recommended approach for major team decisions." },
+        { "front": "KESAM Model", "back": "Team selection: Knowledge, Experience (2+ years), Skills (communication, tools), Attitude (learning-oriented, team player), Additional comments (other factors)." },
+        { "front": "Team Charter", "back": "Formal document defining the team's authority, scope of work, mission, boundaries, resources, and reporting relationships. Issued by the sponsor/steering committee." },
+        { "front": "Eight Team Types", "back": "Self-managed, Process improvement, Ad hoc/temporary, Work groups (natural), Cellular, Special project, Virtual, Combinations. Each has distinct leadership requirements and best-use scenarios." }
       ]
     },
     {
@@ -188,39 +344,54 @@
       "ref": "I.D",
       "title": "ASQ Code of Ethics",
       "cognitive": "Apply",
-      "summary": "The ASQ Code of Ethics establishes professional conduct standards for quality practitioners. Quality managers must not only follow these principles but actively promote ethical behavior within their organizations, particularly when quality, safety, and compliance interests conflict with commercial pressures.",
+      "summary": "The ASQ Code of Ethics establishes global standards of conduct for ASQ members, certification holders, and anyone perceived to represent ASQ. A critical role of leadership is ensuring the organization defines acceptable behaviors and communicates values. The code requires members to be honest and transparent, not harm others, treat them with respect, dignity, and fairness, be professional and socially responsible, and advance the quality profession. The ASQ Professional Ethics and Qualifications Committee is appointed annually by the Board of Directors and can impose disciplinary actions including permanent revocation of certifications and expulsion from the society.",
       "concepts": [
         {
-          "term": "ASQ Code of Ethics — Core Principles",
-          "definition": "Members must: (1) Be honest and impartial; serve employer, clients, and public with integrity. (2) Strive to increase the competence and prestige of the profession. (3) Use knowledge and skill for human welfare and not for destructive purposes. Fundamental obligation: protect public safety.",
+          "term": "ASQ Code of Ethics — Three Categories of Expectations",
+          "definition": "Category A — Act with Integrity and Honesty: (1) Uphold integrity, honor, and dignity of the profession, (2) Be truthful and transparent in all professional interactions, (3) Execute responsibilities in a responsible and fully informed manner, (4) Accurately represent qualifications, competence, experience, and training, (5) Only offer services and undertake assignments within areas of competence. Category B — Demonstrate Responsibility: (1) Hold paramount safety, health, and welfare of individuals, public, and environment, (2) Avoid harmful conduct through words or deeds, treat others fairly without prejudice, (3) Do not harm reputation of the Society, its members, or the profession, (4) Act professionally and socially responsibly, (5) Allow diversity in opinions and personal lives of others. Category C — Safeguard Proprietary Information and Avoid Conflicts of Interest: (1) Ensure protection and integrity of confidential information, (2) Do not use confidential information for personal gain, (3) Fully disclose and avoid real or perceived conflicts of interest, (4) Give credit where due, (5) Do not plagiarize — obtain and document permission for intellectual property use.",
           "formula": null,
-          "examTip": "When ethics questions present a conflict between employer interests and public safety — public safety ALWAYS takes priority."
+          "examTip": "The three categories (A: Integrity, B: Responsibility, C: Safeguarding) are the framework for all ethics questions. When safety conflicts with any other concern — safety ALWAYS wins."
         },
         {
-          "term": "Ethical Decision-Making Framework",
-          "definition": "Structured approach: (1) Identify the ethical issue, (2) Gather relevant facts, (3) Identify stakeholders, (4) Consider alternatives, (5) Evaluate consequences of each alternative, (6) Choose the action most consistent with professional ethics, (7) Implement and monitor.",
+          "term": "Key Ethical Principles for Quality Managers",
+          "definition": "Eight principles: Honesty (accurate representation of data, qualifications, findings), Transparency (open communication about quality issues and risks), Confidentiality (protecting proprietary information), Objectivity (decisions based on facts not personal interests), Fairness (treating stakeholders without prejudice or discrimination), Safety (paramount welfare of individuals and public), Competence (only undertaking work within qualified areas), Credit (acknowledging contributions, no plagiarism). Connection to ISO 26000 — international guidance standard on social responsibility. Laws and regulations control industries, but individuals must believe in and feel the need to conduct themselves ethically.",
           "formula": null,
-          "examTip": "Scenarios often test whether you prioritize ethics over convenience, cost, or schedule pressure."
+          "examTip": "Cross-border ethics: what is acceptable in one country may not be in another. Local unethical behavior should not be accepted just because it is local practice."
         },
         {
-          "term": "Whistleblower Protection",
-          "definition": "Quality professionals have an ethical obligation to report unsafe products, falsified data, or regulatory non-compliance. Many jurisdictions provide legal protections for whistleblowers. The quality manager must understand both the ethical duty and the organizational channels for reporting.",
+          "term": "Practical Ethics and Disciplinary Process",
+          "definition": "The Professional Ethics and Qualifications Committee interprets the code and applies it to specific situations. Communications may not be specifically called out in code text. Actions are commensurate with offense seriousness. Disciplinary actions may include permanent revocation of certifications and/or expulsion from the society. Differences in work style or personality should be addressed directly before escalating as ethics issues. Scenario types: supplier-customer relationships (ethical relationship may be implied from context), cross-border ethics (local practice doesn't override professional ethics), confidential information (never for personal gain), conflicts of interest (proactively disclose). Organizations should develop their own code of ethics at or above the ASQ code level.",
           "formula": null,
-          "examTip": "If a scenario involves pressure to suppress quality data or ship non-conforming product — the ethical answer is always to report and escalate."
+          "examTip": "Expect 2-3 scenario-based ethics questions on the exam. Apply the three pillars: Integrity, Responsibility, Safeguarding. Choose answers prioritizing public safety and honest disclosure."
         }
       ],
-      "keyFigures": ["ASQ (professional body)", "Deming (management ethics)", "Juran (quality conscience)"],
+      "keyFigures": ["ASQ (professional body, Board of Directors)", "ISO 26000 (social responsibility guidance)"],
       "practiceQuestions": [
         {
-          "q": "A quality manager discovers that test data was falsified to meet a customer delivery deadline. The plant manager instructs the quality manager to 'let it go this time.' According to the ASQ Code of Ethics, the quality manager should:",
-          "options": ["Comply with the plant manager to maintain the working relationship", "Document the issue and report it through proper organizational channels", "Resign immediately in protest", "Wait for the next audit to address the finding"],
+          "q": "A quality manager discovers test data was falsified to meet a delivery deadline. The plant manager says to 'let it go this time.' The quality manager should:",
+          "options": ["Comply to maintain the working relationship", "Document the issue and report through proper channels", "Resign immediately in protest", "Wait for the next audit to address it"],
           "correct": 1,
-          "explanation": "The ASQ Code of Ethics requires honest reporting and integrity. Falsified data is a serious ethical violation. The quality manager must document and report through proper channels, escalating if necessary."
+          "explanation": "The ASQ Code requires truthfulness, transparency, and holding safety paramount. Falsified data is a serious violation requiring documentation and reporting through proper channels."
+        },
+        {
+          "q": "A quality consultant discovers a former client's proprietary methodology would solve a current client's problem. The consultant should:",
+          "options": ["Share the methodology since it benefits the current client", "Modify it slightly and present as original work", "Not share confidential information and develop an alternative", "Ask former client's permission before sharing"],
+          "correct": 2,
+          "explanation": "Category C requires protecting confidential information and not using it for personal gain. The consultant must develop an alternative approach independently."
+        },
+        {
+          "q": "An ASQ member is asked to lead a reliability engineering project but has no formal training or experience in reliability. According to the Code, the member should:",
+          "options": ["Accept the project and learn as they go", "Accept but disclose the limitation to the client", "Decline and recommend someone with appropriate qualifications", "Accept only if supervised by a reliability expert"],
+          "correct": 2,
+          "explanation": "Category A requires only offering services within areas of competence. The ethical response is to decline and recommend a qualified practitioner."
         }
       ],
       "flashcards": [
-        { "front": "ASQ Code of Ethics — Three Fundamental Obligations", "back": "(1) Honest and impartial service to employers, clients, and the public. (2) Strive to increase competence and prestige of the quality profession. (3) Apply knowledge for advancement of human welfare, never for destructive purposes." },
-        { "front": "Ethics vs. Compliance", "back": "Compliance = following rules, laws, and regulations (minimum standard). Ethics = doing what is right even when not required by law (higher standard). Quality managers are held to the ethical standard." }
+        { "front": "ASQ Code of Ethics — Three Categories", "back": "A: Integrity and Honesty — uphold dignity, be truthful, represent qualifications accurately, work within competence. B: Responsibility — paramount safety/welfare, avoid harm, treat fairly, act professionally. C: Safeguard Information — protect confidential data, no personal gain, disclose conflicts, give credit, no plagiarism." },
+        { "front": "Paramount Safety Principle", "back": "Hold paramount the safety, health, and welfare of individuals, the public, and the environment. Overriding principle — when safety conflicts with employer interests, schedule, or cost, safety always takes priority." },
+        { "front": "Ethics vs. Compliance", "back": "Compliance = following rules/laws/regulations (minimum, externally imposed). Ethics = doing what is right even when not required by law (higher standard, internally driven). Quality managers are held to the ethical standard." },
+        { "front": "ASQ Disciplinary Actions", "back": "The Professional Ethics and Qualifications Committee (appointed annually by Board of Directors) can impose actions commensurate with offense seriousness — up to and including permanent revocation of certifications and expulsion from the society." },
+        { "front": "ISO 26000", "back": "International guidance standard on social responsibility. Not specifically part of ASQ Code but provides framework for ethical behavior. The intent of ethical behavior permeates every aspect of professional conduct." }
       ]
     }
   ]
