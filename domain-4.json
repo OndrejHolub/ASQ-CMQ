@@ -1,0 +1,176 @@
+{
+  "id": 4,
+  "num": "IV",
+  "title": "Quality Management Tools",
+  "examQuestions": 28,
+  "examWeight": 17,
+  "sections": [
+    {
+      "id": "4A",
+      "ref": "IV.A",
+      "title": "Problem-Solving and Improvement Tools",
+      "cognitive": "Analyze",
+      "summary": "Quality managers must select and apply the right analytical tool for each situation. This section covers the seven basic quality control tools, the seven management and planning tools, and lean improvement tools. The exam tests tool selection — which tool answers which question — as much as tool mechanics.",
+      "concepts": [
+        {
+          "term": "Seven Basic Quality Control Tools",
+          "definition": "Ishikawa's foundational toolkit: (1) Cause-and-Effect (Fishbone) Diagram — organizes potential causes by category, (2) Check Sheet — structured data collection form, (3) Control Chart — monitors process stability over time, (4) Histogram — displays frequency distribution of data, (5) Pareto Chart — prioritizes problems by frequency/impact (80/20), (6) Scatter Diagram — shows correlation between two variables, (7) Flowchart (Process Map) — visualizes process steps and decision points.",
+          "formula": null,
+          "examTip": "Know which tool answers which question: What is the distribution? → Histogram. Which problems are most significant? → Pareto. Is the process stable? → Control chart. Are two variables related? → Scatter diagram."
+        },
+        {
+          "term": "Seven Management and Planning Tools",
+          "definition": "(1) Affinity Diagram — groups ideas by natural relationships, (2) Interrelationship Digraph — identifies cause-and-effect among related issues, (3) Tree Diagram — breaks objectives into increasingly detailed actions, (4) Matrix Diagram — shows relationships between groups of items, (5) Prioritization Matrix — weighted criteria for decision-making, (6) Process Decision Program Chart (PDPC) — anticipates failures in implementation plans, (7) Activity Network Diagram — sequences tasks for project scheduling.",
+          "formula": null,
+          "examTip": "The 7 management tools are used for planning and organizing qualitative information — contrast with the 7 QC tools which are primarily for quantitative data analysis."
+        },
+        {
+          "term": "Pareto Analysis",
+          "definition": "Based on the Pareto Principle (80/20 rule): approximately 80% of effects come from 20% of causes. The Pareto chart displays categories of problems in descending order of frequency with a cumulative percentage line. Used to identify the 'vital few' problems that will yield the greatest improvement when addressed. Can be stratified (nested Pareto) to drill into the top category.",
+          "formula": "Cumulative % = Running total of category / Grand total × 100%",
+          "examTip": "After creating a Pareto chart, focus improvement on the leftmost bars (vital few). If all bars are roughly equal height, the Pareto principle does not apply — look for a different stratification."
+        },
+        {
+          "term": "Cause-and-Effect (Ishikawa/Fishbone) Diagram",
+          "definition": "Organizes brainstormed potential causes of a problem into major categories. Manufacturing commonly uses 6M: Man (People), Machine (Equipment), Method (Process), Material, Measurement, Mother Nature (Environment). Service industries may use 4P: Policies, Procedures, People, Plant. The diagram structures team thinking and ensures comprehensive cause exploration.",
+          "formula": null,
+          "examTip": "The fishbone is a brainstorming organizer, not a root cause confirmation tool. After generating potential causes, each must be verified with data before concluding it is the actual root cause."
+        },
+        {
+          "term": "FMEA (Failure Mode and Effects Analysis)",
+          "definition": "Proactive risk assessment tool that systematically evaluates potential failures. For each potential failure mode, three factors are scored (typically 1–10): Severity (impact on customer), Occurrence (likelihood of cause), Detection (likelihood of catching before customer). The Risk Priority Number prioritizes corrective action.",
+          "formula": "RPN = Severity × Occurrence × Detection\nAction Priority: address highest RPNs first\nNote: Some standards now recommend using Action Priority tables instead of raw RPN multiplication",
+          "examTip": "High severity items should be addressed regardless of RPN — a severity 9 or 10 with any occurrence warrants action. Do not solely rely on RPN ranking."
+        },
+        {
+          "term": "Lean Tools — 5S, Kaizen, Poka-Yoke",
+          "definition": "5S: Sort (remove unnecessary items), Set in Order (organize remaining items), Shine (clean and inspect), Standardize (create standards for first 3S), Sustain (maintain discipline). Kaizen: rapid, focused improvement events (3–5 days) with cross-functional teams attacking a specific process. Poka-Yoke: mistake-proofing devices or methods that prevent errors or make them immediately obvious — classified as prevention (impossible to make error) or detection (error is immediately flagged).",
+          "formula": null,
+          "examTip": "Prevention poka-yoke > detection poka-yoke. Example: asymmetric connector that only fits one way (prevention) vs. sensor that alarms on incorrect assembly (detection)."
+        }
+      ],
+      "keyFigures": ["Ishikawa (7 QC tools, fishbone)", "Pareto/Juran (vital few)", "Shingo (poka-yoke)", "Ohno (lean/TPS)", "Mizuno (7 management tools)"],
+      "practiceQuestions": [
+        {
+          "q": "A quality team has brainstormed 40 potential causes for a recurring defect and needs to organize them logically before investigation. The MOST appropriate tool is:",
+          "options": ["Pareto chart", "Cause-and-effect diagram", "Scatter diagram", "Control chart"],
+          "correct": 1,
+          "explanation": "A cause-and-effect (fishbone) diagram organizes brainstormed causes into structured categories (6M or similar), making the list manageable and highlighting areas for investigation. Pareto requires frequency data (not yet available); scatter diagrams require paired data."
+        },
+        {
+          "q": "An FMEA identifies a failure mode with Severity = 9, Occurrence = 2, Detection = 3. The RPN is 54. Another mode has S = 5, O = 8, D = 7 with RPN = 280. Which should be prioritized?",
+          "options": ["The RPN 280 mode — higher RPN means higher risk", "The Severity 9 mode — high severity requires action regardless of RPN", "Both equally — both are above the action threshold", "Neither — RPNs below 300 do not require action"],
+          "correct": 1,
+          "explanation": "A severity of 9 (safety or regulatory impact) demands action regardless of the overall RPN. Relying solely on RPN can mask critical high-severity, low-occurrence risks. Best practice: address all severity ≥ 9 items first, then prioritize remaining by RPN."
+        }
+      ],
+      "flashcards": [
+        { "front": "7 QC Tools — Selection Guide", "back": "What's the pattern? → Histogram. What's most frequent? → Pareto. What causes this? → Fishbone. Is this stable? → Control Chart. Are X and Y related? → Scatter. What are the steps? → Flowchart. How do I collect data? → Check Sheet." },
+        { "front": "FMEA — Severity 9 and 10", "back": "Severity 9: potential safety issue with warning. Severity 10: safety issue without warning (or regulatory non-compliance). AIAG guidance: any Severity ≥ 9 requires action regardless of Occurrence or Detection scores." },
+        { "front": "5S — Japanese Terms", "back": "Seiri (Sort), Seiton (Set in Order), Seiso (Shine), Seiketsu (Standardize), Shitsuke (Sustain). The fifth S — Sustain — is the most difficult and the most critical for long-term success." },
+        { "front": "8 Wastes of Lean (TIMWOODS)", "back": "Transportation, Inventory, Motion, Waiting, Overproduction, Overprocessing, Defects, Skills (underutilized talent). Overproduction is often considered the worst waste because it generates all others." }
+      ]
+    },
+    {
+      "id": "4B",
+      "ref": "IV.B",
+      "title": "Statistical Process Control",
+      "cognitive": "Analyze",
+      "summary": "SPC is the application of statistical methods to monitor and control processes. Quality managers must understand variation theory, control chart selection, interpretation rules, and process capability — the mathematical language of process performance. This section is calculation-heavy on the exam.",
+      "concepts": [
+        {
+          "term": "Variation Theory — Common vs. Special Cause",
+          "definition": "Common cause variation is inherent to the process — random, stable, predictable within limits. Special cause variation is assignable to a specific, identifiable factor — not part of the normal process. A process exhibiting only common cause variation is 'in statistical control' (stable and predictable). Special causes must be identified and eliminated. Acting on common cause variation as if it were special cause (tampering) increases variation.",
+          "formula": null,
+          "examTip": "Deming's key insight: do NOT adjust a stable process in response to individual data points (tampering). Improve the system to reduce common cause variation. Only act on special causes."
+        },
+        {
+          "term": "Control Chart Selection",
+          "definition": "Variable data (continuous measurement): X-bar and R chart (subgroup average and range, n < 10), X-bar and S chart (subgroup average and standard deviation, n ≥ 10), Individual and Moving Range (I-MR) chart (single measurements). Attribute data (counts): p-chart (proportion defective, variable sample size), np-chart (number defective, fixed sample size), c-chart (count of defects per unit, fixed opportunity), u-chart (defects per unit, variable opportunity).",
+          "formula": "X-bar chart: UCL = X̄ + A₂R̄,  LCL = X̄ − A₂R̄\nR chart: UCL = D₄R̄,  LCL = D₃R̄\np-chart: UCL = p̄ + 3√(p̄(1−p̄)/n),  LCL = p̄ − 3√(p̄(1−p̄)/n)",
+          "examTip": "Chart selection logic: Is data variable or attribute? If variable: subgroups or individuals? If attribute: defectives (p, np) or defects (c, u)? Fixed or variable sample size?"
+        },
+        {
+          "term": "Control Chart Interpretation — Western Electric Rules",
+          "definition": "Out-of-control signals: (1) One point beyond 3σ from center line, (2) Two of three consecutive points beyond 2σ (same side), (3) Four of five consecutive points beyond 1σ (same side), (4) Eight consecutive points on one side of the center line. Additional patterns: trends (six consecutive increasing/decreasing points), cycles (repeating patterns), stratification (points hugging center line — may indicate mixed populations or incorrect control limits).",
+          "formula": null,
+          "examTip": "Memorize all four Western Electric rules. The exam provides control charts and asks you to identify whether the process is in control and which rule(s) are violated."
+        },
+        {
+          "term": "Process Capability",
+          "definition": "Measures how well a stable process meets specifications. Cp measures potential capability (spread of process relative to specification width). Cpk measures actual capability (accounts for centering). A capable and centered process has Cp ≈ Cpk. A capable but off-center process has Cp > Cpk.",
+          "formula": "Cp = (USL − LSL) / 6σ\nCpk = min[(USL − μ) / 3σ,  (μ − LSL) / 3σ]\nPp = (USL − LSL) / 6s   [uses sample std dev — overall capability]\nPpk = min[(USL − μ) / 3s,  (μ − LSL) / 3s]\n\nGeneral benchmarks:\n  Cpk ≥ 1.33 — capable\n  Cpk ≥ 1.67 — capable (safety/critical)\n  Cpk ≥ 2.00 — Six Sigma level",
+          "examTip": "Cp vs. Cpk: Cp ignores centering (best case), Cpk accounts for centering (actual performance). If Cp >> Cpk, the process is capable but off-center — center it to realize the potential."
+        },
+        {
+          "term": "Measurement System Analysis (MSA)",
+          "definition": "Evaluates whether the measurement system contributes acceptable variation relative to process variation or specification tolerance. Gage R&R study: Repeatability (equipment variation — same operator, same part, same gage) and Reproducibility (operator variation — different operators, same part, same gage). Acceptable: GRR < 10% of tolerance. Marginal: 10–30%. Unacceptable: > 30%.",
+          "formula": "Total MSA Variation² = Repeatability² + Reproducibility²\n%GRR = (GRR / Tolerance) × 100%\n%GRR < 10% → Acceptable\n%GRR 10–30% → Marginal (conditionally acceptable)\n%GRR > 30% → Unacceptable",
+          "examTip": "Always validate the measurement system BEFORE conducting process capability studies — if the gage is inadequate, capability numbers are meaningless."
+        }
+      ],
+      "keyFigures": ["Shewhart (control charts)", "Deming (variation theory)", "Wheeler (understanding variation)", "AIAG (MSA reference manual)"],
+      "practiceQuestions": [
+        {
+          "q": "A process has Cp = 1.8 and Cpk = 0.9. The CORRECT interpretation is:",
+          "options": ["The process is capable and well-centered", "The process has potential capability but is off-center", "The measurement system is inadequate", "The specification limits are too narrow"],
+          "correct": 1,
+          "explanation": "Cp = 1.8 shows the process spread (6σ) fits well within the specification width — the process has good potential. Cpk = 0.9 shows the process mean is shifted toward one specification limit. Centering the process would bring Cpk closer to the Cp value of 1.8."
+        },
+        {
+          "q": "A control chart shows eight consecutive points above the center line, all within the control limits. This indicates:",
+          "options": ["The process is in control — all points within limits", "A special cause is present — Western Electric Rule 4 violated", "The control limits need to be recalculated", "Normal random variation"],
+          "correct": 1,
+          "explanation": "Eight consecutive points on one side of the center line is a Western Electric Rule violation indicating a special cause — likely a process shift. Points within control limits does NOT mean the process is in control if patterns violate run rules."
+        }
+      ],
+      "flashcards": [
+        { "front": "Control Chart Selection Logic", "back": "Variable data → subgroups: X̄-R (n<10) or X̄-S (n≥10). Individuals: I-MR. Attribute — defectives: p (variable n), np (fixed n). Defects: u (variable opportunity), c (fixed opportunity)." },
+        { "front": "Cp vs. Cpk vs. Pp vs. Ppk", "back": "Cp/Cpk: within-subgroup variation (short-term, 'potential' capability). Pp/Ppk: total variation (long-term, 'actual' performance). Cp ignores centering; Cpk accounts for it. Use Pp/Ppk when process is not in statistical control." },
+        { "front": "Common Cause vs. Special Cause Action", "back": "Common cause: improve the system (management responsibility). Special cause: find and remove the assignable cause (usually operational responsibility). Treating common cause as special cause = tampering = increased variation." },
+        { "front": "Gage R&R Acceptance Criteria", "back": "<10% of tolerance: acceptable. 10–30%: marginal — may be acceptable based on importance, cost of gage, etc. >30%: unacceptable — measurement system must be improved before use." }
+      ]
+    },
+    {
+      "id": "4C",
+      "ref": "IV.C",
+      "title": "Design of Experiments and Process Optimization",
+      "cognitive": "Analyze",
+      "summary": "Design of Experiments (DOE) provides a systematic method for determining how process inputs (factors) affect outputs (responses). Unlike one-factor-at-a-time experimentation, DOE efficiently evaluates multiple factors simultaneously and identifies interactions. Quality managers must understand when to apply DOE and how to interpret results.",
+      "concepts": [
+        {
+          "term": "Full Factorial Design",
+          "definition": "Tests all possible combinations of factor levels. For k factors at 2 levels each, a full factorial requires 2^k experimental runs. Advantages: estimates all main effects and all interactions. Disadvantages: number of runs grows exponentially — a 2^5 design requires 32 runs, 2^7 requires 128 runs.",
+          "formula": "Number of runs = L^k\nwhere L = number of levels, k = number of factors\n2 factors × 2 levels = 2² = 4 runs\n3 factors × 2 levels = 2³ = 8 runs\n5 factors × 2 levels = 2⁵ = 32 runs",
+          "examTip": "Know how to calculate the number of runs. The exam may ask: 'How many experimental runs are needed for a full factorial with 4 factors at 2 levels?' → 2⁴ = 16 runs."
+        },
+        {
+          "term": "Fractional Factorial Design",
+          "definition": "Tests a strategically selected subset of a full factorial to reduce the number of runs while still estimating main effects and some interactions. A 2^(k-p) design uses 2^(k-p) runs — the 'p' indicates the fraction (2^(-p) of the full factorial). Trade-off: fewer runs but some effects are confounded (aliased) — cannot be distinguished from each other.",
+          "formula": "2^(k-p) design: fraction = 1/2^p of full factorial\nExample: 2^(5-2) = 2³ = 8 runs (1/4 fraction of 32-run full factorial)\nResolution indicates what is confounded:\n  Resolution III: main effects confounded with 2-factor interactions\n  Resolution IV: main effects clear of 2-fi; 2-fi confounded with each other\n  Resolution V: main effects and 2-fi all estimable independently",
+          "examTip": "Resolution V or higher is preferred for important studies. Resolution III is a screening design — useful for identifying which factors matter, not for precise optimization."
+        },
+        {
+          "term": "Taguchi Methods",
+          "definition": "Genichi Taguchi's approach emphasizes robust design — making products/processes insensitive to variation (noise factors). Key concepts: Loss Function (quality loss increases quadratically as output deviates from target), Signal-to-Noise ratio (optimization metric), Orthogonal arrays (efficient experimental layouts). Taguchi's philosophy: it is cheaper to design quality in than to inspect it out.",
+          "formula": "Taguchi Loss Function: L(y) = k(y − T)²\nwhere y = actual value, T = target, k = cost constant\nLoss increases with the SQUARE of deviation — small deviations matter",
+          "examTip": "The Taguchi Loss Function challenges the 'goalpost' mentality (anything within spec is equally good). It quantifies the increasing cost of deviation from target, even within specification limits."
+        }
+      ],
+      "keyFigures": ["Fisher (ANOVA, factorial design)", "Taguchi (robust design, loss function)", "Box (response surface methodology)"],
+      "practiceQuestions": [
+        {
+          "q": "A quality engineer needs to screen 7 factors to identify the 2–3 most significant ones, with minimum experimental runs. The BEST approach is:",
+          "options": ["Full factorial: 2⁷ = 128 runs", "One-factor-at-a-time: 7 experiments", "Fractional factorial: 2^(7-4) = 8 runs (Resolution III)", "Taguchi L₈ orthogonal array"],
+          "correct": 2,
+          "explanation": "For screening (identifying which factors matter), a Resolution III fractional factorial or Taguchi orthogonal array efficiently evaluates 7 factors in only 8 runs. Full factorial (128 runs) is wasteful for screening. OFAT misses interactions and is statistically inefficient."
+        }
+      ],
+      "flashcards": [
+        { "front": "DOE — Key Terms", "back": "Factor: input variable being studied. Level: specific value of a factor. Response: output being measured. Main Effect: impact of one factor on the response. Interaction: combined effect of two+ factors that differs from the sum of their individual effects. Confounding: inability to separate two effects." },
+        { "front": "Taguchi Loss Function", "back": "L(y) = k(y−T)². Loss is zero at target, increases quadratically with deviation. Contradicts the traditional 'within spec = acceptable' view. Drives toward continuous reduction of variation around the target, not just meeting specifications." },
+        { "front": "ANOVA in DOE", "back": "Analysis of Variance partitions total variation into factor effects, interactions, and error. F-ratio = Mean Square (factor) / Mean Square (error). If F > F-critical (or p-value < α), the factor is statistically significant." }
+      ]
+    }
+  ]
+}

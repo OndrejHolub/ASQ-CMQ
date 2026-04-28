@@ -1,0 +1,169 @@
+{
+  "id": 2,
+  "num": "II",
+  "title": "Strategic Plan Development and Deployment",
+  "examQuestions": 25,
+  "examWeight": 15,
+  "sections": [
+    {
+      "id": "2A",
+      "ref": "II.A",
+      "title": "Strategic Planning Models",
+      "cognitive": "Analyze",
+      "summary": "Strategic planning translates an organization's vision into actionable objectives. Quality managers must understand the major planning frameworks, their assumptions, and when each is most appropriate. The exam tests application — not just recall — of these models in quality management contexts.",
+      "concepts": [
+        {
+          "term": "Hoshin Kanri (Policy Deployment)",
+          "definition": "A systematic approach to strategic planning originating from Japanese management practice. Aligns long-term strategic objectives with daily operational activities through a cascading process of goal-setting, action planning, and review. Uses the 'catchball' process — iterative negotiation between management levels — to ensure buy-in and feasibility at every tier.",
+          "formula": null,
+          "examTip": "Hoshin Kanri is the exam's preferred answer for questions about aligning strategic goals with operational execution. The catchball process is a frequent test topic."
+        },
+        {
+          "term": "Balanced Scorecard (Kaplan & Norton)",
+          "definition": "Strategic management framework that translates vision and strategy into four interconnected perspectives: Financial (How do we look to shareholders?), Customer (How do customers see us?), Internal Business Process (What must we excel at?), Learning & Growth (How can we continue to improve and create value?). Each perspective has objectives, measures, targets, and initiatives.",
+          "formula": null,
+          "examTip": "Know which metrics belong to which perspective. Customer satisfaction = Customer. Employee training = Learning & Growth. Cycle time = Internal Process."
+        },
+        {
+          "term": "Scenario Planning",
+          "definition": "Develops multiple plausible future scenarios (not predictions) to stress-test strategic plans against uncertainty. Particularly valuable in volatile industries where single-point forecasting is unreliable. Typically creates 3–4 scenarios ranging from optimistic to worst-case.",
+          "formula": null,
+          "examTip": "Scenario planning ≠ forecasting. Forecasting predicts one future; scenario planning prepares for several."
+        },
+        {
+          "term": "Management by Objectives (MBO)",
+          "definition": "Drucker's framework where managers and employees jointly set specific, measurable objectives. Performance is evaluated against these agreed-upon targets. Effective for individual accountability but can create siloed optimization if objectives aren't aligned across functions.",
+          "formula": null,
+          "examTip": "MBO is strongest for individual performance alignment but weakest for cross-functional collaboration — contrast with Hoshin Kanri."
+        }
+      ],
+      "keyFigures": ["Kaplan & Norton (Balanced Scorecard)", "Drucker (MBO)", "Akao (Hoshin Kanri)"],
+      "practiceQuestions": [
+        {
+          "q": "A VP of Quality proposes annual quality objectives but receives pushback from middle management about feasibility. Which planning methodology BEST addresses this gap?",
+          "options": ["Management by Objectives with tighter deadlines", "Hoshin Kanri with the catchball process", "Scenario planning with multiple contingencies", "Balanced Scorecard with financial KPIs"],
+          "correct": 1,
+          "explanation": "The catchball process in Hoshin Kanri specifically addresses the gap between strategic intent and operational feasibility through iterative negotiation between organizational levels."
+        },
+        {
+          "q": "An organization's quality scorecard shows excellent financial results but declining customer satisfaction and rising employee turnover. Using the Balanced Scorecard framework, this indicates:",
+          "options": ["The strategy is working — financial results prove it", "Leading indicators (customer, learning) predict future financial decline", "The scorecard needs more financial metrics", "Employee turnover is irrelevant to quality strategy"],
+          "correct": 1,
+          "explanation": "The Balanced Scorecard treats customer and learning/growth metrics as leading indicators. Financial results are lagging indicators — strong today but predicted to decline if leading indicators are negative."
+        }
+      ],
+      "flashcards": [
+        { "front": "Hoshin Kanri — Catchball Process", "back": "Iterative, two-way negotiation of goals between management levels. Top management sets direction ('what'), each level proposes 'how,' feedback flows both up and down until consensus on both goals and means is reached." },
+        { "front": "Balanced Scorecard — Four Perspectives", "back": "Financial: profitability, revenue growth, cost reduction. Customer: satisfaction, retention, market share. Internal Process: quality, cycle time, productivity. Learning & Growth: employee skills, technology, culture." },
+        { "front": "Leading vs. Lagging Indicators", "back": "Leading: predictive, input-oriented (training hours, audit findings, near-misses). Lagging: outcome-based, historical (revenue, defect rate, warranty costs). Balanced strategy requires both." }
+      ]
+    },
+    {
+      "id": "2B",
+      "ref": "II.B",
+      "title": "Business Environment Analysis",
+      "cognitive": "Analyze",
+      "summary": "Before formulating strategy, organizations must rigorously assess both internal capabilities and external forces. This section covers the analytical frameworks quality managers use to evaluate competitive position, identify risks and opportunities, and inform evidence-based strategic decisions.",
+      "concepts": [
+        {
+          "term": "SWOT Analysis",
+          "definition": "Internal assessment of Strengths and Weaknesses combined with external assessment of Opportunities and Threats. Strengths and weaknesses are within the organization's control (processes, people, technology). Opportunities and threats are external market and environmental forces.",
+          "formula": null,
+          "examTip": "Classify correctly: trained workforce = Strength, new regulation = Threat or Opportunity (depends on preparedness), aging equipment = Weakness, competitor exit = Opportunity."
+        },
+        {
+          "term": "PESTLE Analysis",
+          "definition": "Macro-environmental scan across six dimensions: Political (government policy, trade regulations), Economic (interest rates, exchange rates, inflation), Social (demographics, cultural trends), Technological (innovation, automation, R&D), Legal (employment law, consumer protection, safety standards), Environmental (sustainability, climate regulation, waste management).",
+          "formula": null,
+          "examTip": "PESTLE is broader than SWOT — it scans the entire macro-environment. Often used as input to the Opportunities and Threats portion of SWOT."
+        },
+        {
+          "term": "Porter's Five Forces",
+          "definition": "Competitive analysis framework: (1) Threat of new entrants — barriers to entry, (2) Bargaining power of suppliers — concentration, switching costs, (3) Bargaining power of buyers — volume, price sensitivity, (4) Threat of substitute products — functional alternatives, (5) Intensity of competitive rivalry — market growth, differentiation.",
+          "formula": null,
+          "examTip": "Five Forces assesses industry attractiveness and competitive dynamics — not internal capabilities (that's SWOT's job)."
+        },
+        {
+          "term": "Benchmarking",
+          "definition": "Systematic comparison of processes, metrics, and practices against best-in-class organizations. Types: Internal (within organization), Competitive (direct competitors), Functional (same function, different industry), Generic (universal best practices). Process: Plan → Collect data → Analyze gaps → Implement improvements.",
+          "formula": "Performance Gap = Best-in-Class Performance − Current Performance",
+          "examTip": "Functional benchmarking (comparing your logistics to Amazon's, for example) often yields the most innovative insights because it looks outside your industry."
+        },
+        {
+          "term": "Risk Assessment",
+          "definition": "Systematic identification, analysis, and evaluation of risks that could impact strategic objectives. Qualitative methods: risk matrices, probability-impact grids. Quantitative methods: Monte Carlo simulation, expected monetary value (EMV), decision trees.",
+          "formula": "Risk Exposure = Probability × Impact\nEMV = Σ(Probability_i × Value_i) for all outcomes",
+          "examTip": "Know how to calculate EMV for decision tree problems — a common exam calculation."
+        }
+      ],
+      "keyFigures": ["Porter (competitive strategy)", "Camp (benchmarking pioneer)", "Ansoff (growth matrix)"],
+      "practiceQuestions": [
+        {
+          "q": "A quality manager is asked to evaluate whether a new environmental regulation represents an opportunity or a threat. The MOST appropriate analytical approach is:",
+          "options": ["Porter's Five Forces analysis", "PESTLE analysis followed by SWOT classification", "Benchmarking against competitors", "Balanced Scorecard review"],
+          "correct": 1,
+          "explanation": "Environmental regulations are macro-environmental factors (the 'E' in PESTLE). After identifying the factor via PESTLE, SWOT classification determines whether the organization's current capabilities position this as an opportunity (competitive advantage through early compliance) or a threat (costly compliance burden)."
+        },
+        {
+          "q": "A project has two possible outcomes: 60% chance of saving $500,000 and 40% chance of costing $200,000. The Expected Monetary Value (EMV) is:",
+          "options": ["$300,000", "$220,000", "$500,000", "$380,000"],
+          "correct": 1,
+          "explanation": "EMV = (0.60 × $500,000) + (0.40 × (−$200,000)) = $300,000 − $80,000 = $220,000."
+        }
+      ],
+      "flashcards": [
+        { "front": "SWOT — Internal vs. External", "back": "Internal (controllable): Strengths and Weaknesses — resources, capabilities, processes, culture. External (uncontrollable): Opportunities and Threats — market trends, regulation, competition, technology shifts." },
+        { "front": "Porter's Five Forces", "back": "(1) New entrants threat, (2) Supplier power, (3) Buyer power, (4) Substitute threat, (5) Competitive rivalry. Higher combined force = lower industry profitability." },
+        { "front": "Types of Benchmarking", "back": "Internal: compare units within organization. Competitive: compare with direct rivals. Functional: same function, different industry. Generic: universal best practices. Each offers different insight depth and accessibility." },
+        { "front": "Ansoff's Growth Matrix", "back": "Four growth strategies: Market Penetration (existing products, existing markets), Market Development (existing products, new markets), Product Development (new products, existing markets), Diversification (new products, new markets)." }
+      ]
+    },
+    {
+      "id": "2C",
+      "ref": "II.C",
+      "title": "Strategic Plan Deployment",
+      "cognitive": "Evaluate",
+      "summary": "The most elegant strategy is worthless without effective deployment. This section addresses how organizations translate strategic objectives into operational plans, align resources, establish accountability, communicate the strategy, and monitor execution through systematic review cycles.",
+      "concepts": [
+        {
+          "term": "Deployment Flowdown (Cascading Objectives)",
+          "definition": "The process of translating high-level strategic objectives into progressively more specific goals at each organizational level: Corporate → Division → Department → Team → Individual. Each level's objectives directly support the level above, creating a traceable line-of-sight from individual work to strategic intent.",
+          "formula": null,
+          "examTip": "Look for broken line-of-sight in exam scenarios — misaligned departmental goals are a common deployment failure."
+        },
+        {
+          "term": "SMART Objectives",
+          "definition": "Effective objectives must be: Specific (clearly defined scope), Measurable (quantifiable criteria), Achievable (realistic given resources), Relevant (aligned to strategic goals), Time-bound (explicit deadlines). Quality objectives failing any SMART criterion are unlikely to drive effective action.",
+          "formula": null,
+          "examTip": "Exam questions present objectives and ask which SMART criterion is missing. 'Improve quality' fails Specific and Measurable. 'Reduce scrap by 20% by Q4' passes all five."
+        },
+        {
+          "term": "Key Performance Indicators (KPIs)",
+          "definition": "Quantifiable measures that evaluate success against strategic objectives. Effective KPIs have clear ownership, defined data sources, established baselines, specific targets, and regular review cadence. Distinguish between process KPIs (leading) and outcome KPIs (lagging).",
+          "formula": null,
+          "examTip": "The exam values KPIs that are actionable and owned — a KPI that no one can influence is not useful."
+        },
+        {
+          "term": "Strategy Communication",
+          "definition": "Translating strategic plans into messages that each organizational level can understand and act upon. Methods include town halls, visual management boards, strategy maps, cascaded briefings, and digital dashboards. Effective communication addresses 'what' and 'why' at senior levels and 'what' and 'how' at operational levels.",
+          "formula": null,
+          "examTip": "Deployment failures are more often communication failures than planning failures."
+        }
+      ],
+      "keyFigures": ["Drucker (SMART objectives origin)", "Kaplan & Norton (strategy maps)", "Akao (Hoshin deployment)"],
+      "practiceQuestions": [
+        {
+          "q": "A quality department's annual objective reads: 'We will significantly improve our customer quality metrics this year.' This objective fails which SMART criteria?",
+          "options": ["Specific and Achievable only", "Measurable and Time-bound only", "Specific, Measurable, and Time-bound", "Relevant and Achievable only"],
+          "correct": 2,
+          "explanation": "'Significantly' is not specific. There is no quantifiable target (not measurable). 'This year' is vague — no specific end date (not time-bound). Achievable and Relevant cannot be assessed without specific targets."
+        }
+      ],
+      "flashcards": [
+        { "front": "Strategy Map (Kaplan & Norton)", "back": "Visual representation showing cause-and-effect linkages between objectives across all four Balanced Scorecard perspectives. Reads bottom-up: Learning enables Process improvement, which drives Customer satisfaction, which produces Financial results." },
+        { "front": "Catchball vs. Top-Down Deployment", "back": "Top-down: leadership sets all goals, cascades without input — fast but low buy-in. Catchball: iterative negotiation at each level — slower but produces realistic goals with strong ownership." },
+        { "front": "Management Review Cycle", "back": "Periodic (monthly/quarterly) leadership review of strategy execution. Inputs: KPI performance, audit results, customer feedback, risk updates. Outputs: resource adjustments, corrective actions, revised targets." }
+      ]
+    }
+  ]
+}
