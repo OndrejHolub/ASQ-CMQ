@@ -10,17 +10,22 @@
       "ref": "II.A",
       "title": "Strategic Planning Models",
       "cognitive": "Apply",
-      "summary": "Strategic planning is the continuous, systematic process by which an organization defines what it wants to become and how it will get there. Quality managers must understand the major models — traditional three-tier planning, hoshin kanri, and scenario planning — and how mission, vision, and values guide the plan.",
+      "summary": "Strategic planning is the continuous, systematic process by which an organization defines what it wants to become and how it will get there. Quality managers must understand the major models \u2014 traditional three-tier planning, hoshin kanri, and scenario planning \u2014 and how mission, vision, and values guide the plan.",
       "concepts": [
         {
           "term": "Three Levels of Planning",
-          "definition": "Strategic (3–5+ years; high-level direction), Tactical (1–3 years; what tasks must be completed), and Operational (months to 1 year; day-to-day execution detailing who, what, when, how).",
+          "definition": "Strategic (3\u20135+ years; high-level direction), Tactical (1\u20133 years; what tasks must be completed), and Operational (months to 1 year; day-to-day execution detailing who, what, when, how).",
           "formula": null,
-          "examTip": "The exam frequently tests the distinction between strategic, tactical, and operational plans and their time horizons."
+          "examTip": "The exam frequently tests the distinction between strategic, tactical, and operational plans and their time horizons.",
+          "definitionBullets": [
+            "**Strategic** \u2014 3\u20135 year horizon, WHAT we will achieve, set by senior leadership",
+            "**Tactical** \u2014 1\u20133 year horizon, WHO and WHEN, owned by middle management",
+            "**Operational** \u2014 daily/quarterly, HOW we execute, frontline and supervisors"
+          ]
         },
         {
           "term": "Hoshin Kanri (Policy Deployment)",
-          "definition": "A tightly knit planning and implementation system that connects management by objectives with organizational direction. Involves every level via PDCA, builds consensus through catchball, and operationalizes 'walk the talk.' Distinct from MBO — it is a complete system, not just objective-setting.",
+          "definition": "A tightly knit planning and implementation system that connects management by objectives with organizational direction. Involves every level via PDCA, builds consensus through catchball, and operationalizes 'walk the talk.' Distinct from MBO \u2014 it is a complete system, not just objective-setting.",
           "formula": null,
           "examTip": "Hoshin involves EVERY level, uses PDCA, and is a whole system. Know both advantages (consensus, fact-based, alignment) and disadvantages (cultural change, 3+ years to mature, requires top-management commitment)."
         },
@@ -28,11 +33,11 @@
           "term": "Catchball",
           "definition": "Japanese concept used in hoshin deployment: plans are passed back and forth between levels for review and consensus before implementation, ensuring buy-in and surfacing conflicts.",
           "formula": null,
-          "examTip": "Catchball ≠ delegation. It is iterative, two-way, and mandatory in hoshin."
+          "examTip": "Catchball \u2260 delegation. It is iterative, two-way, and mandatory in hoshin."
         },
         {
           "term": "Scenario Planning",
-          "definition": "Disciplined method for imagining possible futures. In its simplest form uses three macro scenarios — good future, bad future, and wild card — to prepare contingencies and overcome tunnel vision.",
+          "definition": "Disciplined method for imagining possible futures. In its simplest form uses three macro scenarios \u2014 good future, bad future, and wild card \u2014 to prepare contingencies and overcome tunnel vision.",
           "formula": null,
           "examTip": "Scenario planning is about preparing for uncertainty, not predicting one outcome. Three scenarios is the standard."
         },
@@ -84,10 +89,15 @@
           "explanation": "Hoshin is a whole-organization system using PDCA loops and catchball at every level. MBO targets individual objective-setting and lacks the systemic deployment and review structure."
         },
         {
-          "q": "An organization plans for 3–5 years out at the corporate level. This is BEST described as:",
-          "options": ["Operational planning", "Tactical planning", "Strategic planning", "Contingency planning"],
+          "q": "An organization plans for 3\u20135 years out at the corporate level. This is BEST described as:",
+          "options": [
+            "Operational planning",
+            "Tactical planning",
+            "Strategic planning",
+            "Contingency planning"
+          ],
           "correct": 2,
-          "explanation": "Strategic planning operates at the 3–5+ year horizon and defines what the organization strives to become. Tactical plans (1–3 years) translate strategy into tasks; operational plans handle day-to-day execution."
+          "explanation": "Strategic planning operates at the 3\u20135+ year horizon and defines what the organization strives to become. Tactical plans (1\u20133 years) translate strategy into tasks; operational plans handle day-to-day execution."
         },
         {
           "q": "The walkabout / catchball technique in hoshin deployment is used PRIMARILY to:",
@@ -113,12 +123,79 @@
         }
       ],
       "flashcards": [
-        { "front": "Three levels of planning and their horizons?", "back": "Strategic (3–5+ yrs), Tactical (1–3 yrs), Operational (months–1 yr)." },
-        { "front": "What does Hoshin Kanri literally translate to?", "back": "Policy deployment — 'walk the talk'." },
-        { "front": "Three macro scenarios in scenario planning?", "back": "Good future, bad future, wild card." },
-        { "front": "S.M.A.R.T.W.A.Y. stands for?", "back": "Specific, Measurable, Achievable, Realistic, Time-framed, Worthwhile, Assigned, Yielding." },
-        { "front": "What is catchball?", "back": "Iterative back-and-forth consensus-building between organizational levels in hoshin." },
-        { "front": "Vision vs Mission?", "back": "Vision = where we want to go (future state). Mission = why we exist (purpose; what/who/how)." }
+        {
+          "front": "Three levels of planning and their horizons?",
+          "back": "Strategic (3\u20135+ yrs), Tactical (1\u20133 yrs), Operational (months\u20131 yr)."
+        },
+        {
+          "front": "What does Hoshin Kanri literally translate to?",
+          "back": "Policy deployment \u2014 'walk the talk'."
+        },
+        {
+          "front": "Three macro scenarios in scenario planning?",
+          "back": "Good future, bad future, wild card."
+        },
+        {
+          "front": "S.M.A.R.T.W.A.Y. stands for?",
+          "back": "Specific, Measurable, Achievable, Realistic, Time-framed, Worthwhile, Assigned, Yielding."
+        },
+        {
+          "front": "What is catchball?",
+          "back": "Iterative back-and-forth consensus-building between organizational levels in hoshin."
+        },
+        {
+          "front": "Vision vs Mission?",
+          "back": "Vision = where we want to go (future state). Mission = why we exist (purpose; what/who/how)."
+        }
+      ],
+      "summaryBullets": [
+        "**3 levels of planning**: Strategic (long-term, what), Tactical (medium, who/when), Operational (short, how)",
+        "**Hoshin Kanri** = Japanese policy deployment with X-matrix and **catchball** dialogue",
+        "**Vision** = aspirational future state; **Mission** = current purpose; **Values** = guiding principles",
+        "**Scenario planning** prepares for multiple plausible futures, not just the most likely",
+        "**Strategic planning models**: Hoshin, Balanced Scorecard, Baldrige, SWOT-driven, scenario-based"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "3 Levels of Planning \u2014 Cascading Hierarchy",
+          "code": "graph TD\n  S[**STRATEGIC**<br/>3-5 year horizon<br/>WHAT we will achieve<br/>Senior leadership] --> T[**TACTICAL**<br/>1-3 year horizon<br/>WHO and WHEN<br/>Middle management]\n  T --> O[**OPERATIONAL**<br/>Daily-Quarterly<br/>HOW we execute<br/>Frontline & supervisors]\n  style S fill:#bbdefb\n  style T fill:#c8e6c9\n  style O fill:#fff9c4"
+        },
+        {
+          "type": "mermaid",
+          "title": "Hoshin Kanri X-Matrix Concept",
+          "code": "graph LR\n  V[Long-term<br/>Vision/Strategy] --- A[Annual<br/>Objectives]\n  A --- I[Improvement<br/>Priorities]\n  I --- M[Metrics &<br/>Targets]\n  M --- O[Owners /<br/>Resources]\n  O --- V\n  C[CATCHBALL<br/>iterative dialogue<br/>up & down levels] -.-> V\n  C -.-> A\n  C -.-> I\n  C -.-> M\n  C -.-> O\n  style V fill:#ffe0b2\n  style C fill:#f8bbd0"
+        },
+        {
+          "type": "table",
+          "title": "Vision vs Mission vs Values",
+          "columns": [
+            "Element",
+            "Time Frame",
+            "Purpose",
+            "Example (Tesla)"
+          ],
+          "rows": [
+            [
+              "**Vision**",
+              "Future (aspirational)",
+              "Where are we going?",
+              "Accelerate world's transition to sustainable energy"
+            ],
+            [
+              "**Mission**",
+              "Present (current purpose)",
+              "Why do we exist?",
+              "Design, manufacture, sell EVs and energy products"
+            ],
+            [
+              "**Values**",
+              "Always (guiding)",
+              "How do we behave?",
+              "Move fast, do the impossible, innovate, respect"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -132,25 +209,38 @@
           "term": "SWOT Analysis",
           "definition": "Systematic assessment of internal Strengths and Weaknesses and external Opportunities and Threats. Used to align strategy with reality.",
           "formula": "Internal: S, W | External: O, T",
-          "examTip": "Be able to categorize items as internal (S/W) vs external (O/T). The exam tests this distinction directly."
+          "examTip": "Be able to categorize items as internal (S/W) vs external (O/T). The exam tests this distinction directly.",
+          "definitionBullets": [
+            "**S**trengths \u2014 helpful **internal** factors",
+            "**W**eaknesses \u2014 harmful **internal** factors",
+            "**O**pportunities \u2014 helpful **external** factors",
+            "**T**hreats \u2014 harmful **external** factors"
+          ]
         },
         {
           "term": "FMEA in Strategic Planning",
           "definition": "Failure Mode and Effects Analysis applied to strategic risk: identify potential failures, assess severity, occurrence, and detection, prioritize via RPN, then act.",
-          "formula": "RPN = Severity (S) × Occurrence (O) × Detection (D)",
-          "examTip": "Memorize RPN = S × O × D. All three on a 1–10 scale (10 = most severe / most frequent / lowest detection)."
+          "formula": "RPN = Severity (S) \u00d7 Occurrence (O) \u00d7 Detection (D)",
+          "examTip": "Memorize RPN = S \u00d7 O \u00d7 D. All three on a 1\u201310 scale (10 = most severe / most frequent / lowest detection)."
         },
         {
           "term": "Porter's Five Forces",
           "definition": "Competitive analysis framework: existing rivalry, threat of new entrants, threat of substitutes, bargaining power of buyers, bargaining power of suppliers.",
           "formula": null,
-          "examTip": "Know all five forces. The exam may describe a market situation and ask which force applies."
+          "examTip": "Know all five forces. The exam may describe a market situation and ask which force applies.",
+          "definitionBullets": [
+            "Threat of **new entrants**",
+            "Threat of **substitutes**",
+            "**Buyer power**",
+            "**Supplier power**",
+            "**Competitive rivalry** (center force)"
+          ]
         },
         {
           "term": "Benchmarking (Strategic)",
           "definition": "Comparing organizational performance against best practices or competitors to identify improvement areas. Strategic benchmarking looks at competitive positioning, not just process metrics.",
           "formula": null,
-          "examTip": "Copying competitors only makes you as good as them — benchmarking should drive innovation, not imitation."
+          "examTip": "Copying competitors only makes you as good as them \u2014 benchmarking should drive innovation, not imitation."
         },
         {
           "term": "Stakeholders / Interested Parties",
@@ -168,7 +258,7 @@
           "term": "Six Technology Strategy Guidelines",
           "definition": "(1) Address behavioral changes; (2) Don't automate bad processes; (3) Solve real problems, not chase shiny objects; (4) Choose lowest tech with highest ROI; (5) Fit culture or change culture; (6) Ensure capability supports the technology.",
           "formula": null,
-          "examTip": "Especially #2 — automating a bad process just speeds up bad output."
+          "examTip": "Especially #2 \u2014 automating a bad process just speeds up bad output."
         },
         {
           "term": "Generational Differences",
@@ -178,42 +268,166 @@
         },
         {
           "term": "Legal vs Regulatory Factors",
-          "definition": "Legal: enforceable laws (employment, liability, IP, antitrust, Sarbanes-Oxley). Regulatory: rules from agencies/associations — often voluntary but with force of law.",
+          "definition": "Legal: enforceable laws (employment, liability, IP, antitrust, Sarbanes-Oxley). Regulatory: rules from agencies/associations \u2014 often voluntary but with force of law.",
           "formula": null,
           "examTip": "Know the distinction. Both must inform strategic planning."
         }
       ],
       "keyFigures": [
         "Michael Porter (Five Forces, competitive strategy)",
-        "Sarbanes & Oxley (SOX 2002 — corporate governance)"
+        "Sarbanes & Oxley (SOX 2002 \u2014 corporate governance)"
       ],
       "practiceQuestions": [
         {
           "q": "An FMEA shows: Severity = 8, Occurrence = 6, Detection = 5. The Risk Priority Number is:",
-          "options": ["19", "120", "240", "480"],
+          "options": [
+            "19",
+            "120",
+            "240",
+            "480"
+          ],
           "correct": 2,
-          "explanation": "RPN = S × O × D = 8 × 6 × 5 = 240."
+          "explanation": "RPN = S \u00d7 O \u00d7 D = 8 \u00d7 6 \u00d7 5 = 240."
         },
         {
           "q": "In a SWOT analysis, 'aging facility equipment' would be classified as:",
-          "options": ["Strength", "Weakness", "Opportunity", "Threat"],
+          "options": [
+            "Strength",
+            "Weakness",
+            "Opportunity",
+            "Threat"
+          ],
           "correct": 1,
-          "explanation": "Aging equipment is an internal condition that limits performance — a Weakness. (External factors would be O or T.)"
+          "explanation": "Aging equipment is an internal condition that limits performance \u2014 a Weakness. (External factors would be O or T.)"
         },
         {
           "q": "Porter's Five Forces does NOT include:",
-          "options": ["Threat of new entrants", "Bargaining power of suppliers", "Government regulation", "Threat of substitutes"],
+          "options": [
+            "Threat of new entrants",
+            "Bargaining power of suppliers",
+            "Government regulation",
+            "Threat of substitutes"
+          ],
           "correct": 2,
           "explanation": "Government regulation is part of the broader business environment but is not one of Porter's five competitive forces."
         }
       ],
       "flashcards": [
-        { "front": "Internal SWOT components?", "back": "Strengths and Weaknesses." },
-        { "front": "External SWOT components?", "back": "Opportunities and Threats." },
-        { "front": "RPN formula?", "back": "RPN = Severity × Occurrence × Detection." },
-        { "front": "Porter's Five Forces?", "back": "Rivalry, new entrants, substitutes, buyer power, supplier power." },
-        { "front": "Quality 4.0 — name 5 technologies.", "back": "Cloud, big data, AI/ML, IoT/edge, blockchain (also AR/VR, mobile)." },
-        { "front": "Difference between legal and regulatory factors?", "back": "Legal = enforceable laws; Regulatory = agency/association rules, often voluntary but with force of law." }
+        {
+          "front": "Internal SWOT components?",
+          "back": "Strengths and Weaknesses."
+        },
+        {
+          "front": "External SWOT components?",
+          "back": "Opportunities and Threats."
+        },
+        {
+          "front": "RPN formula?",
+          "back": "RPN = Severity \u00d7 Occurrence \u00d7 Detection."
+        },
+        {
+          "front": "Porter's Five Forces?",
+          "back": "Rivalry, new entrants, substitutes, buyer power, supplier power."
+        },
+        {
+          "front": "Quality 4.0 \u2014 name 5 technologies.",
+          "back": "Cloud, big data, AI/ML, IoT/edge, blockchain (also AR/VR, mobile)."
+        },
+        {
+          "front": "Difference between legal and regulatory factors?",
+          "back": "Legal = enforceable laws; Regulatory = agency/association rules, often voluntary but with force of law."
+        }
+      ],
+      "summaryBullets": [
+        "**SWOT** = internal Strengths/Weaknesses + external Opportunities/Threats",
+        "**Porter's 5 Forces**: rivalry, new entrants, substitutes, buyer power, supplier power",
+        "**PEST/PESTLE** = macro environment scan (Political, Economic, Social, Tech, Legal, Environmental)",
+        "**Benchmarking** types: internal, competitive, functional, generic",
+        "**Stakeholders** include customers, employees, shareholders, suppliers, community, regulators"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "SWOT Analysis Matrix \u2014 Internal/External \u00d7 Helpful/Harmful",
+          "code": "graph TD\n  subgraph Internal[INTERNAL \u2014 Org Capabilities]\n    S[**STRENGTHS**<br/>Helpful internal factors<br/>e.g., strong brand,<br/>skilled workforce]\n    W[**WEAKNESSES**<br/>Harmful internal factors<br/>e.g., outdated tech,<br/>high turnover]\n  end\n  subgraph External[EXTERNAL \u2014 Market/Environment]\n    O[**OPPORTUNITIES**<br/>Helpful external factors<br/>e.g., new markets,<br/>regulatory shifts]\n    T[**THREATS**<br/>Harmful external factors<br/>e.g., new competitors,<br/>economic downturn]\n  end\n  style S fill:#c8e6c9\n  style W fill:#ffcdd2\n  style O fill:#bbdefb\n  style T fill:#ffe0b2"
+        },
+        {
+          "type": "mermaid",
+          "title": "Porter's Five Forces",
+          "code": "graph TD\n  R((**Industry<br/>Rivalry**)) \n  NE[**1. Threat of**<br/>**New Entrants**<br/>Barriers to entry?] --> R\n  S[**2. Threat of**<br/>**Substitutes**<br/>Alternative products?] --> R\n  BP[**3. Buyer Power**<br/>Customer concentration?<br/>Switching costs?] --> R\n  SP[**4. Supplier Power**<br/>Supplier concentration?<br/>Unique inputs?] --> R\n  R --> CR[**5. Competitive**<br/>**Rivalry Intensity**<br/>Number, growth, exit barriers]\n  style R fill:#ffe0b2\n  style CR fill:#ffcdd2"
+        },
+        {
+          "type": "table",
+          "title": "PESTLE Macro-Environment Scan",
+          "columns": [
+            "Factor",
+            "Examples",
+            "Impact on Strategy"
+          ],
+          "rows": [
+            [
+              "**P**olitical",
+              "Government policy, trade tariffs, stability",
+              "Market access, operating costs"
+            ],
+            [
+              "**E**conomic",
+              "GDP, inflation, exchange rates, unemployment",
+              "Demand, pricing, capital cost"
+            ],
+            [
+              "**S**ocial",
+              "Demographics, culture, lifestyle trends",
+              "Customer needs, workforce"
+            ],
+            [
+              "**T**echnological",
+              "Innovation, automation, R&D pace",
+              "Disruption risk, capability gaps"
+            ],
+            [
+              "**L**egal",
+              "Regulations, employment law, IP",
+              "Compliance cost, market entry"
+            ],
+            [
+              "**E**nvironmental",
+              "Climate, sustainability, ESG",
+              "License to operate, reporting"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Benchmarking \u2014 4 Types",
+          "columns": [
+            "Type",
+            "Comparison Target",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**Internal**",
+              "Other units within same org",
+              "Tesla Lathrop vs Tesla Berlin"
+            ],
+            [
+              "**Competitive**",
+              "Direct competitors",
+              "Tesla vs LG Energy Solution"
+            ],
+            [
+              "**Functional**",
+              "Best-in-class same function, any industry",
+              "Tesla logistics vs Amazon logistics"
+            ],
+            [
+              "**Generic**",
+              "Best-in-class processes regardless of function",
+              "Toyota TPS principles applied anywhere"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -227,13 +441,22 @@
           "term": "Action Plan Components",
           "definition": "Project definition, completion date, link to strategic objective, scope, deliverables, measurement criteria, assumptions, approach, start date, resource estimate, capacity verification, benefit-cost estimate, Gantt timeline with responsibilities.",
           "formula": null,
-          "examTip": "The exam may give a partial action plan and ask what is missing."
+          "examTip": "The exam may give a partial action plan and ask what is missing.",
+          "definitionBullets": [
+            "**Objective** \u2014 what outcome are we pursuing?",
+            "**Tasks** \u2014 concrete activities needed",
+            "**Owner** \u2014 who is accountable",
+            "**Timeline** \u2014 start and finish dates",
+            "**Resources** \u2014 budget, people, tools",
+            "**Metrics** \u2014 how we'll measure success",
+            "**Risks** \u2014 what could go wrong + mitigation"
+          ]
         },
         {
           "term": "Cascading Concept",
-          "definition": "Objectives flow from enterprise → divisional → departmental → action plans. Customer requirements feed in at each level. Borrowed from QFD.",
-          "formula": "Enterprise objectives → strategies → divisional → departmental → action plans → results",
-          "examTip": "Heavily tested. Cascading is the deployment mechanism — without it, plans don't reach the floor."
+          "definition": "Objectives flow from enterprise \u2192 divisional \u2192 departmental \u2192 action plans. Customer requirements feed in at each level. Borrowed from QFD.",
+          "formula": "Enterprise objectives \u2192 strategies \u2192 divisional \u2192 departmental \u2192 action plans \u2192 results",
+          "examTip": "Heavily tested. Cascading is the deployment mechanism \u2014 without it, plans don't reach the floor."
         },
         {
           "term": "Walkabout",
@@ -245,13 +468,19 @@
           "term": "Balanced Scorecard",
           "definition": "Performance measurement combining financial and non-financial measures. Typical perspectives: financial, customer, internal process, learning & growth.",
           "formula": null,
-          "examTip": "Balanced scorecard = balance of leading and lagging indicators across multiple perspectives."
+          "examTip": "Balanced scorecard = balance of leading and lagging indicators across multiple perspectives.",
+          "definitionBullets": [
+            "**Financial** \u2014 shareholder/stakeholder financial outcomes",
+            "**Customer** \u2014 customer-facing performance",
+            "**Internal Process** \u2014 operational excellence at key processes",
+            "**Learning & Growth** \u2014 workforce capability, culture, technology"
+          ]
         },
         {
           "term": "Critical Success Factors (CSFs)",
-          "definition": "8–12 indicators selected to measure outcomes of the strategic plan. Custom-fitted to the organization. Steer the org toward fulfillment of vision/mission.",
+          "definition": "8\u201312 indicators selected to measure outcomes of the strategic plan. Custom-fitted to the organization. Steer the org toward fulfillment of vision/mission.",
           "formula": null,
-          "examTip": "CSFs are FEW (8–12), strategic, and outcome-focused — not operational metrics."
+          "examTip": "CSFs are FEW (8\u201312), strategic, and outcome-focused \u2014 not operational metrics."
         },
         {
           "term": "Open-Loop vs Closed-Loop",
@@ -263,25 +492,25 @@
           "term": "Effectiveness vs Efficiency",
           "definition": "Effectiveness = quality/correctness of the process (doing the right thing). Efficiency = speed/cost of the process (doing it well).",
           "formula": null,
-          "examTip": "Effectiveness before efficiency — speeding up a wrong process is worse than slowing down a right one."
+          "examTip": "Effectiveness before efficiency \u2014 speeding up a wrong process is worse than slowing down a right one."
         },
         {
           "term": "Six Factors Influencing Measurement Frequency",
           "definition": "Purpose (trend vs control), Cost, Rate of change, Degree of control, Consequences/risk, Baseline data availability.",
           "formula": null,
-          "examTip": "These six factors determine how often to measure — exam may test any one as a scenario question."
+          "examTip": "These six factors determine how often to measure \u2014 exam may test any one as a scenario question."
         },
         {
           "term": "Quality Policy vs Objectives vs Principles",
           "definition": "Principles: guiding beliefs. Policy: formalized document of intentions. Objectives: specific, measurable, time-bound actions to achieve quality outcomes.",
           "formula": null,
-          "examTip": "Principles → Policy → Objectives is the cascade from values to measurable action."
+          "examTip": "Principles \u2192 Policy \u2192 Objectives is the cascade from values to measurable action."
         },
         {
           "term": "Annual Closed-Loop Assessment",
           "definition": "Four-step cycle: (1) Define business excellence; (2) Assess progress (e.g., Baldrige); (3) Identify gaps vs world-class; (4) Deploy action plan with annual priorities and aligned metrics.",
           "formula": null,
-          "examTip": "This is hoshin's annual review mechanism — connects strategic plan with continual improvement."
+          "examTip": "This is hoshin's annual review mechanism \u2014 connects strategic plan with continual improvement."
         }
       ],
       "keyFigures": [
@@ -297,29 +526,145 @@
             "Replaces management decision-making with automation"
           ],
           "correct": 1,
-          "explanation": "Closed-loop produces two outputs — the product/service AND the information needed to manage and improve the process. Open-loop relies on intuition for adjustment."
+          "explanation": "Closed-loop produces two outputs \u2014 the product/service AND the information needed to manage and improve the process. Open-loop relies on intuition for adjustment."
         },
         {
           "q": "Critical Success Factors should typically number:",
-          "options": ["1–3", "8–12", "20–30", "50+"],
+          "options": [
+            "1\u20133",
+            "8\u201312",
+            "20\u201330",
+            "50+"
+          ],
           "correct": 1,
-          "explanation": "8–12 CSFs is the recognized range — enough to span strategic goals without diluting focus."
+          "explanation": "8\u201312 CSFs is the recognized range \u2014 enough to span strategic goals without diluting focus."
         },
         {
           "q": "The cascading concept in deployment originates from which quality methodology?",
-          "options": ["Six Sigma", "Lean", "QFD (Quality Function Deployment)", "TQM"],
+          "options": [
+            "Six Sigma",
+            "Lean",
+            "QFD (Quality Function Deployment)",
+            "TQM"
+          ],
           "correct": 2,
           "explanation": "Cascading borrows from QFD's House-of-Quality logic of translating customer requirements through successive matrices."
         }
       ],
       "flashcards": [
-        { "front": "Cascading flow?", "back": "Enterprise → Divisional → Departmental → Action plans → Results, with customer requirements feeding in." },
-        { "front": "What is the walkabout?", "back": "Posting plans on flip charts, walking around, attaching conflict notes, then resolving trade-offs." },
-        { "front": "Open vs closed loop — which is preferred?", "back": "Closed-loop. Continuous monitoring + immediate adjustment." },
-        { "front": "Effectiveness vs efficiency?", "back": "Effectiveness = doing the right thing. Efficiency = doing it well/fast/cheap." },
-        { "front": "How many CSFs are typical?", "back": "8 to 12." },
-        { "front": "Quality cascade: Principles → ? → ?", "back": "Principles → Policy → Objectives." }
+        {
+          "front": "Cascading flow?",
+          "back": "Enterprise \u2192 Divisional \u2192 Departmental \u2192 Action plans \u2192 Results, with customer requirements feeding in."
+        },
+        {
+          "front": "What is the walkabout?",
+          "back": "Posting plans on flip charts, walking around, attaching conflict notes, then resolving trade-offs."
+        },
+        {
+          "front": "Open vs closed loop \u2014 which is preferred?",
+          "back": "Closed-loop. Continuous monitoring + immediate adjustment."
+        },
+        {
+          "front": "Effectiveness vs efficiency?",
+          "back": "Effectiveness = doing the right thing. Efficiency = doing it well/fast/cheap."
+        },
+        {
+          "front": "How many CSFs are typical?",
+          "back": "8 to 12."
+        },
+        {
+          "front": "Quality cascade: Principles \u2192 ? \u2192 ?",
+          "back": "Principles \u2192 Policy \u2192 Objectives."
+        }
+      ],
+      "summaryBullets": [
+        "**Action plans** convert strategy into specific, owned, time-bound activities",
+        "**Cascading** breaks high-level goals into supporting goals at each level",
+        "**Balanced Scorecard**: 4 perspectives \u2014 Financial, Customer, Internal Process, Learning & Growth",
+        "**Walkabout (gemba walk)** \u2014 leaders go to the work to see deployment reality",
+        "**CSFs** = critical success factors \u2014 the few things that MUST go right",
+        "**KPIs** = key performance indicators \u2014 measurable metrics tied to CSFs"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "Balanced Scorecard \u2014 4 Perspectives",
+          "code": "graph TD\n  V[**VISION &<br/>STRATEGY**] --> F[**FINANCIAL**<br/>To succeed financially,<br/>how should we appear<br/>to shareholders?]\n  V --> C[**CUSTOMER**<br/>To achieve our vision,<br/>how should we appear<br/>to customers?]\n  V --> IP[**INTERNAL<br/>PROCESS**<br/>To satisfy customers,<br/>at what processes<br/>must we excel?]\n  V --> LG[**LEARNING &<br/>GROWTH**<br/>To achieve our vision,<br/>how will we sustain<br/>change & improvement?]\n  style V fill:#ffe0b2\n  style F fill:#c8e6c9\n  style C fill:#bbdefb\n  style IP fill:#fff9c4\n  style LG fill:#f8bbd0"
+        },
+        {
+          "type": "mermaid",
+          "title": "Strategy Cascade \u2014 From Corporate to Individual",
+          "code": "graph TD\n  C[**Corporate Strategy**<br/>Vision, 3-5yr goals] --> BU[**Business Unit Goals**<br/>Annual objectives]\n  BU --> D[**Department Goals**<br/>Quarterly priorities]\n  D --> T[**Team Goals**<br/>Sprint/monthly]\n  T --> I[**Individual Goals**<br/>Weekly/daily<br/>tied to performance review]\n  style C fill:#bbdefb\n  style I fill:#c8e6c9"
+        },
+        {
+          "type": "table",
+          "title": "CSFs vs KPIs \u2014 The Distinction",
+          "columns": [
+            "Concept",
+            "What It Is",
+            "Example (Tesla Megapack)"
+          ],
+          "rows": [
+            [
+              "**CSF** (Critical Success Factor)",
+              "Few things that MUST go right",
+              "Battery cell quality consistency"
+            ],
+            [
+              "**KPI** (Key Performance Indicator)",
+              "Measurable metric tied to CSF",
+              "Cell DPPM \u2264 50, Capacity drift < 2%"
+            ],
+            [
+              "Relationship",
+              "CSF = strategy; KPI = measurement",
+              "CSF defines WHAT; KPI tracks HOW WELL"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Action Plan Components",
+          "columns": [
+            "Component",
+            "Question Answered"
+          ],
+          "rows": [
+            [
+              "**Objective**",
+              "What outcome are we pursuing?"
+            ],
+            [
+              "**Specific tasks**",
+              "What concrete activities are needed?"
+            ],
+            [
+              "**Owner**",
+              "Who is accountable for each task?"
+            ],
+            [
+              "**Timeline**",
+              "When does each task start and finish?"
+            ],
+            [
+              "**Resources**",
+              "What budget, people, tools are required?"
+            ],
+            [
+              "**Metrics**",
+              "How will we know if it worked?"
+            ],
+            [
+              "**Risks**",
+              "What could derail us, and how do we mitigate?"
+            ]
+          ]
+        }
       ]
     }
-  ]
+  ],
+  "renderRequirements": {
+    "mermaid": "Required for visuals[].type === 'mermaid'. Install: npm install mermaid",
+    "markdown": "Recommended for definitions/examTips with **bold** and bullets"
+  }
 }
