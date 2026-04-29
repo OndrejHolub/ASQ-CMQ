@@ -16,25 +16,34 @@
           "term": "Seven Classic Quality Tools",
           "definition": "(1) Flowchart, (2) Check Sheet (tally sheet), (3) Cause-and-Effect / Ishikawa / Fishbone diagram, (4) Pareto Chart, (5) Control Chart, (6) Histogram, (7) Scatter Diagram.",
           "formula": null,
-          "examTip": "Memorize all 7 in order. Each maps to a phase of investigation."
+          "examTip": "Memorize all 7 in order. Each maps to a phase of investigation.",
+          "definitionBullets": [
+            "**Cause-and-effect (Fishbone)** diagram",
+            "**Check sheet**",
+            "**Control chart**",
+            "**Histogram**",
+            "**Pareto chart**",
+            "**Scatter diagram**",
+            "**Flowchart / Stratification**"
+          ]
         },
         {
           "term": "Cause-and-Effect Diagram (4M / 4P)",
           "definition": "Fishbone diagram organizing potential causes by category. Manufacturing: 4Ms (Manpower, Machinery, Methods, Materials). Service: 4Ps (People, Policies, Procedures, Plant).",
           "formula": null,
-          "examTip": "Manufacturing → 4Ms; Service → 4Ps. Created by Ishikawa."
+          "examTip": "Manufacturing \u2192 4Ms; Service \u2192 4Ps. Created by Ishikawa."
         },
         {
           "term": "Pareto Principle",
           "definition": "80% of effects come from 20% of causes (Vilfredo Pareto, applied broadly by Juran). Pareto chart arranges bars by descending frequency with a cumulative percentage line.",
           "formula": null,
-          "examTip": "Not all problems have a Pareto shape — sometimes bars are nearly equal."
+          "examTip": "Not all problems have a Pareto shape \u2014 sometimes bars are nearly equal."
         },
         {
           "term": "Correlation Coefficient (r)",
           "definition": "Statistical measure of linear association between two variables. r approaches +1 (strong positive), -1 (strong negative), or 0 (no correlation). Visual slope is NOT a measure of correlation strength.",
           "formula": "r ranges from -1 to +1",
-          "examTip": "Correlation ≠ causation. Visual slope can mislead — calculate r."
+          "examTip": "Correlation \u2260 causation. Visual slope can mislead \u2014 calculate r."
         },
         {
           "term": "Seven Management and Planning Tools",
@@ -52,7 +61,7 @@
           "term": "Interrelationship Digraph",
           "definition": "Maps cause-and-effect relationships between ideas using arrows. Counting 'arrows in' vs 'arrows out' identifies primary drivers (out > in) and outcomes (in > out).",
           "formula": null,
-          "examTip": "Identifies leverage points — focus on primary drivers."
+          "examTip": "Identifies leverage points \u2014 focus on primary drivers."
         },
         {
           "term": "Process Decision Program Chart (PDPC)",
@@ -70,41 +79,54 @@
           "term": "PDCA / PDSA Cycle",
           "definition": "Plan-Do-Check-Act (Shewhart, popularized by Deming who later promoted Plan-Do-Study-Act). Foundation of continuous improvement.",
           "formula": null,
-          "examTip": "Shewhart created it; Deming preferred PDSA (Study emphasizes learning over checking)."
+          "examTip": "Shewhart created it; Deming preferred PDSA (Study emphasizes learning over checking).",
+          "definitionBullets": [
+            "**Plan** \u2014 identify problem, analyze, set objectives, plan changes",
+            "**Do** \u2014 implement on small scale, collect data",
+            "**Check** (or **Study** in PDSA) \u2014 compare results to objectives",
+            "**Act** \u2014 standardize if good, or adjust and repeat cycle"
+          ]
         },
         {
           "term": "Kepner-Tregoe Method",
           "definition": "Fact-based root cause analysis (Rand Corp., 1950s). Four steps: (1) Problem Analysis, (2) Decision Analysis, (3) Situation Appraisal, (4) Potential Problem Analysis.",
           "formula": null,
-          "examTip": "Kepner-Tregoe is structured and rational — focuses on systematically eliminating possibilities."
+          "examTip": "Kepner-Tregoe is structured and rational \u2014 focuses on systematically eliminating possibilities."
         },
         {
           "term": "DMAIC (Six Sigma)",
           "definition": "Define (charter, VOC), Measure (current process, MSA), Analyze (root causes), Improve (design future state, implement), Control (control plan, SPC, sustain).",
           "formula": null,
-          "examTip": "Memorize DMAIC phases and key tools per phase."
+          "examTip": "Memorize DMAIC phases and key tools per phase.",
+          "definitionBullets": [
+            "**Define** \u2014 problem, customer, scope, charter",
+            "**Measure** \u2014 baseline data, current capability",
+            "**Analyze** \u2014 root cause, statistical analysis",
+            "**Improve** \u2014 pilot solutions, verify gains",
+            "**Control** \u2014 standardize, monitor, sustain"
+          ]
         },
         {
           "term": "Six Sigma Quality Levels",
-          "definition": "1σ = 690,000 DPMO; 2σ = 308,000; 3σ = 66,800; 4σ = 6,210; 5σ = 230; 6σ = 3.4 DPMO.",
+          "definition": "1\u03c3 = 690,000 DPMO; 2\u03c3 = 308,000; 3\u03c3 = 66,800; 4\u03c3 = 6,210; 5\u03c3 = 230; 6\u03c3 = 3.4 DPMO.",
           "formula": null,
-          "examTip": "6σ = 3.4 DPMO. Memorize."
+          "examTip": "6\u03c3 = 3.4 DPMO. Memorize."
         },
         {
           "term": "FMEA (Design / Process)",
           "definition": "Systematic identification of potential failures, their effects, and preventive/corrective actions. DFMEA = product/design; PFMEA = process. Computes RPN to prioritize.",
-          "formula": "RPN = Severity × Occurrence × Detection",
-          "examTip": "Each scale 1–10. RPN > threshold (often 100 or 125) triggers action."
+          "formula": "RPN = Severity \u00d7 Occurrence \u00d7 Detection",
+          "examTip": "Each scale 1\u201310. RPN > threshold (often 100 or 125) triggers action."
         },
         {
           "term": "Five Whys",
-          "definition": "Iterative root cause technique — ask 'Why?' approximately 5 times to drill from symptom to root cause. Simple but powerful.",
+          "definition": "Iterative root cause technique \u2014 ask 'Why?' approximately 5 times to drill from symptom to root cause. Simple but powerful.",
           "formula": null,
           "examTip": "Best for non-complex problems. Combine with fishbone for complex ones."
         },
         {
           "term": "Brainstorming Process",
-          "definition": "Generate → Discuss/refine → Add/delete/combine/modify → Select and verify feasible ideas. Quantity over quality in generation phase.",
+          "definition": "Generate \u2192 Discuss/refine \u2192 Add/delete/combine/modify \u2192 Select and verify feasible ideas. Quantity over quality in generation phase.",
           "formula": null,
           "examTip": "Defer judgment in idea generation. Evaluate later."
         },
@@ -133,14 +155,20 @@
           "examTip": "NGT/multivoting = democratic narrowing without dominant voices controlling."
         },
         {
-          "term": "Cost of Quality (COQ) — Four Categories",
+          "term": "Cost of Quality (COQ) \u2014 Four Categories",
           "definition": "Prevention (training, planning, audits), Appraisal (testing, inspection, calibration), Internal Failure (rework, scrap before delivery), External Failure (warranty, returns, lawsuits after delivery).",
           "formula": "COQ = P + A + IF + EF",
-          "examTip": "Goal: shift spending TO Prevention, AWAY from failures. Total COQ DECREASES."
+          "examTip": "Goal: shift spending TO Prevention, AWAY from failures. Total COQ DECREASES.",
+          "definitionBullets": [
+            "**Prevention** \u2014 proactive investment to avoid defects",
+            "**Appraisal** \u2014 inspection and testing to detect defects",
+            "**Internal failure** \u2014 defects caught before shipment (scrap, rework)",
+            "**External failure** \u2014 defects reaching customer (warranty, recalls)"
+          ]
         },
         {
           "term": "COQ Cost Optimization",
-          "definition": "Investing in Prevention reduces all downstream failure costs. External failures are MOST expensive; Prevention is CHEAPEST. Typical organization starts with 60–70% in failure costs and aims to flip toward prevention.",
+          "definition": "Investing in Prevention reduces all downstream failure costs. External failures are MOST expensive; Prevention is CHEAPEST. Typical organization starts with 60\u201370% in failure costs and aims to flip toward prevention.",
           "formula": null,
           "examTip": "1-10-100 rule: $1 prevention = $10 appraisal = $100 failure."
         },
@@ -171,21 +199,36 @@
       "practiceQuestions": [
         {
           "q": "Which of the 7 classic tools BEST shows the relationship between two variables?",
-          "options": ["Pareto chart", "Histogram", "Scatter diagram", "Control chart"],
+          "options": [
+            "Pareto chart",
+            "Histogram",
+            "Scatter diagram",
+            "Control chart"
+          ],
           "correct": 2,
           "explanation": "A scatter diagram plots one variable against another to reveal correlation. Histogram shows distribution; Pareto ranks; control chart monitors over time."
         },
         {
           "q": "An RPN calculation gives Severity=9, Occurrence=4, Detection=3. The RPN is:",
-          "options": ["16", "108", "126", "216"],
+          "options": [
+            "16",
+            "108",
+            "126",
+            "216"
+          ],
           "correct": 1,
-          "explanation": "RPN = 9 × 4 × 3 = 108."
+          "explanation": "RPN = 9 \u00d7 4 \u00d7 3 = 108."
         },
         {
           "q": "At Six Sigma quality level, defects per million opportunities are approximately:",
-          "options": ["3.4", "230", "6,210", "66,800"],
+          "options": [
+            "3.4",
+            "230",
+            "6,210",
+            "66,800"
+          ],
           "correct": 0,
-          "explanation": "6σ = 3.4 DPMO. 5σ ≈ 230, 4σ ≈ 6,210, 3σ ≈ 66,800."
+          "explanation": "6\u03c3 = 3.4 DPMO. 5\u03c3 \u2248 230, 4\u03c3 \u2248 6,210, 3\u03c3 \u2248 66,800."
         },
         {
           "q": "An organization has Total COQ = 15% of sales, with 45% in internal failure, 30% in external failure, 20% appraisal, and 5% prevention. The BEST first action is:",
@@ -200,22 +243,253 @@
         },
         {
           "q": "Which of the 7 management & planning tools is BEST suited to organizing brainstormed ideas into natural categories?",
-          "options": ["Tree diagram", "Affinity diagram", "Matrix diagram", "Prioritization matrix"],
+          "options": [
+            "Tree diagram",
+            "Affinity diagram",
+            "Matrix diagram",
+            "Prioritization matrix"
+          ],
           "correct": 1,
           "explanation": "Affinity diagrams group ideas by natural similarity using sticky notes. Tree diagrams decompose hierarchically; matrices compare; prioritization weights alternatives."
         }
       ],
       "flashcards": [
-        { "front": "7 classic quality tools?", "back": "Flowchart, Check sheet, Cause-and-Effect, Pareto, Control chart, Histogram, Scatter diagram." },
-        { "front": "7 management & planning tools?", "back": "AND, Affinity, Interrelationship digraph, Matrix, Prioritization matrix, PDPC, Tree." },
-        { "front": "4Ms vs 4Ps?", "back": "4Ms (Manufacturing): Manpower, Machinery, Methods, Materials. 4Ps (Service): People, Policies, Procedures, Plant." },
-        { "front": "DMAIC phases?", "back": "Define, Measure, Analyze, Improve, Control." },
-        { "front": "RPN formula?", "back": "RPN = Severity × Occurrence × Detection (each 1–10 scale)." },
-        { "front": "6σ DPMO?", "back": "3.4 defects per million opportunities." },
-        { "front": "COQ four buckets?", "back": "Prevention + Appraisal + Internal Failure + External Failure." },
-        { "front": "Kepner-Tregoe 4 steps?", "back": "Problem Analysis, Decision Analysis, Situation Appraisal, Potential Problem Analysis." },
-        { "front": "Six Thinking Hats colors?", "back": "White (facts), Red (emotions), Black (negative), Yellow (positive), Green (creative), Blue (control)." },
-        { "front": "TRIZ — what is it?", "back": "Theory of Inventive Problem-Solving — 40 principles for systematic innovation." }
+        {
+          "front": "7 classic quality tools?",
+          "back": "Flowchart, Check sheet, Cause-and-Effect, Pareto, Control chart, Histogram, Scatter diagram."
+        },
+        {
+          "front": "7 management & planning tools?",
+          "back": "AND, Affinity, Interrelationship digraph, Matrix, Prioritization matrix, PDPC, Tree."
+        },
+        {
+          "front": "4Ms vs 4Ps?",
+          "back": "4Ms (Manufacturing): Manpower, Machinery, Methods, Materials. 4Ps (Service): People, Policies, Procedures, Plant."
+        },
+        {
+          "front": "DMAIC phases?",
+          "back": "Define, Measure, Analyze, Improve, Control."
+        },
+        {
+          "front": "RPN formula?",
+          "back": "RPN = Severity \u00d7 Occurrence \u00d7 Detection (each 1\u201310 scale)."
+        },
+        {
+          "front": "6\u03c3 DPMO?",
+          "back": "3.4 defects per million opportunities."
+        },
+        {
+          "front": "COQ four buckets?",
+          "back": "Prevention + Appraisal + Internal Failure + External Failure."
+        },
+        {
+          "front": "Kepner-Tregoe 4 steps?",
+          "back": "Problem Analysis, Decision Analysis, Situation Appraisal, Potential Problem Analysis."
+        },
+        {
+          "front": "Six Thinking Hats colors?",
+          "back": "White (facts), Red (emotions), Black (negative), Yellow (positive), Green (creative), Blue (control)."
+        },
+        {
+          "front": "TRIZ \u2014 what is it?",
+          "back": "Theory of Inventive Problem-Solving \u2014 40 principles for systematic innovation."
+        }
+      ],
+      "summaryBullets": [
+        "**7 Classic QC Tools** (Ishikawa): Cause-effect, Check sheet, Control chart, Histogram, Pareto, Scatter, Stratification/Flowchart",
+        "**7 Management & Planning Tools** (newer): Affinity, Interrelationship digraph, Tree, Matrix, Prioritization matrix, PDPC, Activity network",
+        "**Pareto Principle**: 80/20 \u2014 focus on the vital few causes producing most defects",
+        "**PDCA/PDSA cycle**: Plan \u2192 Do \u2192 Check (or Study) \u2192 Act \u2014 Deming/Shewhart",
+        "**DMAIC** (Six Sigma): Define \u2192 Measure \u2192 Analyze \u2192 Improve \u2192 Control",
+        "**5 Whys** = root cause via iterative questioning; **FMEA** = forward-looking risk",
+        "**Six Sigma** = 3.4 DPMO; **3\u03c3** = 66,800 DPMO. Big gap.",
+        "**COQ** = Prevention + Appraisal + Internal Failure + External Failure"
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "title": "7 Classic QC Tools (Ishikawa)",
+          "columns": [
+            "#",
+            "Tool",
+            "Use Case"
+          ],
+          "rows": [
+            [
+              "1",
+              "**Cause-and-Effect (Fishbone)**",
+              "Brainstorm potential root causes by category"
+            ],
+            [
+              "2",
+              "**Check Sheet**",
+              "Structured data collection at the source"
+            ],
+            [
+              "3",
+              "**Control Chart**",
+              "Distinguish common from special cause variation"
+            ],
+            [
+              "4",
+              "**Histogram**",
+              "Visualize distribution shape, spread, center"
+            ],
+            [
+              "5",
+              "**Pareto Chart**",
+              "Identify the vital few causes (80/20)"
+            ],
+            [
+              "6",
+              "**Scatter Diagram**",
+              "Show correlation between two variables"
+            ],
+            [
+              "7",
+              "**Flowchart / Stratification**",
+              "Map process steps OR separate data layers"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Cause-and-Effect (Fishbone) \u2014 4M Categories",
+          "code": "graph LR\n  Man[**Man**<br/>Skill, training,<br/>fatigue] --> Effect((**EFFECT**<br/>Defect, problem))\n  Machine[**Machine**<br/>Equipment, tools,<br/>maintenance] --> Effect\n  Method[**Method**<br/>Process, procedure,<br/>SOP] --> Effect\n  Material[**Material**<br/>Inputs, components,<br/>specs] --> Effect\n  style Effect fill:#ffcdd2"
+        },
+        {
+          "type": "mermaid",
+          "title": "PDCA / PDSA Cycle (Deming-Shewhart)",
+          "code": "graph TD\n  P[**PLAN**<br/>Identify problem,<br/>analyze, set objectives,<br/>plan changes] --> D[**DO**<br/>Implement on<br/>small scale,<br/>collect data]\n  D --> C[**CHECK / STUDY**<br/>Compare results<br/>to objectives]\n  C --> A[**ACT**<br/>Standardize if good,<br/>or adjust and<br/>repeat cycle]\n  A -.next cycle.-> P\n  style P fill:#bbdefb\n  style D fill:#c8e6c9\n  style C fill:#fff9c4\n  style A fill:#ffe0b2"
+        },
+        {
+          "type": "mermaid",
+          "title": "DMAIC \u2014 Six Sigma Improvement Cycle",
+          "code": "graph LR\n  D[**D**efine<br/>Problem,<br/>customer,<br/>scope] --> M[**M**easure<br/>Baseline data,<br/>process<br/>capability]\n  M --> A[**A**nalyze<br/>Root cause,<br/>statistical<br/>analysis]\n  A --> I[**I**mprove<br/>Pilot solutions,<br/>verify gains]\n  I --> C[**C**ontrol<br/>Standardize,<br/>monitor,<br/>sustain]\n  style D fill:#bbdefb\n  style M fill:#c8e6c9\n  style A fill:#fff9c4\n  style I fill:#ffe0b2\n  style C fill:#f8bbd0"
+        },
+        {
+          "type": "table",
+          "title": "Six Sigma Quality Levels",
+          "columns": [
+            "Sigma Level",
+            "DPMO (Defects per Million Opps)",
+            "Yield"
+          ],
+          "rows": [
+            [
+              "1\u03c3",
+              "691,462",
+              "30.85%"
+            ],
+            [
+              "2\u03c3",
+              "308,538",
+              "69.15%"
+            ],
+            [
+              "3\u03c3",
+              "66,807",
+              "93.32%"
+            ],
+            [
+              "4\u03c3",
+              "6,210",
+              "99.38%"
+            ],
+            [
+              "5\u03c3",
+              "233",
+              "99.977%"
+            ],
+            [
+              "**6\u03c3**",
+              "**3.4**",
+              "**99.99966%**"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "5 Whys Root Cause Analysis Example",
+          "code": "graph TD\n  P[**Problem**<br/>Production line stopped] --> W1[**Why 1?**<br/>Conveyor motor failed]\n  W1 --> W2[**Why 2?**<br/>Bearings seized]\n  W2 --> W3[**Why 3?**<br/>Lubrication ran dry]\n  W3 --> W4[**Why 4?**<br/>Lube schedule not followed]\n  W4 --> W5[**Why 5?**<br/>No PM ownership defined]\n  W5 --> RC[**ROOT CAUSE**<br/>Missing PM accountability \u2014<br/>NOT 'failed motor']\n  style RC fill:#c8e6c9\n  style P fill:#ffcdd2"
+        },
+        {
+          "type": "table",
+          "title": "Brainstorming Variants \u2014 When to Use",
+          "columns": [
+            "Tool",
+            "Best For",
+            "Key Feature"
+          ],
+          "rows": [
+            [
+              "**Brainstorming**",
+              "Generating quantity of ideas",
+              "No criticism, build on others' ideas"
+            ],
+            [
+              "**Six Thinking Hats**",
+              "Looking at problem from 6 angles",
+              "White=facts, Red=feelings, Black=risks, Yellow=benefits, Green=ideas, Blue=process"
+            ],
+            [
+              "**SCAMPER**",
+              "Modifying existing solutions",
+              "Substitute, Combine, Adapt, Modify, Put to other use, Eliminate, Reverse"
+            ],
+            [
+              "**TRIZ**",
+              "Inventive problem solving",
+              "40 inventive principles from patent analysis"
+            ],
+            [
+              "**NGT / Multivoting**",
+              "Group prioritization",
+              "Silent generation + structured voting"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "FMEA \u2014 Risk Priority Number Calculation",
+          "code": "graph LR\n  S[**Severity**<br/>1-10<br/>How bad if it<br/>happens?] --> RPN((**RPN**<br/>S \u00d7 O \u00d7 D<br/>Range: 1-1000))\n  O[**Occurrence**<br/>1-10<br/>How often?] --> RPN\n  D[**Detection**<br/>1-10<br/>Can we catch it<br/>before customer?] --> RPN\n  RPN --> Action[**Prioritize Actions**<br/>Higher RPN = higher priority]\n  style RPN fill:#ffe0b2"
+        },
+        {
+          "type": "table",
+          "title": "Cost of Quality (COQ) Categories",
+          "columns": [
+            "Category",
+            "Type",
+            "Examples",
+            "Cost Direction"
+          ],
+          "rows": [
+            [
+              "**Prevention**",
+              "Conformance",
+              "Training, planning, design reviews",
+              "Invest more here"
+            ],
+            [
+              "**Appraisal**",
+              "Conformance",
+              "Inspection, testing, audits",
+              "Optimize"
+            ],
+            [
+              "**Internal Failure**",
+              "Nonconformance",
+              "Scrap, rework caught in-house",
+              "Drive down"
+            ],
+            [
+              "**External Failure**",
+              "Nonconformance",
+              "Warranty, recalls, complaints",
+              "Eliminate"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -229,13 +503,20 @@
           "term": "Process Definition",
           "definition": "A series of interrelated actions that transform a concept, request, or order into a delivered product or service. Adds value to inputs and provides outputs to internal/external customers.",
           "formula": null,
-          "examTip": "Every process must add value — otherwise it is waste."
+          "examTip": "Every process must add value \u2014 otherwise it is waste."
         },
         {
           "term": "SIPOC Model",
-          "definition": "Suppliers → Inputs → Process → Outputs → Customers. Foundational tool for understanding any process from a management perspective. Used in Six Sigma Define phase.",
+          "definition": "Suppliers \u2192 Inputs \u2192 Process \u2192 Outputs \u2192 Customers. Foundational tool for understanding any process from a management perspective. Used in Six Sigma Define phase.",
           "formula": null,
-          "examTip": "SIPOC is THE first map you draw to understand a process."
+          "examTip": "SIPOC is THE first map you draw to understand a process.",
+          "definitionBullets": [
+            "**S**uppliers \u2014 who provides inputs",
+            "**I**nputs \u2014 materials, information, specifications",
+            "**P**rocess \u2014 5\u20137 high-level process steps",
+            "**O**utputs \u2014 products or services produced",
+            "**C**ustomers \u2014 who receives the outputs"
+          ]
         },
         {
           "term": "Process Mapping (Standard Symbols)",
@@ -245,7 +526,7 @@
         },
         {
           "term": "Swim-Lane / Cross-Functional Flowchart",
-          "definition": "Grid-format process map with departments in columns. Shows handoffs and where work crosses functional boundaries — a primary source of disconnects.",
+          "definition": "Grid-format process map with departments in columns. Shows handoffs and where work crosses functional boundaries \u2014 a primary source of disconnects.",
           "formula": null,
           "examTip": "Swim lanes reveal cross-functional handoffs and accountability gaps."
         },
@@ -253,11 +534,17 @@
           "term": "QMS Documentation Hierarchy (4 Levels)",
           "definition": "(1) Quality Manual (What/Why), (2) Procedures (Who/What/When), (3) Work Instructions (How), (4) Records (objective evidence/data).",
           "formula": null,
-          "examTip": "4-level pyramid. Quality Manual at top; Records at bottom."
+          "examTip": "4-level pyramid. Quality Manual at top; Records at bottom.",
+          "definitionBullets": [
+            "**Level 1 \u2014 Quality Manual**: policy, scope, vision (WHY)",
+            "**Level 2 \u2014 Procedures**: process flows (WHO/WHAT/WHEN)",
+            "**Level 3 \u2014 Work Instructions**: step-by-step detail (HOW)",
+            "**Level 4 \u2014 Records**: evidence of execution (WHAT HAPPENED)"
+          ]
         },
         {
           "term": "Control Plan",
-          "definition": "Document defining product/process characteristics, tolerances, measurements, controls, and reaction plans. Supports — does not replace — work instructions.",
+          "definition": "Document defining product/process characteristics, tolerances, measurements, controls, and reaction plans. Supports \u2014 does not replace \u2014 work instructions.",
           "formula": null,
           "examTip": "Control plan = systematic capture of how each characteristic is monitored."
         },
@@ -268,22 +555,38 @@
           "examTip": "These five tools form the core of automotive QMS expectations."
         },
         {
-          "term": "Seven Wastes (Muda) — TIMWOOD",
+          "term": "Seven Wastes (Muda) \u2014 TIMWOOD",
           "definition": "Transportation, Inventory, Motion, Waiting, Overproduction, Overprocessing, Defects. Some add an 8th: unused human talent.",
           "formula": null,
-          "examTip": "TIMWOOD acronym. Be ready to classify any example into one of the seven."
+          "examTip": "TIMWOOD acronym. Be ready to classify any example into one of the seven.",
+          "definitionBullets": [
+            "**T**ransport \u2014 unnecessary movement of WIP",
+            "**I**nventory \u2014 excess raw, WIP, or finished goods",
+            "**M**otion \u2014 wasted operator movement",
+            "**W**aiting \u2014 idle time waiting for resources",
+            "**O**verprocessing \u2014 doing more than customer requires",
+            "**O**verproduction \u2014 too much, too soon",
+            "**D**efects \u2014 errors, scrap, rework"
+          ]
         },
         {
           "term": "5S Methodology",
-          "definition": "Sort (Seiri — separate needed from unneeded; red tags), Set in Order (Seiton — neat arrangement), Shine (Seiso — clean), Standardize (Seiketsu — maintain), Sustain (Shitsuke — habituate).",
+          "definition": "Sort (Seiri \u2014 separate needed from unneeded; red tags), Set in Order (Seiton \u2014 neat arrangement), Shine (Seiso \u2014 clean), Standardize (Seiketsu \u2014 maintain), Sustain (Shitsuke \u2014 habituate).",
           "formula": null,
-          "examTip": "Memorize order: Sort → Set → Shine → Standardize → Sustain. Some add 6th 'S' for Safety."
+          "examTip": "Memorize order: Sort \u2192 Set \u2192 Shine \u2192 Standardize \u2192 Sustain. Some add 6th 'S' for Safety.",
+          "definitionBullets": [
+            "**Sort** (Seiri) \u2014 remove what isn't needed",
+            "**Set in order** (Seiton) \u2014 place for everything",
+            "**Shine** (Seiso) \u2014 clean and inspect",
+            "**Standardize** (Seiketsu) \u2014 document the new normal",
+            "**Sustain** (Shitsuke) \u2014 discipline and audit"
+          ]
         },
         {
           "term": "Visual Management",
-          "definition": "Status of process understood at-a-glance — color codes, andon lights, signage, tool boards. Cuts costs, improves communication, identifies safety hazards, enables rapid correction.",
+          "definition": "Status of process understood at-a-glance \u2014 color codes, andon lights, signage, tool boards. Cuts costs, improves communication, identifies safety hazards, enables rapid correction.",
           "formula": null,
-          "examTip": "Visual management is core to Lean — see the abnormality immediately."
+          "examTip": "Visual management is core to Lean \u2014 see the abnormality immediately."
         },
         {
           "term": "Just-in-Time (JIT)",
@@ -293,9 +596,9 @@
         },
         {
           "term": "Little's Law",
-          "definition": "Average WIP = Throughput Rate × Average Lead Time. Foundation of JIT and flow analysis.",
-          "formula": "WIP = Throughput × Lead Time",
-          "examTip": "Reduce WIP → must reduce throughput or lead time. Memorize the formula."
+          "definition": "Average WIP = Throughput Rate \u00d7 Average Lead Time. Foundation of JIT and flow analysis.",
+          "formula": "WIP = Throughput \u00d7 Lead Time",
+          "examTip": "Reduce WIP \u2192 must reduce throughput or lead time. Memorize the formula."
         },
         {
           "term": "Kanban",
@@ -305,61 +608,74 @@
         },
         {
           "term": "Value Stream Mapping (VSM)",
-          "definition": "Charts all material and information flow from raw material to customer. Three types: Material flow (manufacturing), Transactional (TVSM — non-mfg processes), Enterprise (EVSM — across business). Two states: Current State, Future State.",
-          "formula": "Takt Time = Available Work Time ÷ Customer Demand",
+          "definition": "Charts all material and information flow from raw material to customer. Three types: Material flow (manufacturing), Transactional (TVSM \u2014 non-mfg processes), Enterprise (EVSM \u2014 across business). Two states: Current State, Future State.",
+          "formula": "Takt Time = Available Work Time \u00f7 Customer Demand",
           "examTip": "Always map current state first, then future state. Never improve the future without seeing the current."
         },
         {
           "term": "Single-Minute Exchange of Die (SMED)",
           "definition": "Shigeo Shingo's method to reduce setup/changeover time. Key step: convert internal setup (machine stopped) to external setup (machine running). Goal: under 10 minutes.",
           "formula": null,
-          "examTip": "Internal → external is the key conversion. Enables small batch production."
+          "examTip": "Internal \u2192 external is the key conversion. Enables small batch production."
         },
         {
           "term": "Poka-Yoke (Mistake-Proofing)",
           "definition": "Shigeo Shingo's mistake-prevention approach. Two systems: Control (prevents error) and Warning (alerts operator). Three device types: Contact, Counting, Motion sequence.",
           "formula": null,
-          "examTip": "Control approach is preferred — it prevents the error completely."
+          "examTip": "Control approach is preferred \u2014 it prevents the error completely."
         },
         {
           "term": "Four Categories of Mistakes (Poka-Yoke)",
-          "definition": "(1) Information errors — incorrect/ambiguous/missing/inadequate warning; (2) Omission/Commission — wrong addition or harmful action; (3) Selection errors — wrong part/destination; (4) Misalignment — misuse or rush.",
+          "definition": "(1) Information errors \u2014 incorrect/ambiguous/missing/inadequate warning; (2) Omission/Commission \u2014 wrong addition or harmful action; (3) Selection errors \u2014 wrong part/destination; (4) Misalignment \u2014 misuse or rush.",
           "formula": null,
-          "examTip": "Match scenarios to one of these four mistake categories."
+          "examTip": "Match scenarios to one of these four mistake categories.",
+          "definitionBullets": [
+            "**Information** mistakes \u2014 wrong/missing data",
+            "**Misalignment** \u2014 wrong placement/orientation",
+            "**Omission** \u2014 step skipped",
+            "**Sequence** \u2014 steps in wrong order"
+          ]
         },
         {
           "term": "Kaizen Blitz / Event",
-          "definition": "Intense 3–5 day rapid improvement event. Cross-functional team focused on a target process. Typical Mon-train, Tue-current state, Wed-future state, Thu-data, Fri-implement.",
+          "definition": "Intense 3\u20135 day rapid improvement event. Cross-functional team focused on a target process. Typical Mon-train, Tue-current state, Wed-future state, Thu-data, Fri-implement.",
           "formula": null,
           "examTip": "Kaizen blitz = focused rapid improvement. Different from continuous kaizen philosophy."
         },
         {
           "term": "Overall Equipment Effectiveness (OEE)",
           "definition": "Measure of equipment efficiency combining three components.",
-          "formula": "OEE = Availability × Performance × Quality",
-          "examTip": "World-class OEE ≈ 85%. Memorize the formula."
+          "formula": "OEE = Availability \u00d7 Performance \u00d7 Quality",
+          "examTip": "World-class OEE \u2248 85%. Memorize the formula."
         },
         {
-          "term": "Theory of Constraints (TOC) — Goldratt",
+          "term": "Theory of Constraints (TOC) \u2014 Goldratt",
           "definition": "Systems-thinking methodology. Performance is constrained by the weakest link. Goal: identify and exploit constraints to maximize throughput.",
           "formula": null,
-          "examTip": "Goldratt's 'The Goal' is the foundational text. TOC ≠ Pareto — focuses on one constraint at a time."
+          "examTip": "Goldratt's 'The Goal' is the foundational text. TOC \u2260 Pareto \u2014 focuses on one constraint at a time."
         },
         {
-          "term": "TOC — Five Focusing Steps",
-          "definition": "(1) Identify the constraint, (2) Exploit the constraint (squeeze more capacity without major changes), (3) Subordinate everything else to the constraint, (4) Elevate the constraint (major changes if needed), (5) Repeat — don't let inertia become the new constraint.",
+          "term": "TOC \u2014 Five Focusing Steps",
+          "definition": "(1) Identify the constraint, (2) Exploit the constraint (squeeze more capacity without major changes), (3) Subordinate everything else to the constraint, (4) Elevate the constraint (major changes if needed), (5) Repeat \u2014 don't let inertia become the new constraint.",
           "formula": null,
-          "examTip": "Memorize all 5 steps. Step 5 is critical — TOC is iterative."
+          "examTip": "Memorize all 5 steps. Step 5 is critical \u2014 TOC is iterative.",
+          "definitionBullets": [
+            "**Identify** the constraint",
+            "**Exploit** the constraint (get max from it)",
+            "**Subordinate** everything else to the constraint",
+            "**Elevate** the constraint (add capacity)",
+            "**Repeat** \u2014 find the new constraint"
+          ]
         },
         {
           "term": "TOC Financial Definitions",
           "definition": "Throughput (T): rate at which system generates money via sales. Inventory (I): money tied up in things to sell. Operating Expense (OE): money spent turning inventory into throughput.",
-          "formula": "Productivity = T/OE | Profit = T − OE | ROI = (T − OE)/I",
+          "formula": "Productivity = T/OE | Profit = T \u2212 OE | ROI = (T \u2212 OE)/I",
           "examTip": "Memorize T, I, OE. Throughput goes up; Inventory and OE go down."
         },
         {
           "term": "Physical vs Policy Constraints",
-          "definition": "Physical constraints: easier to identify (raw materials, equipment, workforce). Policy constraints: harder — rules, procedures, management decisions limiting throughput. Eliminating policy constraints yields bigger gains.",
+          "definition": "Physical constraints: easier to identify (raw materials, equipment, workforce). Policy constraints: harder \u2014 rules, procedures, management decisions limiting throughput. Eliminating policy constraints yields bigger gains.",
           "formula": null,
           "examTip": "Most real constraints are POLICY, not physical."
         }
@@ -374,19 +690,34 @@
       "practiceQuestions": [
         {
           "q": "In a SIPOC analysis, the 'P' represents:",
-          "options": ["Purchase orders", "Process", "Product", "Procedure"],
+          "options": [
+            "Purchase orders",
+            "Process",
+            "Product",
+            "Procedure"
+          ],
           "correct": 1,
           "explanation": "SIPOC = Suppliers, Inputs, Process, Outputs, Customers."
         },
         {
           "q": "Which of the seven wastes is BEST illustrated by 'producing more than the customer ordered to keep machines busy'?",
-          "options": ["Inventory", "Waiting", "Overproduction", "Defects"],
+          "options": [
+            "Inventory",
+            "Waiting",
+            "Overproduction",
+            "Defects"
+          ],
           "correct": 2,
           "explanation": "Overproduction is producing more than current demand. It cascades into other wastes (excess inventory, longer lead times)."
         },
         {
           "q": "The fifth 'S' in 5S methodology is:",
-          "options": ["Safety", "Sustain", "Simplify", "Stabilize"],
+          "options": [
+            "Safety",
+            "Sustain",
+            "Simplify",
+            "Stabilize"
+          ],
           "correct": 1,
           "explanation": "Sort, Set in Order, Shine, Standardize, Sustain. (Some practitioners add Safety as a 6th S.)"
         },
@@ -399,32 +730,258 @@
             "Setup steps into inspection steps"
           ],
           "correct": 1,
-          "explanation": "Internal setup happens while the machine is stopped — the key is to move as much as possible to external (while machine is still running)."
+          "explanation": "Internal setup happens while the machine is stopped \u2014 the key is to move as much as possible to external (while machine is still running)."
         },
         {
           "q": "OEE of a machine: Availability=80%, Performance=90%, Quality=95%. OEE equals:",
-          "options": ["68.4%", "85%", "88%", "265%"],
+          "options": [
+            "68.4%",
+            "85%",
+            "88%",
+            "265%"
+          ],
           "correct": 0,
-          "explanation": "OEE = 0.80 × 0.90 × 0.95 = 0.684 = 68.4%."
+          "explanation": "OEE = 0.80 \u00d7 0.90 \u00d7 0.95 = 0.684 = 68.4%."
         },
         {
           "q": "In Goldratt's Theory of Constraints, the second focusing step is:",
-          "options": ["Identify the constraint", "Subordinate everything else", "Exploit the constraint", "Elevate the constraint"],
+          "options": [
+            "Identify the constraint",
+            "Subordinate everything else",
+            "Exploit the constraint",
+            "Elevate the constraint"
+          ],
           "correct": 2,
-          "explanation": "After identifying, the next step is to EXPLOIT — squeeze more capacity from the constraint without major investment, before subordinating or elevating."
+          "explanation": "After identifying, the next step is to EXPLOIT \u2014 squeeze more capacity from the constraint without major investment, before subordinating or elevating."
         }
       ],
       "flashcards": [
-        { "front": "SIPOC?", "back": "Suppliers → Inputs → Process → Outputs → Customers." },
-        { "front": "QMS documentation 4 levels?", "back": "Quality Manual → Procedures → Work Instructions → Records." },
-        { "front": "Seven wastes (TIMWOOD)?", "back": "Transportation, Inventory, Motion, Waiting, Overproduction, Overprocessing, Defects." },
-        { "front": "5S in order?", "back": "Sort, Set in Order, Shine, Standardize, Sustain." },
-        { "front": "Little's Law?", "back": "WIP = Throughput × Lead Time." },
-        { "front": "Takt Time formula?", "back": "Available Work Time ÷ Customer Demand." },
-        { "front": "OEE formula?", "back": "Availability × Performance × Quality." },
-        { "front": "TOC 5 focusing steps?", "back": "Identify, Exploit, Subordinate, Elevate, Repeat." },
-        { "front": "Internal vs external setup (SMED)?", "back": "Internal = machine stopped. External = machine running. Goal: convert internal to external." },
-        { "front": "Two poka-yoke approaches?", "back": "Control (prevents) and Warning (alerts)." }
+        {
+          "front": "SIPOC?",
+          "back": "Suppliers \u2192 Inputs \u2192 Process \u2192 Outputs \u2192 Customers."
+        },
+        {
+          "front": "QMS documentation 4 levels?",
+          "back": "Quality Manual \u2192 Procedures \u2192 Work Instructions \u2192 Records."
+        },
+        {
+          "front": "Seven wastes (TIMWOOD)?",
+          "back": "Transportation, Inventory, Motion, Waiting, Overproduction, Overprocessing, Defects."
+        },
+        {
+          "front": "5S in order?",
+          "back": "Sort, Set in Order, Shine, Standardize, Sustain."
+        },
+        {
+          "front": "Little's Law?",
+          "back": "WIP = Throughput \u00d7 Lead Time."
+        },
+        {
+          "front": "Takt Time formula?",
+          "back": "Available Work Time \u00f7 Customer Demand."
+        },
+        {
+          "front": "OEE formula?",
+          "back": "Availability \u00d7 Performance \u00d7 Quality."
+        },
+        {
+          "front": "TOC 5 focusing steps?",
+          "back": "Identify, Exploit, Subordinate, Elevate, Repeat."
+        },
+        {
+          "front": "Internal vs external setup (SMED)?",
+          "back": "Internal = machine stopped. External = machine running. Goal: convert internal to external."
+        },
+        {
+          "front": "Two poka-yoke approaches?",
+          "back": "Control (prevents) and Warning (alerts)."
+        }
+      ],
+      "summaryBullets": [
+        "**SIPOC** = Suppliers, Inputs, Process, Outputs, Customers \u2014 high-level process map",
+        "**QMS Documentation 4 levels**: Manual \u2192 Procedures \u2192 Work Instructions \u2192 Records",
+        "**7 Wastes (TIMWOOD)**: Transport, Inventory, Motion, Waiting, Overprocessing, Overproduction, Defects (some add 8th = Skills)",
+        "**5S**: Sort, Set in order, Shine, Standardize, Sustain",
+        "**Just-in-Time (JIT)** + **Kanban** + **Value Stream Mapping** = Lean foundation",
+        "**Poka-yoke** = mistake-proofing; 4 mistake categories: information, misalignment, omission, sequence",
+        "**OEE** = Availability \u00d7 Performance \u00d7 Quality (target: 85%+ world-class)",
+        "**Theory of Constraints (TOC)** \u2014 focus on bottleneck; 5 focusing steps"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "SIPOC Process Mapping Model",
+          "code": "graph LR\n  S[**S**uppliers<br/>Who provides<br/>inputs?] --> I[**I**nputs<br/>Materials,<br/>info, specs]\n  I --> P[**P**rocess<br/>5-7 high-level<br/>steps]\n  P --> O[**O**utputs<br/>Products,<br/>services]\n  O --> C[**C**ustomers<br/>Who receives<br/>outputs?]\n  style S fill:#bbdefb\n  style I fill:#c8e6c9\n  style P fill:#fff9c4\n  style O fill:#ffe0b2\n  style C fill:#f8bbd0"
+        },
+        {
+          "type": "mermaid",
+          "title": "QMS Documentation Hierarchy \u2014 4 Levels (Pyramid)",
+          "code": "graph BT\n  L4[**LEVEL 4: RECORDS**<br/>Evidence \u2014 completed forms,<br/>test results, audit reports] --> L3[**LEVEL 3: WORK INSTRUCTIONS**<br/>How \u2014 detailed step-by-step]\n  L3 --> L2[**LEVEL 2: PROCEDURES**<br/>Who/What/When \u2014 process flows]\n  L2 --> L1[**LEVEL 1: QUALITY MANUAL**<br/>Why \u2014 policy, scope, vision]\n  style L1 fill:#bbdefb\n  style L2 fill:#c8e6c9\n  style L3 fill:#fff9c4\n  style L4 fill:#ffe0b2"
+        },
+        {
+          "type": "table",
+          "title": "7 Wastes of Lean \u2014 TIMWOOD",
+          "columns": [
+            "#",
+            "Waste",
+            "Example"
+          ],
+          "rows": [
+            [
+              "1",
+              "**T**ransport",
+              "Moving WIP unnecessarily between stations"
+            ],
+            [
+              "2",
+              "**I**nventory",
+              "Excess raw material, WIP, or finished goods"
+            ],
+            [
+              "3",
+              "**M**otion",
+              "Operator reaching, walking, searching for tools"
+            ],
+            [
+              "4",
+              "**W**aiting",
+              "Idle time waiting for parts, info, decisions"
+            ],
+            [
+              "5",
+              "**O**verprocessing",
+              "Doing more than customer requires (extra polish)"
+            ],
+            [
+              "6",
+              "**O**verproduction",
+              "Making more than needed, sooner than needed"
+            ],
+            [
+              "7",
+              "**D**efects",
+              "Scrap, rework, errors"
+            ],
+            [
+              "8 (added)",
+              "**S**kills (unused)",
+              "Underutilizing employee creativity/capability"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "5S Methodology",
+          "columns": [
+            "#",
+            "S Term",
+            "English",
+            "Action"
+          ],
+          "rows": [
+            [
+              "1",
+              "**Seiri**",
+              "**Sort**",
+              "Remove what isn't needed (red tag)"
+            ],
+            [
+              "2",
+              "**Seiton**",
+              "**Set in order**",
+              "Place for everything, everything in its place"
+            ],
+            [
+              "3",
+              "**Seiso**",
+              "**Shine**",
+              "Clean and inspect to identify abnormalities"
+            ],
+            [
+              "4",
+              "**Seiketsu**",
+              "**Standardize**",
+              "Document the new normal"
+            ],
+            [
+              "5",
+              "**Shitsuke**",
+              "**Sustain**",
+              "Discipline, audit, continuous improvement"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "OEE \u2014 Overall Equipment Effectiveness",
+          "code": "graph LR\n  A[**Availability**<br/>Run time /<br/>Planned time<br/>Loss: breakdowns,<br/>setup] --> OEE((**OEE**<br/>A \u00d7 P \u00d7 Q))\n  P[**Performance**<br/>Actual / Ideal<br/>output rate<br/>Loss: minor stops,<br/>slow cycles]) --> OEE\n  Q[**Quality**<br/>Good parts /<br/>Total parts<br/>Loss: defects,<br/>rework] --> OEE\n  OEE --> T[**World-class**<br/>OEE \u2265 85%]\n  style OEE fill:#ffe0b2\n  style T fill:#c8e6c9"
+        },
+        {
+          "type": "mermaid",
+          "title": "Theory of Constraints \u2014 5 Focusing Steps",
+          "code": "graph LR\n  S1[**1. Identify**<br/>the constraint] --> S2[**2. Exploit**<br/>get the most from<br/>the constraint]\n  S2 --> S3[**3. Subordinate**<br/>everything else to<br/>the constraint]\n  S3 --> S4[**4. Elevate**<br/>increase capacity<br/>of constraint]\n  S4 --> S5[**5. Repeat**<br/>find the new<br/>constraint]\n  S5 -.next bottleneck.-> S1\n  style S1 fill:#bbdefb\n  style S5 fill:#c8e6c9"
+        },
+        {
+          "type": "table",
+          "title": "Poka-Yoke \u2014 4 Categories of Mistakes",
+          "columns": [
+            "Mistake Type",
+            "Description",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**Information**",
+              "Wrong/missing data",
+              "Wrong part number on order"
+            ],
+            [
+              "**Misalignment**",
+              "Wrong placement/orientation",
+              "Connector inserted backwards"
+            ],
+            [
+              "**Omission**",
+              "Step skipped",
+              "Bolt not torqued"
+            ],
+            [
+              "**Sequence**",
+              "Steps in wrong order",
+              "Powering on before connecting cable"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Automotive Quality Toolset (IATF 16949 Core Tools)",
+          "columns": [
+            "Tool",
+            "Purpose"
+          ],
+          "rows": [
+            [
+              "**APQP**",
+              "Advanced Product Quality Planning \u2014 phased planning gate process"
+            ],
+            [
+              "**PPAP**",
+              "Production Part Approval Process \u2014 supplier sample submission"
+            ],
+            [
+              "**FMEA**",
+              "Failure Mode and Effects Analysis \u2014 risk forecasting"
+            ],
+            [
+              "**MSA**",
+              "Measurement System Analysis \u2014 gauge R&R, accuracy"
+            ],
+            [
+              "**SPC**",
+              "Statistical Process Control \u2014 control charts, process monitoring"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -432,17 +989,17 @@
       "ref": "IV.C",
       "title": "Measurement, Assessment, and Metrics",
       "cognitive": "Evaluate / Apply / Analyze / Understand",
-      "summary": "Statistics turns data into information. Quality managers must apply sampling, descriptive statistics, distributions, SPC, MSA (gage R&R, accuracy/precision), trend and pattern analysis, and process capability indices (Cp/Cpk/Pp/Ppk) — and distinguish common from special cause variation. Reliability is captured through MTTF/MTBF/MTTR and the bathtub curve.",
+      "summary": "Statistics turns data into information. Quality managers must apply sampling, descriptive statistics, distributions, SPC, MSA (gage R&R, accuracy/precision), trend and pattern analysis, and process capability indices (Cp/Cpk/Pp/Ppk) \u2014 and distinguish common from special cause variation. Reliability is captured through MTTF/MTBF/MTTR and the bathtub curve.",
       "concepts": [
         {
           "term": "Goal-Question-Metric (GQM)",
           "definition": "Three-level measurement model: Goal (conceptual), Question (operational, defines what to measure), Metric (quantitative answer to the question).",
           "formula": null,
-          "examTip": "GQM ensures every metric ties back to a goal — no orphan measurements."
+          "examTip": "GQM ensures every metric ties back to a goal \u2014 no orphan measurements."
         },
         {
           "term": "Three Timely Tenets of Measurement",
-          "definition": "(1) Never measure without knowing who supplies data, who consumes information, and the cost-effectiveness; (2) Always involve the people doing the work; (3) The primary reason is to IMPROVE — not control or punish.",
+          "definition": "(1) Never measure without knowing who supplies data, who consumes information, and the cost-effectiveness; (2) Always involve the people doing the work; (3) The primary reason is to IMPROVE \u2014 not control or punish.",
           "formula": null,
           "examTip": "Metrics are for improvement, not surveillance."
         },
@@ -453,38 +1010,42 @@
           "examTip": "Stratified sampling protects against bias when subgroups differ. Random sampling is gold standard."
         },
         {
-          "term": "Alpha (α) and Beta (β) Risk",
-          "definition": "Alpha = Producer's Risk = probability of rejecting good product (Type I error). Beta = Consumer's Risk = probability of accepting bad product (Type II error). Typical: α = 0.05, β = 0.10.",
+          "term": "Alpha (\u03b1) and Beta (\u03b2) Risk",
+          "definition": "Alpha = Producer's Risk = probability of rejecting good product (Type I error). Beta = Consumer's Risk = probability of accepting bad product (Type II error). Typical: \u03b1 = 0.05, \u03b2 = 0.10.",
           "formula": null,
-          "examTip": "α = Type I = reject GOOD. β = Type II = accept BAD."
+          "examTip": "\u03b1 = Type I = reject GOOD. \u03b2 = Type II = accept BAD.",
+          "definitionBullets": [
+            "**Alpha (\u03b1)** \u2014 Type I \u2014 Producer's risk \u2014 REJECTING a good lot (false alarm)",
+            "**Beta (\u03b2)** \u2014 Type II \u2014 Consumer's risk \u2014 ACCEPTING a bad lot (miss)"
+          ]
         },
         {
           "term": "AQL and LTPD",
           "definition": "AQL (Acceptable Quality Limit): worst tolerable process average submitted for acceptance. LTPD (Lot Tolerance Percent Defective): the point on OC curve associated with consumer's risk. Defined in ANSI/ASQ Z1.4.",
           "formula": null,
-          "examTip": "AQL ≠ acceptable quality. It's the worst the customer will tolerate, not the goal."
+          "examTip": "AQL \u2260 acceptable quality. It's the worst the customer will tolerate, not the goal."
         },
         {
           "term": "Single / Double / Multiple Sampling",
-          "definition": "Single: one sample, accept if ≤ c defects. Double: two samples; first determines accept/reject/test more. Multiple: up to 7 sequential samples — most discriminating but susceptible to abuse.",
+          "definition": "Single: one sample, accept if \u2264 c defects. Double: two samples; first determines accept/reject/test more. Multiple: up to 7 sequential samples \u2014 most discriminating but susceptible to abuse.",
           "formula": null,
           "examTip": "Sampling complexity vs. cost trade-off. ANSI/ASQ Z1.4 governs in many industries."
         },
         {
           "term": "Central Tendency Measures",
-          "definition": "Mean (average): ΣX ÷ n. Median: middle value when sorted (or avg of two middles for even n). Mode: most frequently occurring value.",
-          "formula": "X̄ = ΣX / n",
+          "definition": "Mean (average): \u03a3X \u00f7 n. Median: middle value when sorted (or avg of two middles for even n). Mode: most frequently occurring value.",
+          "formula": "X\u0304 = \u03a3X / n",
           "examTip": "Median is robust to outliers; mean is not. Mode may not be unique."
         },
         {
           "term": "Dispersion Measures",
-          "definition": "Range (R): max − min. Variance: average of squared deviations. Standard Deviation (s): square root of variance.",
-          "formula": "s = √[Σ(X − X̄)² ÷ (n − 1)]",
-          "examTip": "Sample SD divides by (n − 1); population SD by N."
+          "definition": "Range (R): max \u2212 min. Variance: average of squared deviations. Standard Deviation (s): square root of variance.",
+          "formula": "s = \u221a[\u03a3(X \u2212 X\u0304)\u00b2 \u00f7 (n \u2212 1)]",
+          "examTip": "Sample SD divides by (n \u2212 1); population SD by N."
         },
         {
           "term": "Probability Distributions",
-          "definition": "Normal (bell-shaped, symmetric), Exponential (time between events), Weibull (reliability — bathtub), Poisson (rare events in n trials, p < 0.10), Binomial (yes/no in n trials), Hypergeometric (without replacement).",
+          "definition": "Normal (bell-shaped, symmetric), Exponential (time between events), Weibull (reliability \u2014 bathtub), Poisson (rare events in n trials, p < 0.10), Binomial (yes/no in n trials), Hypergeometric (without replacement).",
           "formula": null,
           "examTip": "Normal for continuous data, Poisson for rare counts, Binomial for pass/fail."
         },
@@ -496,24 +1057,24 @@
         },
         {
           "term": "Variables Control Charts",
-          "definition": "X̄-R (subgroup average + range), X̄-s (average + standard deviation, larger subgroups), CUSUM (cumulative sum, detects small shifts), individuals (X-MR for individual measurements).",
+          "definition": "X\u0304-R (subgroup average + range), X\u0304-s (average + standard deviation, larger subgroups), CUSUM (cumulative sum, detects small shifts), individuals (X-MR for individual measurements).",
           "formula": null,
-          "examTip": "Variables data → X̄-R or X̄-s. Use s when subgroup size > ~10."
+          "examTip": "Variables data \u2192 X\u0304-R or X\u0304-s. Use s when subgroup size > ~10."
         },
         {
           "term": "Attributes Control Charts",
           "definition": "p-chart (fraction defective, variable n), np-chart (number defective, constant n), c-chart (count of defects, constant area), u-chart (defects per unit, variable area).",
           "formula": null,
-          "examTip": "p/np for defectives; c/u for defects. Constant n → np or c; variable n → p or u."
+          "examTip": "p/np for defectives; c/u for defects. Constant n \u2192 np or c; variable n \u2192 p or u."
         },
         {
           "term": "Four Control Chart Criteria for In-Control",
-          "definition": "(1) No visible pattern; (2) Approximately equal points above and below centerline; (3) Some points close to control limits but not beyond; (4) Approximately two-thirds of points within ±1σ.",
+          "definition": "(1) No visible pattern; (2) Approximately equal points above and below centerline; (3) Some points close to control limits but not beyond; (4) Approximately two-thirds of points within \u00b11\u03c3.",
           "formula": null,
           "examTip": "Memorize all four criteria for an in-control process."
         },
         {
-          "term": "MSA — Repeatability vs Reproducibility",
+          "term": "MSA \u2014 Repeatability vs Reproducibility",
           "definition": "Repeatability: variation in same gage with same operator measuring the same part repeatedly (gage variation). Reproducibility: variation between operators using same gage on same part (operator variation). Together = Gage R&R.",
           "formula": null,
           "examTip": "Repeat = same operator/gage. Reproduce = different operators/same gage."
@@ -532,7 +1093,7 @@
         },
         {
           "term": "Common vs Special Cause Variation",
-          "definition": "Common (chance) cause: inherent random variation always present in a stable process. Special (assignable) cause: detectable, removable variation from a specific source — appears as out-of-control patterns.",
+          "definition": "Common (chance) cause: inherent random variation always present in a stable process. Special (assignable) cause: detectable, removable variation from a specific source \u2014 appears as out-of-control patterns.",
           "formula": null,
           "examTip": "Stable process = common cause only. Out-of-control = special cause to investigate."
         },
@@ -544,21 +1105,21 @@
         },
         {
           "term": "Sporadic vs Chronic Problems (Juran)",
-          "definition": "Sporadic: sudden departure from normal — restore control. Chronic: ongoing baseline that needs breakthrough improvement, not just control.",
+          "definition": "Sporadic: sudden departure from normal \u2014 restore control. Chronic: ongoing baseline that needs breakthrough improvement, not just control.",
           "formula": null,
           "examTip": "Sporadic = control. Chronic = breakthrough."
         },
         {
           "term": "Process Capability Cp",
           "definition": "Ratio of specification range to process spread. Measures POTENTIAL capability assuming the process is centered.",
-          "formula": "Cp = (USL − LSL) ÷ 6σ",
-          "examTip": "Cp > 1.33 = capable. Cp = 2 → 6σ short-term."
+          "formula": "Cp = (USL \u2212 LSL) \u00f7 6\u03c3",
+          "examTip": "Cp > 1.33 = capable. Cp = 2 \u2192 6\u03c3 short-term."
         },
         {
           "term": "Process Capability Cpk",
-          "definition": "Accounts for centering. Smaller of (USL − X̄)/3σ and (X̄ − LSL)/3σ.",
-          "formula": "Cpk = min[(USL − X̄)/3σ, (X̄ − LSL)/3σ]",
-          "examTip": "Cpk ≤ Cp. If Cpk = Cp, process is perfectly centered."
+          "definition": "Accounts for centering. Smaller of (USL \u2212 X\u0304)/3\u03c3 and (X\u0304 \u2212 LSL)/3\u03c3.",
+          "formula": "Cpk = min[(USL \u2212 X\u0304)/3\u03c3, (X\u0304 \u2212 LSL)/3\u03c3]",
+          "examTip": "Cpk \u2264 Cp. If Cpk = Cp, process is perfectly centered."
         },
         {
           "term": "Pp / Ppk (Performance Indices)",
@@ -568,13 +1129,19 @@
         },
         {
           "term": "Capability Thresholds",
-          "definition": "Cp/Cpk > 1.33: capable. Cp/Cpk = 1.00–1.33: capable with tight control. Cp/Cpk < 1.00: not capable. Ppk > 1.67: capable (long-term).",
+          "definition": "Cp/Cpk > 1.33: capable. Cp/Cpk = 1.00\u20131.33: capable with tight control. Cp/Cpk < 1.00: not capable. Ppk > 1.67: capable (long-term).",
           "formula": null,
-          "examTip": "1.33 (short-term) and 1.67 (long-term) are the magic numbers."
+          "examTip": "1.33 (short-term) and 1.67 (long-term) are the magic numbers.",
+          "definitionBullets": [
+            "**Cpk < 1.0** \u2014 process NOT capable",
+            "**Cpk = 1.33** \u2014 industry standard for capable process",
+            "**Cpk = 1.67** \u2014 required for safety-critical / automotive",
+            "**Cpk \u2265 2.0** \u2014 Six Sigma world-class"
+          ]
         },
         {
           "term": "Bathtub Curve (Reliability)",
-          "definition": "Failure rate vs time has three phases: (1) Infant Mortality (decreasing rate — defects burn-in), (2) Useful Life (constant random failure rate), (3) Wear-out (increasing failure rate — end of life).",
+          "definition": "Failure rate vs time has three phases: (1) Infant Mortality (decreasing rate \u2014 defects burn-in), (2) Useful Life (constant random failure rate), (3) Wear-out (increasing failure rate \u2014 end of life).",
           "formula": null,
           "examTip": "Most modeling assumes the constant-rate useful-life region. Burn-in screens infant mortality."
         },
@@ -582,12 +1149,18 @@
           "term": "MTTF / MTBF / MTTR",
           "definition": "MTTF: Mean Time To Failure (nonrepairable items). MTBF: Mean Time Between Failures (repairable items). MTTR: Mean Time To Repair.",
           "formula": null,
-          "examTip": "MTTF = nonrepairable; MTBF = repairable. Don't confuse them."
+          "examTip": "MTTF = nonrepairable; MTBF = repairable. Don't confuse them.",
+          "definitionBullets": [
+            "**MTTF** \u2014 Mean Time To Failure \u2014 non-repairable items (light bulbs)",
+            "**MTBF** \u2014 Mean Time Between Failures \u2014 repairable items (machines)",
+            "**MTTR** \u2014 Mean Time To Repair \u2014 how fast you recover",
+            "**Ao** = MTBF / (MTBF + MTTR) \u2014 operational availability"
+          ]
         },
         {
           "term": "Availability (Ao)",
-          "definition": "Operational availability — combines reliability and maintainability.",
-          "formula": "Ao = MTBF ÷ (MTBF + MTTR)",
+          "definition": "Operational availability \u2014 combines reliability and maintainability.",
+          "formula": "Ao = MTBF \u00f7 (MTBF + MTTR)",
           "examTip": "Improve availability by raising MTBF or lowering MTTR."
         }
       ],
@@ -599,7 +1172,7 @@
       ],
       "practiceQuestions": [
         {
-          "q": "In sampling, alpha (α) risk is BEST described as:",
+          "q": "In sampling, alpha (\u03b1) risk is BEST described as:",
           "options": [
             "Accepting bad product",
             "Rejecting good product",
@@ -622,7 +1195,12 @@
         },
         {
           "q": "Which control chart is BEST for tracking the count of defects in a constant-size sample?",
-          "options": ["p-chart", "np-chart", "c-chart", "u-chart"],
+          "options": [
+            "p-chart",
+            "np-chart",
+            "c-chart",
+            "u-chart"
+          ],
           "correct": 2,
           "explanation": "c-chart counts defects per constant inspection unit. np-chart counts DEFECTIVES (not defects). u-chart is for variable sample size."
         },
@@ -639,29 +1217,308 @@
         },
         {
           "q": "MTBF = 200 hours and MTTR = 5 hours. Operational availability is approximately:",
-          "options": ["97.6%", "95.2%", "97.5%", "99.0%"],
+          "options": [
+            "97.6%",
+            "95.2%",
+            "97.5%",
+            "99.0%"
+          ],
           "correct": 0,
-          "explanation": "Ao = MTBF/(MTBF + MTTR) = 200/205 ≈ 0.9756 = 97.6%."
+          "explanation": "Ao = MTBF/(MTBF + MTTR) = 200/205 \u2248 0.9756 = 97.6%."
         },
         {
           "q": "Treating common-cause variation as if it were special-cause and adjusting the process is called:",
-          "options": ["Calibration", "Tampering", "Drift", "Process capability"],
+          "options": [
+            "Calibration",
+            "Tampering",
+            "Drift",
+            "Process capability"
+          ],
           "correct": 1,
-          "explanation": "Tampering — overcorrecting a stable process — increases variation. Demonstrated by Deming's funnel experiment."
+          "explanation": "Tampering \u2014 overcorrecting a stable process \u2014 increases variation. Demonstrated by Deming's funnel experiment."
         }
       ],
       "flashcards": [
-        { "front": "Alpha vs Beta risk?", "back": "α = Producer's risk = reject GOOD (Type I). β = Consumer's risk = accept BAD (Type II)." },
-        { "front": "Cp formula?", "back": "Cp = (USL − LSL) ÷ 6σ." },
-        { "front": "Cpk formula?", "back": "Cpk = min[(USL − X̄)/3σ, (X̄ − LSL)/3σ]." },
-        { "front": "Cp/Cpk capable threshold?", "back": "> 1.33 (short-term). > 1.67 (long-term Ppk)." },
-        { "front": "Repeatability vs Reproducibility?", "back": "Repeatability = same operator/same gage. Reproducibility = different operators/same gage." },
-        { "front": "Bathtub curve phases?", "back": "Infant mortality → Useful life (constant rate) → Wear-out." },
-        { "front": "MTTF vs MTBF?", "back": "MTTF = nonrepairable. MTBF = repairable." },
-        { "front": "Availability formula?", "back": "Ao = MTBF ÷ (MTBF + MTTR)." },
-        { "front": "Common vs special cause?", "back": "Common = inherent random. Special = assignable, detectable, removable." },
-        { "front": "What is tampering?", "back": "Overcorrecting common-cause variation; increases overall variation." }
+        {
+          "front": "Alpha vs Beta risk?",
+          "back": "\u03b1 = Producer's risk = reject GOOD (Type I). \u03b2 = Consumer's risk = accept BAD (Type II)."
+        },
+        {
+          "front": "Cp formula?",
+          "back": "Cp = (USL \u2212 LSL) \u00f7 6\u03c3."
+        },
+        {
+          "front": "Cpk formula?",
+          "back": "Cpk = min[(USL \u2212 X\u0304)/3\u03c3, (X\u0304 \u2212 LSL)/3\u03c3]."
+        },
+        {
+          "front": "Cp/Cpk capable threshold?",
+          "back": "> 1.33 (short-term). > 1.67 (long-term Ppk)."
+        },
+        {
+          "front": "Repeatability vs Reproducibility?",
+          "back": "Repeatability = same operator/same gage. Reproducibility = different operators/same gage."
+        },
+        {
+          "front": "Bathtub curve phases?",
+          "back": "Infant mortality \u2192 Useful life (constant rate) \u2192 Wear-out."
+        },
+        {
+          "front": "MTTF vs MTBF?",
+          "back": "MTTF = nonrepairable. MTBF = repairable."
+        },
+        {
+          "front": "Availability formula?",
+          "back": "Ao = MTBF \u00f7 (MTBF + MTTR)."
+        },
+        {
+          "front": "Common vs special cause?",
+          "back": "Common = inherent random. Special = assignable, detectable, removable."
+        },
+        {
+          "front": "What is tampering?",
+          "back": "Overcorrecting common-cause variation; increases overall variation."
+        }
+      ],
+      "summaryBullets": [
+        "**GQM** = Goal-Question-Metric \u2014 start with the goal, derive metrics",
+        "**Alpha (\u03b1)** = Type I = producer's risk = false alarm; **Beta (\u03b2)** = Type II = consumer's risk = miss",
+        "**AQL** = Acceptable Quality Limit (good lots accepted); **LTPD** = Lot Tolerance % Defective (bad lots rejected)",
+        "**Central tendency**: mean, median, mode | **Dispersion**: range, variance, std dev",
+        "**SPC**: variables charts (X\u0304-R, X\u0304-s, I-MR) for measurements; attributes (p, np, c, u) for counts",
+        "**Cp** = process capability (centered); **Cpk** = capability adjusted for centering",
+        "**Cpk thresholds**: <1.0 not capable | 1.33 standard | 1.67 high-volume/safety-critical",
+        "**Common cause** = inherent variation (don't tamper); **Special cause** = assignable (investigate)",
+        "**Bathtub curve**: infant mortality \u2192 useful life \u2192 wear-out failure"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "GQM \u2014 Goal-Question-Metric",
+          "code": "graph TD\n  G[**GOAL**<br/>What outcome do<br/>we want?<br/><i>e.g., Reduce field<br/>warranty cost</i>] --> Q1[**Question 1**<br/>What drives field<br/>warranty cost?]\n  G --> Q2[**Question 2**<br/>Where do failures<br/>cluster?]\n  Q1 --> M1[Metric: Cost<br/>per failure mode]\n  Q1 --> M2[Metric: Time-to-<br/>failure distribution]\n  Q2 --> M3[Metric: Failures<br/>by region/lot]\n  Q2 --> M4[Metric: Customer<br/>complaint rate]\n  style G fill:#bbdefb"
+        },
+        {
+          "type": "table",
+          "title": "Alpha (\u03b1) vs Beta (\u03b2) Risk \u2014 Sampling Errors",
+          "columns": [
+            "Risk",
+            "Greek",
+            "Other Names",
+            "What Happens",
+            "Cost Falls On"
+          ],
+          "rows": [
+            [
+              "**Type I**",
+              "\u03b1 (alpha)",
+              "Producer's risk, False alarm",
+              "Reject GOOD lot",
+              "Producer (rework, lost lot)"
+            ],
+            [
+              "**Type II**",
+              "\u03b2 (beta)",
+              "Consumer's risk, Miss",
+              "Accept BAD lot",
+              "Consumer (defective product reaches customer)"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Common Cause vs Special Cause Variation",
+          "code": "graph TD\n  V[**Process Variation**] --> CC[**Common Cause**<br/>inherent in the system<br/>random, predictable]\n  V --> SC[**Special Cause**<br/>assignable, identifiable<br/>not part of normal system]\n  CC --> CC1[Action: change<br/>the system<br/>do NOT tamper]\n  SC --> SC1[Action: investigate<br/>and eliminate<br/>the assignable cause]\n  Tamp[**TAMPERING**<br/>Reacting to common cause<br/>as if special cause \u2014<br/>increases variation] -.warning.-> CC1\n  style CC fill:#bbdefb\n  style SC fill:#ffcdd2\n  style Tamp fill:#ffe0b2"
+        },
+        {
+          "type": "table",
+          "title": "Control Chart Selection Matrix",
+          "columns": [
+            "Data Type",
+            "Subgroup Size",
+            "Chart"
+          ],
+          "rows": [
+            [
+              "**Variables** (measurements)",
+              "n = 1",
+              "**I-MR** (Individuals & Moving Range)"
+            ],
+            [
+              "**Variables** (measurements)",
+              "2 \u2264 n \u2264 9",
+              "**X\u0304-R** (Average & Range)"
+            ],
+            [
+              "**Variables** (measurements)",
+              "n \u2265 10",
+              "**X\u0304-s** (Average & Std Dev)"
+            ],
+            [
+              "**Attributes** (defective units, fixed sample)",
+              "Constant n",
+              "**np chart** (number defective)"
+            ],
+            [
+              "**Attributes** (defective units, variable sample)",
+              "Variable n",
+              "**p chart** (proportion defective)"
+            ],
+            [
+              "**Attributes** (defects per unit, fixed area)",
+              "Constant area",
+              "**c chart** (count of defects)"
+            ],
+            [
+              "**Attributes** (defects per unit, variable area)",
+              "Variable area",
+              "**u chart** (defects per unit)"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Process Capability Indices \u2014 Cp, Cpk, Pp, Ppk",
+          "columns": [
+            "Index",
+            "Formula",
+            "Interpretation"
+          ],
+          "rows": [
+            [
+              "**Cp**",
+              "(USL \u2212 LSL) / 6\u03c3",
+              "Spread vs spec \u2014 assumes process is centered"
+            ],
+            [
+              "**Cpk**",
+              "min[(USL\u2212\u03bc)/3\u03c3, (\u03bc\u2212LSL)/3\u03c3]",
+              "Adjusts for off-center; the more honest metric"
+            ],
+            [
+              "**Pp**",
+              "Like Cp but uses long-term sigma",
+              "Performance \u2014 total variation including drift"
+            ],
+            [
+              "**Ppk**",
+              "Like Cpk but uses long-term sigma",
+              "Performance adjusted for centering"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Cpk Capability Thresholds",
+          "columns": [
+            "Cpk Range",
+            "Interpretation",
+            "Typical Use"
+          ],
+          "rows": [
+            [
+              "< 1.00",
+              "\ud83d\udd34 NOT CAPABLE",
+              "Process must be improved before release"
+            ],
+            [
+              "1.00 \u2013 1.32",
+              "\ud83d\udfe1 Marginal",
+              "Acceptable for non-critical, increased inspection"
+            ],
+            [
+              "1.33",
+              "\ud83d\udfe2 STANDARD",
+              "Industry minimum for capable process"
+            ],
+            [
+              "1.67",
+              "\ud83d\udfe2 HIGH",
+              "Required for safety-critical, automotive"
+            ],
+            [
+              "\u2265 2.00",
+              "\ud83d\udfe2 SIX SIGMA",
+              "World-class, < 3.4 DPMO"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Bathtub Curve \u2014 Reliability Failure Rate Over Time",
+          "code": "graph LR\n  IM[**Infant Mortality**<br/>Decreasing failure rate<br/>Cause: defects, weak parts<br/>Mitigation: burn-in testing] --> UL[**Useful Life**<br/>Constant (low) failure rate<br/>Cause: random failures<br/>Mitigation: redundancy, MTBF design]\n  UL --> WO[**Wear-Out**<br/>Increasing failure rate<br/>Cause: aging, fatigue, corrosion<br/>Mitigation: PM, end-of-life replacement]\n  style IM fill:#ffe0b2\n  style UL fill:#c8e6c9\n  style WO fill:#ffcdd2"
+        },
+        {
+          "type": "table",
+          "title": "Reliability Metrics \u2014 MTTF, MTBF, MTTR, Availability",
+          "columns": [
+            "Metric",
+            "Full Name",
+            "Used For",
+            "Formula"
+          ],
+          "rows": [
+            [
+              "**MTTF**",
+              "Mean Time To Failure",
+              "Non-repairable items (light bulbs)",
+              "Total operating time / # failures"
+            ],
+            [
+              "**MTBF**",
+              "Mean Time Between Failures",
+              "Repairable items (machines)",
+              "Total uptime / # failures"
+            ],
+            [
+              "**MTTR**",
+              "Mean Time To Repair",
+              "How fast we recover",
+              "Total downtime / # repairs"
+            ],
+            [
+              "**Availability (Ao)**",
+              "Operational Availability",
+              "% of time system is up",
+              "MTBF / (MTBF + MTTR)"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Accuracy vs Precision vs Bias vs Linearity",
+          "columns": [
+            "Term",
+            "Meaning",
+            "Visual"
+          ],
+          "rows": [
+            [
+              "**Accuracy**",
+              "Closeness to TRUE value",
+              "Hits the bullseye"
+            ],
+            [
+              "**Precision**",
+              "Closeness of repeated measurements to each other",
+              "Tight cluster (anywhere on target)"
+            ],
+            [
+              "**Bias**",
+              "Systematic offset from true value",
+              "Tight cluster, but off-center"
+            ],
+            [
+              "**Linearity**",
+              "Bias varies across measurement range",
+              "Bias gets worse as you measure higher/lower"
+            ]
+          ]
+        }
       ]
     }
-  ]
+  ],
+  "renderRequirements": {
+    "mermaid": "Required for visuals[].type === 'mermaid'. Install: npm install mermaid",
+    "markdown": "Recommended for definitions/examTips with **bold** and bullets"
+  }
 }
