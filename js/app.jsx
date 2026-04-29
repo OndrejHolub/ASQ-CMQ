@@ -12,12 +12,12 @@ const { useState, useEffect, useRef, useMemo } = React;
 // -----------------------------------------------------------------------------
 const DOMAIN_INDEX = [
   { id: 1, num: "I",   file: "content/domain-1.json", title: "Leadership" },
-  { id: 2, num: "II",  file: "content/domain-2.json", title: "Strategic Plan Development" },
-  { id: 3, num: "III", file: "content/domain-3.json", title: "Management Elements" },
+  { id: 2, num: "II",  file: "content/domain-2.json", title: "Strategic Plan Development & Deployment" },
+  { id: 3, num: "III", file: "content/domain-3.json", title: "Management Elements & Methods" },
   { id: 4, num: "IV",  file: "content/domain-4.json", title: "Quality Management Tools" },
   { id: 5, num: "V",   file: "content/domain-5.json", title: "Customer-Focused Organizations" },
   { id: 6, num: "VI",  file: "content/domain-6.json", title: "Supply Chain Management" },
-  { id: 7, num: "VII", file: "content/domain-7.json", title: "Training and Development" },
+  { id: 7, num: "VII", file: "content/domain-7.json", title: "Training & Development" },
 ];
 
 // -----------------------------------------------------------------------------
