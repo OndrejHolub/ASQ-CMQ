@@ -1,0 +1,764 @@
+{
+  "id": 7,
+  "num": "VII",
+  "title": "Training and Development",
+  "examQuestions": 12,
+  "examWeight": 9,
+  "renderRequirements": {
+    "mermaid": "Required for visuals[].type === 'mermaid'. Install: npm install mermaid",
+    "markdown": "Recommended for definitions/examTips with **bold** and bullets"
+  },
+  "sections": [
+    {
+      "id": "7A",
+      "ref": "VII.A",
+      "title": "Training Plans",
+      "cognitive": "Create",
+      "summary": "Training is an investment, not an expense — but only when aligned with the strategic plan. Training teaches HOW (skill); education teaches WHY/WHEN (knowledge). Juran and Gryna define six planning issues. Cost-benefit analysis justifies the budget.",
+      "summaryBullets": [
+        "**Training = investment**, not expense — when strategically aligned",
+        "**Training** teaches HOW (skill, hands-on, narrow scope)",
+        "**Education** teaches WHY/WHEN (knowledge, formal, broad)",
+        "**Juran & Gryna**: 6 planning issues center on org context + management commitment",
+        "**Without strategic alignment** → training is the first cost cut in downturns"
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "title": "Training vs Education — At a Glance",
+          "columns": ["Dimension", "Training", "Education"],
+          "rows": [
+            ["Teaches", "HOW", "WHY / WHEN"],
+            ["Focus", "Specific skill", "Broad knowledge"],
+            ["Method", "Hands-on, applied", "Formal study"],
+            ["Measurement", "Demonstrate output", "Test comprehension"],
+            ["Time horizon", "Short, focused", "Long, gradual"],
+            ["Example", "Operating a CMM machine", "Statistical theory, ISO 9001 principles"],
+            ["CMQ/OE itself", "Some skill content", "Mostly education"]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Juran & Gryna's 6 Training Planning Issues",
+          "code": "mindmap\n  root((Training<br/>Plan))\n    1. Quality problems<br/>and challenges\n    2. Knowledge & skills<br/>needed to address them\n    3. Existing facilities<br/>and processes\n    4. Climate & track<br/>record of past programs\n    5. What needs to be<br/>done differently\n    6. Top management<br/>support & commitment"
+        }
+      ],
+      "concepts": [
+        {
+          "term": "Training vs Education (Core Distinction)",
+          "definition": "Training: hands-on, applied skill acquisition — teaches HOW. Measured by demonstrating the skill and producing desired outputs. Education: formal acquisition of knowledge — teaches WHY and WHEN. Broadens thinking and knowledge base.",
+          "formula": null,
+          "examTip": "Memorize: Training = HOW (skill, narrow). Education = WHY/WHEN (knowledge, broad). CMQ/OE itself is mostly education."
+        },
+        {
+          "term": "Training as Investment",
+          "definition": "When done correctly and for the right reasons, training is not an expense — it is an investment in a workforce that differentiates the organization from competitors. Strategic asset, not overhead.",
+          "formula": null,
+          "examTip": "Training is the first thing cut in downturns — that's a sign it wasn't strategically aligned."
+        },
+        {
+          "term": "Juran & Gryna's 6 Training Planning Issues",
+          "definition": "Six issues to consider when planning organizational training:",
+          "definitionBullets": [
+            "Quality problems and challenges faced by the organization",
+            "Knowledge/skills needed to address them",
+            "Existing training facilities and processes",
+            "Prevailing climate (track record of past programs)",
+            "What needs to be done differently",
+            "What's needed to gain top management support and commitment"
+          ],
+          "formula": null,
+          "examTip": "Juran & Gryna emphasize organizational context and management commitment, not just curriculum design."
+        },
+        {
+          "term": "Strategic Alignment of Training",
+          "definition": "Training is most beneficial when supported by and aligned with the strategic plan. Trainees must grasp the connection between learning content and organizational strategic objectives. Management must role-model quality principles daily.",
+          "formula": null,
+          "examTip": "Without strategic alignment, training is seen as 'time off the line' — and is the first cost cut."
+        },
+        {
+          "term": "Training Cost-Benefit Analysis",
+          "definition": "Justifies the training budget by quantifying tradeoffs:",
+          "definitionBullets": [
+            "**Costs**: trainee salaries, materials, equipment, lost production time",
+            "**Benefits**: employee satisfaction, improved quality, retention, reduced errors, productivity"
+          ],
+          "formula": null,
+          "examTip": "Always quantify benefits when proposing training — vague 'employee development' loses to hard numbers."
+        },
+        {
+          "term": "Effective Training Design Characteristics",
+          "definition": "Successful training requires more than content delivery:",
+          "definitionBullets": [
+            "Consistent, frequent reinforcement of practice",
+            "Coaching for on-the-job recognition",
+            "Timely application of skills (without reinforcement, training fades)",
+            "Measurement of effectiveness",
+            "Addressing mainline operational needs"
+          ],
+          "formula": null,
+          "examTip": "Reinforcement window is critical — skills decay rapidly without immediate application."
+        }
+      ],
+      "keyFigures": [
+        {
+          "title": "Figure 19.1: Training vs Education Trajectory",
+          "description": "Education shows broad, gradual knowledge growth over time. Training shows steeper measurable skill acquisition over a shorter period focused on a specific competency."
+        }
+      ],
+      "practiceQuestions": [
+        {
+          "q": "What is the fundamental distinction between training and education?",
+          "options": ["Training is more expensive", "Training teaches HOW (skill); education teaches WHY and WHEN (knowledge)", "Education is for managers only", "Training is faster"],
+          "correct": 1,
+          "explanation": "Training is hands-on, applied skill acquisition — teaches HOW. Education broadens knowledge and thinking — teaches WHY and WHEN. Both are essential but serve different purposes."
+        },
+        {
+          "q": "According to Juran and Gryna, which of the following is NOT one of their six training planning issues?",
+          "options": ["Quality problems and challenges faced", "Required certification fees", "Existing training facilities and processes", "Top management support and commitment"],
+          "correct": 1,
+          "explanation": "The six Juran & Gryna issues focus on problems, required knowledge, existing facilities, climate, what to do differently, and management commitment. Certification fees are not on the list."
+        },
+        {
+          "q": "Why is training typically the first item cut during budget downturns?",
+          "options": ["It is genuinely unimportant", "It is often not aligned with strategic plans, making ROI invisible", "Regulations don't require it", "Training departments lack political power"],
+          "correct": 1,
+          "explanation": "When training isn't tied to strategic objectives with measurable outcomes, leadership sees it as discretionary overhead. Strategic alignment + ROI evidence protects training budgets."
+        }
+      ],
+      "flashcards": [
+        {"front": "Training vs Education one-liner", "back": "Training = HOW (skill, hands-on, narrow). Education = WHY/WHEN (knowledge, formal, broad)."},
+        {"front": "Juran & Gryna's 6 planning issues", "back": "(1) Quality problems; (2) Skills needed; (3) Existing facilities; (4) Climate/track record; (5) What to do differently; (6) Top management commitment."},
+        {"front": "Training cost-benefit categories", "back": "Costs: salaries, materials, equipment, lost production. Benefits: satisfaction, quality, retention, reduced errors, productivity."},
+        {"front": "Why is training often the first cost cut?", "back": "Lack of strategic alignment makes ROI invisible. Tie to strategy + measure outcomes to protect the budget."}
+      ]
+    },
+    {
+      "id": "7B",
+      "ref": "VII.B",
+      "title": "Training Needs Analysis",
+      "cognitive": "Evaluate",
+      "summary": "Training cannot fix every problem. Mager and Pipe's diagnostic separates performance deficiencies from skill/knowledge deficiencies — only the latter responds to training. The J/T/F/C matrix maps gaps to Job, Training, Feedback, or Consequences solutions.",
+      "summaryBullets": [
+        "**Training ≠ universal fix** — it only solves skill/knowledge gaps",
+        "**Mager & Pipe's first question**: Performance problem or skill problem?",
+        "**J/T/F/C matrix**: Job redesign, Training, Feedback, or Consequences",
+        "**5-phase training process**: Needs → Propose → Design → Deliver → Evaluate",
+        "**KESSA factors** identify gaps from existing records",
+        "**IDP = Goals + Timelines + Activities** (3 elements only)"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "Mager & Pipe Decision Flow — Is Training the Right Solution?",
+          "code": "graph TD\n  Start[Performance gap identified] --> Q1{Could the worker do<br/>the job if their life<br/>depended on it?}\n  Q1 -->|YES — they can do it| Perf[Performance problem<br/>NOT a training problem]\n  Q1 -->|NO — they can't do it| Skill[Skill / knowledge gap<br/>Training may help]\n  Perf --> Diag{Why aren't<br/>they doing it?}\n  Diag -->|Task setup wrong| J[J: Job Solution<br/>Redesign task/process]\n  Diag -->|Don't know how they're doing| F[F: Feedback Solution]\n  Diag -->|Wrong incentives| C[C: Consequences Solution]\n  Skill --> T[T: Training Solution]\n  style Perf fill:#fff3cd\n  style Skill fill:#d4edda\n  style J fill:#cce5ff\n  style T fill:#d4edda\n  style F fill:#cce5ff\n  style C fill:#cce5ff"
+        },
+        {
+          "type": "mermaid",
+          "title": "5-Phase Training Process Cycle (Figure 19.2)",
+          "code": "graph LR\n  P1[1. Needs<br/>Assessment] --> P2[2. Propose<br/>Program<br/>approval+funding]\n  P2 --> P3[3. Design &<br/>Develop]\n  P3 --> P4[4. Deliver<br/>Training]\n  P4 --> P5[5. Evaluate<br/>Effectiveness]\n  P5 -.feedback.-> P1\n  Mgmt[Management Support — spans all 5 phases] -.-> P1\n  Mgmt -.-> P2\n  Mgmt -.-> P3\n  Mgmt -.-> P4\n  Mgmt -.-> P5\n  style Mgmt fill:#ffe4b5"
+        },
+        {
+          "type": "table",
+          "title": "J/T/F/C Diagnostic Matrix — When to Use Each Solution",
+          "columns": ["Symptom", "Diagnosis", "Solution Type"],
+          "rows": [
+            ["Worker doesn't have time / proper tools / right procedures", "System problem", "**J — Job Solution** (redesign task)"],
+            ["Worker doesn't know what they're supposed to do", "Knowledge gap", "**T — Training Solution**"],
+            ["Worker has never done the job correctly", "Skill gap", "**T — Training Solution**"],
+            ["Worker COULD do it if life depended on it, but isn't", "Motivation/incentive issue", "**C — Consequences Solution**"],
+            ["Worker doesn't know how they're performing", "Information gap", "**F — Feedback Solution**"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "KESSA Factors — Reviewed in Existing Records",
+          "columns": ["Factor", "What It Measures", "Where to Find It"],
+          "rows": [
+            ["**K**nowledge", "What the person knows", "Education records, certifications"],
+            ["**E**xperience", "What they've done", "Work history, projects completed"],
+            ["**S**kills", "What they can demonstrate", "Performance reviews, demonstrations"],
+            ["**A**ptitude", "Natural ability/potential", "Aptitude tests, observed potential"],
+            ["**A**ttitude", "Disposition toward work", "360° feedback, supervisor input"]
+          ]
+        }
+      ],
+      "concepts": [
+        {
+          "term": "Training Cannot Fix Performance Problems",
+          "definition": "Training will not solve all problems. It cannot remedy poor management, lack of motivation, or root causes that aren't skill-related. Mager and Pipe: first determine if the gap is a performance deficiency or a knowledge/skill deficiency.",
+          "formula": null,
+          "examTip": "If a worker CAN do the job but ISN'T doing it — training is the wrong solution. Look at consequences, feedback, or system."
+        },
+        {
+          "term": "Mager & Pipe Diagnostic Process",
+          "definition": "Before committing training resources, ask: is this a performance deficiency (worker can do it but isn't) or a knowledge/skill deficiency (worker doesn't know how)? Only the latter responds to training.",
+          "formula": null,
+          "examTip": "Classic test question: 'Can they do it if their life depended on it?' Yes → not training. No → training."
+        },
+        {
+          "term": "J/T/F/C Diagnostic Matrix (Table 19.2)",
+          "definition": "Maps the gap to a solution type:",
+          "definitionBullets": [
+            "**J** — Job Solution (task/process redesign)",
+            "**T** — Training Solution (knowledge/skill gap)",
+            "**F** — Feedback (worker doesn't know how they're doing)",
+            "**C** — Consequences (incentives or disincentives misaligned)"
+          ],
+          "formula": null,
+          "examTip": "Memorize: J-T-F-C. Most exam questions about needs analysis hinge on choosing the right one."
+        },
+        {
+          "term": "5-Phase Training Process Cycle",
+          "definition": "Master training process across 5 phases:",
+          "definitionBullets": [
+            "Needs Assessment — identify what's needed",
+            "Propose Training Program — get approval and funding",
+            "Design and Develop Training — build the curriculum",
+            "Deliver Training — execute",
+            "Evaluate Effectiveness — measure and improve"
+          ],
+          "formula": null,
+          "examTip": "Management support spans the entire process. Each phase is testable individually."
+        },
+        {
+          "term": "KESSA Factors",
+          "definition": "Knowledge, Experience, Skills, Aptitude, Attitude — used to determine the magnitude of a training need by reviewing existing records (performance appraisals, job descriptions, completed training).",
+          "formula": null,
+          "examTip": "KESSA is for reviewing what employees ALREADY have, to identify gaps."
+        },
+        {
+          "term": "Needs Assessment Techniques",
+          "definition": "Eight techniques for identifying training needs:",
+          "definitionBullets": [
+            "Review existing records (KESSA)",
+            "Interviews",
+            "Focus groups (8–10 employees, cross-section)",
+            "Organizational diagnosis",
+            "Job analysis (sequenced task listing, time/motion)",
+            "Front-end analysis (audit, root cause, competency)",
+            "Surveys / checklists / questionnaires",
+            "Personal observation / brainstorming"
+          ],
+          "formula": null,
+          "examTip": "Eight techniques. Focus groups have a target size of 8–10 — common detail question."
+        },
+        {
+          "term": "Individual Development Plan (IDP)",
+          "definition": "Tool that anticipates knowledge/skills/abilities needed for current and future roles. Three main elements:",
+          "definitionBullets": [
+            "**Development goals** — what to achieve",
+            "**Timelines** — when to achieve",
+            "**Activities** — how to achieve each goal"
+          ],
+          "formula": null,
+          "examTip": "IDP = Goals + Timelines + Activities. Three elements only — don't add fluff."
+        },
+        {
+          "term": "Sources of Training Need Identification",
+          "definition": "Four primary sources: surveys, performance reviews, regulatory guidelines (safety, ISO, FDA), competency assessments. Key questions: Is the need mandated? Is there a specific objective? Is the need clearly defined?",
+          "formula": null,
+          "examTip": "Regulatory mandate is the strongest training trigger — non-discretionary."
+        }
+      ],
+      "keyFigures": [
+        {
+          "title": "Figure 19.2: Training Process Cycle",
+          "description": "5 phases: Needs Assessment → Propose Program → Design/Develop → Deliver → Evaluate Effectiveness. Management support is constant across all phases."
+        }
+      ],
+      "practiceQuestions": [
+        {
+          "q": "An employee knows how to perform a task correctly but consistently does not. According to Mager and Pipe, what is the appropriate solution?",
+          "options": ["More training", "Punishment", "Address consequences or feedback, not training", "Termination"],
+          "correct": 2,
+          "explanation": "If the worker CAN do it but ISN'T, this is a performance deficiency, not a skill/knowledge deficiency. Training is the wrong solution. Look at feedback (F) or consequences (C) using the J/T/F/C matrix."
+        },
+        {
+          "q": "What does the acronym KESSA stand for in training needs analysis?",
+          "options": ["Knowledge, Education, Skills, Strategy, Attitude", "Knowledge, Experience, Skills, Aptitude, Attitude", "Key Elements of Successful Skills Acquisition", "Knowledge, Engagement, Service, Strategy, Application"],
+          "correct": 1,
+          "explanation": "KESSA = Knowledge, Experience, Skills, Aptitude, Attitude. These factors are reviewed in existing employee records to determine the magnitude of a training need."
+        },
+        {
+          "q": "What are the three main elements of an Individual Development Plan (IDP)?",
+          "options": ["Skills, salary, supervisor", "Development goals, timelines, activities", "Education, experience, evaluation", "Mission, vision, values"],
+          "correct": 1,
+          "explanation": "IDP elements: (1) Development goals, (2) Timelines to accomplish them, (3) Activities necessary for each goal. Simple structure — don't overcomplicate."
+        },
+        {
+          "q": "In the 5-phase training process cycle, which phase comes immediately AFTER needs assessment?",
+          "options": ["Design and Develop Training", "Propose Training Program (approval and funding)", "Deliver Training", "Evaluate Effectiveness"],
+          "correct": 1,
+          "explanation": "The 5 phases in order: (1) Needs Assessment → (2) Propose Training Program → (3) Design and Develop → (4) Deliver → (5) Evaluate. Approval and funding come before design work begins."
+        }
+      ],
+      "flashcards": [
+        {"front": "Mager & Pipe's first diagnostic question", "back": "Is this a performance deficiency (can but won't) or a skill/knowledge deficiency (can't)? Only skill gaps respond to training."},
+        {"front": "J/T/F/C matrix solution types", "back": "J = Job redesign. T = Training. F = Feedback. C = Consequences. Map the gap to the right one."},
+        {"front": "KESSA acronym", "back": "Knowledge, Experience, Skills, Aptitude, Attitude — factors reviewed in existing records."},
+        {"front": "5-phase training process", "back": "(1) Needs Assessment; (2) Propose; (3) Design/Develop; (4) Deliver; (5) Evaluate. Management support throughout."},
+        {"front": "IDP 3 elements", "back": "Development goals + Timelines + Activities."},
+        {"front": "Focus group ideal size", "back": "8–10 employees, cross-section from work units."}
+      ]
+    },
+    {
+      "id": "7C",
+      "ref": "VII.C",
+      "title": "Training Materials, Development, and Delivery",
+      "cognitive": "Apply",
+      "summary": "ADDIE is the foundational instructional design model. Bloom's Taxonomy categorizes learning objectives across cognitive, affective, and psychomotor domains. Knowles' andragogical model guides design for adult learners. Delivery methods range from classroom and OJT to e-learning, gamification, microlearning, simulation, and coaching.",
+      "summaryBullets": [
+        "**ADDIE** = Analysis → Design → Development → Implementation → Evaluation",
+        "**Bloom's 3 domains**: Cognitive (mental, 6 levels), Affective (feelings, 5), Psychomotor (physical, 7)",
+        "**Knowles' andragogy**: 6 principles for adult learning (need to know WHY first)",
+        "**4 learning styles**: Seeing, Hearing, Feeling, Doing",
+        "**Gamification** has 4 levels (partial → fully gamified portals)",
+        "**Job aids** = training substitutes for 8 specific situations"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "ADDIE Instructional Design Model",
+          "code": "graph LR\n  A[**A**nalysis<br/>Audience<br/>Content<br/>Delivery] --> D1[**D**esign<br/>Methods<br/>Measurement<br/>Evaluation criteria]\n  D1 --> D2[**D**evelopment<br/>Create/purchase<br/>materials]\n  D2 --> I[**I**mplementation<br/>Deliver to<br/>target audience]\n  I --> E[**E**valuation<br/>Assess results<br/>vs objectives]\n  E -.iterate.-> A\n  style A fill:#e3f2fd\n  style D1 fill:#e8f5e9\n  style D2 fill:#fff9c4\n  style I fill:#ffe0b2\n  style E fill:#fce4ec"
+        },
+        {
+          "type": "mermaid",
+          "title": "Bloom's Taxonomy — Cognitive Domain (Low → High)",
+          "code": "graph BT\n  L1[1. Remember<br/>knowledge level] --> L2[2. Understand<br/>comprehension]\n  L2 --> L3[3. Apply<br/>application]\n  L3 --> L4[4. Analyze<br/>analysis]\n  L4 --> L5[5. Evaluate<br/>evaluation]\n  L5 --> L6[6. Create<br/>synthesis]\n  style L1 fill:#ffebee\n  style L2 fill:#fff3e0\n  style L3 fill:#fff9c4\n  style L4 fill:#dcedc8\n  style L5 fill:#b2dfdb\n  style L6 fill:#bbdefb"
+        },
+        {
+          "type": "table",
+          "title": "Bloom's 3 Domains — Comparison",
+          "columns": ["Domain", "Focus", "# of Levels", "Use Case"],
+          "rows": [
+            ["**Cognitive**", "Mental skills / thinking", "6", "Most exam BoK levels (Apply, Analyze, etc.)"],
+            ["**Affective**", "Feelings / emotions / values", "5", "Culture, ethics, attitude training"],
+            ["**Psychomotor**", "Physical / manual skills", "7", "Hands-on skill acquisition (welding, assembly)"]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Knowles' 6 Principles of Adult Learning (Andragogy)",
+          "code": "mindmap\n  root((Adult<br/>Learners))\n    1. Need to be<br/>SELF-DIRECTING\n    2. Need to know<br/>WHY they should learn\n    3. Ready to learn when<br/>life requires it\n    4. Task/problem-centered<br/>not subject-centered\n    5. Motivated by intrinsic<br/>AND extrinsic factors\n    6. Bring relevant<br/>EXPERIENCE to learning"
+        },
+        {
+          "type": "table",
+          "title": "Gamification — 4 Levels",
+          "columns": ["Level", "Name", "Description", "Example"],
+          "rows": [
+            ["1", "Partial Gamification", "Quiz/assessment in traditional e-learning", "End-of-module quiz"],
+            ["2", "Game-Based Learning", "Entire learning path is a game", "Branching scenario simulation"],
+            ["3", "Gamified Learning Path", "Points, badges, leaderboards", "Duolingo-style progression"],
+            ["4", "Gamified Portals", "Multi-learner interaction & competition", "Corporate learning platform with teams"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "When to Use a Job Aid (vs Training)",
+          "columns": ["Situation", "Why Job Aid Wins"],
+          "rows": [
+            ["Task is rare, hard to remember", "Memory fades; reference is faster"],
+            ["Task is lengthy / info-intensive", "Cognitive load too high to memorize"],
+            ["Cost of error is high", "Error cost > job aid cost"],
+            ["Procedures change frequently", "Update aid faster than retraining everyone"],
+            ["High turnover + simple task", "Training ROI doesn't pay back"],
+            ["Empowered self-sufficient roles", "Aid supports independence"],
+            ["Limited time / resources for training", "Aid is the practical alternative"],
+            ["New standards or procedures", "Bridge until full training rollout"]
+          ]
+        }
+      ],
+      "concepts": [
+        {
+          "term": "ADDIE Instructional Design Model",
+          "definition": "5-phase model used by ASQ for the CMQOE program:",
+          "definitionBullets": [
+            "**A — Analysis**: audience, content, delivery method",
+            "**D — Design**: methods, measurement, evaluation criteria",
+            "**D — Development**: create or purchase materials",
+            "**I — Implementation**: deliver to target audience",
+            "**E — Evaluation**: assess results vs instructional objectives"
+          ],
+          "formula": null,
+          "examTip": "ADDIE = Analyze, Design, Develop, Implement, Evaluate. The most-tested instructional design model on CMQ/OE."
+        },
+        {
+          "term": "Bloom's Taxonomy — Cognitive Domain",
+          "definition": "6 levels of cognitive objectives (low to high):",
+          "definitionBullets": [
+            "**Remember** (knowledge)",
+            "**Understand** (comprehension)",
+            "**Apply** (application)",
+            "**Analyze** (analysis)",
+            "**Evaluate** (evaluation)",
+            "**Create** (synthesis)"
+          ],
+          "formula": null,
+          "examTip": "Bloom cognitive verbs ARE the cognitive levels in the CMQ/OE BoK. Each section has a stated level."
+        },
+        {
+          "term": "Bloom's Taxonomy — Affective Domain",
+          "definition": "Growth in feelings/emotional areas. 5 levels: Receiving → Responding → Valuing → Organization → Characterization. Used for attitude, values, and motivation training.",
+          "formula": null,
+          "examTip": "Affective domain is often overlooked but critical for culture/values training."
+        },
+        {
+          "term": "Bloom's Taxonomy — Psychomotor Domain",
+          "definition": "Manual/physical skills. 7 behaviors: Perception → Set → Guided Response → Mechanism → Complex Overt Response → Adaptation → Origination. Used for hands-on skill training.",
+          "formula": null,
+          "examTip": "Psychomotor = physical skill domain (welding, assembly, sports). 7 levels — most detailed of the three domains."
+        },
+        {
+          "term": "Knowles' Andragogy — 6 Principles of Adult Learning",
+          "definition": "Adults learn fundamentally differently than children:",
+          "definitionBullets": [
+            "Need to be **self-directing**",
+            "Need to know **WHY** they should learn",
+            "Ready to learn when **life requires it**",
+            "**Task/problem-centered** (not subject-centered)",
+            "Motivated by **intrinsic AND extrinsic** factors",
+            "Bring relevant **experience** to the learning"
+          ],
+          "formula": null,
+          "examTip": "Andragogy ≠ pedagogy. Adults need WHY first, want self-direction, and learn through application — not lecture."
+        },
+        {
+          "term": "Four Learning Styles",
+          "definition": "Effective training addresses multiple styles:",
+          "definitionBullets": [
+            "**Seeing** — visual demonstration",
+            "**Hearing** — verbal explanation, paraphrasing",
+            "**Feeling** — tactile/kinesthetic experience",
+            "**Doing** — hands-on replication"
+          ],
+          "formula": null,
+          "examTip": "See-Hear-Feel-Do. Training that uses multiple modalities outperforms single-channel delivery."
+        },
+        {
+          "term": "On-the-Job Training (OJT)",
+          "definition": "New/transferred employee assigned to experienced employee who demonstrates tasks. Useful for skill training, individuals/small groups. Risk: without consistency, learners absorb wrong methods from peers. Process: tell, show, do, repeat until standards are met.",
+          "formula": null,
+          "examTip": "OJT must have a structured plan — informal 'shadow Joe' creates variation and bad habits."
+        },
+        {
+          "term": "Coaching",
+          "definition": "One-to-one method requiring continuous flow of instruction, comments, testing, observation, and feedback. Steps: define goals, identify resources, observe performance, set expectations, plan schedule, gain commitment, give feedback, follow up.",
+          "formula": null,
+          "examTip": "Coaching is ongoing relationship; mentoring is broader career guidance. Don't conflate them."
+        },
+        {
+          "term": "Gamification — 4 Levels",
+          "definition": "Increasing immersion in game-based learning:",
+          "definitionBullets": [
+            "**Level 1** — Partial Gamification (quiz in e-learning)",
+            "**Level 2** — Game-Based Learning (full path is a game)",
+            "**Level 3** — Gamified Learning Path (points, badges, leaderboards)",
+            "**Level 4** — Gamified Portals (multi-learner interaction)"
+          ],
+          "formula": null,
+          "examTip": "Levels 1→4 = increasing immersion. Level 4 portals enable social/competitive learning at scale."
+        },
+        {
+          "term": "Microlearning",
+          "definition": "Short, focused content (often video) on a specific task — and nothing more. Formats: posters, infographics, e-learning courses, games, videos, job aids, simulations, branching scenarios. Best for just-in-time learning.",
+          "formula": null,
+          "examTip": "Microlearning thrives because attention spans are short and tasks are specific. Pairs well with job aids."
+        },
+        {
+          "term": "Learner-Controlled Instruction (LCI) / Self-Directed Learning",
+          "definition": "Learner builds toward mastery at their own pace. Strength: flexibility when training needs are diverse across the population.",
+          "formula": null,
+          "examTip": "LCI = SDL. Best when learners differ in baseline knowledge or schedule."
+        },
+        {
+          "term": "Competency-Based Training",
+          "definition": "Focuses on what students learn, how, when, and IF they learn each task:",
+          "definitionBullets": [
+            "**Learner-centered** pace",
+            "Job broken into **manageable tasks**",
+            "**Mastery** before progression",
+            "**Performance-based** acknowledgment",
+            "Demonstrated knowledge / experience / skill"
+          ],
+          "formula": null,
+          "examTip": "Competency-based ≠ time-based. Move on when mastered, not when the clock runs out."
+        },
+        {
+          "term": "Job Aids — When to Use",
+          "definition": "8 situations where job aids beat training:",
+          "definitionBullets": [
+            "Task is rare and hard to remember",
+            "Task is lengthy / info-intensive",
+            "Cost of error is high",
+            "Procedures change frequently",
+            "High turnover with simple tasks",
+            "Empowered self-sufficient roles",
+            "Little time / resources for training",
+            "New standards or procedures"
+          ],
+          "formula": null,
+          "examTip": "Job aids are training substitutes when memorization isn't practical. 8 specific use cases."
+        },
+        {
+          "term": "Job Aid Types",
+          "definition": "Procedure manuals, laminated checklists, computer-screen prompts, nested help screens, instructions on form back, work order details, troubleshooting boards, audio guidance, decision trees.",
+          "formula": null,
+          "examTip": "Checklists at the workstation are the most common job aid — Atul Gawande's 'Checklist Manifesto' principle."
+        },
+        {
+          "term": "Lesson Plan Types",
+          "definition": "4 types from least to most flexible:",
+          "definitionBullets": [
+            "**Manuscript** (full script — least flexible, read it)",
+            "**Topical outline** (structured headings)",
+            "**Sentence** (one sentence per topic)",
+            "**Key word** (just trigger words — most flexible, requires expertise)"
+          ],
+          "formula": null,
+          "examTip": "Manuscript = least flexible. Key word = most flexible (presenter expertise required)."
+        }
+      ],
+      "keyFigures": [],
+      "practiceQuestions": [
+        {
+          "q": "What does the ADDIE instructional design model stand for?",
+          "options": ["Analyze, Develop, Deploy, Implement, Evaluate", "Analysis, Design, Development, Implementation, Evaluation", "Adapt, Design, Demonstrate, Improve, Execute", "Assess, Decide, Develop, Implement, Effectuate"],
+          "correct": 1,
+          "explanation": "ADDIE = Analysis, Design, Development, Implementation, Evaluation. ASQ uses ADDIE in its CMQ/OE self-directed learning series."
+        },
+        {
+          "q": "Which level of Bloom's cognitive taxonomy represents the highest order of thinking?",
+          "options": ["Remember", "Understand", "Apply", "Create"],
+          "correct": 3,
+          "explanation": "Bloom's cognitive levels (low to high): Remember → Understand → Apply → Analyze → Evaluate → Create. Create (synthesis) is the highest order."
+        },
+        {
+          "q": "According to Knowles' andragogy, what do adults need BEFORE they will engage in learning?",
+          "options": ["A teacher's authority", "To know WHY they should learn it", "A passing grade", "A prerequisite course"],
+          "correct": 1,
+          "explanation": "Knowles' #2 principle: adults have a deep need to know WHY they should learn something. Without this, engagement and retention drop sharply."
+        },
+        {
+          "q": "Which training delivery method is BEST suited when employee turnover is high and the task is simple?",
+          "options": ["Classroom training", "Multi-day workshop", "Job aid (e.g., laminated checklist)", "Mentoring program"],
+          "correct": 2,
+          "explanation": "Job aids are appropriate when turnover is high and the task is simple — investing in deep training for short-tenured workers is wasteful when a checklist will suffice."
+        },
+        {
+          "q": "What is the primary risk of unstructured On-the-Job Training (OJT)?",
+          "options": ["It's too expensive", "Learners absorb incorrect methods from peers", "It takes too long", "It violates ISO 9001"],
+          "correct": 1,
+          "explanation": "Without a consistent OJT program, there is a strong possibility that people learn incorrect procedures from teammates. OJT requires a structured plan, not informal shadowing."
+        }
+      ],
+      "flashcards": [
+        {"front": "ADDIE 5 phases", "back": "Analysis → Design → Development → Implementation → Evaluation."},
+        {"front": "Bloom's cognitive levels (low to high)", "back": "Remember → Understand → Apply → Analyze → Evaluate → Create."},
+        {"front": "Bloom's 3 domains", "back": "Cognitive (mental, 6 levels), Affective (feelings, 5 levels), Psychomotor (physical, 7 levels)."},
+        {"front": "Knowles' adult learning principles", "back": "(1) Self-directing; (2) Need to know WHY; (3) Ready when life requires; (4) Task/problem-centered; (5) Intrinsic + extrinsic motivation; (6) Bring experience."},
+        {"front": "4 learning styles", "back": "Seeing, Hearing, Feeling, Doing. Use multiple channels."},
+        {"front": "Gamification 4 levels", "back": "L1 Partial gamification → L2 Game-based learning → L3 Gamified path (points/badges) → L4 Gamified portals (multi-learner)."},
+        {"front": "When to use a job aid", "back": "Rare task, lengthy/info-intensive, high cost of error, frequent procedure changes, high turnover + simple task, empowerment, limited training time, new standards."},
+        {"front": "OJT process steps", "back": "Tell them, show them, have them do it, repeat until performance standards are met."},
+        {"front": "Lesson plan types (most → least flexible)", "back": "Key word > Sentence > Topical outline > Manuscript."}
+      ]
+    },
+    {
+      "id": "7D",
+      "ref": "VII.D",
+      "title": "Training Effectiveness and Evaluation",
+      "cognitive": "Evaluate",
+      "summary": "Kirkpatrick's 4 levels — extended by Phillips to Level 5 (ROTI) — define training evaluation. Reaction (smile sheets) is lowest value; Results and ROTI are highest value but hardest to measure. ROTI = Net program benefits / Program costs. Rule of thumb: BCR ≥ 3:1.",
+      "summaryBullets": [
+        "**Kirkpatrick 4 levels**: Reaction → Learning → Behavior → Results",
+        "**Phillips Level 5**: ROTI (Return on Training Investment, in $)",
+        "**Level 1 (smile sheets)** = lowest value; **Level 5** = highest value",
+        "**ROTI** = Net Program Benefits / Program Costs",
+        "**BCR rule of thumb**: minimum 3:1 ($3 benefit per $1 spent)",
+        "**Most training fails at Level 3** (behavior transfer to job)"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "Kirkpatrick / Phillips 5 Levels of Evaluation (Figure 19.5)",
+          "code": "graph BT\n  L1[**LEVEL 1: REACTION**<br/>Were participants pleased?<br/><i>Smile sheets — lowest value</i>] --> L2\n  L2[**LEVEL 2: LEARNING**<br/>Did they learn what was intended?<br/><i>Tests, demonstrations</i>] --> L3\n  L3[**LEVEL 3: BEHAVIOR**<br/>Did on-the-job behavior change?<br/><i>Where most training fails</i>] --> L4\n  L4[**LEVEL 4: RESULTS**<br/>Was there organizational impact?<br/><i>Productivity, quality, retention</i>] --> L5\n  L5[**LEVEL 5: ROTI** Phillips<br/>Dollar return on investment?<br/><i>Highest value — hardest to measure</i>]\n  style L1 fill:#ffcdd2\n  style L2 fill:#ffe0b2\n  style L3 fill:#fff9c4\n  style L4 fill:#c8e6c9\n  style L5 fill:#b3e5fc"
+        },
+        {
+          "type": "table",
+          "title": "Evaluation Levels — Cost vs Value Tradeoff",
+          "columns": ["Level", "Question Answered", "Measurement Method", "Difficulty", "Value to Org"],
+          "rows": [
+            ["**1. Reaction**", "Did they like it?", "End-of-class survey (smile sheet)", "🟢 Easy", "🔴 Lowest"],
+            ["**2. Learning**", "Did they learn it?", "Pre/post tests, demonstrations", "🟡 Medium", "🟡 Medium"],
+            ["**3. Behavior**", "Did behavior change on the job?", "Supervisor observation, 360° feedback", "🟠 Hard", "🟢 High"],
+            ["**4. Results**", "Did the org see impact?", "KPIs (productivity, quality, retention)", "🔴 Very Hard", "🟢 Very High"],
+            ["**5. ROTI**", "Was there dollar payback?", "$Net Benefits / $Costs", "🔴 Hardest", "🟢 Highest"]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "ROTI / BCR Decision Logic",
+          "code": "graph TD\n  Start[Calculate ROTI/BCR] --> Calc[ROTI = Net Benefits / Costs<br/>BCR = Total Benefits / Costs]\n  Calc --> Q1{BCR ≥ 3:1?}\n  Q1 -->|YES — at least $3 benefit per $1 spent| Pass[✅ Training is successful<br/>Continue / scale up]\n  Q1 -->|NO — less than 3:1| Fail[❌ Training is unsuccessful<br/>Redesign or discontinue]\n  style Pass fill:#c8e6c9\n  style Fail fill:#ffcdd2"
+        },
+        {
+          "type": "table",
+          "title": "Common Causes of Training Failure",
+          "columns": ["Cause", "Why It Kills Effectiveness"],
+          "rows": [
+            ["Cultural resistance from line managers", "Without buy-in, learning isn't reinforced on the job"],
+            ["No connection to strategic plan", "Training feels disconnected from real work"],
+            ["No posttraining application objectives", "Skills decay before they're used"],
+            ["'What's in it for me?' unaddressed", "Adults don't engage without WHY (Knowles)"],
+            ["Mixing participant levels", "Content is too basic OR too advanced for half the room"],
+            ["Lack of in-course practice", "No psychomotor/applied reinforcement"],
+            ["Technique vs problem orientation", "Tools without context don't transfer"]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Training vs Education vs Development — Three-Way Distinction",
+          "columns": ["Dimension", "Training", "Education", "Development"],
+          "rows": [
+            ["**What it builds**", "Skill repertoire", "Knowledge & wisdom", "Long-term wisdom"],
+            ["**Time horizon**", "Short", "Medium", "Long (career-spanning)"],
+            ["**Format**", "Hands-on, applied", "Formal study", "Formal + informal exposure"],
+            ["**Source**", "Trainers", "Educators", "Mentors, experiences, assignments"],
+            ["**Output**", "Demonstrated skill", "Broadened thinking", "Synthesized insights, expertise"]
+          ]
+        }
+      ],
+      "concepts": [
+        {
+          "term": "Kirkpatrick/Phillips 5 Levels of Evaluation",
+          "definition": "5 progressively more valuable (and harder) evaluation levels:",
+          "definitionBullets": [
+            "**L1 Reaction** — Were participants pleased? (Smile sheets, lowest value)",
+            "**L2 Learning** — Did they learn what was intended?",
+            "**L3 Behavior** — Did on-the-job behavior change?",
+            "**L4 Results** — Was there measurable organizational impact?",
+            "**L5 ROTI** — What is the dollar return on training investment? (Phillips' addition)"
+          ],
+          "formula": null,
+          "examTip": "Memorize: Reaction → Learning → Behavior → Results → ROTI. 1 is easiest/lowest value; 5 is hardest/highest value."
+        },
+        {
+          "term": "Level 1 — Reaction",
+          "definition": "End-of-class survey or 'smile sheet' measuring participant satisfaction. Lowest value evaluation — being pleased ≠ having learned. Often the only level measured, which is a mistake.",
+          "formula": null,
+          "examTip": "Smile sheets are vanity metrics — they show comfort, not capability."
+        },
+        {
+          "term": "Level 2 — Learning",
+          "definition": "Did participants learn the intended content? Measured by tests, demonstrations, certifications. The first level that measures actual capability change.",
+          "formula": null,
+          "examTip": "Pre-test/post-test design isolates Level 2 learning gains."
+        },
+        {
+          "term": "Level 3 — Behavior",
+          "definition": "Did on-the-job behavior change as a result of training? Measured by participant observation, supervisor feedback, performance appraisals. Tests transfer of learning to the workplace.",
+          "formula": null,
+          "examTip": "Level 3 is where training fails most often — without reinforcement, classroom learning doesn't transfer."
+        },
+        {
+          "term": "Level 4 — Results",
+          "definition": "Was there measurable organizational impact? Productivity, defect rates, customer satisfaction, retention. The most important level — but the hardest to attribute to training alone.",
+          "formula": null,
+          "examTip": "Attribution is the Level 4 challenge — many factors affect business results, not just training."
+        },
+        {
+          "term": "Level 5 — ROTI (Return on Training Investment)",
+          "definition": "Dollar value of training benefits divided by program costs. Phillips' addition to Kirkpatrick's original 4 levels. Highest value, most difficult to assess.",
+          "formula": "ROTI = Net Program Benefits / Program Costs",
+          "examTip": "ROTI is the executive-friendly metric. If you can't quantify ROTI, training stays a discretionary line item."
+        },
+        {
+          "term": "Benefit-Cost Ratio (BCR)",
+          "definition": "Total program benefits divided by program costs. Rule of thumb: if BCR < 3:1 (less than $3 of benefit per $1 spent), the training should be considered unsuccessful.",
+          "formula": "BCR = Program Benefits / Program Costs (target ≥ 3:1)",
+          "examTip": "BCR threshold of 3:1 is the de facto industry minimum. Below that, ROI is questionable."
+        },
+        {
+          "term": "Common Causes of Training Ineffectiveness",
+          "definition": "Most failures are organizational, not pedagogical:",
+          "definitionBullets": [
+            "Cultural resistance by line managers",
+            "Doubts as to usefulness of the training",
+            "No apparent connection between training and strategic plans",
+            "No posttraining application objectives",
+            "'What's in it for me?' unaddressed",
+            "Lack of line manager involvement",
+            "Technique vs problem orientation",
+            "Mixing of levels of participants",
+            "Lack of application during the course"
+          ],
+          "formula": null,
+          "examTip": "Most failures are organizational, not pedagogical. Line manager involvement is the #1 protective factor."
+        },
+        {
+          "term": "Training Evaluation Verification & Validation",
+          "definition": "Validation: measures used to assess training effectiveness (did the program do what it was supposed to do?). Verification: measures used to assess outcomes resulting from training (did learners actually achieve the desired performance?).",
+          "formula": null,
+          "examTip": "Validation = program effectiveness. Verification = learner outcomes. Same root concepts as ISO 9001 V&V."
+        },
+        {
+          "term": "Training, Education, and Development — Three-Way Distinction",
+          "definition": "Three components of full employee growth:",
+          "definitionBullets": [
+            "**Training** — skill repertoire, hands-on, short-term",
+            "**Education** — broadening knowledge, formal/informal, medium-term",
+            "**Development** — long-term wisdom from formal and informal exposure to more experienced people; synthesizing information, accumulating insights, gaining experience and responsibility"
+          ],
+          "formula": null,
+          "examTip": "Training (HOW) + Education (WHY/WHEN) + Development (LONG-TERM WISDOM) = full employee growth."
+        }
+      ],
+      "keyFigures": [
+        {
+          "title": "Figure 19.5: Kirkpatrick/Phillips Levels of Training Evaluation",
+          "description": "5-level pyramid: L1 Reaction (smile sheets, lowest value) → L2 Learning (did they learn?) → L3 Behavior (did behavior change on the job?) → L4 Results (organizational impact, most important) → L5 ROTI (dollar return on investment, highest value, hardest to measure)."
+        }
+      ],
+      "practiceQuestions": [
+        {
+          "q": "Which level of Kirkpatrick/Phillips evaluation is typically considered the LOWEST value?",
+          "options": ["Level 1 — Reaction", "Level 3 — Behavior", "Level 4 — Results", "Level 5 — ROTI"],
+          "correct": 0,
+          "explanation": "Level 1 (Reaction, smile sheets) is the lowest value — participants being pleased with training does not mean they learned anything or changed behavior. It's the easiest to collect and least diagnostic."
+        },
+        {
+          "q": "What is the typical rule-of-thumb minimum benefit-cost ratio (BCR) for training to be considered successful?",
+          "options": ["1:1", "2:1", "3:1", "10:1"],
+          "correct": 2,
+          "explanation": "Industry rule of thumb: BCR ≥ 3:1 — at least $3 of benefit per $1 of training cost. Below this, training is considered unsuccessful."
+        },
+        {
+          "q": "What is the formula for Return on Training Investment (ROTI)?",
+          "options": ["Total Benefits × Program Costs", "Net Program Benefits / Program Costs", "Program Costs / Net Benefits", "(Benefits − Costs) × Number of Trainees"],
+          "correct": 1,
+          "explanation": "ROTI = Net Program Benefits / Program Costs. Net benefits subtract baseline performance from post-training performance, then dollarized."
+        },
+        {
+          "q": "At which Kirkpatrick level do most training programs fail to deliver value, even when participants enjoyed the training?",
+          "options": ["Level 1 — Reaction", "Level 2 — Learning", "Level 3 — Behavior (transfer to job)", "Level 5 — ROTI"],
+          "correct": 2,
+          "explanation": "Level 3 (Behavior) is where most training fails — without on-the-job reinforcement, coaching, and management support, classroom learning doesn't transfer to actual workplace behavior."
+        },
+        {
+          "q": "What is the difference between training evaluation 'validation' and 'verification'?",
+          "options": ["They are the same thing", "Validation = program effectiveness; Verification = learner outcomes achieved", "Validation = before training; Verification = after training", "Validation = managerial; Verification = technical"],
+          "correct": 1,
+          "explanation": "Validation assesses whether the program did what it was supposed to do (program-level). Verification assesses whether learners actually achieved the desired performance (outcome-level). Same V&V logic as ISO 9001."
+        }
+      ],
+      "flashcards": [
+        {"front": "Kirkpatrick/Phillips 5 levels", "back": "L1 Reaction → L2 Learning → L3 Behavior → L4 Results → L5 ROTI. Low → high value, easy → hard to measure."},
+        {"front": "ROTI formula", "back": "ROTI = Net Program Benefits / Program Costs."},
+        {"front": "BCR threshold", "back": "BCR ≥ 3:1 — at least $3 benefit per $1 cost. Below = unsuccessful training."},
+        {"front": "Where does most training fail?", "back": "Level 3 — Behavior. Without reinforcement and management support, classroom learning doesn't transfer to the job."},
+        {"front": "Training vs Education vs Development", "back": "Training = HOW (skill). Education = WHY/WHEN (knowledge). Development = long-term wisdom from experience."},
+        {"front": "Validation vs Verification", "back": "Validation = did the program do what it should? Verification = did learners actually achieve desired performance?"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1841 @@
+{
+  "id": 3,
+  "num": "III",
+  "title": "Management Elements & Methods",
+  "examQuestions": 32,
+  "examWeight": 21,
+  "sections": [
+    {
+      "id": "3A",
+      "ref": "III.A",
+      "title": "Principles of Management",
+      "cognitive": "Evaluate / Apply / Analyze",
+      "summary": "Quality managers must master core management functions (POSDC), classical and modern theories, situational leadership styles, organizational design across functional silos, HR practices, financial literacy, risk-based thinking, and knowledge management. Three levels of management \u2014 top, middle, first-level \u2014 each have distinct decision scopes.",
+      "concepts": [
+        {
+          "term": "POSDC \u2014 Five Management Functions",
+          "definition": "Planning (vision/mission/goals), Organizing (structure & authority), Staffing (right people in right roles), Directing (guide work toward mission), Controlling (monitor & adjust via metrics).",
+          "formula": null,
+          "examTip": "Memorize POSDC in order. Each function operates at strategic and operational levels.",
+          "definitionBullets": [
+            "**P**lan \u2014 set objectives and strategy",
+            "**O**rganize \u2014 structure and resources",
+            "**S**taff \u2014 hire, train, retain",
+            "**D**irect \u2014 lead, motivate, communicate",
+            "**C**ontrol \u2014 measure, correct, improve"
+          ]
+        },
+        {
+          "term": "Scientific Management (Taylor)",
+          "definition": "Frederick Taylor's approach: find the 'one best way' to perform a task, separate thinking from doing, standardize processes for efficiency. Foundation of industrial engineering.",
+          "formula": null,
+          "examTip": "Taylor = efficiency, time studies, standardization, separation of planning from execution."
+        },
+        {
+          "term": "Hawthorne Effect",
+          "definition": "Western Electric studies (1930s) showed productivity rose with both INCREASED and DECREASED lighting. Conclusion: workers respond to attention, not just physical conditions. Foundation of human relations theory.",
+          "formula": null,
+          "examTip": "Hawthorne = attention drives productivity. Mary Parker Follett extended this work."
+        },
+        {
+          "term": "McGregor's Theory X and Theory Y",
+          "definition": "Theory X: negative \u2014 employees dislike work, avoid responsibility, must be coerced. Theory Y: positive \u2014 employees want to work, seek responsibility, are creative. Treating workers under X becomes self-fulfilling prophecy.",
+          "formula": null,
+          "examTip": "X = coercion mindset; Y = empowerment mindset. Modern quality assumes Theory Y."
+        },
+        {
+          "term": "Kolb's Experiential Learning Cycle",
+          "definition": "Four-stage cycle: (1) Concrete Experience \u2192 (2) Reflective Observation \u2192 (3) Abstract Conceptualization (theorize) \u2192 (4) Active Experimentation (apply). Cycle continues.",
+          "formula": null,
+          "examTip": "Experience \u2192 Reflect \u2192 Theorize \u2192 Apply. Used in adult learning design."
+        },
+        {
+          "term": "A-B-C Behavior Analysis",
+          "definition": "Antecedent (trigger) \u2192 Behavior (observed action) \u2192 Consequence (result). Used to identify what causes or inhibits behaviors and design effective reinforcement.",
+          "formula": null,
+          "examTip": "A-B-C is a behavior modification framework \u2014 exam may give a workplace scenario and ask which letter is missing."
+        },
+        {
+          "term": "Blake-Mouton Managerial Grid",
+          "definition": "9\u00d79 grid plotting Concern for Production (x-axis) vs Concern for People (y-axis). Key positions: (1,1) Impoverished; (9,1) Task; (1,9) Country Club; (5,5) Middle of Road; (9,9) Team Management \u2014 the IDEAL.",
+          "formula": null,
+          "examTip": "(9,9) Team Management is the ideal. (1,1) is the worst."
+        },
+        {
+          "term": "Senge's Five Disciplines",
+          "definition": "Personal Mastery, Mental Models, Shared Vision, Team Learning, Systems Thinking (the integrating fifth discipline).",
+          "formula": null,
+          "examTip": "Systems thinking integrates all five. Senge = 'The Fifth Discipline'.",
+          "definitionBullets": [
+            "**Systems thinking** \u2014 see the whole, not just parts",
+            "**Mental models** \u2014 surface and challenge assumptions",
+            "**Shared vision** \u2014 aligned purpose across the org",
+            "**Team learning** \u2014 collective dialogue and skill-building",
+            "**Personal mastery** \u2014 individual continuous growth"
+          ]
+        },
+        {
+          "term": "Management Styles",
+          "definition": "Autocratic (positional power, no input), Participative (involves people, MBWA), Transactional (clear definitions + resources), Transformational (vision + charisma; Bob Galvin), Management by Fact (data-driven; Baldrige/ISO), Coaching (develop + empower), Contingency (style depends on situation).",
+          "formula": null,
+          "examTip": "Match style to scenario. Transformational \u2260 transactional."
+        },
+        {
+          "term": "Suboptimization",
+          "definition": "Optimizing one part of a system at the expense of the whole. Functional silos foster suboptimization. Concurrent engineering and systems thinking are antidotes.",
+          "formula": null,
+          "examTip": "Silos cause suboptimization. ISO 9001, IATF, and Baldrige all emphasize whole-system view."
+        },
+        {
+          "term": "Concurrent Engineering",
+          "definition": "All functions (design, manufacturing, quality, sales) work simultaneously on new product/process development. Replaces sequential 'over the wall' approach.",
+          "formula": null,
+          "examTip": "Concurrent = parallel; sequential = traditional. Concurrent reduces cycle time and rework."
+        },
+        {
+          "term": "DiSC Profile",
+          "definition": "Four behavioral dimensions: Dominance (results), Influence (persuasion), Steadiness (cooperation), Conscientiousness (accuracy).",
+          "formula": null,
+          "examTip": "Know all four DiSC dimensions and what each emphasizes."
+        },
+        {
+          "term": "MBTI Dimensions",
+          "definition": "Four bipolar pairs: E/I (Extraverted-Introverted), S/N (Sensing-iNtuition), T/F (Thinking-Feeling), J/P (Judging-Perceiving). 16 types total.",
+          "formula": null,
+          "examTip": "S wants detail; N takes hunches. F considers feelings; T uses logic. E energizes from people; I from solitude."
+        },
+        {
+          "term": "KESAA Competency Factors",
+          "definition": "Knowledge, Experience, Skills, Aptitude, Attitude. Competency analysis focuses on what's required for the role; differs from job analysis (focused on tasks).",
+          "formula": null,
+          "examTip": "KESAA = job competency analysis. Job analysis = task-focused; competency analysis = capability-focused."
+        },
+        {
+          "term": "Three Basic Financial Statements",
+          "definition": "Balance Sheet (assets, liabilities, equity at a point in time), Income Statement / P&L (revenue, expenses, profit over a period), Cash Flow Statement (cash inflows and outflows).",
+          "formula": "Assets = Liabilities + Owner's Equity",
+          "examTip": "All three are required under GAAP/SEC. Memorize the balance sheet equation."
+        },
+        {
+          "term": "Cash vs Accrual Accounting",
+          "definition": "Cash basis: income recorded when received, expenses when paid (small business). Accrual basis: income when invoiced, expenses when billed (most organizations; more accurate).",
+          "formula": null,
+          "examTip": "Accrual = preferred / standard for most organizations."
+        },
+        {
+          "term": "Current Ratio",
+          "definition": "Liquidity measure showing ability to cover short-term obligations.",
+          "formula": "Current Ratio = Current Assets \u00f7 Current Liabilities (target \u2265 2.0)",
+          "examTip": "Below 2.0 may signal liquidity risk."
+        },
+        {
+          "term": "ROI (Return on Investment)",
+          "definition": "Net dollar benefit divided by investment. Frequently used to justify projects but does NOT consider time value of money.",
+          "formula": "ROI = Net Dollar Benefit \u00f7 Investment",
+          "examTip": "ROI ignores time value of money. Use NPV/IRR for that."
+        },
+        {
+          "term": "ROA (Return on Assets)",
+          "definition": "Return generated relative to tangible total assets \u2014 used when significant capital investment is required.",
+          "formula": "ROA = Net Income \u00f7 Total Tangible Assets",
+          "examTip": "ROA is preferred when comparing capital-intensive projects."
+        },
+        {
+          "term": "Inventory Turnover",
+          "definition": "Number of times inventory is sold and replaced over a period. Higher = better cash efficiency, less obsolescence risk.",
+          "formula": "Inventory Turnover = COGS \u00f7 Average Inventory",
+          "examTip": "Higher turns = leaner. Industry-specific benchmarks matter."
+        },
+        {
+          "term": "Activity-Based Costing/Management (ABC/ABM)",
+          "definition": "ABC allocates costs based on activities consumed by products/services rather than blanket overhead rates. ABM uses ABC data for management decisions. More accurate than traditional cost accounting.",
+          "formula": "Traditional: Product Cost = Direct Labor + Direct Material + Overhead",
+          "examTip": "Traditional is historical; ABC/ABM is forward-looking and granular."
+        },
+        {
+          "term": "Sarbanes-Oxley Act (SOX 2002)",
+          "definition": "U.S. legislation enacted after Enron/WorldCom scandals. Mandates strict financial accounting and personal accountability of top management for disclosure accuracy.",
+          "formula": null,
+          "examTip": "SOX = corporate financial accountability. CEOs/CFOs personally certify reports."
+        },
+        {
+          "term": "Risk Definition (ISO 9000:2015 / ISO 31000)",
+          "definition": "'Effect of uncertainty on objectives.' Risk can be positive (opportunity) or negative. Managed by identifying, analyzing, evaluating, and treating.",
+          "formula": null,
+          "examTip": "ISO defines risk as effect of uncertainty \u2014 not just bad outcomes."
+        },
+        {
+          "term": "Risk-Based Thinking (ISO 9001:2015)",
+          "definition": "Two lenses: (1) Impact/severity \u2014 how bad if it happens? (2) Likelihood/probability \u2014 how likely to happen? Replaces preventive action clause from prior ISO version.",
+          "formula": null,
+          "examTip": "ISO 9001:2015 introduced risk-based thinking. Two dimensions: impact \u00d7 likelihood."
+        },
+        {
+          "term": "FMEA in Risk Management",
+          "definition": "Risk-based approach assessing failure modes, severity, occurrence, and detection. Used for product design, process design, and strategic planning.",
+          "formula": "RPN = Severity \u00d7 Occurrence \u00d7 Detection",
+          "examTip": "RPN = S \u00d7 O \u00d7 D, each on 1\u201310 scale."
+        },
+        {
+          "term": "HACCP",
+          "definition": "Hazard Analysis & Critical Control Points. Risk technique from food industry \u2014 identifies process points where preventive action is critical. Applies broadly to QMS.",
+          "formula": null,
+          "examTip": "HACCP = food safety origin; rigorous monitoring/record-keeping required."
+        },
+        {
+          "term": "SWIFT (Structured What-If Technique)",
+          "definition": "Brainstorming-based risk assessment using 'what-if' prompt words. Requires mature/well-defined process and skilled facilitator.",
+          "formula": null,
+          "examTip": "SWIFT = guided brainstorming for risk; not for immature processes."
+        },
+        {
+          "term": "Bow Tie Analysis",
+          "definition": "Graphic risk tool: Causes \u2192 Preventive Barriers \u2192 Failure Event \u2192 Recovery Barriers \u2192 Consequences. Visualizes both prevention and mitigation.",
+          "formula": null,
+          "examTip": "Bow tie = visual cause-event-consequence with barriers on both sides."
+        },
+        {
+          "term": "Human Reliability Assessment (HRA) / Poka-Yoke",
+          "definition": "HRA addresses risk from human error. Poka-yoke (Japanese for 'mistake-proofing') prevents or instantly detects errors. ISO 9001:2015 clause 8.5.1g requires identification of actions to prevent human error.",
+          "formula": null,
+          "examTip": "Poka-yoke is required by ISO 9001:2015 clause 8.5.1g."
+        },
+        {
+          "term": "DIKW Hierarchy",
+          "definition": "Data \u2192 Information \u2192 Knowledge \u2192 Wisdom. Data is meaningless until interpreted. Knowledge is integrated. Wisdom applies experience and values to act.",
+          "formula": null,
+          "examTip": "DIKW pyramid is the foundation of knowledge management."
+        },
+        {
+          "term": "Tacit vs Explicit Knowledge",
+          "definition": "Tacit: unrecorded \u2014 beliefs, intuition, know-how, skills. Lost when employee leaves. Explicit: codified \u2014 procedures, processes, standards. KM aims to convert tacit \u2192 explicit.",
+          "formula": null,
+          "examTip": "Tacit = in heads; Explicit = in documents. KM goal: convert tacit to explicit."
+        },
+        {
+          "term": "Core Competencies (Baldrige Definition)",
+          "definition": "Strategically important capabilities that are central to fulfilling the mission or provide marketplace advantage. Cannot be easily copied.",
+          "formula": null,
+          "examTip": "Baldrige defines core competencies as strategic capabilities \u2014 not just skills."
+        },
+        {
+          "term": "Human Factors Engineering (HFE)",
+          "definition": "Interdisciplinary practice of designing products, systems, and environments for the user, instead of forcing the user to conform. Improves efficiency, safety, and robustness.",
+          "formula": null,
+          "examTip": "HFE = design for the human, not vice versa. Reduces errors and increases adoption."
+        }
+      ],
+      "keyFigures": [
+        "Frederick Taylor (Scientific Management)",
+        "Henri Fayol (classical organizational theory)",
+        "Frank & Lillian Gilbreth (motion study)",
+        "Henry Gantt (Gantt chart, process concepts)",
+        "Mary Parker Follett (human relations)",
+        "Douglas McGregor (Theory X/Y)",
+        "David Kolb (experiential learning)",
+        "Howard Gardner (multiple intelligences)",
+        "Robert Blake & Jane Mouton (Managerial Grid)",
+        "Stephen Covey (7 Habits)",
+        "Peter Senge (Five Disciplines, learning organization)",
+        "Carl Jung / Myers-Briggs (MBTI)"
+      ],
+      "practiceQuestions": [
+        {
+          "q": "An organization is heavily siloed and each department optimizes its own metrics, often at the expense of overall performance. This is BEST described as:",
+          "options": [
+            "Concurrent engineering",
+            "Suboptimization",
+            "Theory Y management",
+            "Hawthorne effect"
+          ],
+          "correct": 1,
+          "explanation": "Suboptimization is exactly this \u2014 improving a part at the cost of the whole. Functional silos are the classic cause."
+        },
+        {
+          "q": "Which calculation does NOT consider the time value of money?",
+          "options": [
+            "Net Present Value (NPV)",
+            "Internal Rate of Return (IRR)",
+            "Payback Period",
+            "Discounted Cash Flow"
+          ],
+          "correct": 2,
+          "explanation": "Payback period simply counts years to recover investment without discounting future cash. NPV, IRR, and DCF all discount future flows."
+        },
+        {
+          "q": "A current ratio of 1.2 indicates:",
+          "options": [
+            "Strong liquidity",
+            "Possible liquidity concerns",
+            "Excellent inventory turns",
+            "Strong long-term solvency"
+          ],
+          "correct": 1,
+          "explanation": "Current ratio benchmark is \u22652.0. A ratio of 1.2 suggests current assets only modestly cover current liabilities \u2014 a potential liquidity concern."
+        },
+        {
+          "q": "Which Blake-Mouton position is considered ideal?",
+          "options": [
+            "(1,1) Impoverished",
+            "(9,1) Task",
+            "(1,9) Country Club",
+            "(9,9) Team Management"
+          ],
+          "correct": 3,
+          "explanation": "(9,9) shows high concern for both production and people \u2014 the ideal balance."
+        },
+        {
+          "q": "Knowledge that lives in employees' heads \u2014 intuition, beliefs, and unrecorded know-how \u2014 is BEST described as:",
+          "options": [
+            "Explicit knowledge",
+            "Tacit knowledge",
+            "Procedural knowledge",
+            "Codified knowledge"
+          ],
+          "correct": 1,
+          "explanation": "Tacit knowledge is unrecorded and personal. KM aims to capture it as explicit knowledge before it leaves with the employee."
+        }
+      ],
+      "flashcards": [
+        {
+          "front": "POSDC stands for?",
+          "back": "Planning, Organizing, Staffing, Directing, Controlling."
+        },
+        {
+          "front": "Hawthorne effect lesson?",
+          "back": "Productivity rises with attention, regardless of physical conditions."
+        },
+        {
+          "front": "Theory X vs Y?",
+          "back": "X = workers dislike work (coerce). Y = workers want responsibility (empower)."
+        },
+        {
+          "front": "Kolb's learning cycle?",
+          "back": "Experience \u2192 Reflect \u2192 Theorize \u2192 Apply."
+        },
+        {
+          "front": "ROI formula?",
+          "back": "ROI = Net Dollar Benefit \u00f7 Investment (ignores time value of money)."
+        },
+        {
+          "front": "RPN formula?",
+          "back": "RPN = Severity \u00d7 Occurrence \u00d7 Detection."
+        },
+        {
+          "front": "DIKW hierarchy?",
+          "back": "Data \u2192 Information \u2192 Knowledge \u2192 Wisdom."
+        },
+        {
+          "front": "ISO 9001:2015 clause for human-error prevention?",
+          "back": "8.5.1g \u2014 requires actions to prevent human error (poka-yoke)."
+        },
+        {
+          "front": "KESAA stands for?",
+          "back": "Knowledge, Experience, Skills, Aptitude, Attitude."
+        },
+        {
+          "front": "Balance sheet equation?",
+          "back": "Assets = Liabilities + Owner's Equity."
+        }
+      ],
+      "summaryBullets": [
+        "**POSDC** = Plan, Organize, Staff, Direct, Control (Fayol's 5 management functions)",
+        "**McGregor**: Theory X (workers dislike work, need control) vs Theory Y (workers seek responsibility)",
+        "**Blake-Mouton Grid** plots concern for production vs concern for people (1.1 \u2192 9.9)",
+        "**Senge's 5 Disciplines** for learning organizations: systems thinking, mental models, shared vision, team learning, personal mastery",
+        "**3 financial statements**: Income Statement (P&L), Balance Sheet, Cash Flow",
+        "**Risk-based thinking** (ISO 9001:2015) replaced standalone preventive action requirement",
+        "**FMEA**, **HACCP**, **SWIFT**, **Bow Tie** are the core risk-assessment tools",
+        "**DIKW**: Data \u2192 Information \u2192 Knowledge \u2192 Wisdom hierarchy"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "POSDC \u2014 Fayol's 5 Management Functions",
+          "code": "graph LR\n  P[**P**lan<br/>Set objectives,<br/>strategy] --> O[**O**rganize<br/>Structure,<br/>resources]\n  O --> S[**S**taff<br/>Hire, train,<br/>retain]\n  S --> D[**D**irect<br/>Lead, motivate,<br/>communicate]\n  D --> C[**C**ontrol<br/>Measure, correct,<br/>improve]\n  C -.feedback loop.-> P\n  style P fill:#bbdefb\n  style O fill:#c8e6c9\n  style S fill:#fff9c4\n  style D fill:#ffe0b2\n  style C fill:#f8bbd0"
+        },
+        {
+          "type": "table",
+          "title": "McGregor's Theory X vs Theory Y",
+          "columns": [
+            "Assumption",
+            "Theory X",
+            "Theory Y"
+          ],
+          "rows": [
+            [
+              "View of workers",
+              "Dislike work, avoid it",
+              "Find work natural, satisfying"
+            ],
+            [
+              "Motivation",
+              "External (carrots/sticks)",
+              "Internal (responsibility, growth)"
+            ],
+            [
+              "Management style",
+              "Authoritarian, control-oriented",
+              "Participative, empowering"
+            ],
+            [
+              "Use case",
+              "Routine, low-skill, time-pressured",
+              "Knowledge work, skilled professionals"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Blake-Mouton Managerial Grid",
+          "code": "graph TD\n  subgraph Grid[Concern for People (Y) \u00d7 Concern for Production (X)]\n    P11[1.1<br/>**Impoverished**<br/>Low/Low \u2014 minimum effort]\n    P19[1.9<br/>**Country Club**<br/>High people, low production]\n    P55[5.5<br/>**Middle of Road**<br/>Adequate balance]\n    P91[9.1<br/>**Authority-Compliance**<br/>High production, low people]\n    P99[9.9<br/>**Team**<br/>High/High \u2014 IDEAL]\n  end\n  style P99 fill:#c8e6c9\n  style P11 fill:#ffcdd2\n  style P55 fill:#fff9c4"
+        },
+        {
+          "type": "mermaid",
+          "title": "DIKW Hierarchy \u2014 Data to Wisdom",
+          "code": "graph BT\n  D[**DATA**<br/>Raw facts, numbers<br/>e.g., 'Defect rate = 230 ppm'] --> I[**INFORMATION**<br/>Data with context<br/>e.g., 'Up 15% vs last quarter']\n  I --> K[**KNOWLEDGE**<br/>Patterns, why<br/>e.g., 'Spike correlates with new vendor']\n  K --> W[**WISDOM**<br/>Judgment, action<br/>e.g., 'Switch back, audit vendor process']\n  style D fill:#ffebee\n  style I fill:#fff3e0\n  style K fill:#e8f5e9\n  style W fill:#bbdefb"
+        },
+        {
+          "type": "table",
+          "title": "3 Financial Statements at a Glance",
+          "columns": [
+            "Statement",
+            "Question Answered",
+            "Key Items"
+          ],
+          "rows": [
+            [
+              "**Income Statement (P&L)**",
+              "Did we make money?",
+              "Revenue, COGS, Operating Expenses, Net Income"
+            ],
+            [
+              "**Balance Sheet**",
+              "What do we own/owe?",
+              "Assets, Liabilities, Equity (A = L + E)"
+            ],
+            [
+              "**Cash Flow**",
+              "Where did cash actually go?",
+              "Operating, Investing, Financing activities"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Risk Assessment Tools \u2014 When to Use Each",
+          "columns": [
+            "Tool",
+            "Direction",
+            "Best For"
+          ],
+          "rows": [
+            [
+              "**FMEA**",
+              "Bottom-up",
+              "Component failure modes; RPN = S\u00d7O\u00d7D"
+            ],
+            [
+              "**FTA** (Fault Tree)",
+              "Top-down",
+              "Tracing single failure event to root causes"
+            ],
+            [
+              "**HACCP**",
+              "Process-based",
+              "Food/pharma safety \u2014 Critical Control Points"
+            ],
+            [
+              "**SWIFT**",
+              "What-if questioning",
+              "Structured brainstorm for hazards"
+            ],
+            [
+              "**Bow Tie**",
+              "Visual cause-consequence",
+              "Major accident hazards, 2-sided risk view"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Tacit vs Explicit Knowledge",
+          "columns": [
+            "Type",
+            "Description",
+            "How to Capture"
+          ],
+          "rows": [
+            [
+              "**Tacit**",
+              "Personal, experiential, hard to articulate (a master welder's feel)",
+              "Mentoring, apprenticeship, communities of practice"
+            ],
+            [
+              "**Explicit**",
+              "Documented, codified, transferable (an SOP)",
+              "Manuals, procedures, training, databases"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3B",
+      "ref": "III.B",
+      "title": "Communication Skills and Abilities",
+      "cognitive": "Apply",
+      "summary": "Communication is sender \u2192 filters \u2192 message \u2192 filters \u2192 receiver, distorted by cultural, technical, and psychological filters. Quality managers must master verbal/nonverbal/written modes, three directions (vertical up/down, horizontal), feedback (informative vs corrective), global communication challenges, and information-system-enabled communication.",
+      "concepts": [
+        {
+          "term": "Communication Path Model",
+          "definition": "Sender \u2192 Filters \u2192 Message \u2192 Filters \u2192 Receiver \u2192 Action/Opinion/Interpretation/Ignore. Filters distort at both ends \u2014 cultural, educational, experiential, technical noise.",
+          "formula": null,
+          "examTip": "Memorize the model. Filters exist on BOTH sides."
+        },
+        {
+          "term": "Three Directions of Communication",
+          "definition": "Vertical down (top \u2192 subordinates: strategy, direction), Vertical up (subordinates \u2192 management: status, feedback, complaints), Horizontal/Lateral (across functions: cross-functional teams, sharing).",
+          "formula": null,
+          "examTip": "Bottom-up suffers from 'telephone game' distortion. Horizontal needs explicit channels.",
+          "definitionBullets": [
+            "**Downward** \u2014 boss to employee (strategy, instructions, feedback)",
+            "**Upward** \u2014 employee to boss (status, escalations, suggestions)",
+            "**Lateral** \u2014 peer to peer (cross-functional coordination)"
+          ]
+        },
+        {
+          "term": "Formal vs Informal Communication",
+          "definition": "Formal: mandated by SOPs (letters, reports, procedures, performance appraisals). Informal: hallway talk, e-mail, gossip \u2014 fast but unreliable, may include rumors.",
+          "formula": null,
+          "examTip": "Both exist in every organization. Quality managers need both channels."
+        },
+        {
+          "term": "Open-Ended Questioning",
+          "definition": "Questions that cannot be answered with yes/no. Plan beforehand, ask open-ended, actively listen and capture responses.",
+          "formula": null,
+          "examTip": "Open questions surface root cause and context. Closed questions confirm specifics."
+        },
+        {
+          "term": "Active Listening",
+          "definition": "Paraphrasing, clarifying, asking meaningful questions, and acknowledging the speaker. Speech is ~4\u00d7 slower than listening capacity \u2014 close the gap by engaging actively.",
+          "formula": null,
+          "examTip": "Avoid interrupting, changing subject, daydreaming. Paraphrase to confirm understanding."
+        },
+        {
+          "term": "Interpersonal Skills for Communication",
+          "definition": "Empathy, tact, open-mindedness, sensitivity, trustworthiness, ethics, authenticity, fairness, friendliness. Effective communicators identify with the receiver's needs and interests.",
+          "formula": null,
+          "examTip": "Empathy \u2260 sympathy. Authenticity = what you see is what you get."
+        },
+        {
+          "term": "Informative vs Corrective Feedback",
+          "definition": "Informative: passing information, no action expected. Corrective (constructive): intended to cause behavioral change or action \u2014 should include positive reinforcement, specific data, agreed-upon timeline, and consequences.",
+          "formula": null,
+          "examTip": "Corrective feedback \u2260 punishment. Joint planning, not telling."
+        },
+        {
+          "term": "Noise (Communication Roadblock)",
+          "definition": "Any disturbance that distorts or blocks the intended message \u2014 physical (loud environments), technical (e-mail outages), psychological (defensiveness), cultural (language gaps).",
+          "formula": null,
+          "examTip": "Asking surfaces dialogue; telling triggers defensiveness."
+        },
+        {
+          "term": "Global Communication Barriers",
+          "definition": "Cultural differences (customs, religion), language/dialect gaps, time zones, political instability, organizational structure incompatibility, financial/electronic interface differences.",
+          "formula": null,
+          "examTip": "Remedies include glossaries, training, dispatched managers, dispersed-team review, business-hours protocols."
+        },
+        {
+          "term": "Information System Levels",
+          "definition": "Operations (record transactions, monitor machines), Day-to-day decisions (cash flow, sales trends, inventory), Strategic analysis (mix decisions, pricing, competitive intelligence).",
+          "formula": null,
+          "examTip": "Three tiers \u2014 same data, different aggregation and audience."
+        },
+        {
+          "term": "E-mail Etiquette (7 Steps)",
+          "definition": "Automate tasks, Preview messages, Discipline yourself, Don't duplicate, Stay safe, Block junk + establish e-comm policy, Teach employees filtering tools.",
+          "formula": null,
+          "examTip": "Authoritative source: International Risk Management Institute."
+        },
+        {
+          "term": "Big Data Cleansing Cost",
+          "definition": "Many organizations spend up to 80% of their big-data budget on cleaning and preparing data \u2014 quality of input drives quality of output.",
+          "formula": null,
+          "examTip": "Garbage in, garbage out. Data quality is gating for analytics ROI."
+        }
+      ],
+      "keyFigures": [
+        "Claude Shannon (information theory \u2014 sender/receiver model origin)"
+      ],
+      "practiceQuestions": [
+        {
+          "q": "In the communication path model, filters can distort:",
+          "options": [
+            "Only the sender's transmission",
+            "Only the receiver's interpretation",
+            "Both transmission and reception",
+            "Neither \u2014 filters help clarify"
+          ],
+          "correct": 2,
+          "explanation": "Filters operate on both sides. Cultural, educational, experiential, and technical filters can distort at transmission AND reception."
+        },
+        {
+          "q": "A quality manager wants to surface a root cause from a field service technician. The BEST questioning technique is:",
+          "options": [
+            "Closed yes/no questions",
+            "Open-ended questions with active listening",
+            "Multiple-choice options",
+            "Leading questions"
+          ],
+          "correct": 1,
+          "explanation": "Open-ended questions paired with active listening (paraphrasing, clarifying) elicit detailed responses needed for root cause."
+        },
+        {
+          "q": "Corrective feedback differs from informative feedback PRIMARILY because corrective feedback:",
+          "options": [
+            "Is always negative",
+            "Is intended to cause behavioral change",
+            "Must be given in writing",
+            "Skips management approval"
+          ],
+          "correct": 1,
+          "explanation": "Corrective (constructive) feedback aims to drive behavioral change; informative feedback simply transfers information."
+        }
+      ],
+      "flashcards": [
+        {
+          "front": "Communication path?",
+          "back": "Sender \u2192 Filters \u2192 Message \u2192 Filters \u2192 Receiver."
+        },
+        {
+          "front": "Three directions of communication?",
+          "back": "Vertical down, vertical up, horizontal/lateral."
+        },
+        {
+          "front": "What is noise in communication?",
+          "back": "Any disturbance that distorts or blocks the message."
+        },
+        {
+          "front": "Informative vs corrective feedback?",
+          "back": "Informative = transfer info. Corrective = drive behavioral change."
+        },
+        {
+          "front": "Big-data quality cost rule?",
+          "back": "Up to 80% of big-data budgets goes to data cleansing."
+        }
+      ],
+      "summaryBullets": [
+        "**Communication path model**: Sender \u2192 Encode \u2192 Channel \u2192 Decode \u2192 Receiver \u2192 Feedback",
+        "**3 directions**: Downward (boss \u2192 employee), Upward (employee \u2192 boss), Lateral (peer-to-peer)",
+        "**Active listening** = paraphrasing, asking clarifying questions, eye contact, no interrupting",
+        "**Open-ended questions** start with what/how/why; closed = yes/no",
+        "**Noise** = anything that distorts the message (physical, semantic, psychological)",
+        "**Informative feedback** = neutral data; **Corrective feedback** = behavior change request"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "Communication Path Model \u2014 Where It Can Go Wrong",
+          "code": "graph LR\n  S[**SENDER**<br/>Has idea] --> E[**ENCODE**<br/>Words, tone,<br/>body language]\n  E --> CH[**CHANNEL**<br/>Email, voice,<br/>meeting]\n  CH --> D[**DECODE**<br/>Interpret based on<br/>receiver's frame]\n  D --> R[**RECEIVER**<br/>Forms understanding]\n  R --> F[**FEEDBACK**<br/>Confirms or<br/>corrects]\n  F -.loop.-> S\n  N[**NOISE**<br/>Physical / semantic / psychological] -.disrupts.-> E\n  N -.disrupts.-> CH\n  N -.disrupts.-> D\n  style N fill:#ffcdd2"
+        },
+        {
+          "type": "table",
+          "title": "3 Directions of Communication",
+          "columns": [
+            "Direction",
+            "Example",
+            "Common Failure"
+          ],
+          "rows": [
+            [
+              "**Downward** (boss \u2192 employee)",
+              "Strategy briefings, performance reviews",
+              "Loss of nuance, fear of pushback"
+            ],
+            [
+              "**Upward** (employee \u2192 boss)",
+              "Status updates, escalations, suggestions",
+              "Filtering bad news (shoot the messenger)"
+            ],
+            [
+              "**Lateral** (peer to peer)",
+              "Cross-functional coordination",
+              "Silo loyalty, no shared accountability"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Open vs Closed Questions",
+          "columns": [
+            "Type",
+            "Starter Words",
+            "Use When"
+          ],
+          "rows": [
+            [
+              "**Open-ended**",
+              "What, How, Why, Tell me about",
+              "Exploring, understanding, brainstorming"
+            ],
+            [
+              "**Closed**",
+              "Is, Are, Did, Will, Have",
+              "Confirming, fact-checking, narrowing"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Types of Communication Noise",
+          "columns": [
+            "Noise Type",
+            "Source",
+            "Mitigation"
+          ],
+          "rows": [
+            [
+              "**Physical**",
+              "Loud environment, bad audio, distance",
+              "Quiet space, better tech, in-person"
+            ],
+            [
+              "**Semantic**",
+              "Jargon, language differences, ambiguity",
+              "Plain language, translations, define terms"
+            ],
+            [
+              "**Psychological**",
+              "Bias, distraction, emotion, fatigue",
+              "Awareness, timing, structured agenda"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3C",
+      "ref": "III.C",
+      "title": "Project Management",
+      "cognitive": "Evaluate",
+      "summary": "Projects are temporary, finite endeavors aligned to strategic objectives. Quality managers must navigate the 5-stage life cycle (Initiate, Plan, Execute, Monitor/Control, Close), choose the right methodology (Waterfall, Evolutionary, Agile/Scrum), apply planning tools (WBS, Gantt, CPM, PERT), and use financial methods (NPV, IRR, ROI) to select projects.",
+      "concepts": [
+        {
+          "term": "Project Life Cycle (5 Stages)",
+          "definition": "(1) Initiating, (2) Planning, (3) Executing, (4) Monitoring & Controlling, (5) Evaluating & Closing. Stages provide go/no-go decision points.",
+          "formula": null,
+          "examTip": "Memorize all 5 stages in order. Each has distinct deliverables.",
+          "definitionBullets": [
+            "**Initiating** \u2014 define project, identify stakeholders, charter",
+            "**Planning** \u2014 scope, schedule, cost, risk, communications, quality",
+            "**Executing** \u2014 deliver the work per plan",
+            "**Monitoring & Controlling** \u2014 measure progress, manage changes",
+            "**Closing** \u2014 handover, document lessons learned, formal closure"
+          ]
+        },
+        {
+          "term": "Waterfall (Predictive) Methodology",
+          "definition": "Sequential phases: Requirements \u2192 Design \u2192 Implementation \u2192 Testing \u2192 Installation \u2192 Maintenance \u2192 Disposal. Best for stable, well-defined requirements.",
+          "formula": null,
+          "examTip": "Waterfall = traditional, sequential, requirements upfront."
+        },
+        {
+          "term": "Evolutionary / Incremental Methodology",
+          "definition": "Initial capability delivered, then successive deliveries until the final product. Used when requirements are unclear and customer wants flexibility for new tech.",
+          "formula": null,
+          "examTip": "Evolutionary = build it in stages, refine as you go."
+        },
+        {
+          "term": "Agile Manifesto (4 Principles)",
+          "definition": "Customer collaboration over contract negotiation; Responding to change over following a plan; Working software/deliverables over comprehensive documentation; Individuals and interactions over processes and tools.",
+          "formula": null,
+          "examTip": "All 4 are 'X over Y' statements \u2014 both sides have value, but Agile prioritizes the left."
+        },
+        {
+          "term": "Scrum Framework",
+          "definition": "Agile framework for complex problems. Roles: Product Owner, Scrum Master, Development Team. Artifacts: Product Backlog, Sprint Backlog, Increment. Events: Sprint (1\u20134 weeks), Sprint Planning, Daily Scrum, Sprint Review, Retrospective.",
+          "formula": null,
+          "examTip": "Sprint length 1\u20134 weeks. Scrum Master removes barriers; Product Owner prioritizes backlog."
+        },
+        {
+          "term": "Burndown Chart",
+          "definition": "Tracks remaining work (y-axis) vs time/days (x-axis). Slope = burndown velocity. Used in sprints to visualize progress and forecast completion.",
+          "formula": null,
+          "examTip": "Burndown trends down over a sprint. Flat or rising = problem."
+        },
+        {
+          "term": "Work Breakdown Structure (WBS)",
+          "definition": "Hierarchical decomposition of total project work into work packages. Focal point for planning, cost estimating, and assigning responsibility. Each box can show owner, cost, references.",
+          "formula": null,
+          "examTip": "WBS is THE foundation for cost, schedule, and responsibility tracking."
+        },
+        {
+          "term": "Gantt Chart",
+          "definition": "Time-phased bar chart of tasks with start/end dates. Easy to read and modify but does NOT show interdependencies, slack, or uncertainty.",
+          "formula": null,
+          "examTip": "Gantt = simple but limited. For dependencies use AND/CPM/PERT."
+        },
+        {
+          "term": "Critical Path Method (CPM)",
+          "definition": "Network diagram with single time estimate per task. Critical path = longest path through network = minimum project duration. Tasks on critical path have ZERO slack \u2014 any delay extends the project.",
+          "formula": "Project Duration = \u03a3 tasks on Critical Path",
+          "examTip": "Critical path = longest path (counter-intuitive). Zero slack on critical activities."
+        },
+        {
+          "term": "PERT (Program Evaluation & Review Technique)",
+          "definition": "Extends CPM with three time estimates per task: Optimistic (O), Most Likely (M), Pessimistic (P). Used when uncertainty is high.",
+          "formula": "Expected Time = (O + 4M + P) \u00f7 6",
+          "examTip": "Memorize PERT formula. Weighting favors most-likely estimate."
+        },
+        {
+          "term": "Activity Network Diagram (AND)",
+          "definition": "Shows task dependencies and timing. Used to communicate sequence and predecessors in larger projects.",
+          "formula": null,
+          "examTip": "AND emphasizes dependencies more than Gantt."
+        },
+        {
+          "term": "Resource Requirements Matrix (RRM)",
+          "definition": "Identifies what tasks need what resources, the quantity per period, and acquisition timing.",
+          "formula": null,
+          "examTip": "RRM answers WHAT/WHEN for resources."
+        },
+        {
+          "term": "Linear Responsibility Matrix (LRM / RACI)",
+          "definition": "Assigns roles to tasks: Responsible, Accountable, Consulted, Informed. Resolves ambiguity in cross-functional projects.",
+          "formula": null,
+          "examTip": "LRM/RACI answers WHO for project tasks.",
+          "definitionBullets": [
+            "**R**esponsible \u2014 does the work (multiple OK)",
+            "**A**ccountable \u2014 owns outcome, signs off (EXACTLY ONE)",
+            "**C**onsulted \u2014 2-way input before decision",
+            "**I**nformed \u2014 1-way notification after decision"
+          ]
+        },
+        {
+          "term": "Net Present Value (NPV)",
+          "definition": "Discounts future cash flows at the organization's required rate of return. NPV > 0 = accept; NPV < 0 = reject. Considers time value of money.",
+          "formula": "NPV = \u03a3 [Cash Flow_t \u00f7 (1+r)^t] \u2212 Initial Investment",
+          "examTip": "Positive NPV = project exceeds required return. Higher NPV = better."
+        },
+        {
+          "term": "Internal Rate of Return (IRR)",
+          "definition": "Discount rate at which NPV = 0. If IRR > organization's required rate, accept the project. Higher IRR = higher potential return.",
+          "formula": "Solve: NPV = 0",
+          "examTip": "IRR > hurdle rate = accept. IRR can mislead with non-conventional cash flows."
+        },
+        {
+          "term": "Payback Period",
+          "definition": "Number of years to recover initial investment from net cash flows. Simple but ignores time value of money and post-payback returns.",
+          "formula": "Payback = Initial Investment \u00f7 Annual Net Cash Flow",
+          "examTip": "Payback is simple but flawed \u2014 used alongside NPV/IRR."
+        },
+        {
+          "term": "Earned Value Analysis (EVA)",
+          "definition": "Compares planned value, earned value, and actual cost. Variances reveal cost performance (CV) and schedule performance (SV).",
+          "formula": "CV = EV \u2212 AC | SV = EV \u2212 PV",
+          "examTip": "Negative CV = over budget; negative SV = behind schedule."
+        },
+        {
+          "term": "Risk Assessment Matrix",
+          "definition": "Plots probability of risk (low/med/high) vs impact (very low \u2192 very high). Each cell drives a mitigation strategy.",
+          "formula": null,
+          "examTip": "Probability \u00d7 Impact = priority. Mitigation depends on the cell."
+        },
+        {
+          "term": "Project Charter",
+          "definition": "Formal document defining purpose, scope, problem statement, goals (SMART), sponsor, funding, team, methodology, milestones, risk criteria, recognition.",
+          "formula": null,
+          "examTip": "Charter authorizes and aligns. Required input to planning phase."
+        },
+        {
+          "term": "Stage/Gate Reviews",
+          "definition": "Go/no-go decision points between phases. Outcomes: continue, hold, proceed at funded level, postpone, or cancel.",
+          "formula": null,
+          "examTip": "Gates protect organization from runaway projects."
+        },
+        {
+          "term": "Post-Project Audit",
+          "definition": "Compares actual outcomes to predictions in the project plan. One of the MOST commonly omitted steps in the project life cycle.",
+          "formula": null,
+          "examTip": "Skipping the post-project audit prevents organizational learning."
+        }
+      ],
+      "keyFigures": [
+        "Henry Gantt (Gantt chart)",
+        "PMI / PMBOK Guide",
+        "Jeff Sutherland & Ken Schwaber (Scrum)",
+        "Kent Beck (Agile Manifesto co-author, XP)"
+      ],
+      "practiceQuestions": [
+        {
+          "q": "In a CPM network, the critical path is:",
+          "options": [
+            "The shortest path through the network",
+            "The longest path through the network",
+            "Any path with zero cost",
+            "The path with the most tasks"
+          ],
+          "correct": 1,
+          "explanation": "The critical path is the LONGEST path \u2014 it determines the minimum project duration. Tasks on it have zero slack."
+        },
+        {
+          "q": "PERT differs from CPM PRIMARILY because PERT:",
+          "options": [
+            "Uses bar charts instead of networks",
+            "Uses three time estimates per activity",
+            "Eliminates the critical path concept",
+            "Is used only in software projects"
+          ],
+          "correct": 1,
+          "explanation": "PERT uses optimistic, most likely, and pessimistic estimates: ET = (O + 4M + P)/6. CPM uses a single estimate per task."
+        },
+        {
+          "q": "The Agile Manifesto values:",
+          "options": [
+            "Comprehensive documentation over working software",
+            "Following a plan over responding to change",
+            "Customer collaboration over contract negotiation",
+            "Processes and tools over individuals and interactions"
+          ],
+          "correct": 2,
+          "explanation": "Agile values customer collaboration over contract negotiation \u2014 one of the four core 'X over Y' principles."
+        },
+        {
+          "q": "Which financial method considers the time value of money?",
+          "options": [
+            "Payback Period",
+            "Simple ROI",
+            "Net Present Value",
+            "Cost-Benefit Ratio"
+          ],
+          "correct": 2,
+          "explanation": "NPV discounts future cash flows. Payback period and simple ROI ignore time value of money."
+        }
+      ],
+      "flashcards": [
+        {
+          "front": "5 project life-cycle stages?",
+          "back": "Initiate, Plan, Execute, Monitor/Control, Close."
+        },
+        {
+          "front": "Waterfall vs Agile?",
+          "back": "Waterfall = sequential, requirements upfront. Agile = iterative, embraces change."
+        },
+        {
+          "front": "Sprint length range?",
+          "back": "1 to 4 weeks."
+        },
+        {
+          "front": "PERT formula?",
+          "back": "Expected Time = (O + 4M + P) / 6."
+        },
+        {
+          "front": "Critical path definition?",
+          "back": "The longest path through the network = minimum project duration."
+        },
+        {
+          "front": "NPV decision rule?",
+          "back": "NPV > 0 \u2192 accept; NPV < 0 \u2192 reject."
+        },
+        {
+          "front": "Most commonly omitted project step?",
+          "back": "Post-project audit."
+        }
+      ],
+      "summaryBullets": [
+        "**5 project lifecycle stages**: Initiating \u2192 Planning \u2192 Executing \u2192 Monitoring/Controlling \u2192 Closing",
+        "**Waterfall** = sequential, plan-driven; **Agile** = iterative, change-friendly",
+        "**Scrum** = Agile framework with sprints (1\u20134 weeks), backlog, ceremonies",
+        "**WBS** decomposes scope into deliverables; **Gantt** shows time; **CPM** finds longest path",
+        "**RACI** = Responsible, Accountable, Consulted, Informed (one Accountable per task)",
+        "**EVA**: PV (planned), EV (earned), AC (actual). CV = EV \u2212 AC, SV = EV \u2212 PV"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "Project Life Cycle \u2014 5 PMI Stages",
+          "code": "graph LR\n  I[**1. Initiating**<br/>Charter,<br/>stakeholders] --> P[**2. Planning**<br/>Scope, schedule,<br/>cost, risk]\n  P --> E[**3. Executing**<br/>Deliver the<br/>work]\n  E --> M[**4. Monitoring &<br/>Controlling**<br/>Measure, correct]\n  M --> C[**5. Closing**<br/>Handover,<br/>lessons learned]\n  M -.iterate.-> E\n  style I fill:#bbdefb\n  style P fill:#c8e6c9\n  style E fill:#fff9c4\n  style M fill:#ffe0b2\n  style C fill:#f8bbd0"
+        },
+        {
+          "type": "table",
+          "title": "Waterfall vs Agile \u2014 Methodology Comparison",
+          "columns": [
+            "Dimension",
+            "Waterfall (Predictive)",
+            "Agile (Adaptive)"
+          ],
+          "rows": [
+            [
+              "Approach",
+              "Sequential, big up-front plan",
+              "Iterative, evolving"
+            ],
+            [
+              "Change",
+              "Discouraged after planning",
+              "Embraced throughout"
+            ],
+            [
+              "Delivery",
+              "End of project (single)",
+              "Incremental (each sprint)"
+            ],
+            [
+              "Customer involvement",
+              "Start and end",
+              "Continuous"
+            ],
+            [
+              "Best for",
+              "Stable requirements (e.g., construction)",
+              "Uncertain requirements (e.g., software)"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Scrum Framework \u2014 Sprint Cycle",
+          "code": "graph LR\n  PB[**Product Backlog**<br/>Prioritized list<br/>by Product Owner] --> SP[**Sprint Planning**<br/>What can we<br/>commit to?]\n  SP --> SB[**Sprint Backlog**<br/>1-4 week sprint]\n  SB --> DS[**Daily Standup**<br/>15 min sync]\n  DS --> SB\n  SB --> SR[**Sprint Review**<br/>Demo to<br/>stakeholders]\n  SR --> RT[**Retrospective**<br/>What to improve]\n  RT --> PB\n  style PB fill:#bbdefb\n  style RT fill:#c8e6c9"
+        },
+        {
+          "type": "table",
+          "title": "RACI Matrix \u2014 Roles & Responsibilities",
+          "columns": [
+            "Role",
+            "Meaning",
+            "Rule"
+          ],
+          "rows": [
+            [
+              "**R**esponsible",
+              "Does the work",
+              "Can be multiple people"
+            ],
+            [
+              "**A**ccountable",
+              "Owns the outcome, signs off",
+              "**EXACTLY ONE per task**"
+            ],
+            [
+              "**C**onsulted",
+              "2-way input before decision",
+              "Subject matter experts"
+            ],
+            [
+              "**I**nformed",
+              "1-way notification after decision",
+              "Affected parties"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Earned Value Analysis (EVA) \u2014 Key Metrics",
+          "columns": [
+            "Metric",
+            "Formula",
+            "Meaning"
+          ],
+          "rows": [
+            [
+              "**PV** (Planned Value)",
+              "Budget \u00d7 % planned",
+              "What we said we'd spend by now"
+            ],
+            [
+              "**EV** (Earned Value)",
+              "Budget \u00d7 % complete",
+              "Value of work actually done"
+            ],
+            [
+              "**AC** (Actual Cost)",
+              "$ spent to date",
+              "What we actually paid"
+            ],
+            [
+              "**CV** (Cost Variance)",
+              "EV \u2212 AC",
+              "Positive = under budget"
+            ],
+            [
+              "**SV** (Schedule Variance)",
+              "EV \u2212 PV",
+              "Positive = ahead of schedule"
+            ],
+            [
+              "**CPI**",
+              "EV / AC",
+              ">1 = good cost performance"
+            ],
+            [
+              "**SPI**",
+              "EV / PV",
+              ">1 = good schedule performance"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Critical Path Method (CPM) Concept",
+          "code": "graph LR\n  Start([Start]) --> A[A: 3d]\n  Start --> B[B: 2d]\n  A --> C[C: 4d]\n  B --> D[D: 6d]\n  C --> End([End])\n  D --> End\n  style A fill:#ffcdd2\n  style C fill:#ffcdd2\n  style End fill:#ffcdd2\n  style Start fill:#ffcdd2"
+        }
+      ]
+    },
+    {
+      "id": "3D",
+      "ref": "III.D",
+      "title": "Quality System",
+      "cognitive": "Create / Evaluate",
+      "summary": "A quality system is the documented framework \u2014 mission, policy, plans, procedures, audits, reviews \u2014 that translates customer requirements into reliable products and services. Effectiveness is evaluated through audits (1st/2nd/3rd party; system/process/product), management reviews, balanced scorecard, customer feedback, and Gemba walks.",
+      "concepts": [
+        {
+          "term": "Definitions of Quality",
+          "definition": "Multiple definitions: fitness for use (Juran), conformance to requirements (Crosby), meeting/exceeding customer expectations, satisfying customer, delighting customer, freedom from deficiencies.",
+          "formula": null,
+          "examTip": "Different gurus, different definitions. Know who said what."
+        },
+        {
+          "term": "Little q vs Big Q",
+          "definition": "Little q: quality as a department function (QC, inspection). Big Q: quality across the entire organization \u2014 every employee, every process, every decision.",
+          "formula": null,
+          "examTip": "TQM and modern frameworks demand Big Q thinking."
+        },
+        {
+          "term": "Quality of Design vs Quality of Conformance",
+          "definition": "Quality of Design: building quality in from the start (DFSS). Quality of Conformance: producing to specifications. Both are needed; design quality is the leverage point.",
+          "formula": null,
+          "examTip": "Design quality is upstream; conformance is downstream. Improve design first."
+        },
+        {
+          "term": "Quality Function Mission (10-Step Process)",
+          "definition": "(1) Identify customer; (2) Determine need; (3) Confirm need with customer; (4) Agree on standards/measures; (5) Quantify gap; (6) Define improvement actions; (7) Make improvement; (8) Evaluate; (9) Maintain gains; (10) Repeat.",
+          "formula": null,
+          "examTip": "Mission of quality function is collaborative \u2014 quality dept doesn't 'produce' quality alone."
+        },
+        {
+          "term": "Quality Plan Components",
+          "definition": "Objectives, process steps, responsibility/authority/resource allocation, standards/practices/procedures/work instructions, testing/inspection/audit programs, change procedures, measurement methods.",
+          "formula": null,
+          "examTip": "Quality plan is the bridge from policy to operational practice."
+        },
+        {
+          "term": "Balanced Scorecard (BSC)",
+          "definition": "Macro-level measurement combining financial and non-financial perspectives. Standard four perspectives: Customer, Internal Process, Learning & Growth (Employee), Financial. Some frameworks add Stakeholder.",
+          "formula": null,
+          "examTip": "Created by Kaplan & Norton. Drives away from financial-only thinking."
+        },
+        {
+          "term": "Leading vs Lagging Indicators",
+          "definition": "Leading: predict future performance (training hours, customer satisfaction surveys, employee engagement). Lagging: report past performance (warranty claims, defect rates, financial results).",
+          "formula": null,
+          "examTip": "Leading indicators enable proactive management; lagging indicators confirm outcomes."
+        },
+        {
+          "term": "Three Audit Parties",
+          "definition": "Auditor (plans/conducts audit), Client (requested or scheduled the audit), Auditee (organization being audited).",
+          "formula": null,
+          "examTip": "Distinguish auditor, client, and auditee \u2014 exam may test the relationship.",
+          "definitionBullets": [
+            "**1st party (internal)** \u2014 organization audits itself",
+            "**2nd party** \u2014 customer audits its supplier",
+            "**3rd party** \u2014 independent registrar audits for certification"
+          ]
+        },
+        {
+          "term": "Audit Types by Party",
+          "definition": "First-party: internal audit by org's own auditors. Second-party: customer auditing supplier. Third-party: independent registrar (e.g., for ISO 9001 certification).",
+          "formula": null,
+          "examTip": "1st = internal, 2nd = customer-supplier, 3rd = independent/registrar."
+        },
+        {
+          "term": "Audit Types by Scope",
+          "definition": "System audit: verifies overall QMS appropriateness. Process audit: examines a single process or activity. Product audit: in-depth examination of a specific product against requirements.",
+          "formula": null,
+          "examTip": "System (broad) > Process (one activity) > Product (one item)."
+        },
+        {
+          "term": "Audit Process \u2014 3 Stages",
+          "definition": "(1) Preparation (define purpose/scope, select team, build checklists); (2) Performance (opening meeting, data collection, closing meeting); (3) Reporting/Corrective Action/Follow-up/Closure.",
+          "formula": null,
+          "examTip": "Three stages \u2014 exam may give a step and ask which stage it belongs to."
+        },
+        {
+          "term": "Gemba Walk",
+          "definition": "Senior management's informal walk-through of the actual work area, often following an order from receipt to delivery. Reveals reality vs reports.",
+          "formula": null,
+          "examTip": "Gemba = 'the real place.' Observations shared with managers but not always formally documented."
+        },
+        {
+          "term": "Management Review (ISO 9001)",
+          "definition": "Periodic top-management QMS review (bimonthly/quarterly/annually). Inputs: previous actions, internal/external changes, QMS performance, customer satisfaction, audit results, resource adequacy, risk/opportunity actions.",
+          "formula": null,
+          "examTip": "Management review is REQUIRED by ISO 9001 \u2014 not optional."
+        },
+        {
+          "term": "Skip-Level Meeting",
+          "definition": "Senior manager meets with employees 2+ levels below WITHOUT intervening managers present. Surfaces grassroots reality. Must be done with care to avoid undermining direct managers.",
+          "formula": null,
+          "examTip": "Skip-level = direct senior-to-floor connection, used judiciously."
+        },
+        {
+          "term": "Cost of Quality (COQ)",
+          "definition": "Total cost of achieving quality: Prevention + Appraisal + Internal Failure + External Failure. Prevention is cheapest; external failure is most expensive.",
+          "formula": "COQ = Prevention + Appraisal + Internal Failure + External Failure",
+          "examTip": "P-A-F-F. Shift spending to Prevention to reduce total COQ.",
+          "definitionBullets": [
+            "**Prevention** \u2014 training, planning, process design (proactive)",
+            "**Appraisal** \u2014 inspection, testing, audits (detection)",
+            "**Internal failure** \u2014 scrap, rework caught before shipment",
+            "**External failure** \u2014 warranty, recalls, customer complaints"
+          ]
+        },
+        {
+          "term": "Return on Quality Investment (ROQI)",
+          "definition": "Rate of return where benefits exceed quality costs and failure costs decrease. Quality investments must show financial impact.",
+          "formula": null,
+          "examTip": "ROQI = quality version of ROI."
+        }
+      ],
+      "keyFigures": [
+        "Robert Kaplan & David Norton (Balanced Scorecard)"
+      ],
+      "practiceQuestions": [
+        {
+          "q": "An ISO 9001 registrar conducts an audit at your facility for certification purposes. This is BEST classified as:",
+          "options": [
+            "First-party audit",
+            "Second-party audit",
+            "Third-party audit",
+            "Internal audit"
+          ],
+          "correct": 2,
+          "explanation": "Third-party audits are conducted by an independent body (registrar) for certification. First-party = internal; second-party = customer auditing supplier."
+        },
+        {
+          "q": "Which audit examines a single welding operation against process specifications?",
+          "options": [
+            "System audit",
+            "Process audit",
+            "Product audit",
+            "Compliance audit"
+          ],
+          "correct": 1,
+          "explanation": "A process audit examines a single process/activity. System audits cover the whole QMS; product audits examine specific deliverables."
+        },
+        {
+          "q": "In COQ, which category is BEST to invest in to reduce total cost?",
+          "options": [
+            "Prevention",
+            "Appraisal",
+            "Internal failure",
+            "External failure"
+          ],
+          "correct": 0,
+          "explanation": "Prevention costs are cheapest and reduce all downstream failure costs. External failure is most expensive \u2014 prevention prevents it."
+        }
+      ],
+      "flashcards": [
+        {
+          "front": "Little q vs Big Q?",
+          "back": "Little q = QC dept focus. Big Q = quality across entire organization."
+        },
+        {
+          "front": "Three audit parties?",
+          "back": "Auditor, Client, Auditee."
+        },
+        {
+          "front": "Audit types by party?",
+          "back": "1st-party (internal), 2nd-party (customer\u2192supplier), 3rd-party (independent registrar)."
+        },
+        {
+          "front": "Audit types by scope?",
+          "back": "System, Process, Product."
+        },
+        {
+          "front": "Audit 3-stage process?",
+          "back": "Preparation, Performance, Reporting/Follow-up."
+        },
+        {
+          "front": "COQ four buckets?",
+          "back": "Prevention + Appraisal + Internal Failure + External Failure."
+        },
+        {
+          "front": "BSC standard 4 perspectives?",
+          "back": "Customer, Internal Process, Learning & Growth, Financial."
+        }
+      ],
+      "summaryBullets": [
+        "**Little q vs Big Q**: Little q = product/process quality; Big Q = quality across the entire enterprise",
+        "**Quality of Design** = product specs match customer needs; **Quality of Conformance** = production meets specs",
+        "**3 audit parties**: 1st (internal/self), 2nd (customer audits supplier), 3rd (independent registrar)",
+        "**Audit process** has 3 stages: planning \u2192 execution \u2192 reporting/follow-up",
+        "**Leading indicators** predict; **Lagging indicators** confirm (after-the-fact)",
+        "**Cost of Quality (COQ)** = Prevention + Appraisal + Internal Failure + External Failure",
+        "**Gemba walk** \u2014 leaders go to the work to observe reality, not metrics on a dashboard"
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "title": "Little q vs Big Q",
+          "columns": [
+            "Dimension",
+            "Little q (Traditional)",
+            "Big Q (Modern)"
+          ],
+          "rows": [
+            [
+              "Scope",
+              "Product or process",
+              "Entire enterprise"
+            ],
+            [
+              "Owner",
+              "Quality department",
+              "Everyone"
+            ],
+            [
+              "Customers",
+              "External buyer",
+              "All stakeholders (internal + external)"
+            ],
+            [
+              "Activities",
+              "Inspection, test",
+              "Strategy, design, supply chain, service"
+            ],
+            [
+              "Goal",
+              "Meet specs",
+              "Meet stakeholder expectations"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Cost of Quality (COQ) \u2014 4 Categories",
+          "code": "graph TD\n  COQ[**Cost of Quality**] --> CONF[**Cost of Conformance**<br/>Investments to prevent defects]\n  COQ --> NONCONF[**Cost of Nonconformance**<br/>Cost when defects occur]\n  CONF --> P[**Prevention**<br/>Training, planning,<br/>process design]\n  CONF --> A[**Appraisal**<br/>Inspection, testing,<br/>audits]\n  NONCONF --> IF[**Internal Failure**<br/>Scrap, rework,<br/>caught before shipment]\n  NONCONF --> EF[**External Failure**<br/>Warranty, recalls,<br/>customer complaints]\n  style P fill:#c8e6c9\n  style A fill:#bbdefb\n  style IF fill:#ffe0b2\n  style EF fill:#ffcdd2"
+        },
+        {
+          "type": "table",
+          "title": "Audit Types \u2014 by Party",
+          "columns": [
+            "Party",
+            "Who Audits Whom",
+            "Purpose"
+          ],
+          "rows": [
+            [
+              "**1st Party (Internal)**",
+              "Org audits itself",
+              "Self-assessment, find issues before others do"
+            ],
+            [
+              "**2nd Party**",
+              "Customer audits supplier",
+              "Supplier qualification, surveillance"
+            ],
+            [
+              "**3rd Party**",
+              "Independent registrar",
+              "Certification (ISO 9001, IATF 16949)"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Audit Process \u2014 3 Stages",
+          "code": "graph LR\n  P[**1. PLANNING**<br/>Scope, criteria,<br/>schedule, team] --> E[**2. EXECUTION**<br/>Opening meeting,<br/>evidence gathering,<br/>findings]\n  E --> R[**3. REPORTING /<br/>FOLLOW-UP**<br/>Closing meeting,<br/>report, CAPA verification]\n  style P fill:#bbdefb\n  style E fill:#c8e6c9\n  style R fill:#ffe0b2"
+        },
+        {
+          "type": "table",
+          "title": "Leading vs Lagging Indicators",
+          "columns": [
+            "Aspect",
+            "Leading",
+            "Lagging"
+          ],
+          "rows": [
+            [
+              "Timing",
+              "Before outcome",
+              "After outcome"
+            ],
+            [
+              "Predicts vs Reports",
+              "Predicts future",
+              "Reports past"
+            ],
+            [
+              "Influence",
+              "Can still change result",
+              "Result is locked"
+            ],
+            [
+              "Quality example",
+              "Training hours, audits passed, near-misses logged",
+              "Defects, complaints, warranty cost"
+            ],
+            [
+              "Best use",
+              "Drive proactive action",
+              "Confirm strategy worked"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Quality of Design vs Quality of Conformance",
+          "columns": [
+            "Dimension",
+            "Quality of Design",
+            "Quality of Conformance"
+          ],
+          "rows": [
+            [
+              "Question",
+              "Did we design the right thing?",
+              "Did we build it right?"
+            ],
+            [
+              "Owner",
+              "Engineering, marketing, customer-facing",
+              "Manufacturing, operations"
+            ],
+            [
+              "Failure mode",
+              "Wrong feature, missed customer need",
+              "Defect, out-of-spec part"
+            ],
+            [
+              "Tools",
+              "QFD, VOC, market research",
+              "SPC, FMEA, control plans"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3E",
+      "ref": "III.E",
+      "title": "Quality Models and Theories",
+      "cognitive": "Apply / Understand",
+      "summary": "ISO 9000 series, Baldrige (MBNQA), TQM, Six Sigma, Lean, and the philosophies of the quality gurus (Shewhart, Deming, Juran, Crosby, Feigenbaum, Ishikawa, Taguchi) form the intellectual foundation of modern quality management. Each model has distinct elements, principles, and use cases.",
+      "concepts": [
+        {
+          "term": "ISO 9001:2015 (10 Sections)",
+          "definition": "Sections 1\u20133 (Scope/References/Terms), 4 (Context of Organization), 5 (Leadership), 6 (Planning), 7 (Support), 8 (Operations), 9 (Performance Evaluation), 10 (Improvement). Certifiable QMS standard.",
+          "formula": null,
+          "examTip": "Sections 4\u201310 are the auditable clauses. Memorize their topics."
+        },
+        {
+          "term": "ISO 9000 vs 9001 vs 9004",
+          "definition": "9000:2015 \u2014 Fundamentals & Vocabulary. 9001:2015 \u2014 Requirements (certifiable). 9004:2018 \u2014 Guidance for Sustained Success (best-practice).",
+          "formula": null,
+          "examTip": "Only 9001 is the certifiable Requirements standard."
+        },
+        {
+          "term": "ISO 9001 Seven Quality Management Principles",
+          "definition": "Customer focus, Leadership, Engagement of people, Process approach, Improvement, Evidence-based decision-making, Relationship management.",
+          "formula": null,
+          "examTip": "Memorize all seven. Reduced from eight in the 2015 update.",
+          "definitionBullets": [
+            "Customer focus",
+            "Leadership",
+            "Engagement of people",
+            "Process approach",
+            "Improvement",
+            "Evidence-based decision making",
+            "Relationship management"
+          ]
+        },
+        {
+          "term": "Industry-Specific Standards",
+          "definition": "IATF 16949 (automotive), AS9100D (aerospace/defense), TL 9000 (telecom), ISO 13485 (medical devices), ISO/IEC 27001 (info security), ISO 14001 (environmental), ISO 45001 (occupational health/safety), ISO 22000 (food safety), ISO 50001 (energy).",
+          "formula": null,
+          "examTip": "Know which standard belongs to which industry."
+        },
+        {
+          "term": "Malcolm Baldrige (MBNQA) \u2014 7 Categories",
+          "definition": "(1) Leadership, (2) Strategy, (3) Customers, (4) Measurement/Analysis/Knowledge Management, (5) Workforce, (6) Operations, (7) Results. Results category weighted highest at 45%.",
+          "formula": null,
+          "examTip": "Results = 45% of total. Memorize all 7 categories. Public Law 100-107, signed 1987."
+        },
+        {
+          "term": "Baldrige Core Values (11)",
+          "definition": "Visionary leadership, Customer-focused excellence, Organizational learning and agility, Focus on success, Managing for innovation, Management by fact, Societal contributions, Ethics and transparency, Delivering value and results, Systems perspective, plus an integrating value.",
+          "formula": null,
+          "examTip": "Baldrige is NONPRESCRIPTIVE \u2014 it tells you what, not how."
+        },
+        {
+          "term": "TQM \u2014 8 Primary Elements",
+          "definition": "Customer focused, Total employee involvement, Process centered, Integrated system, Strategic and systematic approach, Continual improvement, Fact-based decision-making, Communications.",
+          "formula": null,
+          "examTip": "Memorize all 8. TQM is a philosophy, not a tool."
+        },
+        {
+          "term": "Five TQM Implementation Strategies",
+          "definition": "(1) Element approach (tool-by-tool), (2) Guru approach (follow Deming/Juran/etc.), (3) Organization model approach (visit role models), (4) Japanese approach (Deming Prize methods), (5) Award criteria approach (use Baldrige/Deming criteria).",
+          "formula": null,
+          "examTip": "5 ways to implement TQM \u2014 exam may give a scenario and ask which approach."
+        },
+        {
+          "term": "Kaizen and Kaizen Blitz",
+          "definition": "Kaizen: nonstop incremental, orderly continuous improvement (Japanese). Kaizen Blitz/Event: 5-day intensive structured event focused on eliminating waste and reducing costs.",
+          "formula": null,
+          "examTip": "Kaizen = ongoing philosophy. Kaizen blitz = focused 5-day project."
+        },
+        {
+          "term": "Four Types of Benchmarking",
+          "definition": "(1) Internal: across functions or locations within own org; (2) Competitive: direct competitors; (3) Functional: same function in non-competitor; (4) Generic: any process in any industry.",
+          "formula": null,
+          "examTip": "Internal \u2192 Competitive \u2192 Functional \u2192 Generic in increasing scope/difficulty."
+        },
+        {
+          "term": "10-Step Benchmarking Process",
+          "definition": "Determine what to benchmark \u2192 Define existing process \u2192 Form team \u2192 Identify partners \u2192 Collect/analyze data \u2192 Evaluate vs partner \u2192 Determine impact \u2192 Set new targets \u2192 Implement & monitor \u2192 Repeat.",
+          "formula": null,
+          "examTip": "Benchmarking is iterative, not one-shot."
+        },
+        {
+          "term": "Walter Shewhart",
+          "definition": "Father of Statistical Quality Control. Created the control chart and the PDCA cycle (often misattributed to Deming). Distinguished assignable causes from chance (common) causes of variation. Bell Labs, 1931.",
+          "formula": "PDCA: Plan-Do-Check-Act",
+          "examTip": "Shewhart = SPC + PDCA + control chart + variation theory."
+        },
+        {
+          "term": "W. Edwards Deming",
+          "definition": "Authored the 14 Points for Transformation, the 7 Deadly Diseases, and the System of Profound Knowledge (Appreciation for system, Theory of knowledge, Knowledge about variation, Psychology). Promoted PDSA over PDCA.",
+          "formula": null,
+          "examTip": "14 Points + 7 Diseases + 4 components of profound knowledge. Drove out fear (Point 8)."
+        },
+        {
+          "term": "Deming's 14 Points (Selected)",
+          "definition": "Constancy of purpose; new philosophy; cease dependence on inspection; end price-only awards; improve constantly; institute training; institute leadership; drive out fear; break down barriers; eliminate slogans; eliminate quotas; remove pride-of-workmanship barriers; education/self-improvement program; everyone works on transformation.",
+          "formula": null,
+          "examTip": "Know the 14 Points by theme. 'Drive out fear' (#8) and 'cease dependence on inspection' (#3) are commonly tested."
+        },
+        {
+          "term": "Deming's 7 Deadly Diseases",
+          "definition": "(1) Lack of constancy of purpose; (2) Short-term profit emphasis; (3) Performance reviews/merit ratings; (4) Mobility of management; (5) Running on visible figures alone; (6) Excessive medical costs; (7) Excessive warranty costs.",
+          "formula": null,
+          "examTip": "#3 (annual performance reviews) and #5 (visible figures only) are uniquely controversial."
+        },
+        {
+          "term": "Joseph Juran \u2014 Quality Trilogy",
+          "definition": "(1) Quality Planning; (2) Quality Control (measure \u2192 compare to goal \u2192 act on gap); (3) Quality Improvement (prove need \u2192 infrastructure \u2192 project teams \u2192 diagnose \u2192 control to hold gains).",
+          "formula": null,
+          "examTip": "Juran's trilogy: Plan, Control, Improve. Pareto principle credited to Juran.",
+          "definitionBullets": [
+            "**Quality Planning** \u2014 identify customers, determine needs, design product/process",
+            "**Quality Control** \u2014 measure performance, compare to goals, act on differences",
+            "**Quality Improvement** \u2014 prove need, identify projects, diagnose causes, remedy"
+          ]
+        },
+        {
+          "term": "Juran's Universal Sequence",
+          "definition": "Two journeys for improvement: Diagnostic (symptom \u2192 cause) and Remedial (cause \u2192 remedy). Foundation of structured problem-solving.",
+          "formula": null,
+          "examTip": "Diagnostic journey first, then remedial."
+        },
+        {
+          "term": "Philip Crosby \u2014 5 Absolutes",
+          "definition": "(1) Quality = conformance to requirements; (2) No quality problem \u2014 always cheaper to do right first time; (3) Only performance measurement is cost of quality; (4) Only performance standard is zero defects; (5) Quality from prevention, not detection.",
+          "formula": null,
+          "examTip": "Crosby = zero defects + COQ + prevention. Conformance to requirements is his definition of quality.",
+          "definitionBullets": [
+            "Quality = conformance to requirements",
+            "Prevention, not appraisal",
+            "Performance standard = zero defects",
+            "Measurement = price of nonconformance (cost of quality)",
+            "There is no such thing as a 'quality problem' \u2014 quality is free"
+          ]
+        },
+        {
+          "term": "Armand Feigenbaum \u2014 Total Quality Control",
+          "definition": "Quality as a strategic business tool requiring awareness across the entire organization. Three responsibility areas: Quality Leadership, Quality Technology, Organizational Commitment. Coined 'Total Quality Control' \u2014 predecessor to TQM.",
+          "formula": null,
+          "examTip": "Feigenbaum = TQC; quality is strategic, not just shop floor."
+        },
+        {
+          "term": "Kaoru Ishikawa",
+          "definition": "Created the cause-and-effect (fishbone/Ishikawa) diagram. Promoted quality circles. Defined 4 audit types: by president, by unit head, by QC staff, mutual QC audit. Emphasized 'respect for humanity' and full participation.",
+          "formula": null,
+          "examTip": "Ishikawa = fishbone + quality circles + 4 audit types."
+        },
+        {
+          "term": "Genichi Taguchi \u2014 Loss Function",
+          "definition": "Quality is the loss imparted to society from the time the product is shipped. Any deviation from target = loss. Drives continuous improvement beyond mere spec compliance.",
+          "formula": "L(y) = k(y \u2212 m)\u00b2",
+          "examTip": "Taguchi loss is QUADRATIC in distance from target. Closer to target = better."
+        },
+        {
+          "term": "Taguchi Methods",
+          "definition": "Design of Experiments (DOE) for parameter design, tolerance design, and robust design. Identifies design settings that minimize variation in the presence of noise factors.",
+          "formula": null,
+          "examTip": "Taguchi DOE = robust design. Different from classical DOE."
+        }
+      ],
+      "keyFigures": [
+        "Walter A. Shewhart (SPC, control charts, PDCA)",
+        "W. Edwards Deming (14 Points, Profound Knowledge)",
+        "Joseph M. Juran (Trilogy, Pareto principle)",
+        "Philip B. Crosby (Zero Defects, 5 Absolutes)",
+        "Armand V. Feigenbaum (Total Quality Control)",
+        "Kaoru Ishikawa (Fishbone, Quality Circles)",
+        "Genichi Taguchi (Loss Function, Robust Design)",
+        "Ronald Reagan (signed Public Law 100-107 establishing MBNQA, 1987)"
+      ],
+      "practiceQuestions": [
+        {
+          "q": "The Baldrige Award category weighted highest is:",
+          "options": [
+            "Leadership",
+            "Customers",
+            "Workforce",
+            "Results"
+          ],
+          "correct": 3,
+          "explanation": "Results is weighted at 45% \u2014 higher than any of the other six categories."
+        },
+        {
+          "q": "Crosby's definition of quality is:",
+          "options": [
+            "Fitness for use",
+            "Conformance to requirements",
+            "Customer delight",
+            "Meeting expectations"
+          ],
+          "correct": 1,
+          "explanation": "Crosby defined quality as conformance to requirements. Juran defined it as fitness for use."
+        },
+        {
+          "q": "The PDCA cycle was originally developed by:",
+          "options": [
+            "Deming",
+            "Juran",
+            "Shewhart",
+            "Crosby"
+          ],
+          "correct": 2,
+          "explanation": "Shewhart developed PDCA at Bell Labs. Deming popularized it (he advocated PDSA \u2014 Plan-Do-Study-Act)."
+        },
+        {
+          "q": "Taguchi's loss function states that loss to society is:",
+          "options": [
+            "Zero as long as the product is within specification limits",
+            "Linear with deviation from target",
+            "Quadratic with deviation from target",
+            "Cubic with deviation from target"
+          ],
+          "correct": 2,
+          "explanation": "L(y) = k(y \u2212 m)\u00b2 \u2014 quadratic. The further from target, the loss grows by the square of deviation, regardless of being within spec."
+        },
+        {
+          "q": "Which of Deming's 14 Points is MOST closely associated with employee psychological safety?",
+          "options": [
+            "#3 Cease dependence on inspection",
+            "#8 Drive out fear",
+            "#11 Eliminate quotas",
+            "#1 Constancy of purpose"
+          ],
+          "correct": 1,
+          "explanation": "Point 8 \u2014 'Drive out fear' \u2014 directly addresses psychological safety as essential for transformation."
+        }
+      ],
+      "flashcards": [
+        {
+          "front": "ISO 9001:2015 \u2014 how many sections?",
+          "back": "10 sections (1-3 intro; 4-10 auditable: Context, Leadership, Planning, Support, Operations, Performance Evaluation, Improvement)."
+        },
+        {
+          "front": "Baldrige 7 categories?",
+          "back": "Leadership, Strategy, Customers, Measurement/Analysis/KM, Workforce, Operations, Results."
+        },
+        {
+          "front": "Baldrige Results weight?",
+          "back": "45% \u2014 highest of all categories."
+        },
+        {
+          "front": "Father of SPC?",
+          "back": "Walter Shewhart (Bell Labs, 1931)."
+        },
+        {
+          "front": "Juran's trilogy?",
+          "back": "Quality Planning, Quality Control, Quality Improvement."
+        },
+        {
+          "front": "Crosby's 4 standards?",
+          "back": "Conformance to requirements; do it right first time; cost of quality; zero defects; prevention."
+        },
+        {
+          "front": "Ishikawa diagram other name?",
+          "back": "Cause-and-effect / Fishbone diagram."
+        },
+        {
+          "front": "Taguchi loss function formula?",
+          "back": "L(y) = k(y \u2212 m)\u00b2 \u2014 quadratic with deviation from target m."
+        },
+        {
+          "front": "TQM 8 primary elements?",
+          "back": "Customer focus, total involvement, process centered, integrated system, strategic approach, continual improvement, fact-based, communications."
+        },
+        {
+          "front": "4 types of benchmarking?",
+          "back": "Internal, Competitive, Functional, Generic."
+        }
+      ],
+      "summaryBullets": [
+        "**ISO 9001:2015** has 10 sections; built on 7 quality management principles",
+        "**ISO 9000** = vocabulary; **9001** = requirements; **9004** = guidance for sustained success",
+        "**Baldrige (MBNQA)** \u2014 7 categories: Leadership, Strategy, Customers, Measurement, Workforce, Operations, Results",
+        "**TQM** has 8 primary elements; built on customer focus + continuous improvement + employee involvement",
+        "**Deming**: 14 Points + 7 Deadly Diseases + PDCA",
+        "**Juran's Trilogy**: Quality Planning, Quality Control, Quality Improvement",
+        "**Crosby's 5 Absolutes**: Quality = conformance to requirements; prevention, not appraisal; zero defects standard; cost of quality; quality is free",
+        "**Ishikawa**: father of QC circles, fishbone diagram, 7 basic QC tools",
+        "**Taguchi**: loss function \u2014 any deviation from target = loss to society"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "ISO 9001:2015 \u2014 10 Section Structure (Annex SL)",
+          "code": "graph TD\n  S0[**0\u20133** Intro,<br/>Scope, Refs,<br/>Terms]\n  S4[**4. Context**<br/>Org context,<br/>scope, QMS]\n  S5[**5. Leadership**<br/>Commitment,<br/>policy, roles]\n  S6[**6. Planning**<br/>Risks, objectives,<br/>changes]\n  S7[**7. Support**<br/>Resources, people,<br/>info, comms]\n  S8[**8. Operation**<br/>Plan, design,<br/>produce, control]\n  S9[**9. Performance**<br/>Monitor, measure,<br/>audit, review]\n  S10[**10. Improvement**<br/>Nonconformity,<br/>CA, continual]\n  S0 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10\n  S10 -.PDCA loop.-> S4\n  style S5 fill:#bbdefb\n  style S10 fill:#c8e6c9"
+        },
+        {
+          "type": "table",
+          "title": "ISO 9000 vs 9001 vs 9004",
+          "columns": [
+            "Standard",
+            "Type",
+            "Purpose"
+          ],
+          "rows": [
+            [
+              "**ISO 9000**",
+              "Definitions",
+              "Vocabulary and fundamental concepts"
+            ],
+            [
+              "**ISO 9001**",
+              "Requirements (auditable)",
+              "Certifiable QMS requirements"
+            ],
+            [
+              "**ISO 9004**",
+              "Guidance",
+              "Sustained success \u2014 beyond minimum requirements"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Baldrige (MBNQA) \u2014 7 Categories Framework",
+          "code": "graph TD\n  L[**1. Leadership<br/>(Drives the system)**] --> SP[**2. Strategy**]\n  L --> C[**3. Customers**]\n  L --> W[**5. Workforce**]\n  L --> O[**6. Operations**]\n  SP --> R[**7. Results<br/>(Outcomes)**]\n  C --> R\n  W --> R\n  O --> R\n  M[**4. Measurement,<br/>Analysis, KM**] -.foundation.-> L\n  M -.foundation.-> SP\n  M -.foundation.-> C\n  M -.foundation.-> W\n  M -.foundation.-> O\n  M -.foundation.-> R\n  style L fill:#bbdefb\n  style R fill:#c8e6c9\n  style M fill:#ffe0b2"
+        },
+        {
+          "type": "table",
+          "title": "Quality Gurus \u2014 Core Contributions",
+          "columns": [
+            "Guru",
+            "Key Contribution",
+            "One-Liner"
+          ],
+          "rows": [
+            [
+              "**Shewhart**",
+              "Control charts, PDCA precursor",
+              "Statistical process control founder"
+            ],
+            [
+              "**Deming**",
+              "14 Points, 7 Deadly Diseases, System of Profound Knowledge",
+              "85% of problems are management's fault"
+            ],
+            [
+              "**Juran**",
+              "Quality Trilogy (Plan/Control/Improve), Pareto Principle in quality",
+              "Fitness for use"
+            ],
+            [
+              "**Crosby**",
+              "Zero Defects, Quality is Free, 5 Absolutes",
+              "Quality = conformance to requirements"
+            ],
+            [
+              "**Feigenbaum**",
+              "Total Quality Control (TQC), Cost of Quality categories",
+              "Quality is everybody's job"
+            ],
+            [
+              "**Ishikawa**",
+              "Fishbone diagram, 7 basic QC tools, QC circles",
+              "95% of quality problems can be solved with simple tools"
+            ],
+            [
+              "**Taguchi**",
+              "Loss Function, robust design, signal-to-noise",
+              "Any deviation from target = loss to society"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Juran's Quality Trilogy",
+          "code": "graph LR\n  QP[**Quality<br/>Planning**<br/>Identify customers,<br/>determine needs,<br/>develop product/process] --> QC[**Quality<br/>Control**<br/>Evaluate performance,<br/>compare to goals,<br/>act on differences]\n  QC --> QI[**Quality<br/>Improvement**<br/>Prove need,<br/>identify projects,<br/>diagnose & remedy]\n  QI -.loop.-> QP\n  style QP fill:#bbdefb\n  style QC fill:#c8e6c9\n  style QI fill:#ffe0b2"
+        },
+        {
+          "type": "table",
+          "title": "ISO 9001 \u2014 7 Quality Management Principles (2015)",
+          "columns": [
+            "#",
+            "Principle",
+            "Why It Matters"
+          ],
+          "rows": [
+            [
+              "1",
+              "**Customer focus**",
+              "Sustained success requires meeting customer needs"
+            ],
+            [
+              "2",
+              "**Leadership**",
+              "Unity of purpose, alignment of strategy"
+            ],
+            [
+              "3",
+              "**Engagement of people**",
+              "Competent, empowered, engaged people deliver quality"
+            ],
+            [
+              "4",
+              "**Process approach**",
+              "Manage activities as interrelated processes"
+            ],
+            [
+              "5",
+              "**Improvement**",
+              "Ongoing focus on enhancement"
+            ],
+            [
+              "6",
+              "**Evidence-based decision making**",
+              "Decisions on data, not hunches"
+            ],
+            [
+              "7",
+              "**Relationship management**",
+              "Manage relationships with relevant interested parties"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "renderRequirements": {
+    "mermaid": "Required for visuals[].type === 'mermaid'. Install: npm install mermaid",
+    "markdown": "Recommended for definitions/examTips with **bold** and bullets"
+  }
+}
