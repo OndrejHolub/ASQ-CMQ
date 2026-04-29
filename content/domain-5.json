@@ -10,19 +10,27 @@
       "ref": "V.A",
       "title": "Customer Identification and Segmentation",
       "cognitive": "Evaluate / Analyze",
-      "summary": "All quality begins with identifying who the customer is — internal vs external, primary vs secondary vs indirect, B2B vs B2C. Customers are segmented by volume, profitability, industry, geography, demographics, or psychographics. Qualitative data (opinions, beliefs) and quantitative data (counts, measurements) both inform decisions, with the right type chosen for the question being asked.",
+      "summary": "All quality begins with identifying who the customer is \u2014 internal vs external, primary vs secondary vs indirect, B2B vs B2C. Customers are segmented by volume, profitability, industry, geography, demographics, or psychographics. Qualitative data (opinions, beliefs) and quantitative data (counts, measurements) both inform decisions, with the right type chosen for the question being asked.",
       "concepts": [
         {
           "term": "Six Customer Types (Harrington)",
-          "definition": "(1) Primary — directly receives process output; (2) Secondary — receives output but is not the process's reason for being; (3) Indirect — affected by but does not receive output directly; (4) External — end user/consumer; (5) False — performs activities that do not add value; (6) Internal — next operation/function within the organization.",
+          "definition": "(1) Primary \u2014 directly receives process output; (2) Secondary \u2014 receives output but is not the process's reason for being; (3) Indirect \u2014 affected by but does not receive output directly; (4) External \u2014 end user/consumer; (5) False \u2014 performs activities that do not add value; (6) Internal \u2014 next operation/function within the organization.",
           "formula": null,
-          "examTip": "Especially distinguish primary, secondary, indirect, and false customers."
+          "examTip": "Especially distinguish primary, secondary, indirect, and false customers.",
+          "definitionBullets": [
+            "**Primary** \u2014 directly receives process output",
+            "**Secondary** \u2014 receives output but is not the process's reason for being",
+            "**Indirect** \u2014 affected by but does not directly receive output",
+            "**External** \u2014 end user / consumer",
+            "**False** \u2014 performs activities that don't add value",
+            "**Internal** \u2014 next operation/function within the organization"
+          ]
         },
         {
           "term": "Internal Customer Concept",
-          "definition": "Every function and process within the organization is both a receiver and provider — 'next operation as customer' (Bhote). Treating internal customers well cascades to external customer satisfaction.",
+          "definition": "Every function and process within the organization is both a receiver and provider \u2014 'next operation as customer' (Bhote). Treating internal customers well cascades to external customer satisfaction.",
           "formula": null,
-          "examTip": "Internal customer is foundational to TQM. Poor internal treatment → poor external service."
+          "examTip": "Internal customer is foundational to TQM. Poor internal treatment \u2192 poor external service."
         },
         {
           "term": "Quality-Level Agreements (QLAs / SLAs)",
@@ -34,7 +42,7 @@
           "term": "Seven Steps to Improve Internal Customer Interfaces",
           "definition": "(1) Identify interfaces; (2) Assess gaps; (3) Set objectives & measurements; (4) Feasibility study of changes; (5) Modify processes; (6) Track and report; (7) Document QLAs.",
           "formula": null,
-          "examTip": "Step 1 (identify interfaces) is most often skipped — easy to assume you already know."
+          "examTip": "Step 1 (identify interfaces) is most often skipped \u2014 easy to assume you already know."
         },
         {
           "term": "External Customer Types",
@@ -44,7 +52,7 @@
         },
         {
           "term": "B2B vs B2C",
-          "definition": "B2C: provider sells directly to consumers — straightforward to capture VOC. B2B: 'real customer' is often unclear; multiple stakeholders in purchasing decision; each stakeholder group has unique requirements.",
+          "definition": "B2C: provider sells directly to consumers \u2014 straightforward to capture VOC. B2B: 'real customer' is often unclear; multiple stakeholders in purchasing decision; each stakeholder group has unique requirements.",
           "formula": null,
           "examTip": "B2B requires segmenting by stakeholder role within the buying organization."
         },
@@ -52,19 +60,24 @@
           "term": "Market Segmentation Criteria",
           "definition": "Purchase volume, profitability, industry, type of purchases, type of organization, geographic, demographic (age, income, gender), psychographic (lifestyle, attitudes), buyers' organizational structure.",
           "formula": null,
-          "examTip": "Profitability segmentation is more useful than volume — high-volume customers may not be profitable."
+          "examTip": "Profitability segmentation is more useful than volume \u2014 high-volume customers may not be profitable."
         },
         {
           "term": "Three Preference Patterns",
-          "definition": "(1) Homogeneous — all customers have similar preferences (compete in middle); (2) Diffused — no natural segments, varied preferences; (3) Clustered — distinct natural groups (target with cluster analysis).",
+          "definition": "(1) Homogeneous \u2014 all customers have similar preferences (compete in middle); (2) Diffused \u2014 no natural segments, varied preferences; (3) Clustered \u2014 distinct natural groups (target with cluster analysis).",
           "formula": null,
-          "examTip": "Clustered preferences enable targeted marketing — most actionable for segmentation."
+          "examTip": "Clustered preferences enable targeted marketing \u2014 most actionable for segmentation.",
+          "definitionBullets": [
+            "**Homogeneous** \u2014 all customers have similar preferences (compete in middle)",
+            "**Diffused** \u2014 no natural segments, varied preferences",
+            "**Clustered** \u2014 distinct natural groups (best for targeted marketing)"
+          ]
         },
         {
           "term": "'Vital Few' Customers",
-          "definition": "Core customer segment representing the most strategic value. Avoid the trap of treating all customers as equally important — bar set too low for core customers means delivering minimum to everyone.",
+          "definition": "Core customer segment representing the most strategic value. Avoid the trap of treating all customers as equally important \u2014 bar set too low for core customers means delivering minimum to everyone.",
           "formula": null,
-          "examTip": "Pareto applies to customers — focus on vital few without abandoning the rest."
+          "examTip": "Pareto applies to customers \u2014 focus on vital few without abandoning the rest."
         },
         {
           "term": "8-Step Process for Working with External Customers",
@@ -74,9 +87,13 @@
         },
         {
           "term": "Qualitative vs Quantitative Data",
-          "definition": "Qualitative: subjective — opinions, beliefs, feelings, attitudes (interviews, focus groups, observation, content analysis). Quantitative: objective — counts, measurements, statistical estimates (surveys with closed questions, transactional data).",
+          "definition": "Qualitative: subjective \u2014 opinions, beliefs, feelings, attitudes (interviews, focus groups, observation, content analysis). Quantitative: objective \u2014 counts, measurements, statistical estimates (surveys with closed questions, transactional data).",
           "formula": null,
-          "examTip": "Qualitative explores WHY; quantitative measures HOW MUCH/MANY."
+          "examTip": "Qualitative explores WHY; quantitative measures HOW MUCH/MANY.",
+          "definitionBullets": [
+            "**Qualitative** \u2014 subjective: opinions, beliefs, feelings (interviews, focus groups, observation). Answers WHY.",
+            "**Quantitative** \u2014 objective: counts, measurements, statistical estimates (surveys with closed questions, transactional data). Answers HOW MUCH/MANY."
+          ]
         },
         {
           "term": "Qualitative Techniques",
@@ -86,7 +103,7 @@
         },
         {
           "term": "Survey Analysis (4 Steps)",
-          "definition": "(1) Analyze raw data — rank, correlate, segment, compare to past; (2) Compare findings to other internal/external data; (3) Communicate to decision-makers; (4) Use the information and verify results with follow-up.",
+          "definition": "(1) Analyze raw data \u2014 rank, correlate, segment, compare to past; (2) Compare findings to other internal/external data; (3) Communicate to decision-makers; (4) Use the information and verify results with follow-up.",
           "formula": null,
           "examTip": "Follow-up surveys after improvements close the loop."
         }
@@ -95,21 +112,31 @@
         "H. James Harrington (six customer types)",
         "Keki Bhote (next operation as customer)",
         "Philip Kotler (market segmentation)",
-        "Alvin & Heidi Toffler (Powershift — customer-driven trends)",
-        "Sam Walton ('there is only one boss—the customer')"
+        "Alvin & Heidi Toffler (Powershift \u2014 customer-driven trends)",
+        "Sam Walton ('there is only one boss\u2014the customer')"
       ],
       "practiceQuestions": [
         {
           "q": "An inspector who 100% checks every part because of historical deficiencies is BEST classified as a:",
-          "options": ["Primary customer", "Secondary customer", "Indirect customer", "False customer"],
+          "options": [
+            "Primary customer",
+            "Secondary customer",
+            "Indirect customer",
+            "False customer"
+          ],
           "correct": 3,
           "explanation": "A false customer performs activities that do not add value. The 100% inspection persists because of past failures, not because it adds value to the end product."
         },
         {
           "q": "Which segmentation criterion is BEST for prioritizing strategic customer focus?",
-          "options": ["Purchase volume only", "Profitability", "Geographic location only", "Customer's company size"],
+          "options": [
+            "Purchase volume only",
+            "Profitability",
+            "Geographic location only",
+            "Customer's company size"
+          ],
           "correct": 1,
-          "explanation": "Profitability-based segmentation reveals which customers actually generate value. Volume alone can be misleading — high-volume customers may erode margins."
+          "explanation": "Profitability-based segmentation reveals which customers actually generate value. Volume alone can be misleading \u2014 high-volume customers may erode margins."
         },
         {
           "q": "Quality-Level Agreements (QLAs) are MOST appropriate for:",
@@ -131,16 +158,209 @@
             "Defect rate trends"
           ],
           "correct": 2,
-          "explanation": "Open-ended questions surface qualitative insights — beliefs, motivations, attitudes. Quantitative data comes from closed questions and transactional sources."
+          "explanation": "Open-ended questions surface qualitative insights \u2014 beliefs, motivations, attitudes. Quantitative data comes from closed questions and transactional sources."
         }
       ],
       "flashcards": [
-        { "front": "Harrington's 6 customer types?", "back": "Primary, Secondary, Indirect, External, False, Internal." },
-        { "front": "What is a 'false customer'?", "back": "An individual or group performing non-value-added activities (e.g., 100% inspector compensating for poor process)." },
-        { "front": "QLA stands for?", "back": "Quality-Level Agreement (internal SLA)." },
-        { "front": "Three customer preference patterns?", "back": "Homogeneous, Diffused, Clustered." },
-        { "front": "B2B vs B2C — key difference?", "back": "B2B has multiple stakeholders in the buying decision; the 'real customer' is often unclear." },
-        { "front": "Qualitative vs Quantitative data?", "back": "Qualitative = subjective (opinions, beliefs). Quantitative = objective (counts, measurements)." }
+        {
+          "front": "Harrington's 6 customer types?",
+          "back": "Primary, Secondary, Indirect, External, False, Internal."
+        },
+        {
+          "front": "What is a 'false customer'?",
+          "back": "An individual or group performing non-value-added activities (e.g., 100% inspector compensating for poor process)."
+        },
+        {
+          "front": "QLA stands for?",
+          "back": "Quality-Level Agreement (internal SLA)."
+        },
+        {
+          "front": "Three customer preference patterns?",
+          "back": "Homogeneous, Diffused, Clustered."
+        },
+        {
+          "front": "B2B vs B2C \u2014 key difference?",
+          "back": "B2B has multiple stakeholders in the buying decision; the 'real customer' is often unclear."
+        },
+        {
+          "front": "Qualitative vs Quantitative data?",
+          "back": "Qualitative = subjective (opinions, beliefs). Quantitative = objective (counts, measurements)."
+        }
+      ],
+      "summaryBullets": [
+        "**Harrington's 6 customer types**: Primary, Secondary, Indirect, External, False, Internal",
+        "**Internal customer** = next operation/function \u2014 'next operation as customer' (Bhote)",
+        "**QLAs/SLAs** make internal expectations explicit and measurable",
+        "**B2C** = direct-to-consumer (clear VOC); **B2B** = multiple stakeholders (segment by role)",
+        "**3 preference patterns**: Homogeneous, Diffused, Clustered (clustered = best for targeting)",
+        "**Vital few customers** \u2014 apply Pareto to the customer base, focus on the strategic core",
+        "**Qualitative** = WHY (interviews, focus groups); **Quantitative** = HOW MUCH (surveys, transactional)"
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "title": "Harrington's 6 Customer Types",
+          "columns": [
+            "Type",
+            "Definition",
+            "Example"
+          ],
+          "rows": [
+            [
+              "**Primary**",
+              "Directly receives process output",
+              "Buyer of the Megapack"
+            ],
+            [
+              "**Secondary**",
+              "Receives output but not the process's reason for being",
+              "End-user utility operator"
+            ],
+            [
+              "**Indirect**",
+              "Affected by but doesn't directly receive output",
+              "Local community near substation"
+            ],
+            [
+              "**External**",
+              "End user / consumer",
+              "Homeowner using grid power"
+            ],
+            [
+              "**False**",
+              "Performs activities that don't add value",
+              "Internal stakeholder gatekeeping unnecessary approvals"
+            ],
+            [
+              "**Internal**",
+              "Next operation/function within the org",
+              "Final assembly receives output from sub-assembly"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "Internal Customer Chain \u2014 'Next Operation as Customer' (Bhote)",
+          "code": "graph LR\n  Sup[**Supplier**<br/>External]) --> Op1[**Receiving<br/>Inspection**]\n  Op1 -.internal customer.-> Op2[**Sub-Assembly**]\n  Op2 -.internal customer.-> Op3[**Final<br/>Assembly**]\n  Op3 -.internal customer.-> Op4[**Test &<br/>QA**]\n  Op4 -.internal customer.-> Op5[**Packaging &<br/>Shipping**]\n  Op5 -->Cust[**External<br/>Customer**]\n  style Sup fill:#bbdefb\n  style Cust fill:#c8e6c9"
+        },
+        {
+          "type": "table",
+          "title": "B2B vs B2C \u2014 VOC Capture",
+          "columns": [
+            "Dimension",
+            "B2C",
+            "B2B"
+          ],
+          "rows": [
+            [
+              "Customer",
+              "End consumer",
+              "Other organization"
+            ],
+            [
+              "Buying decision",
+              "Single individual or family",
+              "Multiple stakeholders (specifier, buyer, user, finance)"
+            ],
+            [
+              "VOC capture",
+              "Direct surveys, social media",
+              "Segmented by stakeholder role"
+            ],
+            [
+              "Cycle length",
+              "Short (impulse to weeks)",
+              "Long (months to years)"
+            ],
+            [
+              "Volume per customer",
+              "Low",
+              "High"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "3 Preference Patterns \u2014 Segmentation Strategy",
+          "code": "graph TD\n  H[**Homogeneous**<br/>All customers want<br/>similar things<br/>e.g., commodity salt] -->|Strategy| HS[Compete in the middle<br/>Mass market]\n  D[**Diffused**<br/>No natural segments<br/>Wildly varied preferences<br/>e.g., custom art] -->|Strategy| DS[Niche, custom, or<br/>create new patterns]\n  C[**Clustered**<br/>Distinct natural groups<br/>e.g., car buyers] -->|Strategy| CS[Target specific clusters<br/>BEST for segmentation]\n  style C fill:#c8e6c9\n  style CS fill:#c8e6c9"
+        },
+        {
+          "type": "table",
+          "title": "Qualitative vs Quantitative Data",
+          "columns": [
+            "Dimension",
+            "Qualitative",
+            "Quantitative"
+          ],
+          "rows": [
+            [
+              "Question answered",
+              "**WHY?**",
+              "**HOW MUCH / HOW MANY?**"
+            ],
+            [
+              "Data type",
+              "Subjective \u2014 opinions, beliefs",
+              "Objective \u2014 counts, measurements"
+            ],
+            [
+              "Methods",
+              "Interviews, focus groups, observation, content analysis",
+              "Surveys (closed Q's), transactional data, ratings"
+            ],
+            [
+              "Use case",
+              "Explore, understand, generate hypotheses",
+              "Confirm, measure, statistical inference"
+            ],
+            [
+              "Sample size",
+              "Small (5\u201330)",
+              "Large (100+)"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "title": "Market Segmentation Criteria",
+          "columns": [
+            "Criterion",
+            "Examples",
+            "Watch Out For"
+          ],
+          "rows": [
+            [
+              "**Volume**",
+              "High-volume vs low-volume buyers",
+              "High volume \u2260 profitable"
+            ],
+            [
+              "**Profitability**",
+              "Margin per customer",
+              "More useful than pure volume"
+            ],
+            [
+              "**Industry**",
+              "Auto, aerospace, healthcare",
+              "Different regs, cycle times"
+            ],
+            [
+              "**Geography**",
+              "Region, country, urban/rural",
+              "Logistics + regulation differences"
+            ],
+            [
+              "**Demographics**",
+              "Age, income, gender",
+              "Surface-level, can stereotype"
+            ],
+            [
+              "**Psychographics**",
+              "Lifestyle, values, attitudes",
+              "Most actionable, hardest to capture"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -154,7 +374,7 @@
           "term": "Customer Relationship Management (CRM)",
           "definition": "Strategy and toolset to learn customers' needs, values, and behaviors; segment them; coordinate sales, service, and marketing information across all touchpoints. Most-advanced form: partnerships and alliances.",
           "formula": null,
-          "examTip": "CRM ≠ a software tool. It's the strategy; software supports it."
+          "examTip": "CRM \u2260 a software tool. It's the strategy; software supports it."
         },
         {
           "term": "Customer-Focused vs Market-Driven",
@@ -170,7 +390,7 @@
         },
         {
           "term": "Quality Function Deployment (QFD)",
-          "definition": "Methodology translating customer voice (qualitative requirements) into operational requirements using a series of matrices (House of Quality). Cascades through 4 levels: Customer Requirements → Design → Parts → Process → Production.",
+          "definition": "Methodology translating customer voice (qualitative requirements) into operational requirements using a series of matrices (House of Quality). Cascades through 4 levels: Customer Requirements \u2192 Design \u2192 Parts \u2192 Process \u2192 Production.",
           "formula": null,
           "examTip": "QFD is heavily tested. Know all 4 cascading levels."
         },
@@ -178,67 +398,74 @@
           "term": "House of Quality (QFD Matrix)",
           "definition": "Sections: (A) Customer wants/needs (VOC); (B) Importance weighting; (C) Customer perception of competitors; (D) Critical process characteristics (Voice of Company); (E) Relationship strength matrix; (F) Importance rating; (G) Correlations (the 'roof'); (H) Targets.",
           "formula": null,
-          "examTip": "Memorize sections A–H. Roof (G) shows relationships among technical characteristics."
+          "examTip": "Memorize sections A\u2013H. Roof (G) shows relationships among technical characteristics."
         },
         {
-          "term": "Kano Model — Five Quality Element Categories",
-          "definition": "(1) Must-be (basic — dissatisfaction if absent, no satisfaction if present); (2) One-dimensional (linear — satisfaction scales with fulfillment); (3) Attractive/Delighters (unexpected features that delight); (4) Indifferent (no impact either way); (5) Reverse (some users dissatisfied when feature is provided).",
+          "term": "Kano Model \u2014 Five Quality Element Categories",
+          "definition": "(1) Must-be (basic \u2014 dissatisfaction if absent, no satisfaction if present); (2) One-dimensional (linear \u2014 satisfaction scales with fulfillment); (3) Attractive/Delighters (unexpected features that delight); (4) Indifferent (no impact either way); (5) Reverse (some users dissatisfied when feature is provided).",
           "formula": null,
-          "examTip": "HEAVILY TESTED. Yesterday's delighters become today's must-be's (e.g., automobile cup holders)."
+          "examTip": "HEAVILY TESTED. Yesterday's delighters become today's must-be's (e.g., automobile cup holders).",
+          "definitionBullets": [
+            "**Must-be** \u2014 basic expectations (absent = anger, present = neutral)",
+            "**One-dimensional** \u2014 linear satisfaction (more = better)",
+            "**Attractive (delighters)** \u2014 exceed expectations (absent = OK, present = wow)",
+            "**Indifferent** \u2014 customer doesn't care",
+            "**Reverse** \u2014 more = LESS satisfaction (over-engineering)"
+          ]
         },
         {
           "term": "Kano Curves",
           "definition": "Must-be: lower-right curve (saturates at neutral). One-dimensional: straight diagonal line. Attractive: upper-left curve (rises rapidly with fulfillment). Indifferent: flat horizontal line. Reverse: opposite of expected.",
           "formula": null,
-          "examTip": "Visualize the curves — must-be saturates; attractive accelerates."
+          "examTip": "Visualize the curves \u2014 must-be saturates; attractive accelerates."
         },
         {
           "term": "Listening Posts",
           "definition": "Formal process for capturing casual/informal customer remarks. ICALL (Informal Customer Acquisition Listening and Learning) formalizes the practice. Captures suggestions, displeasures, ideas, and signals of customer departure.",
           "formula": null,
-          "examTip": "Listening posts catch what surveys miss — early warning of customer issues."
+          "examTip": "Listening posts catch what surveys miss \u2014 early warning of customer issues."
         },
         {
           "term": "Customer Survey Methods",
-          "definition": "Written/mail (30–50% response), telephone (higher response, faster), in-person (most powerful but expensive), e-mail/web (cheapest, variable response), comment cards, mystery shopping, social media monitoring, joint planning meetings, customer panels, advisory councils.",
+          "definition": "Written/mail (30\u201350% response), telephone (higher response, faster), in-person (most powerful but expensive), e-mail/web (cheapest, variable response), comment cards, mystery shopping, social media monitoring, joint planning meetings, customer panels, advisory councils.",
           "formula": null,
           "examTip": "Match method to objective: in-person for depth, web for breadth, mystery shopping for service consistency."
         },
         {
           "term": "Complaint Handling Statistics",
-          "definition": "9.5% of non-complainers (with >$100 loss) repurchase. 19% of complainers with unresolved issues repurchase. 54.3% repurchase when complaint is resolved — and even higher with quick resolution.",
+          "definition": "9.5% of non-complainers (with >$100 loss) repurchase. 19% of complainers with unresolved issues repurchase. 54.3% repurchase when complaint is resolved \u2014 and even higher with quick resolution.",
           "formula": null,
           "examTip": "Resolving complaints quickly is the highest-leverage retention tool."
         },
         {
-          "term": "Customer Value Analysis (Gale & Wood — 7 Tools)",
+          "term": "Customer Value Analysis (Gale & Wood \u2014 7 Tools)",
           "definition": "(1) Market-perceived quality profile; (2) Market-perceived price profile; (3) Customer value map; (4) Won/lost analysis; (5) Head-to-head area chart; (6) Key events timeline; (7) What/who matrix.",
           "formula": null,
-          "examTip": "Gale & Wood's 7 tools — used to quantify customer-perceived value vs. competition."
+          "examTip": "Gale & Wood's 7 tools \u2014 used to quantify customer-perceived value vs. competition."
         },
         {
           "term": "Five Levels of Customer Satisfaction",
-          "definition": "(1) Dissatisfied — departed; (2) Marginally satisfied — easily lost; (3) Basically satisfied — probably gone; (4) Delighted — returns (retained); (5) Committed advocate — loyal AND tells others.",
+          "definition": "(1) Dissatisfied \u2014 departed; (2) Marginally satisfied \u2014 easily lost; (3) Basically satisfied \u2014 probably gone; (4) Delighted \u2014 returns (retained); (5) Committed advocate \u2014 loyal AND tells others.",
           "formula": null,
-          "examTip": "'Basically satisfied' is NOT good — they often leave silently."
+          "examTip": "'Basically satisfied' is NOT good \u2014 they often leave silently."
         },
         {
           "term": "Net Promoter Score (NPS)",
-          "definition": "Single question: 'How likely are you to recommend us?' on 0–10 scale. Promoters (9–10), Passives (7–8), Detractors (0–6).",
-          "formula": "NPS = % Promoters − % Detractors",
-          "examTip": "NPS ranges from −100 to +100. Memorize the 9–10 / 7–8 / 0–6 thresholds."
+          "definition": "Single question: 'How likely are you to recommend us?' on 0\u201310 scale. Promoters (9\u201310), Passives (7\u20138), Detractors (0\u20136).",
+          "formula": "NPS = % Promoters \u2212 % Detractors",
+          "examTip": "NPS ranges from \u2212100 to +100. Memorize the 9\u201310 / 7\u20138 / 0\u20136 thresholds."
         },
         {
           "term": "Customer Lifetime Value (CLV)",
           "definition": "Total economic value of a customer over the entire relationship. Considers acquisition cost, base profit, revenue growth, operating costs, referrals, and price premium. Reichheld pioneered this measure.",
           "formula": null,
-          "examTip": "Retention is cheaper than acquisition — CLV justifies retention investment."
+          "examTip": "Retention is cheaper than acquisition \u2014 CLV justifies retention investment."
         },
         {
           "term": "Customer Experience Management (CXM)",
           "definition": "Mapping the cumulative impact of multiple touchpoints over the customer journey. Includes personas, key moments, positive/negative impacts, and emotions. Visual journey mapping is the core tool.",
           "formula": null,
-          "examTip": "CXM ≠ CRM. CRM = data; CXM = end-to-end experience design."
+          "examTip": "CXM \u2260 CRM. CRM = data; CXM = end-to-end experience design."
         },
         {
           "term": "Reputational Risk",
@@ -250,13 +477,20 @@
           "term": "Six Critical Areas of Customer-Centric Organizations",
           "definition": "(1) Equip, enable, engage employees; (2) Leadership, vision, support; (3) Create & deploy service strategies; (4) Master service delivery processes; (5) Performance measurement (VOC); (6) Resource & infrastructure development.",
           "formula": null,
-          "examTip": "Memorize all 6 areas — exam may give a deficiency and ask which area it falls under."
+          "examTip": "Memorize all 6 areas \u2014 exam may give a deficiency and ask which area it falls under."
         },
         {
           "term": "Five-Step Customer Recovery Process",
           "definition": "(1) Apologize sincerely and accept responsibility; (2) Restate to confirm understanding; (3) Empathize and commit to resolution; (4) Make Restitution (specific, tangible); (5) Follow Up to verify satisfaction.",
           "formula": null,
-          "examTip": "Memorize all 5 steps in order. Skipping #5 (follow-up) loses the recovery effect."
+          "examTip": "Memorize all 5 steps in order. Skipping #5 (follow-up) loses the recovery effect.",
+          "definitionBullets": [
+            "**Listen** \u2014 let the customer tell the full story without interruption",
+            "**Empathize** \u2014 acknowledge feelings, show you understand",
+            "**Apologize** \u2014 sincere ownership of the issue",
+            "**Solve** \u2014 fix the problem, fast and fair",
+            "**Follow up** \u2014 confirm resolution, prevent recurrence"
+          ]
         },
         {
           "term": "Unconditional Guarantee",
@@ -282,27 +516,47 @@
       "practiceQuestions": [
         {
           "q": "In the Kano Model, automobile cup holders today are MOST likely to be:",
-          "options": ["Attractive (delighter)", "Must-be (basic)", "One-dimensional", "Indifferent"],
+          "options": [
+            "Attractive (delighter)",
+            "Must-be (basic)",
+            "One-dimensional",
+            "Indifferent"
+          ],
           "correct": 1,
           "explanation": "Cup holders were delighters when introduced; over time customer expectations shifted them to must-be (their absence causes dissatisfaction; presence is expected)."
         },
         {
           "q": "An NPS survey returns 60% promoters, 25% passives, 15% detractors. The NPS is:",
-          "options": ["35", "45", "60", "85"],
+          "options": [
+            "35",
+            "45",
+            "60",
+            "85"
+          ],
           "correct": 1,
-          "explanation": "NPS = % Promoters − % Detractors = 60 − 15 = 45."
+          "explanation": "NPS = % Promoters \u2212 % Detractors = 60 \u2212 15 = 45."
         },
         {
           "q": "Which step in the five-step recovery process is MOST often skipped, eroding the recovery's effectiveness?",
-          "options": ["Apologize", "Restate", "Empathize", "Follow Up"],
+          "options": [
+            "Apologize",
+            "Restate",
+            "Empathize",
+            "Follow Up"
+          ],
           "correct": 3,
-          "explanation": "Follow-up — verifying that the customer is now satisfied — is the step most commonly omitted. Without it, the customer can't tell if the apology was sincere."
+          "explanation": "Follow-up \u2014 verifying that the customer is now satisfied \u2014 is the step most commonly omitted. Without it, the customer can't tell if the apology was sincere."
         },
         {
           "q": "QFD cascades through how many primary levels?",
-          "options": ["Two", "Three", "Four", "Five"],
+          "options": [
+            "Two",
+            "Three",
+            "Four",
+            "Five"
+          ],
           "correct": 2,
-          "explanation": "Four levels: Customer Requirements → Design Requirements → Parts Requirements → Process Requirements (with Production controls)."
+          "explanation": "Four levels: Customer Requirements \u2192 Design Requirements \u2192 Parts Requirements \u2192 Process Requirements (with Production controls)."
         },
         {
           "q": "A 'committed advocate' (Level 5 satisfaction) is BEST described as:",
@@ -313,19 +567,181 @@
             "A first-time customer"
           ],
           "correct": 2,
-          "explanation": "Level 5 = committed advocate. Loyal AND actively promotes — the highest tier."
+          "explanation": "Level 5 = committed advocate. Loyal AND actively promotes \u2014 the highest tier."
         }
       ],
       "flashcards": [
-        { "front": "VOC stands for?", "back": "Voice of the Customer." },
-        { "front": "QFD's primary tool?", "back": "House of Quality matrix." },
-        { "front": "QFD 4 cascading levels?", "back": "Customer Reqs → Design Reqs → Parts Reqs → Process Reqs." },
-        { "front": "Kano 5 categories?", "back": "Must-be, One-dimensional, Attractive (delighter), Indifferent, Reverse." },
-        { "front": "NPS formula?", "back": "% Promoters (9–10) − % Detractors (0–6). Passives (7–8) excluded." },
-        { "front": "Five satisfaction levels?", "back": "Dissatisfied → Marginal → Basically satisfied → Delighted → Committed advocate." },
-        { "front": "Five-step recovery process?", "back": "Apologize → Restate → Empathize → Make Restitution → Follow Up." },
-        { "front": "Customer-focused vs market-driven?", "back": "Customer-focused = retain existing. Market-driven = attract new." }
+        {
+          "front": "VOC stands for?",
+          "back": "Voice of the Customer."
+        },
+        {
+          "front": "QFD's primary tool?",
+          "back": "House of Quality matrix."
+        },
+        {
+          "front": "QFD 4 cascading levels?",
+          "back": "Customer Reqs \u2192 Design Reqs \u2192 Parts Reqs \u2192 Process Reqs."
+        },
+        {
+          "front": "Kano 5 categories?",
+          "back": "Must-be, One-dimensional, Attractive (delighter), Indifferent, Reverse."
+        },
+        {
+          "front": "NPS formula?",
+          "back": "% Promoters (9\u201310) \u2212 % Detractors (0\u20136). Passives (7\u20138) excluded."
+        },
+        {
+          "front": "Five satisfaction levels?",
+          "back": "Dissatisfied \u2192 Marginal \u2192 Basically satisfied \u2192 Delighted \u2192 Committed advocate."
+        },
+        {
+          "front": "Five-step recovery process?",
+          "back": "Apologize \u2192 Restate \u2192 Empathize \u2192 Make Restitution \u2192 Follow Up."
+        },
+        {
+          "front": "Customer-focused vs market-driven?",
+          "back": "Customer-focused = retain existing. Market-driven = attract new."
+        }
+      ],
+      "summaryBullets": [
+        "**CRM** = strategy + technology to manage interactions across the customer lifecycle",
+        "**VOC** captured via interviews, surveys, focus groups, complaints, social media, observation",
+        "**QFD / House of Quality** translates VOC into engineering specs",
+        "**Kano Model** \u2014 5 quality categories: Must-be, One-dimensional, Attractive, Indifferent, Reverse",
+        "**NPS** = % Promoters (9\u201310) \u2212 % Detractors (0\u20136); scale: \u2212100 to +100",
+        "**CLV** = total revenue from customer over relationship duration, minus acquisition cost",
+        "**Complaint stats**: most dissatisfied customers don't complain \u2014 they leave silently",
+        "**5-step recovery process**: Listen \u2192 Empathize \u2192 Apologize \u2192 Solve \u2192 Follow-up"
+      ],
+      "visuals": [
+        {
+          "type": "mermaid",
+          "title": "Kano Model \u2014 5 Categories of Customer Quality Attributes",
+          "code": "graph LR\n  subgraph Curves[Customer Satisfaction Curve Behavior]\n    MB[**MUST-BE**<br/>Basic expectations<br/>Absent = dissatisfaction<br/>Present = neutral<br/>e.g., brakes work]\n    OD[**ONE-DIMENSIONAL**<br/>Linear satisfaction<br/>More = better<br/>e.g., fuel economy]\n    AT[**ATTRACTIVE**<br/>Delighters<br/>Absent = OK<br/>Present = wow<br/>e.g., panoramic roof]\n    IN[**INDIFFERENT**<br/>Doesn't matter<br/>e.g., obscure feature]\n    RV[**REVERSE**<br/>More = WORSE<br/>e.g., excessive complexity]\n  end\n  style MB fill:#ffcdd2\n  style OD fill:#fff9c4\n  style AT fill:#c8e6c9\n  style IN fill:#e0e0e0\n  style RV fill:#ffe0b2"
+        },
+        {
+          "type": "table",
+          "title": "Kano Categories \u2014 Action Implications",
+          "columns": [
+            "Category",
+            "Customer Reaction",
+            "Strategy"
+          ],
+          "rows": [
+            [
+              "**Must-be**",
+              "Required \u2014 angry if missing, indifferent if present",
+              "MUST deliver. No upside, big downside."
+            ],
+            [
+              "**One-dimensional**",
+              "Linear: more is better, less is worse",
+              "Compete on these. Quality investment pays back."
+            ],
+            [
+              "**Attractive (Delighters)**",
+              "Surprise & delight when present; OK if absent",
+              "Differentiation. Today's delighter = tomorrow's must-be."
+            ],
+            [
+              "**Indifferent**",
+              "Customer doesn't care",
+              "Stop investing here."
+            ],
+            [
+              "**Reverse**",
+              "More features = LESS satisfaction",
+              "Strip features. Less is more."
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "House of Quality (QFD Matrix) \u2014 Conceptual Structure",
+          "code": "graph TD\n  Roof[**ROOF**<br/>Trade-offs between<br/>engineering specs] --> Top[**TOP**<br/>HOWs \u2014 Engineering<br/>characteristics]\n  Left[**LEFT**<br/>WHATs \u2014 Customer<br/>needs VOC] --> Center[**CENTER**<br/>Relationship matrix<br/>What \u00d7 How]\n  Top --> Center\n  Center --> Right[**RIGHT**<br/>Importance,<br/>competitive benchmarking]\n  Center --> Bottom[**BOTTOM**<br/>Engineering target values,<br/>technical priorities]\n  style Center fill:#ffe0b2\n  style Left fill:#bbdefb\n  style Top fill:#c8e6c9"
+        },
+        {
+          "type": "mermaid",
+          "title": "Net Promoter Score (NPS) Calculation",
+          "code": "graph LR\n  Q['How likely are you to<br/>recommend us?'<br/>Scale 0-10] --> P[**Promoters**<br/>9-10<br/>Loyal advocates]\n  Q --> Pa[**Passives**<br/>7-8<br/>Satisfied<br/>NOT counted]\n  Q --> D[**Detractors**<br/>0-6<br/>At-risk customers]\n  P --> NPS[**NPS Formula**<br/>% Promoters \u2212 % Detractors<br/>Range: -100 to +100]\n  D --> NPS\n  NPS --> B[Benchmarks:<br/>0+ = Good<br/>50+ = Excellent<br/>70+ = World-class]\n  style P fill:#c8e6c9\n  style Pa fill:#fff9c4\n  style D fill:#ffcdd2"
+        },
+        {
+          "type": "table",
+          "title": "Complaint Handling \u2014 Iceberg Statistics",
+          "columns": [
+            "Statistic",
+            "Implication"
+          ],
+          "rows": [
+            [
+              "~96% of dissatisfied customers don't complain",
+              "Most issues are invisible to you"
+            ],
+            [
+              "~91% of non-complainers don't return",
+              "Silent loss of customer base"
+            ],
+            [
+              "~70% of complainers DO return if resolved well",
+              "Recovery is profitable"
+            ],
+            [
+              "~95% return if resolved on the spot",
+              "Speed matters more than perfection"
+            ],
+            [
+              "Complainers tell ~9\u201310 others; resolved complainers tell ~5",
+              "Word-of-mouth amplifies both ways"
+            ]
+          ]
+        },
+        {
+          "type": "mermaid",
+          "title": "5-Step Customer Recovery Process",
+          "code": "graph LR\n  S1[**1. LISTEN**<br/>Don't interrupt,<br/>get the full story] --> S2[**2. EMPATHIZE**<br/>Acknowledge feelings,<br/>show you care]\n  S2 --> S3[**3. APOLOGIZE**<br/>Sincere, not scripted,<br/>own the issue]\n  S3 --> S4[**4. SOLVE**<br/>Fix the problem,<br/>fast and fair]\n  S4 --> S5[**5. FOLLOW UP**<br/>Confirm resolution,<br/>prevent recurrence]\n  style S1 fill:#bbdefb\n  style S5 fill:#c8e6c9"
+        },
+        {
+          "type": "table",
+          "title": "5 Levels of Customer Satisfaction (Hierarchy)",
+          "columns": [
+            "Level",
+            "State",
+            "Strategy"
+          ],
+          "rows": [
+            [
+              "1 (lowest)",
+              "Meets basic expectations",
+              "Stay in business"
+            ],
+            [
+              "2",
+              "Provides good support / responsive",
+              "Build basic trust"
+            ],
+            [
+              "3",
+              "Anticipates customer needs",
+              "Proactive service"
+            ],
+            [
+              "4",
+              "Exceeds customer expectations",
+              "Differentiation"
+            ],
+            [
+              "5 (highest)",
+              "Customer surprised and delighted",
+              "Loyalty + word-of-mouth"
+            ]
+          ]
+        }
       ]
     }
-  ]
+  ],
+  "renderRequirements": {
+    "mermaid": "Required for visuals[].type === 'mermaid'. Install: npm install mermaid",
+    "markdown": "Recommended for definitions/examTips with **bold** and bullets"
+  }
 }
