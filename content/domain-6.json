@@ -181,17 +181,17 @@
         {
           "type": "mermaid",
           "title": "SCM 5 Core Functions (ASQ Definition)",
-          "code": "graph LR\n  P[**1. PLAN**<br/>Demand forecasting,<br/>strategy] --> S[**2. SOURCE**<br/>Identify and<br/>qualify suppliers]\n  S --> M[**3. MAKE**<br/>Production,<br/>conversion]\n  M --> D[**4. DELIVER**<br/>Logistics,<br/>distribution]\n  D --> R[**5. RETURN**<br/>Reverse logistics,<br/>warranty]\n  R -.feedback.-> P\n  style P fill:#bbdefb\n  style S fill:#c8e6c9\n  style M fill:#fff9c4\n  style D fill:#ffe0b2\n  style R fill:#f8bbd0"
+          "code": "graph LR\n  P[\"1. PLAN<br/>Demand forecasting,<br/>strategy\"] --> S[\"2. SOURCE<br/>Identify and<br/>qualify suppliers\"]\n  S --> M[\"3. MAKE<br/>Production,<br/>conversion\"]\n  M --> D[\"4. DELIVER<br/>Logistics,<br/>distribution\"]\n  D --> R[\"5. RETURN<br/>Reverse logistics,<br/>warranty\"]\n  R -.feedback.-> P\n  style P fill:#bbdefb\n  style S fill:#c8e6c9\n  style M fill:#fff9c4\n  style D fill:#ffe0b2\n  style R fill:#f8bbd0"
         },
         {
           "type": "mermaid",
           "title": "Supplier Classification Ladder \u2014 Trust Tiers",
-          "code": "graph BT\n  L1[**APPROVED**<br/>Meets minimum requirements<br/>Entry tier \u2014 can do business] --> L2[**QUALIFIED**<br/>Passed audit/assessment<br/>Self-assessment, on-site quality audit,<br/>OR certificate of compliance]\n  L2 --> L3[**CERTIFIED**<br/>Consistent quality over time<br/>Reduced or skip-lot inspection<br/>Priority for new business]\n  style L1 fill:#ffe0b2\n  style L2 fill:#fff9c4\n  style L3 fill:#c8e6c9"
+          "code": "graph BT\n  L1[\"APPROVED<br/>Meets minimum requirements<br/>Entry tier \u2014 can do business\"] --> L2[\"QUALIFIED<br/>Passed audit/assessment<br/>Self-assessment, on-site quality audit,<br/>OR certificate of compliance\"]\n  L2 --> L3[\"CERTIFIED<br/>Consistent quality over time<br/>Reduced or skip-lot inspection<br/>Priority for new business\"]\n  style L1 fill:#ffe0b2\n  style L2 fill:#fff9c4\n  style L3 fill:#c8e6c9"
         },
         {
           "type": "mermaid",
           "title": "8-Step Supplier Selection Process",
-          "code": "graph LR\n  S1[1. Identify<br/>all sources] --> S2[2. Evaluate<br/>reputations]\n  S2 --> S3[3. Prepare<br/>bidders list]\n  S3 --> S4[4. Request<br/>bids]\n  S4 --> S5[5. Evaluate<br/>pre-award data]\n  S5 --> S6[6. Select<br/>approved list]\n  S6 --> S7[7. Update<br/>contracts]\n  S7 --> S8[8. Prepare<br/>contracts]\n  style S1 fill:#bbdefb\n  style S8 fill:#c8e6c9"
+          "code": "graph LR\n  S1[\"1. Identify<br/>all sources\"] --> S2[\"2. Evaluate<br/>reputations\"]\n  S2 --> S3[\"3. Prepare<br/>bidders list\"]\n  S3 --> S4[\"4. Request<br/>bids\"]\n  S4 --> S5[\"5. Evaluate<br/>pre-award data\"]\n  S5 --> S6[\"6. Select<br/>approved list\"]\n  S6 --> S7[\"7. Update<br/>contracts\"]\n  S7 --> S8[\"8. Prepare<br/>contracts\"]\n  style S1 fill:#bbdefb\n  style S8 fill:#c8e6c9"
         },
         {
           "type": "table",
@@ -403,7 +403,7 @@
         {
           "type": "mermaid",
           "title": "Risk Response Strategies \u2014 Threats vs Opportunities",
-          "code": "graph TD\n  R[**RISK**<br/>Uncertain event with<br/>impact on objectives] --> T[**Threats**<br/>Negative risks]\n  R --> O[**Opportunities**<br/>Positive risks]\n  T --> T1[**E**scalate]\n  T --> T2[**A**void]\n  T --> T3[**T**ransfer]\n  T --> T4[**M**itigate]\n  T --> T5[**A**ccept]\n  O --> O1[**E**xploit]\n  O --> O2[**E**nhance]\n  O --> O3[**S**hare]\n  O --> O4[**A**ccept]\n  style T fill:#ffcdd2\n  style O fill:#c8e6c9"
+          "code": "graph TD\n  R[\"RISK<br/>Uncertain event with<br/>impact on objectives\"] --> T[\"Threats<br/>Negative risks\"]\n  R --> O[\"Opportunities<br/>Positive risks\"]\n  T --> T1[\"Escalate\"]\n  T --> T2[\"Avoid\"]\n  T --> T3[\"Transfer\"]\n  T --> T4[\"Mitigate\"]\n  T --> T5[\"Accept\"]\n  O --> O1[\"Exploit\"]\n  O --> O2[\"Enhance\"]\n  O --> O3[\"Share\"]\n  O --> O4[\"Accept\"]\n  style T fill:#ffcdd2\n  style O fill:#c8e6c9"
         },
         {
           "type": "table",
@@ -475,7 +475,7 @@
         {
           "type": "mermaid",
           "title": "FMEA vs FTA \u2014 Direction of Analysis",
-          "code": "graph TD\n  subgraph FMEA[**FMEA \u2014 Bottom-Up**]\n    F1[Component or step] --> F2[What can fail?]\n    F2 --> F3[Effect on system?]\n    F3 --> F4[RPN = S \u00d7 O \u00d7 D]\n  end\n  subgraph FTA[**FTA \u2014 Top-Down**]\n    T1[Undesired event<br/>at top] --> T2[AND/OR<br/>logic gates]\n    T2 --> T3[Root causes<br/>at bottom]\n  end\n  style FMEA fill:#bbdefb\n  style FTA fill:#ffe0b2"
+          "code": "graph TD\n  subgraph FMEA[\"FMEA \u2014 Bottom-Up\"]\n    F1[\"Component or step\"] --> F2[\"What can fail?\"]\n    F2 --> F3[\"Effect on system?\"]\n    F3 --> F4[\"RPN = S \u00d7 O \u00d7 D\"]\n  end\n  subgraph FTA[\"FTA \u2014 Top-Down\"]\n    T1[\"Undesired event<br/>at top\"] --> T2[\"AND/OR<br/>logic gates\"]\n    T2 --> T3[\"Root causes<br/>at bottom\"]\n  end\n  style FMEA fill:#bbdefb\n  style FTA fill:#ffe0b2"
         }
       ]
     },
@@ -614,7 +614,7 @@
         {
           "type": "mermaid",
           "title": "Communication Methods \u2014 Formal vs Informal",
-          "code": "graph TD\n  C[**Supplier<br/>Communication**] --> F[**FORMAL**<br/>Written, binding]\n  C --> I[**INFORMAL /<br/>ONGOING**]\n  F --> F1[Specifications<br/>and drawings]\n  F --> F2[SQA Requirements<br/>Manual]\n  F --> F3[Contracts and<br/>Purchase Orders]\n  F --> F4[Terms &<br/>Conditions]\n  I --> I1[Plant visits]\n  I --> I2[Sample products]\n  I --> I3[Training of<br/>supplier personnel]\n  I --> I4[Demand forecast<br/>sharing]\n  style F fill:#bbdefb\n  style I fill:#c8e6c9"
+          "code": "graph TD\n  C[\"Supplier<br/>Communication\"] --> F[\"FORMAL<br/>Written, binding\"]\n  C --> I[\"INFORMAL /<br/>ONGOING\"]\n  F --> F1[\"Specifications<br/>and drawings\"]\n  F --> F2[\"SQA Requirements<br/>Manual\"]\n  F --> F3[\"Contracts and<br/>Purchase Orders\"]\n  F --> F4[\"Terms &<br/>Conditions\"]\n  I --> I1[\"Plant visits\"]\n  I --> I2[\"Sample products\"]\n  I --> I3[\"Training of<br/>supplier personnel\"]\n  I --> I4[\"Demand forecast<br/>sharing\"]\n  style F fill:#bbdefb\n  style I fill:#c8e6c9"
         }
       ]
     },
@@ -799,7 +799,7 @@
         {
           "type": "mermaid",
           "title": "QCDS \u2014 4 Pillars of Supplier Performance",
-          "code": "graph TD\n  S[**Supplier<br/>Performance**] --> Q[**QUALITY**<br/>ppm defects<br/>Cpk<br/>warranty<br/>compliance]\n  S --> C[**COST**<br/>Price responsiveness<br/>TCO<br/>cost reduction<br/>roadmap]\n  S --> D[**DELIVERY**<br/>On-time %<br/>completeness<br/>lead time<br/>flexibility]\n  S --> Sv[**SERVICE**<br/>Responsiveness<br/>technical support<br/>communication<br/>partnership]\n  style Q fill:#bbdefb\n  style C fill:#c8e6c9\n  style D fill:#fff9c4\n  style Sv fill:#ffe0b2"
+          "code": "graph TD\n  S[\"Supplier<br/>Performance\"] --> Q[\"QUALITY<br/>ppm defects<br/>Cpk<br/>warranty<br/>compliance\"]\n  S --> C[\"COST<br/>Price responsiveness<br/>TCO<br/>cost reduction<br/>roadmap\"]\n  S --> D[\"DELIVERY<br/>On-time %<br/>completeness<br/>lead time<br/>flexibility\"]\n  S --> Sv[\"SERVICE<br/>Responsiveness<br/>technical support<br/>communication<br/>partnership\"]\n  style Q fill:#bbdefb\n  style C fill:#c8e6c9\n  style D fill:#fff9c4\n  style Sv fill:#ffe0b2"
         },
         {
           "type": "table",
@@ -974,7 +974,7 @@
         {
           "type": "mermaid",
           "title": "8D Corrective Action Process (Automotive Standard)",
-          "code": "graph LR\n  D1[**D1**<br/>Form Team] --> D2[**D2**<br/>Describe<br/>Problem]\n  D2 --> D3[**D3**<br/>Interim<br/>CONTAINMENT]\n  D3 --> D4[**D4**<br/>Root Cause<br/>Analysis]\n  D4 --> D5[**D5**<br/>Permanent<br/>Corrective Action]\n  D5 --> D6[**D6**<br/>Implement &<br/>Verify]\n  D6 --> D7[**D7**<br/>Prevent<br/>Recurrence]\n  D7 --> D8[**D8**<br/>Recognize<br/>Team]\n  style D3 fill:#ffe0b2\n  style D4 fill:#bbdefb\n  style D7 fill:#c8e6c9"
+          "code": "graph LR\n  D1[\"D1<br/>Form Team\"] --> D2[\"D2<br/>Describe<br/>Problem\"]\n  D2 --> D3[\"D3<br/>Interim<br/>CONTAINMENT\"]\n  D3 --> D4[\"D4<br/>Root Cause<br/>Analysis\"]\n  D4 --> D5[\"D5<br/>Permanent<br/>Corrective Action\"]\n  D5 --> D6[\"D6<br/>Implement &<br/>Verify\"]\n  D6 --> D7[\"D7<br/>Prevent<br/>Recurrence\"]\n  D7 --> D8[\"D8<br/>Recognize<br/>Team\"]\n  style D3 fill:#ffe0b2\n  style D4 fill:#bbdefb\n  style D7 fill:#c8e6c9"
         },
         {
           "type": "table",
@@ -1164,12 +1164,12 @@
         {
           "type": "mermaid",
           "title": "Supplier Relationship Tiers \u2014 Increasing Trust",
-          "code": "graph BT\n  T[**Transactional**<br/>Arms-length, price-driven<br/>Multiple suppliers] --> P[**Preferred**<br/>Approved + extra trust<br/>Reduced inspection]\n  P --> Pa[**Partnership**<br/>Cooperative working<br/>relationship<br/>Shared improvement goals]\n  Pa --> A[**Alliance**<br/>Formalized \u2014 SHARED FATE<br/>Joint investment<br/>Long-term contracts]\n  style T fill:#ffe0b2\n  style P fill:#fff9c4\n  style Pa fill:#c8e6c9\n  style A fill:#bbdefb"
+          "code": "graph BT\n  T[\"Transactional<br/>Arms-length, price-driven<br/>Multiple suppliers\"] --> P[\"Preferred<br/>Approved + extra trust<br/>Reduced inspection\"]\n  P --> Pa[\"Partnership<br/>Cooperative working<br/>relationship<br/>Shared improvement goals\"]\n  Pa --> A[\"Alliance<br/>Formalized \u2014 SHARED FATE<br/>Joint investment<br/>Long-term contracts\"]\n  style T fill:#ffe0b2\n  style P fill:#fff9c4\n  style Pa fill:#c8e6c9\n  style A fill:#bbdefb"
         },
         {
           "type": "mermaid",
           "title": "3-Step Supplier Certification Process",
-          "code": "graph LR\n  S1[**1. Develop**<br/>Certification criteria<br/>and process steps] --> S2[**2. Evaluate**<br/>Selected suppliers<br/>against criteria]\n  S2 --> S3[**3. Monitor**<br/>Ongoing performance<br/>per reporting requirements]\n  S3 -.continuous.-> S2\n  style S1 fill:#bbdefb\n  style S2 fill:#c8e6c9\n  style S3 fill:#ffe0b2"
+          "code": "graph LR\n  S1[\"1. Develop<br/>Certification criteria<br/>and process steps\"] --> S2[\"2. Evaluate<br/>Selected suppliers<br/>against criteria\"]\n  S2 --> S3[\"3. Monitor<br/>Ongoing performance<br/>per reporting requirements\"]\n  S3 -.continuous.-> S2\n  style S1 fill:#bbdefb\n  style S2 fill:#c8e6c9\n  style S3 fill:#ffe0b2"
         },
         {
           "type": "table",
@@ -1443,12 +1443,12 @@
         {
           "type": "mermaid",
           "title": "Material Acceptance \u2014 Risk-Tiered Methods",
-          "code": "graph TD\n  M[**Material Acceptance**] --> SI[**Source Inspection**<br/>Buyer inspects at<br/>supplier site<br/>before shipment]\n  M --> RI[**Receiving Inspection**<br/>Sampling at buyer dock<br/>per AQL plan]\n  M --> CT[**Certification**<br/>Based on supplier<br/>QMS history]\n  M --> SQS[**Supplier Quality**<br/>**System reliance**<br/>No buyer inspection<br/>ship-to-stock]\n  SI --> Risk1[**Highest cost,<br/>lowest risk**<br/>Critical safety parts]\n  RI --> Risk2[**Medium cost,<br/>medium risk**<br/>Standard practice]\n  CT --> Risk3[**Lower cost**<br/>Trusted suppliers]\n  SQS --> Risk4[**Lowest cost,<br/>requires most trust**<br/>Certified suppliers only]\n  style Risk4 fill:#c8e6c9\n  style Risk1 fill:#ffe0b2"
+          "code": "graph TD\n  M[\"Material Acceptance\"] --> SI[\"Source Inspection<br/>Buyer inspects at<br/>supplier site<br/>before shipment\"]\n  M --> RI[\"Receiving Inspection<br/>Sampling at buyer dock<br/>per AQL plan\"]\n  M --> CT[\"Certification<br/>Based on supplier<br/>QMS history\"]\n  M --> SQS[\"Supplier Quality<br/>System reliance<br/>No buyer inspection<br/>ship-to-stock\"]\n  SI --> Risk1[\"Highest cost,<br/>lowest risk<br/>Critical safety parts\"]\n  RI --> Risk2[\"Medium cost,<br/>medium risk<br/>Standard practice\"]\n  CT --> Risk3[\"Lower cost<br/>Trusted suppliers\"]\n  SQS --> Risk4[\"Lowest cost,<br/>requires most trust<br/>Certified suppliers only\"]\n  style Risk4 fill:#c8e6c9\n  style Risk1 fill:#ffe0b2"
         },
         {
           "type": "mermaid",
           "title": "Type I vs Type II Risk in Sampling",
-          "code": "graph TD\n  L[**Lot Quality**] --> G[**LOT IS GOOD**<br/>Truly conforming]\n  L --> B[**LOT IS BAD**<br/>Truly nonconforming]\n  G --> A1[Sample says<br/>ACCEPT]\n  G --> R1[Sample says<br/>REJECT]\n  B --> A2[Sample says<br/>ACCEPT]\n  B --> R2[Sample says<br/>REJECT]\n  A1 --> OK1[\u2705 Correct decision]\n  R1 --> Err1[\u274c **TYPE I** \u2014 \u03b1<br/>Producer's risk<br/>Reject good lot]\n  A2 --> Err2[\u274c **TYPE II** \u2014 \u03b2<br/>Consumer's risk<br/>Accept bad lot]\n  R2 --> OK2[\u2705 Correct decision]\n  style Err1 fill:#ffcdd2\n  style Err2 fill:#ffcdd2\n  style OK1 fill:#c8e6c9\n  style OK2 fill:#c8e6c9"
+          "code": "graph TD\n  L[\"Lot Quality\"] --> G[\"LOT IS GOOD<br/>Truly conforming\"]\n  L --> B[\"LOT IS BAD<br/>Truly nonconforming\"]\n  G --> A1[\"Sample says<br/>ACCEPT\"]\n  G --> R1[\"Sample says<br/>REJECT\"]\n  B --> A2[\"Sample says<br/>ACCEPT\"]\n  B --> R2[\"Sample says<br/>REJECT\"]\n  A1 --> OK1[\"\u2705 Correct decision\"]\n  R1 --> Err1[\"\u274c TYPE I \u2014 \u03b1<br/>Producer's risk<br/>Reject good lot\"]\n  A2 --> Err2[\"\u274c TYPE II \u2014 \u03b2<br/>Consumer's risk<br/>Accept bad lot\"]\n  R2 --> OK2[\"\u2705 Correct decision\"]\n  style Err1 fill:#ffcdd2\n  style Err2 fill:#ffcdd2\n  style OK1 fill:#c8e6c9\n  style OK2 fill:#c8e6c9"
         },
         {
           "type": "table",

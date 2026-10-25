@@ -90,17 +90,17 @@
         {
           "type": "mermaid",
           "title": "Functional Structure",
-          "code": "graph TD\n  CEO[CEO]\n  CEO --> ENG[VP Engineering]\n  CEO --> QUAL[VP Quality]\n  CEO --> OPS[VP Operations]\n  CEO --> FIN[VP Finance]\n  ENG --> E1[Design]\n  ENG --> E2[Test]\n  QUAL --> Q1[QC]\n  QUAL --> Q2[QA]\n  OPS --> O1[Plant 1]\n  OPS --> O2[Plant 2]"
+          "code": "graph TD\n  CEO[\"CEO\"]\n  CEO --> ENG[\"VP Engineering\"]\n  CEO --> QUAL[\"VP Quality\"]\n  CEO --> OPS[\"VP Operations\"]\n  CEO --> FIN[\"VP Finance\"]\n  ENG --> E1[\"Design\"]\n  ENG --> E2[\"Test\"]\n  QUAL --> Q1[\"QC\"]\n  QUAL --> Q2[\"QA\"]\n  OPS --> O1[\"Plant 1\"]\n  OPS --> O2[\"Plant 2\"]"
         },
         {
           "type": "mermaid",
           "title": "Matrix Structure (Dual Reporting)",
-          "code": "graph TD\n  CEO[CEO]\n  CEO --> FM1[Functional: Engineering]\n  CEO --> FM2[Functional: Quality]\n  CEO --> FM3[Functional: Operations]\n  CEO --> PM1[Project A Manager]\n  CEO --> PM2[Project B Manager]\n  FM1 -.->|reports to both| EMP[Employee]\n  PM1 -.->|reports to both| EMP\n  style EMP fill:#fef3c7"
+          "code": "graph TD\n  CEO[\"CEO\"]\n  CEO --> FM1[\"Functional: Engineering\"]\n  CEO --> FM2[\"Functional: Quality\"]\n  CEO --> FM3[\"Functional: Operations\"]\n  CEO --> PM1[\"Project A Manager\"]\n  CEO --> PM2[\"Project B Manager\"]\n  FM1 -.->|reports to both| EMP[\"Employee\"]\n  PM1 -.->|reports to both| EMP\n  style EMP fill:#fef3c7"
         },
         {
           "type": "mermaid",
           "title": "Divisional Structure",
-          "code": "graph TD\n  CEO[CEO]\n  CEO --> D1[Product Division A]\n  CEO --> D2[Product Division B]\n  CEO --> D3[Product Division C]\n  D1 --> A1[Eng]\n  D1 --> A2[Qual]\n  D1 --> A3[Ops]\n  D2 --> B1[Eng]\n  D2 --> B2[Qual]\n  D2 --> B3[Ops]\n  D3 --> C1[Eng]\n  D3 --> C2[Qual]\n  D3 --> C3[Ops]"
+          "code": "graph TD\n  CEO[\"CEO\"]\n  CEO --> D1[\"Product Division A\"]\n  CEO --> D2[\"Product Division B\"]\n  CEO --> D3[\"Product Division C\"]\n  D1 --> A1[\"Eng\"]\n  D1 --> A2[\"Qual\"]\n  D1 --> A3[\"Ops\"]\n  D2 --> B1[\"Eng\"]\n  D2 --> B2[\"Qual\"]\n  D2 --> B3[\"Ops\"]\n  D3 --> C1[\"Eng\"]\n  D3 --> C2[\"Qual\"]\n  D3 --> C3[\"Ops\"]"
         },
         {
           "type": "table",
@@ -349,7 +349,7 @@
         {
           "type": "mermaid",
           "title": "Maslow's Hierarchy of Needs",
-          "code": "graph TD\n  L5[Self-Actualization]\n  L4[Esteem]\n  L3[Belongingness / Love]\n  L2[Safety]\n  L1[Physiological]\n  L1 --> L2 --> L3 --> L4 --> L5\n  style L5 fill:#fde68a\n  style L4 fill:#fef3c7\n  style L3 fill:#dbeafe\n  style L2 fill:#bfdbfe\n  style L1 fill:#93c5fd"
+          "code": "graph TD\n  L5[\"Self-Actualization\"]\n  L4[\"Esteem\"]\n  L3[\"Belongingness / Love\"]\n  L2[\"Safety\"]\n  L1[\"Physiological\"]\n  L1 --> L2 --> L3 --> L4 --> L5\n  style L5 fill:#fde68a\n  style L4 fill:#fef3c7\n  style L3 fill:#dbeafe\n  style L2 fill:#bfdbfe\n  style L1 fill:#93c5fd"
         },
         {
           "type": "table",
@@ -429,12 +429,12 @@
         {
           "type": "mermaid",
           "title": "Kotter's 8-Step Change Model",
-          "code": "graph LR\n  S1[1. Create Urgency] --> S2[2. Form Coalition]\n  S2 --> S3[3. Develop Vision]\n  S3 --> S4[4. Communicate Vision]\n  S4 --> S5[5. Empower Action]\n  S5 --> S6[6. Short-Term Wins]\n  S6 --> S7[7. Sustain Acceleration]\n  S7 --> S8[8. Anchor in Culture]"
+          "code": "graph LR\n  S1[\"1. Create Urgency\"] --> S2[\"2. Form Coalition\"]\n  S2 --> S3[\"3. Develop Vision\"]\n  S3 --> S4[\"4. Communicate Vision\"]\n  S4 --> S5[\"5. Empower Action\"]\n  S5 --> S6[\"6. Short-Term Wins\"]\n  S6 --> S7[\"7. Sustain Acceleration\"]\n  S7 --> S8[\"8. Anchor in Culture\"]"
         },
         {
           "type": "mermaid",
           "title": "Lewin's Change Model",
-          "code": "graph LR\n  U[Unfreeze<br/>Disrupt status quo] --> C[Change<br/>Implement new state]\n  C --> R[Refreeze<br/>Institutionalize]\n  style U fill:#fee2e2\n  style C fill:#fef3c7\n  style R fill:#d1fae5"
+          "code": "graph LR\n  U[\"Unfreeze<br/>Disrupt status quo\"] --> C[\"Change<br/>Implement new state\"]\n  C --> R[\"Refreeze<br/>Institutionalize\"]\n  style U fill:#fee2e2\n  style C fill:#fef3c7\n  style R fill:#d1fae5"
         },
         {
           "type": "table",
@@ -469,7 +469,7 @@
         {
           "type": "mermaid",
           "title": "Empowerment = 3-Legged Stool",
-          "code": "graph TD\n  E[Empowerment]\n  E --> A[Authority]\n  E --> AC[Accountability]\n  E --> C[Competence]\n  A -.->|missing = chaos| X1[Failure]\n  AC -.->|missing = frustration| X2[Failure]\n  C -.->|missing = wasted talent| X3[Failure]"
+          "code": "graph TD\n  E[\"Empowerment\"]\n  E --> A[\"Authority\"]\n  E --> AC[\"Accountability\"]\n  E --> C[\"Competence\"]\n  A -.->|missing = chaos| X1[\"Failure\"]\n  AC -.->|missing = frustration| X2[\"Failure\"]\n  C -.->|missing = wasted talent| X3[\"Failure\"]"
         }
       ],
       "keyFigures": [
@@ -692,7 +692,7 @@
         {
           "type": "mermaid",
           "title": "Tuckman's 5-Stage Team Development",
-          "code": "graph LR\n  F[Forming<br/>Polite, uncertain] --> S[Storming<br/>Conflict, frustration]\n  S --> N[Norming<br/>Cohesion, ground rules]\n  N --> P[Performing<br/>High output]\n  P --> A[Adjourning<br/>Closure]\n  style F fill:#dbeafe\n  style S fill:#fee2e2\n  style N fill:#fef3c7\n  style P fill:#d1fae5\n  style A fill:#e9d5ff"
+          "code": "graph LR\n  F[\"Forming<br/>Polite, uncertain\"] --> S[\"Storming<br/>Conflict, frustration\"]\n  S --> N[\"Norming<br/>Cohesion, ground rules\"]\n  N --> P[\"Performing<br/>High output\"]\n  P --> A[\"Adjourning<br/>Closure\"]\n  style F fill:#dbeafe\n  style S fill:#fee2e2\n  style N fill:#fef3c7\n  style P fill:#d1fae5\n  style A fill:#e9d5ff"
         },
         {
           "type": "table",
@@ -1046,7 +1046,7 @@
         {
           "type": "mermaid",
           "title": "ASQ Code of Ethics — Three Fundamental Principles",
-          "code": "graph TD\n  E[ASQ Code of Ethics]\n  E --> P1[Public & Profession<br/>Safety, Welfare, Advance Discipline]\n  E --> P2[Integrity<br/>Honesty, No Falsification]\n  E --> P3[Professional Honor<br/>Competence, Development]\n  style E fill:#fde68a"
+          "code": "graph TD\n  E[\"ASQ Code of Ethics\"]\n  E --> P1[\"Public & Profession<br/>Safety, Welfare, Advance Discipline\"]\n  E --> P2[\"Integrity<br/>Honesty, No Falsification\"]\n  E --> P3[\"Professional Honor<br/>Competence, Development\"]\n  style E fill:#fde68a"
         },
         {
           "type": "table",
@@ -1073,7 +1073,7 @@
         {
           "type": "mermaid",
           "title": "Conflict of Interest — Decision Flow",
-          "code": "graph TD\n  Q[Potential conflict identified] --> D{Disclose to<br/>employer/client}\n  D -->|Yes| R{Recuse from<br/>decision}\n  D -->|No| V[Ethics violation]\n  R -->|Yes| S[Acceptable]\n  R -->|No| Re[Re-evaluate]\n  style V fill:#fee2e2\n  style S fill:#d1fae5"
+          "code": "graph TD\n  Q[\"Potential conflict identified\"] --> D{Disclose to<br/>employer/client}\n  D -->|Yes| R{Recuse from<br/>decision}\n  D -->|No| V[\"Ethics violation\"]\n  R -->|Yes| S[\"Acceptable\"]\n  R -->|No| Re[\"Re-evaluate\"]\n  style V fill:#fee2e2\n  style S fill:#d1fae5"
         },
         {
           "type": "table",
@@ -1112,7 +1112,7 @@
         {
           "type": "mermaid",
           "title": "Whistleblowing — Escalation Path",
-          "code": "graph LR\n  I[Internal report<br/>Manager / Compliance] --> O{Resolved?}\n  O -->|Yes| Done[Documented]\n  O -->|No| H[Higher internal authority]\n  H --> O2{Resolved?}\n  O2 -->|Yes| Done\n  O2 -->|No, public safety risk| Ext[External reporting<br/>Regulator / Authority]\n  style Ext fill:#fef3c7"
+          "code": "graph LR\n  I[\"Internal report<br/>Manager / Compliance\"] --> O{Resolved?}\n  O -->|Yes| Done[\"Documented\"]\n  O -->|No| H[\"Higher internal authority\"]\n  H --> O2{Resolved?}\n  O2 -->|Yes| Done\n  O2 -->|No, public safety risk| Ext[\"External reporting<br/>Regulator / Authority\"]\n  style Ext fill:#fef3c7"
         }
       ],
       "keyFigures": [

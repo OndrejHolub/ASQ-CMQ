@@ -352,7 +352,7 @@
         {
           "type": "mermaid",
           "title": "POSDC \u2014 Fayol's 5 Management Functions",
-          "code": "graph LR\n  P[**P**lan<br/>Set objectives,<br/>strategy] --> O[**O**rganize<br/>Structure,<br/>resources]\n  O --> S[**S**taff<br/>Hire, train,<br/>retain]\n  S --> D[**D**irect<br/>Lead, motivate,<br/>communicate]\n  D --> C[**C**ontrol<br/>Measure, correct,<br/>improve]\n  C -.feedback loop.-> P\n  style P fill:#bbdefb\n  style O fill:#c8e6c9\n  style S fill:#fff9c4\n  style D fill:#ffe0b2\n  style C fill:#f8bbd0"
+          "code": "graph LR\n  P[\"Plan<br/>Set objectives,<br/>strategy\"] --> O[\"Organize<br/>Structure,<br/>resources\"]\n  O --> S[\"Staff<br/>Hire, train,<br/>retain\"]\n  S --> D[\"Direct<br/>Lead, motivate,<br/>communicate\"]\n  D --> C[\"Control<br/>Measure, correct,<br/>improve\"]\n  C -.feedback loop.-> P\n  style P fill:#bbdefb\n  style O fill:#c8e6c9\n  style S fill:#fff9c4\n  style D fill:#ffe0b2\n  style C fill:#f8bbd0"
         },
         {
           "type": "table",
@@ -388,12 +388,12 @@
         {
           "type": "mermaid",
           "title": "Blake-Mouton Managerial Grid",
-          "code": "graph TD\n  subgraph Grid[Concern for People (Y) \u00d7 Concern for Production (X)]\n    P11[1.1<br/>**Impoverished**<br/>Low/Low \u2014 minimum effort]\n    P19[1.9<br/>**Country Club**<br/>High people, low production]\n    P55[5.5<br/>**Middle of Road**<br/>Adequate balance]\n    P91[9.1<br/>**Authority-Compliance**<br/>High production, low people]\n    P99[9.9<br/>**Team**<br/>High/High \u2014 IDEAL]\n  end\n  style P99 fill:#c8e6c9\n  style P11 fill:#ffcdd2\n  style P55 fill:#fff9c4"
+          "code": "graph TD\n  subgraph Grid[\"Concern for People (Y) \u00d7 Concern for Production (X)\"]\n    P11[\"1.1<br/>Impoverished<br/>Low/Low \u2014 minimum effort\"]\n    P19[\"1.9<br/>Country Club<br/>High people, low production\"]\n    P55[\"5.5<br/>Middle of Road<br/>Adequate balance\"]\n    P91[\"9.1<br/>Authority-Compliance<br/>High production, low people\"]\n    P99[\"9.9<br/>Team<br/>High/High \u2014 IDEAL\"]\n  end\n  style P99 fill:#c8e6c9\n  style P11 fill:#ffcdd2\n  style P55 fill:#fff9c4"
         },
         {
           "type": "mermaid",
           "title": "DIKW Hierarchy \u2014 Data to Wisdom",
-          "code": "graph BT\n  D[**DATA**<br/>Raw facts, numbers<br/>e.g., 'Defect rate = 230 ppm'] --> I[**INFORMATION**<br/>Data with context<br/>e.g., 'Up 15% vs last quarter']\n  I --> K[**KNOWLEDGE**<br/>Patterns, why<br/>e.g., 'Spike correlates with new vendor']\n  K --> W[**WISDOM**<br/>Judgment, action<br/>e.g., 'Switch back, audit vendor process']\n  style D fill:#ffebee\n  style I fill:#fff3e0\n  style K fill:#e8f5e9\n  style W fill:#bbdefb"
+          "code": "graph BT\n  D[\"DATA<br/>Raw facts, numbers<br/>e.g., 'Defect rate = 230 ppm'\"] --> I[\"INFORMATION<br/>Data with context<br/>e.g., 'Up 15% vs last quarter'\"]\n  I --> K[\"KNOWLEDGE<br/>Patterns, why<br/>e.g., 'Spike correlates with new vendor'\"]\n  K --> W[\"WISDOM<br/>Judgment, action<br/>e.g., 'Switch back, audit vendor process'\"]\n  style D fill:#ffebee\n  style I fill:#fff3e0\n  style K fill:#e8f5e9\n  style W fill:#bbdefb"
         },
         {
           "type": "table",
@@ -637,7 +637,7 @@
         {
           "type": "mermaid",
           "title": "Communication Path Model \u2014 Where It Can Go Wrong",
-          "code": "graph LR\n  S[**SENDER**<br/>Has idea] --> E[**ENCODE**<br/>Words, tone,<br/>body language]\n  E --> CH[**CHANNEL**<br/>Email, voice,<br/>meeting]\n  CH --> D[**DECODE**<br/>Interpret based on<br/>receiver's frame]\n  D --> R[**RECEIVER**<br/>Forms understanding]\n  R --> F[**FEEDBACK**<br/>Confirms or<br/>corrects]\n  F -.loop.-> S\n  N[**NOISE**<br/>Physical / semantic / psychological] -.disrupts.-> E\n  N -.disrupts.-> CH\n  N -.disrupts.-> D\n  style N fill:#ffcdd2"
+          "code": "graph LR\n  S[\"SENDER<br/>Has idea\"] --> E[\"ENCODE<br/>Words, tone,<br/>body language\"]\n  E --> CH[\"CHANNEL<br/>Email, voice,<br/>meeting\"]\n  CH --> D[\"DECODE<br/>Interpret based on<br/>receiver's frame\"]\n  D --> R[\"RECEIVER<br/>Forms understanding\"]\n  R --> F[\"FEEDBACK<br/>Confirms or<br/>corrects\"]\n  F -.loop.-> S\n  N[\"NOISE<br/>Physical / semantic / psychological\"] -.disrupts.-> E\n  N -.disrupts.-> CH\n  N -.disrupts.-> D\n  style N fill:#ffcdd2"
         },
         {
           "type": "table",
@@ -955,7 +955,7 @@
         {
           "type": "mermaid",
           "title": "Project Life Cycle \u2014 5 PMI Stages",
-          "code": "graph LR\n  I[**1. Initiating**<br/>Charter,<br/>stakeholders] --> P[**2. Planning**<br/>Scope, schedule,<br/>cost, risk]\n  P --> E[**3. Executing**<br/>Deliver the<br/>work]\n  E --> M[**4. Monitoring &<br/>Controlling**<br/>Measure, correct]\n  M --> C[**5. Closing**<br/>Handover,<br/>lessons learned]\n  M -.iterate.-> E\n  style I fill:#bbdefb\n  style P fill:#c8e6c9\n  style E fill:#fff9c4\n  style M fill:#ffe0b2\n  style C fill:#f8bbd0"
+          "code": "graph LR\n  I[\"1. Initiating<br/>Charter,<br/>stakeholders\"] --> P[\"2. Planning<br/>Scope, schedule,<br/>cost, risk\"]\n  P --> E[\"3. Executing<br/>Deliver the<br/>work\"]\n  E --> M[\"4. Monitoring &<br/>Controlling<br/>Measure, correct\"]\n  M --> C[\"5. Closing<br/>Handover,<br/>lessons learned\"]\n  M -.iterate.-> E\n  style I fill:#bbdefb\n  style P fill:#c8e6c9\n  style E fill:#fff9c4\n  style M fill:#ffe0b2\n  style C fill:#f8bbd0"
         },
         {
           "type": "table",
@@ -996,7 +996,7 @@
         {
           "type": "mermaid",
           "title": "Scrum Framework \u2014 Sprint Cycle",
-          "code": "graph LR\n  PB[**Product Backlog**<br/>Prioritized list<br/>by Product Owner] --> SP[**Sprint Planning**<br/>What can we<br/>commit to?]\n  SP --> SB[**Sprint Backlog**<br/>1-4 week sprint]\n  SB --> DS[**Daily Standup**<br/>15 min sync]\n  DS --> SB\n  SB --> SR[**Sprint Review**<br/>Demo to<br/>stakeholders]\n  SR --> RT[**Retrospective**<br/>What to improve]\n  RT --> PB\n  style PB fill:#bbdefb\n  style RT fill:#c8e6c9"
+          "code": "graph LR\n  PB[\"Product Backlog<br/>Prioritized list<br/>by Product Owner\"] --> SP[\"Sprint Planning<br/>What can we<br/>commit to?\"]\n  SP --> SB[\"Sprint Backlog<br/>1-4 week sprint\"]\n  SB --> DS[\"Daily Standup<br/>15 min sync\"]\n  DS --> SB\n  SB --> SR[\"Sprint Review<br/>Demo to<br/>stakeholders\"]\n  SR --> RT[\"Retrospective<br/>What to improve\"]\n  RT --> PB\n  style PB fill:#bbdefb\n  style RT fill:#c8e6c9"
         },
         {
           "type": "table",
@@ -1078,7 +1078,7 @@
         {
           "type": "mermaid",
           "title": "Critical Path Method (CPM) Concept",
-          "code": "graph LR\n  Start([Start]) --> A[A: 3d]\n  Start --> B[B: 2d]\n  A --> C[C: 4d]\n  B --> D[D: 6d]\n  C --> End([End])\n  D --> End\n  style A fill:#ffcdd2\n  style C fill:#ffcdd2\n  style End fill:#ffcdd2\n  style Start fill:#ffcdd2"
+          "code": "graph LR\n  Start([Start]) --> A[\"A: 3d\"]\n  Start --> B[\"B: 2d\"]\n  A --> C[\"C: 4d\"]\n  B --> D[\"D: 6d\"]\n  C --> End([End])\n  D --> End\n  style A fill:#ffcdd2\n  style C fill:#ffcdd2\n  style End fill:#ffcdd2\n  style Start fill:#ffcdd2"
         }
       ]
     },
@@ -1314,7 +1314,7 @@
         {
           "type": "mermaid",
           "title": "Cost of Quality (COQ) \u2014 4 Categories",
-          "code": "graph TD\n  COQ[**Cost of Quality**] --> CONF[**Cost of Conformance**<br/>Investments to prevent defects]\n  COQ --> NONCONF[**Cost of Nonconformance**<br/>Cost when defects occur]\n  CONF --> P[**Prevention**<br/>Training, planning,<br/>process design]\n  CONF --> A[**Appraisal**<br/>Inspection, testing,<br/>audits]\n  NONCONF --> IF[**Internal Failure**<br/>Scrap, rework,<br/>caught before shipment]\n  NONCONF --> EF[**External Failure**<br/>Warranty, recalls,<br/>customer complaints]\n  style P fill:#c8e6c9\n  style A fill:#bbdefb\n  style IF fill:#ffe0b2\n  style EF fill:#ffcdd2"
+          "code": "graph TD\n  COQ[\"Cost of Quality\"] --> CONF[\"Cost of Conformance<br/>Investments to prevent defects\"]\n  COQ --> NONCONF[\"Cost of Nonconformance<br/>Cost when defects occur\"]\n  CONF --> P[\"Prevention<br/>Training, planning,<br/>process design\"]\n  CONF --> A[\"Appraisal<br/>Inspection, testing,<br/>audits\"]\n  NONCONF --> IF[\"Internal Failure<br/>Scrap, rework,<br/>caught before shipment\"]\n  NONCONF --> EF[\"External Failure<br/>Warranty, recalls,<br/>customer complaints\"]\n  style P fill:#c8e6c9\n  style A fill:#bbdefb\n  style IF fill:#ffe0b2\n  style EF fill:#ffcdd2"
         },
         {
           "type": "table",
@@ -1345,7 +1345,7 @@
         {
           "type": "mermaid",
           "title": "Audit Process \u2014 3 Stages",
-          "code": "graph LR\n  P[**1. PLANNING**<br/>Scope, criteria,<br/>schedule, team] --> E[**2. EXECUTION**<br/>Opening meeting,<br/>evidence gathering,<br/>findings]\n  E --> R[**3. REPORTING /<br/>FOLLOW-UP**<br/>Closing meeting,<br/>report, CAPA verification]\n  style P fill:#bbdefb\n  style E fill:#c8e6c9\n  style R fill:#ffe0b2"
+          "code": "graph LR\n  P[\"1. PLANNING<br/>Scope, criteria,<br/>schedule, team\"] --> E[\"2. EXECUTION<br/>Opening meeting,<br/>evidence gathering,<br/>findings\"]\n  E --> R[\"3. REPORTING /<br/>FOLLOW-UP<br/>Closing meeting,<br/>report, CAPA verification\"]\n  style P fill:#bbdefb\n  style E fill:#c8e6c9\n  style R fill:#ffe0b2"
         },
         {
           "type": "table",
@@ -1701,7 +1701,7 @@
         {
           "type": "mermaid",
           "title": "ISO 9001:2015 \u2014 10 Section Structure (Annex SL)",
-          "code": "graph TD\n  S0[**0\u20133** Intro,<br/>Scope, Refs,<br/>Terms]\n  S4[**4. Context**<br/>Org context,<br/>scope, QMS]\n  S5[**5. Leadership**<br/>Commitment,<br/>policy, roles]\n  S6[**6. Planning**<br/>Risks, objectives,<br/>changes]\n  S7[**7. Support**<br/>Resources, people,<br/>info, comms]\n  S8[**8. Operation**<br/>Plan, design,<br/>produce, control]\n  S9[**9. Performance**<br/>Monitor, measure,<br/>audit, review]\n  S10[**10. Improvement**<br/>Nonconformity,<br/>CA, continual]\n  S0 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10\n  S10 -.PDCA loop.-> S4\n  style S5 fill:#bbdefb\n  style S10 fill:#c8e6c9"
+          "code": "graph TD\n  S0[\"0\u20133 Intro,<br/>Scope, Refs,<br/>Terms\"]\n  S4[\"4. Context<br/>Org context,<br/>scope, QMS\"]\n  S5[\"5. Leadership<br/>Commitment,<br/>policy, roles\"]\n  S6[\"6. Planning<br/>Risks, objectives,<br/>changes\"]\n  S7[\"7. Support<br/>Resources, people,<br/>info, comms\"]\n  S8[\"8. Operation<br/>Plan, design,<br/>produce, control\"]\n  S9[\"9. Performance<br/>Monitor, measure,<br/>audit, review\"]\n  S10[\"10. Improvement<br/>Nonconformity,<br/>CA, continual\"]\n  S0 --> S4 --> S5 --> S6 --> S7 --> S8 --> S9 --> S10\n  S10 -.PDCA loop.-> S4\n  style S5 fill:#bbdefb\n  style S10 fill:#c8e6c9"
         },
         {
           "type": "table",
@@ -1732,7 +1732,7 @@
         {
           "type": "mermaid",
           "title": "Baldrige (MBNQA) \u2014 7 Categories Framework",
-          "code": "graph TD\n  L[**1. Leadership<br/>(Drives the system)**] --> SP[**2. Strategy**]\n  L --> C[**3. Customers**]\n  L --> W[**5. Workforce**]\n  L --> O[**6. Operations**]\n  SP --> R[**7. Results<br/>(Outcomes)**]\n  C --> R\n  W --> R\n  O --> R\n  M[**4. Measurement,<br/>Analysis, KM**] -.foundation.-> L\n  M -.foundation.-> SP\n  M -.foundation.-> C\n  M -.foundation.-> W\n  M -.foundation.-> O\n  M -.foundation.-> R\n  style L fill:#bbdefb\n  style R fill:#c8e6c9\n  style M fill:#ffe0b2"
+          "code": "graph TD\n  L[\"1. Leadership<br/>(Drives the system)\"] --> SP[\"2. Strategy\"]\n  L --> C[\"3. Customers\"]\n  L --> W[\"5. Workforce\"]\n  L --> O[\"6. Operations\"]\n  SP --> R[\"7. Results<br/>(Outcomes)\"]\n  C --> R\n  W --> R\n  O --> R\n  M[\"4. Measurement,<br/>Analysis, KM\"] -.foundation.-> L\n  M -.foundation.-> SP\n  M -.foundation.-> C\n  M -.foundation.-> W\n  M -.foundation.-> O\n  M -.foundation.-> R\n  style L fill:#bbdefb\n  style R fill:#c8e6c9\n  style M fill:#ffe0b2"
         },
         {
           "type": "table",
@@ -1783,7 +1783,7 @@
         {
           "type": "mermaid",
           "title": "Juran's Quality Trilogy",
-          "code": "graph LR\n  QP[**Quality<br/>Planning**<br/>Identify customers,<br/>determine needs,<br/>develop product/process] --> QC[**Quality<br/>Control**<br/>Evaluate performance,<br/>compare to goals,<br/>act on differences]\n  QC --> QI[**Quality<br/>Improvement**<br/>Prove need,<br/>identify projects,<br/>diagnose & remedy]\n  QI -.loop.-> QP\n  style QP fill:#bbdefb\n  style QC fill:#c8e6c9\n  style QI fill:#ffe0b2"
+          "code": "graph LR\n  QP[\"Quality<br/>Planning<br/>Identify customers,<br/>determine needs,<br/>develop product/process\"] --> QC[\"Quality<br/>Control<br/>Evaluate performance,<br/>compare to goals,<br/>act on differences\"]\n  QC --> QI[\"Quality<br/>Improvement<br/>Prove need,<br/>identify projects,<br/>diagnose & remedy\"]\n  QI -.loop.-> QP\n  style QP fill:#bbdefb\n  style QC fill:#c8e6c9\n  style QI fill:#ffe0b2"
         },
         {
           "type": "table",

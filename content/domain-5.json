@@ -241,7 +241,7 @@
         {
           "type": "mermaid",
           "title": "Internal Customer Chain \u2014 'Next Operation as Customer' (Bhote)",
-          "code": "graph LR\n  Sup[**Supplier**<br/>External]) --> Op1[**Receiving<br/>Inspection**]\n  Op1 -.internal customer.-> Op2[**Sub-Assembly**]\n  Op2 -.internal customer.-> Op3[**Final<br/>Assembly**]\n  Op3 -.internal customer.-> Op4[**Test &<br/>QA**]\n  Op4 -.internal customer.-> Op5[**Packaging &<br/>Shipping**]\n  Op5 -->Cust[**External<br/>Customer**]\n  style Sup fill:#bbdefb\n  style Cust fill:#c8e6c9"
+          "code": "graph LR\n  Sup[\"Supplier<br/>External\"] --> Op1[\"Receiving<br/>Inspection\"]\n  Op1 -.internal customer.-> Op2[\"Sub-Assembly\"]\n  Op2 -.internal customer.-> Op3[\"Final<br/>Assembly\"]\n  Op3 -.internal customer.-> Op4[\"Test &<br/>QA\"]\n  Op4 -.internal customer.-> Op5[\"Packaging &<br/>Shipping\"]\n  Op5 -->Cust[\"External<br/>Customer\"]\n  style Sup fill:#bbdefb\n  style Cust fill:#c8e6c9"
         },
         {
           "type": "table",
@@ -282,7 +282,7 @@
         {
           "type": "mermaid",
           "title": "3 Preference Patterns \u2014 Segmentation Strategy",
-          "code": "graph TD\n  H[**Homogeneous**<br/>All customers want<br/>similar things<br/>e.g., commodity salt] -->|Strategy| HS[Compete in the middle<br/>Mass market]\n  D[**Diffused**<br/>No natural segments<br/>Wildly varied preferences<br/>e.g., custom art] -->|Strategy| DS[Niche, custom, or<br/>create new patterns]\n  C[**Clustered**<br/>Distinct natural groups<br/>e.g., car buyers] -->|Strategy| CS[Target specific clusters<br/>BEST for segmentation]\n  style C fill:#c8e6c9\n  style CS fill:#c8e6c9"
+          "code": "graph TD\n  H[\"Homogeneous<br/>All customers want<br/>similar things<br/>e.g., commodity salt\"] -->|Strategy| HS[\"Compete in the middle<br/>Mass market\"]\n  D[\"Diffused<br/>No natural segments<br/>Wildly varied preferences<br/>e.g., custom art\"] -->|Strategy| DS[\"Niche, custom, or<br/>create new patterns\"]\n  C[\"Clustered<br/>Distinct natural groups<br/>e.g., car buyers\"] -->|Strategy| CS[\"Target specific clusters<br/>BEST for segmentation\"]\n  style C fill:#c8e6c9\n  style CS fill:#c8e6c9"
         },
         {
           "type": "table",
@@ -618,7 +618,7 @@
         {
           "type": "mermaid",
           "title": "Kano Model \u2014 5 Categories of Customer Quality Attributes",
-          "code": "graph LR\n  subgraph Curves[Customer Satisfaction Curve Behavior]\n    MB[**MUST-BE**<br/>Basic expectations<br/>Absent = dissatisfaction<br/>Present = neutral<br/>e.g., brakes work]\n    OD[**ONE-DIMENSIONAL**<br/>Linear satisfaction<br/>More = better<br/>e.g., fuel economy]\n    AT[**ATTRACTIVE**<br/>Delighters<br/>Absent = OK<br/>Present = wow<br/>e.g., panoramic roof]\n    IN[**INDIFFERENT**<br/>Doesn't matter<br/>e.g., obscure feature]\n    RV[**REVERSE**<br/>More = WORSE<br/>e.g., excessive complexity]\n  end\n  style MB fill:#ffcdd2\n  style OD fill:#fff9c4\n  style AT fill:#c8e6c9\n  style IN fill:#e0e0e0\n  style RV fill:#ffe0b2"
+          "code": "graph LR\n  subgraph Curves[\"Customer Satisfaction Curve Behavior\"]\n    MB[\"MUST-BE<br/>Basic expectations<br/>Absent = dissatisfaction<br/>Present = neutral<br/>e.g., brakes work\"]\n    OD[\"ONE-DIMENSIONAL<br/>Linear satisfaction<br/>More = better<br/>e.g., fuel economy\"]\n    AT[\"ATTRACTIVE<br/>Delighters<br/>Absent = OK<br/>Present = wow<br/>e.g., panoramic roof\"]\n    IN[\"INDIFFERENT<br/>Doesn't matter<br/>e.g., obscure feature\"]\n    RV[\"REVERSE<br/>More = WORSE<br/>e.g., excessive complexity\"]\n  end\n  style MB fill:#ffcdd2\n  style OD fill:#fff9c4\n  style AT fill:#c8e6c9\n  style IN fill:#e0e0e0\n  style RV fill:#ffe0b2"
         },
         {
           "type": "table",
@@ -659,12 +659,12 @@
         {
           "type": "mermaid",
           "title": "House of Quality (QFD Matrix) \u2014 Conceptual Structure",
-          "code": "graph TD\n  Roof[**ROOF**<br/>Trade-offs between<br/>engineering specs] --> Top[**TOP**<br/>HOWs \u2014 Engineering<br/>characteristics]\n  Left[**LEFT**<br/>WHATs \u2014 Customer<br/>needs VOC] --> Center[**CENTER**<br/>Relationship matrix<br/>What \u00d7 How]\n  Top --> Center\n  Center --> Right[**RIGHT**<br/>Importance,<br/>competitive benchmarking]\n  Center --> Bottom[**BOTTOM**<br/>Engineering target values,<br/>technical priorities]\n  style Center fill:#ffe0b2\n  style Left fill:#bbdefb\n  style Top fill:#c8e6c9"
+          "code": "graph TD\n  Roof[\"ROOF<br/>Trade-offs between<br/>engineering specs\"] --> Top[\"TOP<br/>HOWs \u2014 Engineering<br/>characteristics\"]\n  Left[\"LEFT<br/>WHATs \u2014 Customer<br/>needs VOC\"] --> Center[\"CENTER<br/>Relationship matrix<br/>What \u00d7 How\"]\n  Top --> Center\n  Center --> Right[\"RIGHT<br/>Importance,<br/>competitive benchmarking\"]\n  Center --> Bottom[\"BOTTOM<br/>Engineering target values,<br/>technical priorities\"]\n  style Center fill:#ffe0b2\n  style Left fill:#bbdefb\n  style Top fill:#c8e6c9"
         },
         {
           "type": "mermaid",
           "title": "Net Promoter Score (NPS) Calculation",
-          "code": "graph LR\n  Q['How likely are you to<br/>recommend us?'<br/>Scale 0-10] --> P[**Promoters**<br/>9-10<br/>Loyal advocates]\n  Q --> Pa[**Passives**<br/>7-8<br/>Satisfied<br/>NOT counted]\n  Q --> D[**Detractors**<br/>0-6<br/>At-risk customers]\n  P --> NPS[**NPS Formula**<br/>% Promoters \u2212 % Detractors<br/>Range: -100 to +100]\n  D --> NPS\n  NPS --> B[Benchmarks:<br/>0+ = Good<br/>50+ = Excellent<br/>70+ = World-class]\n  style P fill:#c8e6c9\n  style Pa fill:#fff9c4\n  style D fill:#ffcdd2"
+          "code": "graph LR\n  Q[\"'How likely are you to<br/>recommend us?'<br/>Scale 0-10\"] --> P[\"Promoters<br/>9-10<br/>Loyal advocates\"]\n  Q --> Pa[\"Passives<br/>7-8<br/>Satisfied<br/>NOT counted\"]\n  Q --> D[\"Detractors<br/>0-6<br/>At-risk customers\"]\n  P --> NPS[\"NPS Formula<br/>% Promoters \u2212 % Detractors<br/>Range: -100 to +100\"]\n  D --> NPS\n  NPS --> B[\"Benchmarks:<br/>0+ = Good<br/>50+ = Excellent<br/>70+ = World-class\"]\n  style P fill:#c8e6c9\n  style Pa fill:#fff9c4\n  style D fill:#ffcdd2"
         },
         {
           "type": "table",
@@ -699,7 +699,7 @@
         {
           "type": "mermaid",
           "title": "5-Step Customer Recovery Process",
-          "code": "graph LR\n  S1[**1. LISTEN**<br/>Don't interrupt,<br/>get the full story] --> S2[**2. EMPATHIZE**<br/>Acknowledge feelings,<br/>show you care]\n  S2 --> S3[**3. APOLOGIZE**<br/>Sincere, not scripted,<br/>own the issue]\n  S3 --> S4[**4. SOLVE**<br/>Fix the problem,<br/>fast and fair]\n  S4 --> S5[**5. FOLLOW UP**<br/>Confirm resolution,<br/>prevent recurrence]\n  style S1 fill:#bbdefb\n  style S5 fill:#c8e6c9"
+          "code": "graph LR\n  S1[\"1. LISTEN<br/>Don't interrupt,<br/>get the full story\"] --> S2[\"2. EMPATHIZE<br/>Acknowledge feelings,<br/>show you care\"]\n  S2 --> S3[\"3. APOLOGIZE<br/>Sincere, not scripted,<br/>own the issue\"]\n  S3 --> S4[\"4. SOLVE<br/>Fix the problem,<br/>fast and fair\"]\n  S4 --> S5[\"5. FOLLOW UP<br/>Confirm resolution,<br/>prevent recurrence\"]\n  style S1 fill:#bbdefb\n  style S5 fill:#c8e6c9"
         },
         {
           "type": "table",

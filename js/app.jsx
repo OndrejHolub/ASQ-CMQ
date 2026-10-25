@@ -119,7 +119,16 @@ function SummaryView({ section }) {
         <>
           <h3 className="view-heading">Key Figures</h3>
           <ul className="bullet-list">
-            {section.keyFigures.map((f, i) => <li key={i}>{f}</li>)}
+            {section.keyFigures.map((f, i) => (
+              <li key={i}>
+                {typeof f === "string" ? parseInlineMarkdown(f) : (
+                  <>
+                    <strong>{f.title}</strong>
+                    {f.description && <>: {parseInlineMarkdown(f.description)}</>}
+                  </>
+                )}
+              </li>
+            ))}
           </ul>
         </>
       )}
@@ -388,6 +397,35 @@ function DomainHeader({ domain }) {
 }
 
 // -----------------------------------------------------------------------------
+// Error boundary — one malformed section shows a message instead of blanking
+// the whole portal
+// -----------------------------------------------------------------------------
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { error: null };
+  }
+  static getDerivedStateFromError(error) {
+    return { error };
+  }
+  componentDidUpdate(prevProps) {
+    if (prevProps.resetKey !== this.props.resetKey && this.state.error) {
+      this.setState({ error: null });
+    }
+  }
+  render() {
+    if (this.state.error) {
+      return (
+        <div className="error-state">
+          This section could not be displayed: {String(this.state.error.message || this.state.error)}
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
+// -----------------------------------------------------------------------------
 // Main App
 // -----------------------------------------------------------------------------
 function App() {
@@ -424,24 +462,6 @@ function App() {
   // Initial load — Domain I
   useEffect(() => { loadDomain(DOMAIN_INDEX[0]); }, []);
 
-  // Initialize Mermaid once
-  useEffect(() => {
-    if (window.mermaid) {
-      window.mermaid.initialize({
-        startOnLoad: false,
-        theme: "neutral",
-        fontFamily: "'JetBrains Mono', 'SF Mono', monospace",
-        themeVariables: {
-          primaryColor: "#fef3c7",
-          primaryTextColor: "#1a1a1a",
-          primaryBorderColor: "#92400e",
-          lineColor: "#525252",
-          secondaryColor: "#dbeafe",
-          tertiaryColor: "#f3f4f6",
-        },
-      });
-    }
-  }, []);
 
   const activeSection = useMemo(() => {
     if (!activeDomain) return null;
@@ -464,12 +484,35 @@ function App() {
         {!loading && !error && activeDomain && (
           <>
             <DomainHeader domain={activeDomain} />
-            {activeSection && <SectionView section={activeSection} />}
+            {activeSection && (
+              <ErrorBoundary resetKey={activeSection.id}>
+                <SectionView section={activeSection} />
+              </ErrorBoundary>
+            )}
           </>
         )}
       </main>
     </div>
   );
+}
+
+// -----------------------------------------------------------------------------
+// Mermaid — configure once at load, before any diagram renders
+// -----------------------------------------------------------------------------
+if (window.mermaid) {
+  window.mermaid.initialize({
+    startOnLoad: false,
+    theme: "neutral",
+    fontFamily: "'JetBrains Mono', 'SF Mono', monospace",
+    themeVariables: {
+      primaryColor: "#fef3c7",
+      primaryTextColor: "#1a1a1a",
+      primaryBorderColor: "#92400e",
+      lineColor: "#525252",
+      secondaryColor: "#dbeafe",
+      tertiaryColor: "#f3f4f6",
+    },
+  });
 }
 
 // -----------------------------------------------------------------------------

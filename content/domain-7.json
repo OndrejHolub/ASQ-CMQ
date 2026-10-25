@@ -151,12 +151,12 @@
         {
           "type": "mermaid",
           "title": "Mager & Pipe Decision Flow — Is Training the Right Solution?",
-          "code": "graph TD\n  Start[Performance gap identified] --> Q1{Could the worker do<br/>the job if their life<br/>depended on it?}\n  Q1 -->|YES — they can do it| Perf[Performance problem<br/>NOT a training problem]\n  Q1 -->|NO — they can't do it| Skill[Skill / knowledge gap<br/>Training may help]\n  Perf --> Diag{Why aren't<br/>they doing it?}\n  Diag -->|Task setup wrong| J[J: Job Solution<br/>Redesign task/process]\n  Diag -->|Don't know how they're doing| F[F: Feedback Solution]\n  Diag -->|Wrong incentives| C[C: Consequences Solution]\n  Skill --> T[T: Training Solution]\n  style Perf fill:#fff3cd\n  style Skill fill:#d4edda\n  style J fill:#cce5ff\n  style T fill:#d4edda\n  style F fill:#cce5ff\n  style C fill:#cce5ff"
+          "code": "graph TD\n  Start[\"Performance gap identified\"] --> Q1{Could the worker do<br/>the job if their life<br/>depended on it?}\n  Q1 -->|YES \u2014 they can do it| Perf[\"Performance problem<br/>NOT a training problem\"]\n  Q1 -->|NO \u2014 they can't do it| Skill[\"Skill / knowledge gap<br/>Training may help\"]\n  Perf --> Diag{Why aren't<br/>they doing it?}\n  Diag -->|Task setup wrong| J[\"J: Job Solution<br/>Redesign task/process\"]\n  Diag -->|Don't know how they're doing| F[\"F: Feedback Solution\"]\n  Diag -->|Wrong incentives| C[\"C: Consequences Solution\"]\n  Skill --> T[\"T: Training Solution\"]\n  style Perf fill:#fff3cd\n  style Skill fill:#d4edda\n  style J fill:#cce5ff\n  style T fill:#d4edda\n  style F fill:#cce5ff\n  style C fill:#cce5ff"
         },
         {
           "type": "mermaid",
           "title": "5-Phase Training Process Cycle (Figure 19.2)",
-          "code": "graph LR\n  P1[1. Needs<br/>Assessment] --> P2[2. Propose<br/>Program<br/>approval+funding]\n  P2 --> P3[3. Design &<br/>Develop]\n  P3 --> P4[4. Deliver<br/>Training]\n  P4 --> P5[5. Evaluate<br/>Effectiveness]\n  P5 -.feedback.-> P1\n  Mgmt[Management Support — spans all 5 phases] -.-> P1\n  Mgmt -.-> P2\n  Mgmt -.-> P3\n  Mgmt -.-> P4\n  Mgmt -.-> P5\n  style Mgmt fill:#ffe4b5"
+          "code": "graph LR\n  P1[\"1. Needs<br/>Assessment\"] --> P2[\"2. Propose<br/>Program<br/>approval+funding\"]\n  P2 --> P3[\"3. Design &<br/>Develop\"]\n  P3 --> P4[\"4. Deliver<br/>Training\"]\n  P4 --> P5[\"5. Evaluate<br/>Effectiveness\"]\n  P5 -.feedback.-> P1\n  Mgmt[\"Management Support \u2014 spans all 5 phases\"] -.-> P1\n  Mgmt -.-> P2\n  Mgmt -.-> P3\n  Mgmt -.-> P4\n  Mgmt -.-> P5\n  style Mgmt fill:#ffe4b5"
         },
         {
           "type": "table",
@@ -320,12 +320,12 @@
         {
           "type": "mermaid",
           "title": "ADDIE Instructional Design Model",
-          "code": "graph LR\n  A[**A**nalysis<br/>Audience<br/>Content<br/>Delivery] --> D1[**D**esign<br/>Methods<br/>Measurement<br/>Evaluation criteria]\n  D1 --> D2[**D**evelopment<br/>Create/purchase<br/>materials]\n  D2 --> I[**I**mplementation<br/>Deliver to<br/>target audience]\n  I --> E[**E**valuation<br/>Assess results<br/>vs objectives]\n  E -.iterate.-> A\n  style A fill:#e3f2fd\n  style D1 fill:#e8f5e9\n  style D2 fill:#fff9c4\n  style I fill:#ffe0b2\n  style E fill:#fce4ec"
+          "code": "graph LR\n  A[\"Analysis<br/>Audience<br/>Content<br/>Delivery\"] --> D1[\"Design<br/>Methods<br/>Measurement<br/>Evaluation criteria\"]\n  D1 --> D2[\"Development<br/>Create/purchase<br/>materials\"]\n  D2 --> I[\"Implementation<br/>Deliver to<br/>target audience\"]\n  I --> E[\"Evaluation<br/>Assess results<br/>vs objectives\"]\n  E -.iterate.-> A\n  style A fill:#e3f2fd\n  style D1 fill:#e8f5e9\n  style D2 fill:#fff9c4\n  style I fill:#ffe0b2\n  style E fill:#fce4ec"
         },
         {
           "type": "mermaid",
           "title": "Bloom's Taxonomy — Cognitive Domain (Low → High)",
-          "code": "graph BT\n  L1[1. Remember<br/>knowledge level] --> L2[2. Understand<br/>comprehension]\n  L2 --> L3[3. Apply<br/>application]\n  L3 --> L4[4. Analyze<br/>analysis]\n  L4 --> L5[5. Evaluate<br/>evaluation]\n  L5 --> L6[6. Create<br/>synthesis]\n  style L1 fill:#ffebee\n  style L2 fill:#fff3e0\n  style L3 fill:#fff9c4\n  style L4 fill:#dcedc8\n  style L5 fill:#b2dfdb\n  style L6 fill:#bbdefb"
+          "code": "graph BT\n  L1[\"1. Remember<br/>knowledge level\"] --> L2[\"2. Understand<br/>comprehension\"]\n  L2 --> L3[\"3. Apply<br/>application\"]\n  L3 --> L4[\"4. Analyze<br/>analysis\"]\n  L4 --> L5[\"5. Evaluate<br/>evaluation\"]\n  L5 --> L6[\"6. Create<br/>synthesis\"]\n  style L1 fill:#ffebee\n  style L2 fill:#fff3e0\n  style L3 fill:#fff9c4\n  style L4 fill:#dcedc8\n  style L5 fill:#b2dfdb\n  style L6 fill:#bbdefb"
         },
         {
           "type": "table",
@@ -582,7 +582,7 @@
         {
           "type": "mermaid",
           "title": "Kirkpatrick / Phillips 5 Levels of Evaluation (Figure 19.5)",
-          "code": "graph BT\n  L1[**LEVEL 1: REACTION**<br/>Were participants pleased?<br/><i>Smile sheets — lowest value</i>] --> L2\n  L2[**LEVEL 2: LEARNING**<br/>Did they learn what was intended?<br/><i>Tests, demonstrations</i>] --> L3\n  L3[**LEVEL 3: BEHAVIOR**<br/>Did on-the-job behavior change?<br/><i>Where most training fails</i>] --> L4\n  L4[**LEVEL 4: RESULTS**<br/>Was there organizational impact?<br/><i>Productivity, quality, retention</i>] --> L5\n  L5[**LEVEL 5: ROTI** Phillips<br/>Dollar return on investment?<br/><i>Highest value — hardest to measure</i>]\n  style L1 fill:#ffcdd2\n  style L2 fill:#ffe0b2\n  style L3 fill:#fff9c4\n  style L4 fill:#c8e6c9\n  style L5 fill:#b3e5fc"
+          "code": "graph BT\n  L1[\"LEVEL 1: REACTION<br/>Were participants pleased?<br/><i>Smile sheets \u2014 lowest value</i>\"] --> L2\n  L2[\"LEVEL 2: LEARNING<br/>Did they learn what was intended?<br/><i>Tests, demonstrations</i>\"] --> L3\n  L3[\"LEVEL 3: BEHAVIOR<br/>Did on-the-job behavior change?<br/><i>Where most training fails</i>\"] --> L4\n  L4[\"LEVEL 4: RESULTS<br/>Was there organizational impact?<br/><i>Productivity, quality, retention</i>\"] --> L5\n  L5[\"LEVEL 5: ROTI Phillips<br/>Dollar return on investment?<br/><i>Highest value \u2014 hardest to measure</i>\"]\n  style L1 fill:#ffcdd2\n  style L2 fill:#ffe0b2\n  style L3 fill:#fff9c4\n  style L4 fill:#c8e6c9\n  style L5 fill:#b3e5fc"
         },
         {
           "type": "table",
@@ -599,7 +599,7 @@
         {
           "type": "mermaid",
           "title": "ROTI / BCR Decision Logic",
-          "code": "graph TD\n  Start[Calculate ROTI/BCR] --> Calc[ROTI = Net Benefits / Costs<br/>BCR = Total Benefits / Costs]\n  Calc --> Q1{BCR ≥ 3:1?}\n  Q1 -->|YES — at least $3 benefit per $1 spent| Pass[✅ Training is successful<br/>Continue / scale up]\n  Q1 -->|NO — less than 3:1| Fail[❌ Training is unsuccessful<br/>Redesign or discontinue]\n  style Pass fill:#c8e6c9\n  style Fail fill:#ffcdd2"
+          "code": "graph TD\n  Start[\"Calculate ROTI/BCR\"] --> Calc[\"ROTI = Net Benefits / Costs<br/>BCR = Total Benefits / Costs\"]\n  Calc --> Q1{BCR \u2265 3:1?}\n  Q1 -->|YES \u2014 at least $3 benefit per $1 spent| Pass[\"\u2705 Training is successful<br/>Continue / scale up\"]\n  Q1 -->|NO \u2014 less than 3:1| Fail[\"\u274c Training is unsuccessful<br/>Redesign or discontinue\"]\n  style Pass fill:#c8e6c9\n  style Fail fill:#ffcdd2"
         },
         {
           "type": "table",

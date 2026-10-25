@@ -159,12 +159,12 @@
         {
           "type": "mermaid",
           "title": "3 Levels of Planning \u2014 Cascading Hierarchy",
-          "code": "graph TD\n  S[**STRATEGIC**<br/>3-5 year horizon<br/>WHAT we will achieve<br/>Senior leadership] --> T[**TACTICAL**<br/>1-3 year horizon<br/>WHO and WHEN<br/>Middle management]\n  T --> O[**OPERATIONAL**<br/>Daily-Quarterly<br/>HOW we execute<br/>Frontline & supervisors]\n  style S fill:#bbdefb\n  style T fill:#c8e6c9\n  style O fill:#fff9c4"
+          "code": "graph TD\n  S[\"STRATEGIC<br/>3-5 year horizon<br/>WHAT we will achieve<br/>Senior leadership\"] --> T[\"TACTICAL<br/>1-3 year horizon<br/>WHO and WHEN<br/>Middle management\"]\n  T --> O[\"OPERATIONAL<br/>Daily-Quarterly<br/>HOW we execute<br/>Frontline & supervisors\"]\n  style S fill:#bbdefb\n  style T fill:#c8e6c9\n  style O fill:#fff9c4"
         },
         {
           "type": "mermaid",
           "title": "Hoshin Kanri X-Matrix Concept",
-          "code": "graph LR\n  V[Long-term<br/>Vision/Strategy] --- A[Annual<br/>Objectives]\n  A --- I[Improvement<br/>Priorities]\n  I --- M[Metrics &<br/>Targets]\n  M --- O[Owners /<br/>Resources]\n  O --- V\n  C[CATCHBALL<br/>iterative dialogue<br/>up & down levels] -.-> V\n  C -.-> A\n  C -.-> I\n  C -.-> M\n  C -.-> O\n  style V fill:#ffe0b2\n  style C fill:#f8bbd0"
+          "code": "graph LR\n  V[\"Long-term<br/>Vision/Strategy\"] --- A[\"Annual<br/>Objectives\"]\n  A --- I[\"Improvement<br/>Priorities\"]\n  I --- M[\"Metrics &<br/>Targets\"]\n  M --- O[\"Owners /<br/>Resources\"]\n  O --- V\n  C[\"CATCHBALL<br/>iterative dialogue<br/>up & down levels\"] -.-> V\n  C -.-> A\n  C -.-> I\n  C -.-> M\n  C -.-> O\n  style V fill:#ffe0b2\n  style C fill:#f8bbd0"
         },
         {
           "type": "table",
@@ -349,12 +349,12 @@
         {
           "type": "mermaid",
           "title": "SWOT Analysis Matrix \u2014 Internal/External \u00d7 Helpful/Harmful",
-          "code": "graph TD\n  subgraph Internal[INTERNAL \u2014 Org Capabilities]\n    S[**STRENGTHS**<br/>Helpful internal factors<br/>e.g., strong brand,<br/>skilled workforce]\n    W[**WEAKNESSES**<br/>Harmful internal factors<br/>e.g., outdated tech,<br/>high turnover]\n  end\n  subgraph External[EXTERNAL \u2014 Market/Environment]\n    O[**OPPORTUNITIES**<br/>Helpful external factors<br/>e.g., new markets,<br/>regulatory shifts]\n    T[**THREATS**<br/>Harmful external factors<br/>e.g., new competitors,<br/>economic downturn]\n  end\n  style S fill:#c8e6c9\n  style W fill:#ffcdd2\n  style O fill:#bbdefb\n  style T fill:#ffe0b2"
+          "code": "graph TD\n  subgraph Internal[\"INTERNAL \u2014 Org Capabilities\"]\n    S[\"STRENGTHS<br/>Helpful internal factors<br/>e.g., strong brand,<br/>skilled workforce\"]\n    W[\"WEAKNESSES<br/>Harmful internal factors<br/>e.g., outdated tech,<br/>high turnover\"]\n  end\n  subgraph External[\"EXTERNAL \u2014 Market/Environment\"]\n    O[\"OPPORTUNITIES<br/>Helpful external factors<br/>e.g., new markets,<br/>regulatory shifts\"]\n    T[\"THREATS<br/>Harmful external factors<br/>e.g., new competitors,<br/>economic downturn\"]\n  end\n  style S fill:#c8e6c9\n  style W fill:#ffcdd2\n  style O fill:#bbdefb\n  style T fill:#ffe0b2"
         },
         {
           "type": "mermaid",
           "title": "Porter's Five Forces",
-          "code": "graph TD\n  R((**Industry<br/>Rivalry**)) \n  NE[**1. Threat of**<br/>**New Entrants**<br/>Barriers to entry?] --> R\n  S[**2. Threat of**<br/>**Substitutes**<br/>Alternative products?] --> R\n  BP[**3. Buyer Power**<br/>Customer concentration?<br/>Switching costs?] --> R\n  SP[**4. Supplier Power**<br/>Supplier concentration?<br/>Unique inputs?] --> R\n  R --> CR[**5. Competitive**<br/>**Rivalry Intensity**<br/>Number, growth, exit barriers]\n  style R fill:#ffe0b2\n  style CR fill:#ffcdd2"
+          "code": "graph TD\n  R((\"Industry<br/>Rivalry\")) \n  NE[\"1. Threat of<br/>New Entrants<br/>Barriers to entry?\"] --> R\n  S[\"2. Threat of<br/>Substitutes<br/>Alternative products?\"] --> R\n  BP[\"3. Buyer Power<br/>Customer concentration?<br/>Switching costs?\"] --> R\n  SP[\"4. Supplier Power<br/>Supplier concentration?<br/>Unique inputs?\"] --> R\n  R --> CR[\"5. Competitive<br/>Rivalry Intensity<br/>Number, growth, exit barriers\"]\n  style R fill:#ffe0b2\n  style CR fill:#ffcdd2"
         },
         {
           "type": "table",
@@ -589,12 +589,12 @@
         {
           "type": "mermaid",
           "title": "Balanced Scorecard \u2014 4 Perspectives",
-          "code": "graph TD\n  V[**VISION &<br/>STRATEGY**] --> F[**FINANCIAL**<br/>To succeed financially,<br/>how should we appear<br/>to shareholders?]\n  V --> C[**CUSTOMER**<br/>To achieve our vision,<br/>how should we appear<br/>to customers?]\n  V --> IP[**INTERNAL<br/>PROCESS**<br/>To satisfy customers,<br/>at what processes<br/>must we excel?]\n  V --> LG[**LEARNING &<br/>GROWTH**<br/>To achieve our vision,<br/>how will we sustain<br/>change & improvement?]\n  style V fill:#ffe0b2\n  style F fill:#c8e6c9\n  style C fill:#bbdefb\n  style IP fill:#fff9c4\n  style LG fill:#f8bbd0"
+          "code": "graph TD\n  V[\"VISION &<br/>STRATEGY\"] --> F[\"FINANCIAL<br/>To succeed financially,<br/>how should we appear<br/>to shareholders?\"]\n  V --> C[\"CUSTOMER<br/>To achieve our vision,<br/>how should we appear<br/>to customers?\"]\n  V --> IP[\"INTERNAL<br/>PROCESS<br/>To satisfy customers,<br/>at what processes<br/>must we excel?\"]\n  V --> LG[\"LEARNING &<br/>GROWTH<br/>To achieve our vision,<br/>how will we sustain<br/>change & improvement?\"]\n  style V fill:#ffe0b2\n  style F fill:#c8e6c9\n  style C fill:#bbdefb\n  style IP fill:#fff9c4\n  style LG fill:#f8bbd0"
         },
         {
           "type": "mermaid",
           "title": "Strategy Cascade \u2014 From Corporate to Individual",
-          "code": "graph TD\n  C[**Corporate Strategy**<br/>Vision, 3-5yr goals] --> BU[**Business Unit Goals**<br/>Annual objectives]\n  BU --> D[**Department Goals**<br/>Quarterly priorities]\n  D --> T[**Team Goals**<br/>Sprint/monthly]\n  T --> I[**Individual Goals**<br/>Weekly/daily<br/>tied to performance review]\n  style C fill:#bbdefb\n  style I fill:#c8e6c9"
+          "code": "graph TD\n  C[\"Corporate Strategy<br/>Vision, 3-5yr goals\"] --> BU[\"Business Unit Goals<br/>Annual objectives\"]\n  BU --> D[\"Department Goals<br/>Quarterly priorities\"]\n  D --> T[\"Team Goals<br/>Sprint/monthly\"]\n  T --> I[\"Individual Goals<br/>Weekly/daily<br/>tied to performance review\"]\n  style C fill:#bbdefb\n  style I fill:#c8e6c9"
         },
         {
           "type": "table",
