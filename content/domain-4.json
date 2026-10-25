@@ -355,17 +355,17 @@
         {
           "type": "mermaid",
           "title": "Cause-and-Effect (Fishbone) \u2014 4M Categories",
-          "code": "graph LR\n  Man[**Man**<br/>Skill, training,<br/>fatigue] --> Effect((**EFFECT**<br/>Defect, problem))\n  Machine[**Machine**<br/>Equipment, tools,<br/>maintenance] --> Effect\n  Method[**Method**<br/>Process, procedure,<br/>SOP] --> Effect\n  Material[**Material**<br/>Inputs, components,<br/>specs] --> Effect\n  style Effect fill:#ffcdd2"
+          "code": "graph LR\n  Man[\"Man<br/>Skill, training,<br/>fatigue\"] --> Effect((\"EFFECT<br/>Defect, problem\"))\n  Machine[\"Machine<br/>Equipment, tools,<br/>maintenance\"] --> Effect\n  Method[\"Method<br/>Process, procedure,<br/>SOP\"] --> Effect\n  Material[\"Material<br/>Inputs, components,<br/>specs\"] --> Effect\n  style Effect fill:#ffcdd2"
         },
         {
           "type": "mermaid",
           "title": "PDCA / PDSA Cycle (Deming-Shewhart)",
-          "code": "graph TD\n  P[**PLAN**<br/>Identify problem,<br/>analyze, set objectives,<br/>plan changes] --> D[**DO**<br/>Implement on<br/>small scale,<br/>collect data]\n  D --> C[**CHECK / STUDY**<br/>Compare results<br/>to objectives]\n  C --> A[**ACT**<br/>Standardize if good,<br/>or adjust and<br/>repeat cycle]\n  A -.next cycle.-> P\n  style P fill:#bbdefb\n  style D fill:#c8e6c9\n  style C fill:#fff9c4\n  style A fill:#ffe0b2"
+          "code": "graph TD\n  P[\"PLAN<br/>Identify problem,<br/>analyze, set objectives,<br/>plan changes\"] --> D[\"DO<br/>Implement on<br/>small scale,<br/>collect data\"]\n  D --> C[\"CHECK / STUDY<br/>Compare results<br/>to objectives\"]\n  C --> A[\"ACT<br/>Standardize if good,<br/>or adjust and<br/>repeat cycle\"]\n  A -.next cycle.-> P\n  style P fill:#bbdefb\n  style D fill:#c8e6c9\n  style C fill:#fff9c4\n  style A fill:#ffe0b2"
         },
         {
           "type": "mermaid",
           "title": "DMAIC \u2014 Six Sigma Improvement Cycle",
-          "code": "graph LR\n  D[**D**efine<br/>Problem,<br/>customer,<br/>scope] --> M[**M**easure<br/>Baseline data,<br/>process<br/>capability]\n  M --> A[**A**nalyze<br/>Root cause,<br/>statistical<br/>analysis]\n  A --> I[**I**mprove<br/>Pilot solutions,<br/>verify gains]\n  I --> C[**C**ontrol<br/>Standardize,<br/>monitor,<br/>sustain]\n  style D fill:#bbdefb\n  style M fill:#c8e6c9\n  style A fill:#fff9c4\n  style I fill:#ffe0b2\n  style C fill:#f8bbd0"
+          "code": "graph LR\n  D[\"Define<br/>Problem,<br/>customer,<br/>scope\"] --> M[\"Measure<br/>Baseline data,<br/>process<br/>capability\"]\n  M --> A[\"Analyze<br/>Root cause,<br/>statistical<br/>analysis\"]\n  A --> I[\"Improve<br/>Pilot solutions,<br/>verify gains\"]\n  I --> C[\"Control<br/>Standardize,<br/>monitor,<br/>sustain\"]\n  style D fill:#bbdefb\n  style M fill:#c8e6c9\n  style A fill:#fff9c4\n  style I fill:#ffe0b2\n  style C fill:#f8bbd0"
         },
         {
           "type": "table",
@@ -411,7 +411,7 @@
         {
           "type": "mermaid",
           "title": "5 Whys Root Cause Analysis Example",
-          "code": "graph TD\n  P[**Problem**<br/>Production line stopped] --> W1[**Why 1?**<br/>Conveyor motor failed]\n  W1 --> W2[**Why 2?**<br/>Bearings seized]\n  W2 --> W3[**Why 3?**<br/>Lubrication ran dry]\n  W3 --> W4[**Why 4?**<br/>Lube schedule not followed]\n  W4 --> W5[**Why 5?**<br/>No PM ownership defined]\n  W5 --> RC[**ROOT CAUSE**<br/>Missing PM accountability \u2014<br/>NOT 'failed motor']\n  style RC fill:#c8e6c9\n  style P fill:#ffcdd2"
+          "code": "graph TD\n  P[\"Problem<br/>Production line stopped\"] --> W1[\"Why 1?<br/>Conveyor motor failed\"]\n  W1 --> W2[\"Why 2?<br/>Bearings seized\"]\n  W2 --> W3[\"Why 3?<br/>Lubrication ran dry\"]\n  W3 --> W4[\"Why 4?<br/>Lube schedule not followed\"]\n  W4 --> W5[\"Why 5?<br/>No PM ownership defined\"]\n  W5 --> RC[\"ROOT CAUSE<br/>Missing PM accountability \u2014<br/>NOT 'failed motor'\"]\n  style RC fill:#c8e6c9\n  style P fill:#ffcdd2"
         },
         {
           "type": "table",
@@ -452,7 +452,7 @@
         {
           "type": "mermaid",
           "title": "FMEA \u2014 Risk Priority Number Calculation",
-          "code": "graph LR\n  S[**Severity**<br/>1-10<br/>How bad if it<br/>happens?] --> RPN((**RPN**<br/>S \u00d7 O \u00d7 D<br/>Range: 1-1000))\n  O[**Occurrence**<br/>1-10<br/>How often?] --> RPN\n  D[**Detection**<br/>1-10<br/>Can we catch it<br/>before customer?] --> RPN\n  RPN --> Action[**Prioritize Actions**<br/>Higher RPN = higher priority]\n  style RPN fill:#ffe0b2"
+          "code": "graph LR\n  S[\"Severity<br/>1-10<br/>How bad if it<br/>happens?\"] --> RPN((\"RPN<br/>S \u00d7 O \u00d7 D<br/>Range: 1-1000\"))\n  O[\"Occurrence<br/>1-10<br/>How often?\"] --> RPN\n  D[\"Detection<br/>1-10<br/>Can we catch it<br/>before customer?\"] --> RPN\n  RPN --> Action[\"Prioritize Actions<br/>Higher RPN = higher priority\"]\n  style RPN fill:#ffe0b2"
         },
         {
           "type": "table",
@@ -811,12 +811,12 @@
         {
           "type": "mermaid",
           "title": "SIPOC Process Mapping Model",
-          "code": "graph LR\n  S[**S**uppliers<br/>Who provides<br/>inputs?] --> I[**I**nputs<br/>Materials,<br/>info, specs]\n  I --> P[**P**rocess<br/>5-7 high-level<br/>steps]\n  P --> O[**O**utputs<br/>Products,<br/>services]\n  O --> C[**C**ustomers<br/>Who receives<br/>outputs?]\n  style S fill:#bbdefb\n  style I fill:#c8e6c9\n  style P fill:#fff9c4\n  style O fill:#ffe0b2\n  style C fill:#f8bbd0"
+          "code": "graph LR\n  S[\"Suppliers<br/>Who provides<br/>inputs?\"] --> I[\"Inputs<br/>Materials,<br/>info, specs\"]\n  I --> P[\"Process<br/>5-7 high-level<br/>steps\"]\n  P --> O[\"Outputs<br/>Products,<br/>services\"]\n  O --> C[\"Customers<br/>Who receives<br/>outputs?\"]\n  style S fill:#bbdefb\n  style I fill:#c8e6c9\n  style P fill:#fff9c4\n  style O fill:#ffe0b2\n  style C fill:#f8bbd0"
         },
         {
           "type": "mermaid",
           "title": "QMS Documentation Hierarchy \u2014 4 Levels (Pyramid)",
-          "code": "graph BT\n  L4[**LEVEL 4: RECORDS**<br/>Evidence \u2014 completed forms,<br/>test results, audit reports] --> L3[**LEVEL 3: WORK INSTRUCTIONS**<br/>How \u2014 detailed step-by-step]\n  L3 --> L2[**LEVEL 2: PROCEDURES**<br/>Who/What/When \u2014 process flows]\n  L2 --> L1[**LEVEL 1: QUALITY MANUAL**<br/>Why \u2014 policy, scope, vision]\n  style L1 fill:#bbdefb\n  style L2 fill:#c8e6c9\n  style L3 fill:#fff9c4\n  style L4 fill:#ffe0b2"
+          "code": "graph BT\n  L4[\"LEVEL 4: RECORDS<br/>Evidence \u2014 completed forms,<br/>test results, audit reports\"] --> L3[\"LEVEL 3: WORK INSTRUCTIONS<br/>How \u2014 detailed step-by-step\"]\n  L3 --> L2[\"LEVEL 2: PROCEDURES<br/>Who/What/When \u2014 process flows\"]\n  L2 --> L1[\"LEVEL 1: QUALITY MANUAL<br/>Why \u2014 policy, scope, vision\"]\n  style L1 fill:#bbdefb\n  style L2 fill:#c8e6c9\n  style L3 fill:#fff9c4\n  style L4 fill:#ffe0b2"
         },
         {
           "type": "table",
@@ -914,12 +914,12 @@
         {
           "type": "mermaid",
           "title": "OEE \u2014 Overall Equipment Effectiveness",
-          "code": "graph LR\n  A[**Availability**<br/>Run time /<br/>Planned time<br/>Loss: breakdowns,<br/>setup] --> OEE((**OEE**<br/>A \u00d7 P \u00d7 Q))\n  P[**Performance**<br/>Actual / Ideal<br/>output rate<br/>Loss: minor stops,<br/>slow cycles]) --> OEE\n  Q[**Quality**<br/>Good parts /<br/>Total parts<br/>Loss: defects,<br/>rework] --> OEE\n  OEE --> T[**World-class**<br/>OEE \u2265 85%]\n  style OEE fill:#ffe0b2\n  style T fill:#c8e6c9"
+          "code": "graph LR\n  A[\"Availability<br/>Run time /<br/>Planned time<br/>Loss: breakdowns,<br/>setup\"] --> OEE((\"OEE<br/>A \u00d7 P \u00d7 Q\"))\n  P[\"Performance<br/>Actual / Ideal<br/>output rate<br/>Loss: minor stops,<br/>slow cycles\"] --> OEE\n  Q[\"Quality<br/>Good parts /<br/>Total parts<br/>Loss: defects,<br/>rework\"] --> OEE\n  OEE --> T[\"World-class<br/>OEE \u2265 85%\"]\n  style OEE fill:#ffe0b2\n  style T fill:#c8e6c9"
         },
         {
           "type": "mermaid",
           "title": "Theory of Constraints \u2014 5 Focusing Steps",
-          "code": "graph LR\n  S1[**1. Identify**<br/>the constraint] --> S2[**2. Exploit**<br/>get the most from<br/>the constraint]\n  S2 --> S3[**3. Subordinate**<br/>everything else to<br/>the constraint]\n  S3 --> S4[**4. Elevate**<br/>increase capacity<br/>of constraint]\n  S4 --> S5[**5. Repeat**<br/>find the new<br/>constraint]\n  S5 -.next bottleneck.-> S1\n  style S1 fill:#bbdefb\n  style S5 fill:#c8e6c9"
+          "code": "graph LR\n  S1[\"1. Identify<br/>the constraint\"] --> S2[\"2. Exploit<br/>get the most from<br/>the constraint\"]\n  S2 --> S3[\"3. Subordinate<br/>everything else to<br/>the constraint\"]\n  S3 --> S4[\"4. Elevate<br/>increase capacity<br/>of constraint\"]\n  S4 --> S5[\"5. Repeat<br/>find the new<br/>constraint\"]\n  S5 -.next bottleneck.-> S1\n  style S1 fill:#bbdefb\n  style S5 fill:#c8e6c9"
         },
         {
           "type": "table",
@@ -1295,7 +1295,7 @@
         {
           "type": "mermaid",
           "title": "GQM \u2014 Goal-Question-Metric",
-          "code": "graph TD\n  G[**GOAL**<br/>What outcome do<br/>we want?<br/><i>e.g., Reduce field<br/>warranty cost</i>] --> Q1[**Question 1**<br/>What drives field<br/>warranty cost?]\n  G --> Q2[**Question 2**<br/>Where do failures<br/>cluster?]\n  Q1 --> M1[Metric: Cost<br/>per failure mode]\n  Q1 --> M2[Metric: Time-to-<br/>failure distribution]\n  Q2 --> M3[Metric: Failures<br/>by region/lot]\n  Q2 --> M4[Metric: Customer<br/>complaint rate]\n  style G fill:#bbdefb"
+          "code": "graph TD\n  G[\"GOAL<br/>What outcome do<br/>we want?<br/><i>e.g., Reduce field<br/>warranty cost</i>\"] --> Q1[\"Question 1<br/>What drives field<br/>warranty cost?\"]\n  G --> Q2[\"Question 2<br/>Where do failures<br/>cluster?\"]\n  Q1 --> M1[\"Metric: Cost<br/>per failure mode\"]\n  Q1 --> M2[\"Metric: Time-to-<br/>failure distribution\"]\n  Q2 --> M3[\"Metric: Failures<br/>by region/lot\"]\n  Q2 --> M4[\"Metric: Customer<br/>complaint rate\"]\n  style G fill:#bbdefb"
         },
         {
           "type": "table",
@@ -1327,7 +1327,7 @@
         {
           "type": "mermaid",
           "title": "Common Cause vs Special Cause Variation",
-          "code": "graph TD\n  V[**Process Variation**] --> CC[**Common Cause**<br/>inherent in the system<br/>random, predictable]\n  V --> SC[**Special Cause**<br/>assignable, identifiable<br/>not part of normal system]\n  CC --> CC1[Action: change<br/>the system<br/>do NOT tamper]\n  SC --> SC1[Action: investigate<br/>and eliminate<br/>the assignable cause]\n  Tamp[**TAMPERING**<br/>Reacting to common cause<br/>as if special cause \u2014<br/>increases variation] -.warning.-> CC1\n  style CC fill:#bbdefb\n  style SC fill:#ffcdd2\n  style Tamp fill:#ffe0b2"
+          "code": "graph TD\n  V[\"Process Variation\"] --> CC[\"Common Cause<br/>inherent in the system<br/>random, predictable\"]\n  V --> SC[\"Special Cause<br/>assignable, identifiable<br/>not part of normal system\"]\n  CC --> CC1[\"Action: change<br/>the system<br/>do NOT tamper\"]\n  SC --> SC1[\"Action: investigate<br/>and eliminate<br/>the assignable cause\"]\n  Tamp[\"TAMPERING<br/>Reacting to common cause<br/>as if special cause \u2014<br/>increases variation\"] -.warning.-> CC1\n  style CC fill:#bbdefb\n  style SC fill:#ffcdd2\n  style Tamp fill:#ffe0b2"
         },
         {
           "type": "table",
@@ -1445,7 +1445,7 @@
         {
           "type": "mermaid",
           "title": "Bathtub Curve \u2014 Reliability Failure Rate Over Time",
-          "code": "graph LR\n  IM[**Infant Mortality**<br/>Decreasing failure rate<br/>Cause: defects, weak parts<br/>Mitigation: burn-in testing] --> UL[**Useful Life**<br/>Constant (low) failure rate<br/>Cause: random failures<br/>Mitigation: redundancy, MTBF design]\n  UL --> WO[**Wear-Out**<br/>Increasing failure rate<br/>Cause: aging, fatigue, corrosion<br/>Mitigation: PM, end-of-life replacement]\n  style IM fill:#ffe0b2\n  style UL fill:#c8e6c9\n  style WO fill:#ffcdd2"
+          "code": "graph LR\n  IM[\"Infant Mortality<br/>Decreasing failure rate<br/>Cause: defects, weak parts<br/>Mitigation: burn-in testing\"] --> UL[\"Useful Life<br/>Constant (low) failure rate<br/>Cause: random failures<br/>Mitigation: redundancy, MTBF design\"]\n  UL --> WO[\"Wear-Out<br/>Increasing failure rate<br/>Cause: aging, fatigue, corrosion<br/>Mitigation: PM, end-of-life replacement\"]\n  style IM fill:#ffe0b2\n  style UL fill:#c8e6c9\n  style WO fill:#ffcdd2"
         },
         {
           "type": "table",
